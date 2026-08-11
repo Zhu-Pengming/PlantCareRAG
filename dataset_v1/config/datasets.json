@@ -1,0 +1,61 @@
+{
+  "manifest_version": "1.0.0",
+  "frozen_at": "2026-08-11",
+  "datasets": [
+    {
+      "id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+      "title": "Plants Growth and Care Recommendations",
+      "page_url": "https://www.kaggle.com/datasets/aribashafaqat/plants-growth-and-care-recommendations/versions/1",
+      "download_url": "https://www.kaggle.com/api/v1/datasets/download/aribashafaqat/plants-growth-and-care-recommendations",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "role": "knowledge_base_seed",
+      "decision": "accepted_with_quality_gate",
+      "archive_name": "growth_care.zip",
+      "archive_sha256": "f32ff23e7809439584e3a554e0a7be1c302a94ff7096709abd2b12ce2131a047",
+      "member_name": "plants.csv",
+      "member_sha256": "25872e1052b9131f0347f796858344566b9526b204e2ffe70ec1b4b5aee70192",
+      "encoding": "cp1252",
+      "expected_rows": 596,
+      "redistribution": "Derived records retain dataset attribution and license metadata."
+    },
+    {
+      "id": "kaggle:souvikrana17/indoor-plant-health-and-growth-dataset",
+      "title": "Indoor Plant Health & Growth Dataset",
+      "page_url": "https://www.kaggle.com/datasets/souvikrana17/indoor-plant-health-and-growth-dataset",
+      "download_url": "https://www.kaggle.com/api/v1/datasets/download/souvikrana17/indoor-plant-health-and-growth-dataset",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "role": "context_stress_test_only",
+      "decision": "accepted_after_consistency_filter",
+      "archive_name": "health_growth.zip",
+      "archive_sha256": "6a028a156efa060ec9988bd7c0e067497228ee30c5d23a728e4c5e10eb462ba6",
+      "member_name": "Indoor_Plant_Health_and_Growth_Factors.csv",
+      "member_sha256": "92755139e3f7c93af8dfcaf1fc7f4b07611f46daf5b025253e0ad6b61355c213",
+      "encoding": "utf-8-sig",
+      "expected_rows": 1000,
+      "redistribution": "Filtered context records retain dataset attribution and license metadata."
+    },
+    {
+      "id": "kaggle:prakash27x/indoor-house-plants-dataset-with-care-instructions",
+      "title": "Indoor House Plants Dataset with Care Instructions",
+      "page_url": "https://www.kaggle.com/datasets/prakash27x/indoor-house-plants-dataset-with-care-instructions",
+      "download_url": "https://www.kaggle.com/api/v1/datasets/download/prakash27x/indoor-house-plants-dataset-with-care-instructions",
+      "license": "Unknown",
+      "license_url": null,
+      "role": "audit_only",
+      "decision": "rejected",
+      "archive_name": "indoor_house_plants.zip",
+      "archive_sha256": "8c509149ac69c65a7fc94f16b6e58acc81026c6d686a31d7205f5600ef0b4736",
+      "member_name": "house_plants.json",
+      "member_sha256": "02707cf5469a26f5bcf74ceca63643b7246b49ef080b9e3760d76870e6b62e1a",
+      "encoding": "utf-8",
+      "expected_rows": 209,
+      "rejection_reasons": [
+        "Kaggle license is Unknown, so the data cannot be safely redistributed with this repository.",
+        "The downloaded file does not contain the advertised toxicity, care difficulty, description, or image URL fields.",
+        "The audit found inconsistent field types, duplicate Latin names, taxonomic spelling errors, and temperature conversion errors."
+      ]
+    }
+  ]
+}

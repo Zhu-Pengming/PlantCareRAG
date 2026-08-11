@@ -1,0 +1,3158 @@
+[
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:acacia",
+    "name": "Acacia",
+    "normalized_name": "acacia",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      393
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:acalypha",
+    "name": "Acalypha",
+    "normalized_name": "acalypha",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      219
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:acanthus",
+    "name": "Acanthus",
+    "normalized_name": "acanthus",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      394
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:achillea_yarrow",
+    "name": "Achillea (Yarrow)",
+    "normalized_name": "achillea (yarrow)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      548
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:acorn_squash",
+    "name": "Acorn Squash",
+    "normalized_name": "acorn squash",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      343
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:aloe_vera",
+    "name": "Aloe Vera",
+    "normalized_name": "aloe vera",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      2
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:alstroemeria",
+    "name": "Alstroemeria",
+    "normalized_name": "alstroemeria",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      395
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:amaltas_golden_shower",
+    "name": "Amaltas (Golden Shower)",
+    "normalized_name": "amaltas (golden shower)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      259
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:amaranth",
+    "name": "Amaranth",
+    "normalized_name": "amaranth",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      396
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:anemone",
+    "name": "Anemone",
+    "normalized_name": "anemone",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      49
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:angelonia",
+    "name": "Angelonia",
+    "normalized_name": "angelonia",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      550
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:anigozanthos_kangaroo_paw",
+    "name": "Anigozanthos (Kangaroo Paw)",
+    "normalized_name": "anigozanthos (kangaroo paw)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      397
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:apple_tree",
+    "name": "Apple Tree",
+    "normalized_name": "apple tree",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      344
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:aquilegia_columbine",
+    "name": "Aquilegia (Columbine)",
+    "normalized_name": "aquilegia (columbine)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      399
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:armeria_thrift",
+    "name": "Armeria (Thrift)",
+    "normalized_name": "armeria (thrift)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      551
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:arum_lily",
+    "name": "Arum Lily",
+    "normalized_name": "arum lily",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      400
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:astilbe",
+    "name": "Astilbe",
+    "normalized_name": "astilbe",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      118
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:azalea",
+    "name": "Azalea",
+    "normalized_name": "azalea",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      62
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:aztec_lily",
+    "name": "Aztec Lily",
+    "normalized_name": "aztec lily",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      401
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:bacheloratms_button",
+    "name": "Bachelorâ€™s Button",
+    "normalized_name": "bachelorâ€™s button",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      230
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:bamboo",
+    "name": "Bamboo",
+    "normalized_name": "bamboo",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      71
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:banana_plant",
+    "name": "Banana Plant",
+    "normalized_name": "banana plant",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      347
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:banyan_tree_bargad",
+    "name": "Banyan Tree (Bargad)",
+    "normalized_name": "banyan tree (bargad)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      255
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:barberry",
+    "name": "Barberry",
+    "normalized_name": "barberry",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      403
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:bay_laurel",
+    "name": "Bay Laurel",
+    "normalized_name": "bay laurel",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      139
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:bearded_iris",
+    "name": "Bearded Iris",
+    "normalized_name": "bearded iris",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      552
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:bee_balm",
+    "name": "Bee Balm",
+    "normalized_name": "bee balm",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      126
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:beetroot",
+    "name": "Beetroot",
+    "normalized_name": "beetroot",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      348
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:beggonia_outdoor",
+    "name": "Beggonia (Outdoor)",
+    "normalized_name": "beggonia (outdoor)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      264
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:begonia_indoor",
+    "name": "Begonia (Indoor)",
+    "normalized_name": "begonia (indoor)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      196
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:begonia_outdoor",
+    "name": "Begonia (Outdoor)",
+    "normalized_name": "begonia (outdoor)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      188
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:ber_tree_indian_jujube",
+    "name": "Ber Tree (Indian Jujube)",
+    "normalized_name": "ber tree (indian jujube)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      262
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:bigleaf_hydrangea",
+    "name": "Bigleaf Hydrangea",
+    "normalized_name": "bigleaf hydrangea",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      554
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:bird_of_paradise",
+    "name": "Bird of Paradise",
+    "normalized_name": "bird of paradise",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      162
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:black_currant",
+    "name": "Black Currant",
+    "normalized_name": "black currant",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      555
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:blackcurrant",
+    "name": "Blackcurrant",
+    "normalized_name": "blackcurrant",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      350
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:blazing_star",
+    "name": "Blazing Star",
+    "normalized_name": "blazing star",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      557
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:bleeding_heart",
+    "name": "Bleeding Heart",
+    "normalized_name": "bleeding heart",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      111
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:bloodroot",
+    "name": "Bloodroot",
+    "normalized_name": "bloodroot",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      558
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:bok_choy",
+    "name": "Bok Choy",
+    "normalized_name": "bok choy",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      351
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:brachychiton_bottle_tree",
+    "name": "Brachychiton (Bottle Tree)",
+    "normalized_name": "brachychiton (bottle tree)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      406
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:buckwheat",
+    "name": "Buckwheat",
+    "normalized_name": "buckwheat",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      497
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:butternut_squash",
+    "name": "Butternut Squash",
+    "normalized_name": "butternut squash",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      353
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:cabbage_palm",
+    "name": "Cabbage Palm",
+    "normalized_name": "cabbage palm",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      498
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:cactus",
+    "name": "Cactus",
+    "normalized_name": "cactus",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      6
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:calathea",
+    "name": "Calathea",
+    "normalized_name": "calathea",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      154
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:california_poppy",
+    "name": "California Poppy",
+    "normalized_name": "california poppy",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      562
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:camelina",
+    "name": "Camelina",
+    "normalized_name": "camelina",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      499
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:campanula",
+    "name": "Campanula",
+    "normalized_name": "campanula",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      226
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:cananga_ylang_ylang",
+    "name": "Cananga (Ylang-Ylang)",
+    "normalized_name": "cananga (ylang-ylang)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      410
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:canna_lily",
+    "name": "Canna Lily",
+    "normalized_name": "canna lily",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      66
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:carnation",
+    "name": "Carnation",
+    "normalized_name": "carnation",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      42
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:carob_tree",
+    "name": "Carob Tree",
+    "normalized_name": "carob tree",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      563
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:carrot",
+    "name": "Carrot",
+    "normalized_name": "carrot",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      357
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:carrot_plant",
+    "name": "Carrot Plant",
+    "normalized_name": "carrot plant",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      411
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:catnip",
+    "name": "Catnip",
+    "normalized_name": "catnip",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      128
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:cestrum",
+    "name": "Cestrum",
+    "normalized_name": "cestrum",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      412
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:chamomile",
+    "name": "Chamomile",
+    "normalized_name": "chamomile",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      142
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:chili_pepper",
+    "name": "Chili Pepper",
+    "normalized_name": "chili pepper",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      307
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:chinese_evergreen",
+    "name": "Chinese Evergreen",
+    "normalized_name": "chinese evergreen",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      166
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:chinese_lantern_plant",
+    "name": "Chinese Lantern Plant",
+    "normalized_name": "chinese lantern plant",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      566
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:chrysanthemum_outdoor",
+    "name": "Chrysanthemum (Outdoor)",
+    "normalized_name": "chrysanthemum (outdoor)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      275
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:clementine",
+    "name": "Clementine",
+    "normalized_name": "clementine",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      362
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:clivia",
+    "name": "Clivia",
+    "normalized_name": "clivia",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      63
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:clove",
+    "name": "Clove",
+    "normalized_name": "clove",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      363
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:clover",
+    "name": "Clover",
+    "normalized_name": "clover",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      568
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:cockscomb_celosia",
+    "name": "Cockscomb (Celosia)",
+    "normalized_name": "cockscomb (celosia)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      416
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:cocoa_tree",
+    "name": "Cocoa Tree",
+    "normalized_name": "cocoa tree",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      364
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:coltsfoot",
+    "name": "Coltsfoot",
+    "normalized_name": "coltsfoot",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      569
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:coral_bells",
+    "name": "Coral Bells",
+    "normalized_name": "coral bells",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      110
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:corn",
+    "name": "Corn",
+    "normalized_name": "corn",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      365
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:cornflower",
+    "name": "Cornflower",
+    "normalized_name": "cornflower",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      340
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:cress",
+    "name": "Cress",
+    "normalized_name": "cress",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      419
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:cucumber",
+    "name": "Cucumber",
+    "normalized_name": "cucumber",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      366
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:cucumbers",
+    "name": "Cucumbers",
+    "normalized_name": "cucumbers",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      289
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:currant",
+    "name": "Currant",
+    "normalized_name": "currant",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      367
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:cyclamen",
+    "name": "Cyclamen",
+    "normalized_name": "cyclamen",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      421
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:daffodils",
+    "name": "Daffodils",
+    "normalized_name": "daffodils",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      570
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:daisy",
+    "name": "Daisy",
+    "normalized_name": "daisy",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      68
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:daisy_fleabane",
+    "name": "Daisy Fleabane",
+    "normalized_name": "daisy fleabane",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      571
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:date_palm_khajoor",
+    "name": "Date Palm (Khajoor)",
+    "normalized_name": "date palm (khajoor)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      260
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:daylily",
+    "name": "Daylily",
+    "normalized_name": "daylily",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      236
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:devils_ivy",
+    "name": "Devil’s Ivy",
+    "normalized_name": "devil’s ivy",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      425
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:dianella",
+    "name": "Dianella",
+    "normalized_name": "dianella",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      211
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:dieffenbachia",
+    "name": "Dieffenbachia",
+    "normalized_name": "dieffenbachia",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      157
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:dogwood_tree",
+    "name": "Dogwood Tree",
+    "normalized_name": "dogwood tree",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      572
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:dragon_fruit",
+    "name": "Dragon Fruit",
+    "normalized_name": "dragon fruit",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      370
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:dragonfruit_cactus",
+    "name": "Dragonfruit Cactus",
+    "normalized_name": "dragonfruit cactus",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      573
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:dusty_miller",
+    "name": "Dusty Miller",
+    "normalized_name": "dusty miller",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      210
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:eggplant",
+    "name": "Eggplant",
+    "normalized_name": "eggplant",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      371
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:elderflower",
+    "name": "Elderflower",
+    "normalized_name": "elderflower",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      501
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:engelmann_spruce",
+    "name": "Engelmann Spruce",
+    "normalized_name": "engelmann spruce",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      574
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:epazote",
+    "name": "Epazote",
+    "normalized_name": "epazote",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      502
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:euphorbia",
+    "name": "Euphorbia",
+    "normalized_name": "euphorbia",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      281
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:fairy_lantern",
+    "name": "Fairy Lantern",
+    "normalized_name": "fairy lantern",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      575
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:fern_boston_fern",
+    "name": "Fern (Boston Fern)",
+    "normalized_name": "fern (boston fern)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      155
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:fern_boston",
+    "name": "Fern (Boston)",
+    "normalized_name": "fern (boston)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      13
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:fern_maidenhair",
+    "name": "Fern (Maidenhair)",
+    "normalized_name": "fern (maidenhair)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      503
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:feverfew",
+    "name": "Feverfew",
+    "normalized_name": "feverfew",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      239
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:ficus_benjamina",
+    "name": "Ficus Benjamina",
+    "normalized_name": "ficus benjamina",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      301
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:ficus_microcarpa",
+    "name": "Ficus Microcarpa",
+    "normalized_name": "ficus microcarpa",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      430
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:ficus_tree",
+    "name": "Ficus Tree",
+    "normalized_name": "ficus tree",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      168
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:fiddle_leaf_fig",
+    "name": "Fiddle Leaf Fig",
+    "normalized_name": "fiddle leaf fig",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      25
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:fig_tree",
+    "name": "Fig Tree",
+    "normalized_name": "fig tree",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      374
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:fritillaria",
+    "name": "Fritillaria",
+    "normalized_name": "fritillaria",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      576
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:galangal",
+    "name": "Galangal",
+    "normalized_name": "galangal",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      504
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:galax",
+    "name": "Galax",
+    "normalized_name": "galax",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      577
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:gerbera_daisy",
+    "name": "Gerbera Daisy",
+    "normalized_name": "gerbera daisy",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      48
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:ginkgo",
+    "name": "Ginkgo",
+    "normalized_name": "ginkgo",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      578
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:goldenrods",
+    "name": "Goldenrods",
+    "normalized_name": "goldenrods",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      582
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:goldenseal",
+    "name": "Goldenseal",
+    "normalized_name": "goldenseal",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      583
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:grape_hyacinth",
+    "name": "Grape Hyacinth",
+    "normalized_name": "grape hyacinth",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      579
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:green_bean",
+    "name": "Green Bean",
+    "normalized_name": "green bean",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      376
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:guar",
+    "name": "Guar",
+    "normalized_name": "guar",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      580
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:guava",
+    "name": "Guava",
+    "normalized_name": "guava",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      434
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:gul_mohar_flame_tree",
+    "name": "Gul Mohar (Flame Tree)",
+    "normalized_name": "gul mohar (flame tree)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      258
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:gumwood_tree",
+    "name": "Gumwood Tree",
+    "normalized_name": "gumwood tree",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      581
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:haworthia",
+    "name": "Haworthia",
+    "normalized_name": "haworthia",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      171
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:helenium",
+    "name": "Helenium",
+    "normalized_name": "helenium",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      117
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:heliopsis",
+    "name": "Heliopsis",
+    "normalized_name": "heliopsis",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      584
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:henbane",
+    "name": "Henbane",
+    "normalized_name": "henbane",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      585
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:heracleum_cow_parsnip",
+    "name": "Heracleum (Cow Parsnip)",
+    "normalized_name": "heracleum (cow parsnip)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      586
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:holly",
+    "name": "Holly",
+    "normalized_name": "holly",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      60
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:hops_vine",
+    "name": "Hops Vine",
+    "normalized_name": "hops vine",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      587
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:hoya_wax_plant",
+    "name": "Hoya (Wax Plant)",
+    "normalized_name": "hoya (wax plant)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      176
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:hummingbird_sage",
+    "name": "Hummingbird Sage",
+    "normalized_name": "hummingbird sage",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      506
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:hyacinth",
+    "name": "Hyacinth",
+    "normalized_name": "hyacinth",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      50
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:ice_plant",
+    "name": "Ice Plant",
+    "normalized_name": "ice plant",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      251
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:indian_cress",
+    "name": "Indian Cress",
+    "normalized_name": "indian cress",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      507
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:indian_grass",
+    "name": "Indian Grass",
+    "normalized_name": "indian grass",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      588
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:iris",
+    "name": "Iris",
+    "normalized_name": "iris",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      75
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:ironwood",
+    "name": "Ironwood",
+    "normalized_name": "ironwood",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      590
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:islander_agave",
+    "name": "Islander (Agave)",
+    "normalized_name": "islander (agave)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      589
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:ivy",
+    "name": "Ivy",
+    "normalized_name": "ivy",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      39
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:ixia",
+    "name": "Ixia",
+    "normalized_name": "ixia",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      437
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:jacaranda",
+    "name": "Jacaranda",
+    "normalized_name": "jacaranda",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      438
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:jackfruit",
+    "name": "Jackfruit",
+    "normalized_name": "jackfruit",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      378
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:jade_pothos",
+    "name": "Jade Pothos",
+    "normalized_name": "jade pothos",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      173
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:japanese_anemone",
+    "name": "Japanese Anemone",
+    "normalized_name": "japanese anemone",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      114
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:jasmine_outdoor",
+    "name": "Jasmine (Outdoor)",
+    "normalized_name": "jasmine (outdoor)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      221
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:jerusalem_artichoke",
+    "name": "Jerusalem Artichoke",
+    "normalized_name": "jerusalem artichoke",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      591
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:kikar_tree_acacia",
+    "name": "Kikar Tree (Acacia)",
+    "normalized_name": "kikar tree (acacia)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      256
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:kiwi",
+    "name": "Kiwi",
+    "normalized_name": "kiwi",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      381
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:kiwi_vine",
+    "name": "Kiwi Vine",
+    "normalized_name": "kiwi vine",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      442
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:knautia",
+    "name": "Knautia",
+    "normalized_name": "knautia",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      443
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:lacandonian",
+    "name": "Lacandonian",
+    "normalized_name": "lacandonian",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      509
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:lady_s_mantle",
+    "name": "Lady's Mantle",
+    "normalized_name": "lady's mantle",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      382
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:laelia_orchid",
+    "name": "Laelia Orchid",
+    "normalized_name": "laelia orchid",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      593
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:lantana",
+    "name": "Lantana",
+    "normalized_name": "lantana",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      212
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:lemon_grass",
+    "name": "Lemon Grass",
+    "normalized_name": "lemon grass",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      511
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:lemongrass",
+    "name": "Lemongrass",
+    "normalized_name": "lemongrass",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      144
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:liatris",
+    "name": "Liatris",
+    "normalized_name": "liatris",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      447
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:ligustrum",
+    "name": "Ligustrum",
+    "normalized_name": "ligustrum",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      596
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:lilac",
+    "name": "Lilac",
+    "normalized_name": "lilac",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      448
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:lilac_bush",
+    "name": "Lilac Bush",
+    "normalized_name": "lilac bush",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      512
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:lilac_tree",
+    "name": "Lilac Tree",
+    "normalized_name": "lilac tree",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      597
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:lily_of_the_valley",
+    "name": "Lily of the Valley",
+    "normalized_name": "lily of the valley",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      319
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:litchi",
+    "name": "Litchi",
+    "normalized_name": "litchi",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      384
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:lotus",
+    "name": "Lotus",
+    "normalized_name": "lotus",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      70
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:lotus_bamboo",
+    "name": "Lotus Bamboo",
+    "normalized_name": "lotus bamboo",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      76
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:luffa",
+    "name": "Luffa",
+    "normalized_name": "luffa",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      450
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:lupine",
+    "name": "Lupine",
+    "normalized_name": "lupine",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      122
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:lychee",
+    "name": "Lychee",
+    "normalized_name": "lychee",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      385
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:majesty_palm",
+    "name": "Majesty Palm",
+    "normalized_name": "majesty palm",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      161
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:mallow",
+    "name": "Mallow",
+    "normalized_name": "mallow",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      386
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:malva_mallow",
+    "name": "Malva (Mallow)",
+    "normalized_name": "malva (mallow)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      452
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:mandevilla",
+    "name": "Mandevilla",
+    "normalized_name": "mandevilla",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      513
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:marigold_african",
+    "name": "Marigold (African)",
+    "normalized_name": "marigold (african)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      514
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:marjoram",
+    "name": "Marjoram",
+    "normalized_name": "marjoram",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      146
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:mayapple",
+    "name": "Mayapple",
+    "normalized_name": "mayapple",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      515
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:mint",
+    "name": "Mint",
+    "normalized_name": "mint",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      8
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:money_plant",
+    "name": "Money Plant",
+    "normalized_name": "money plant",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      15
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:monstera",
+    "name": "Monstera",
+    "normalized_name": "monstera",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      153
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:mulberry",
+    "name": "Mulberry",
+    "normalized_name": "mulberry",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      389
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:mustard",
+    "name": "Mustard",
+    "normalized_name": "mustard",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      390
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:nandina_heavenly_bamboo",
+    "name": "Nandina (Heavenly Bamboo)",
+    "normalized_name": "nandina (heavenly bamboo)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      516
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:nectarine",
+    "name": "Nectarine",
+    "normalized_name": "nectarine",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      391
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:neem_tree",
+    "name": "Neem Tree",
+    "normalized_name": "neem tree",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      253
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:neoregalia_bromeliad",
+    "name": "Neoregalia (Bromeliad)",
+    "normalized_name": "neoregalia (bromeliad)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      459
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:nettle",
+    "name": "Nettle",
+    "normalized_name": "nettle",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      460
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:nutmeg",
+    "name": "Nutmeg",
+    "normalized_name": "nutmeg",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      517
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:orchid_vanilla",
+    "name": "Orchid (Vanilla)",
+    "normalized_name": "orchid (vanilla)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      518
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:orchid_cactus",
+    "name": "Orchid Cactus",
+    "normalized_name": "orchid cactus",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      72
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:passionflower",
+    "name": "Passionflower",
+    "normalized_name": "passionflower",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      463
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:peepal_tree",
+    "name": "Peepal Tree",
+    "normalized_name": "peepal tree",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      519
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:peepal_tree_bodhi_tree",
+    "name": "Peepal Tree (Bodhi Tree)",
+    "normalized_name": "peepal tree (bodhi tree)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      254
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:peperomia",
+    "name": "Peperomia",
+    "normalized_name": "peperomia",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      167
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:pepper_plant",
+    "name": "Pepper Plant",
+    "normalized_name": "pepper plant",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      465
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:petunia_trailing",
+    "name": "Petunia (Trailing)",
+    "normalized_name": "petunia (trailing)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      191
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:philodendron",
+    "name": "Philodendron",
+    "normalized_name": "philodendron",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      152
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:pilea",
+    "name": "Pilea",
+    "normalized_name": "pilea",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      293
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:pine",
+    "name": "Pine",
+    "normalized_name": "pine",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      318
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:pineapple",
+    "name": "Pineapple",
+    "normalized_name": "pineapple",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      341
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:pineapple_sage",
+    "name": "Pineapple Sage",
+    "normalized_name": "pineapple sage",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      288
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:plumeria",
+    "name": "Plumeria",
+    "normalized_name": "plumeria",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      520
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:pomegranate",
+    "name": "Pomegranate",
+    "normalized_name": "pomegranate",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      468
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:portulaca",
+    "name": "Portulaca",
+    "normalized_name": "portulaca",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      208
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:potato_vine",
+    "name": "Potato Vine",
+    "normalized_name": "potato vine",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      469
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:protea",
+    "name": "Protea",
+    "normalized_name": "protea",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      471
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:purslane",
+    "name": "Purslane",
+    "normalized_name": "purslane",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      472
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:quaking_aspen",
+    "name": "Quaking Aspen",
+    "normalized_name": "quaking aspen",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      521
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:quince",
+    "name": "Quince",
+    "normalized_name": "quince",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      473
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:quinoa",
+    "name": "Quinoa",
+    "normalized_name": "quinoa",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      522
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:radish",
+    "name": "Radish",
+    "normalized_name": "radish",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      308
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:raspberry",
+    "name": "Raspberry",
+    "normalized_name": "raspberry",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      337
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:red_hot_poker_kniphofia",
+    "name": "Red Hot Poker (Kniphofia)",
+    "normalized_name": "red hot poker (kniphofia)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      474
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:red_maple",
+    "name": "Red Maple",
+    "normalized_name": "red maple",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      523
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:red_leafed_maple",
+    "name": "Red-leafed Maple",
+    "normalized_name": "red-leafed maple",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      475
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:redwood",
+    "name": "Redwood",
+    "normalized_name": "redwood",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      524
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:rhododendron",
+    "name": "Rhododendron",
+    "normalized_name": "rhododendron",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      476
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:river_birch",
+    "name": "River Birch",
+    "normalized_name": "river birch",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      525
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:rose_of_sharon",
+    "name": "Rose of Sharon",
+    "normalized_name": "rose of sharon",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      526
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:rosemary_mint",
+    "name": "Rosemary Mint",
+    "normalized_name": "rosemary mint",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      527
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:russian_sage",
+    "name": "Russian Sage",
+    "normalized_name": "russian sage",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      125
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:sago_palm",
+    "name": "Sago Palm",
+    "normalized_name": "sago palm",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      528
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:scabiosa_pincushion_flower",
+    "name": "Scabiosa (Pincushion Flower)",
+    "normalized_name": "scabiosa (pincushion flower)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      529
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:scilla",
+    "name": "Scilla",
+    "normalized_name": "scilla",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      530
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:sea_holly",
+    "name": "Sea Holly",
+    "normalized_name": "sea holly",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      234
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:sedge",
+    "name": "Sedge",
+    "normalized_name": "sedge",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      531
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:sheesham_tree",
+    "name": "Sheesham Tree",
+    "normalized_name": "sheesham tree",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      257
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:silene_catchfly",
+    "name": "Silene (Catchfly)",
+    "normalized_name": "silene (catchfly)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      532
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:silverbell_tree",
+    "name": "Silverbell Tree",
+    "normalized_name": "silverbell tree",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      533
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:snake_plant",
+    "name": "Snake Plant",
+    "normalized_name": "snake plant",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      4
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:snowdrop",
+    "name": "Snowdrop",
+    "normalized_name": "snowdrop",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      480
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:soursop",
+    "name": "Soursop",
+    "normalized_name": "soursop",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      534
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:speedwell",
+    "name": "Speedwell",
+    "normalized_name": "speedwell",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      127
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:spider_flower",
+    "name": "Spider Flower",
+    "normalized_name": "spider flower",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      481
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:star_jasmine",
+    "name": "Star Jasmine",
+    "normalized_name": "star jasmine",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      482
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:strawberry",
+    "name": "Strawberry",
+    "normalized_name": "strawberry",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      327
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:strawberry_plant",
+    "name": "Strawberry Plant",
+    "normalized_name": "strawberry plant",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      483
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:string_of_pearls",
+    "name": "String of Pearls",
+    "normalized_name": "string of pearls",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      172
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:succulent",
+    "name": "Succulent",
+    "normalized_name": "succulent",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      74
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:succulents_general",
+    "name": "Succulents (General)",
+    "normalized_name": "succulents (general)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      169
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:sugarcane",
+    "name": "Sugarcane",
+    "normalized_name": "sugarcane",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      536
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:swedish_ivy",
+    "name": "Swedish Ivy",
+    "normalized_name": "swedish ivy",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      174
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:sweet_basil",
+    "name": "Sweet Basil",
+    "normalized_name": "sweet basil",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      484
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:sweet_potato_vine",
+    "name": "Sweet Potato Vine",
+    "normalized_name": "sweet potato vine",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      485
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:sweet_william",
+    "name": "Sweet William",
+    "normalized_name": "sweet william",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      222
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:tansy",
+    "name": "Tansy",
+    "normalized_name": "tansy",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      537
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:taro",
+    "name": "Taro",
+    "normalized_name": "taro",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      486
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:teak",
+    "name": "Teak",
+    "normalized_name": "teak",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      538
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:themeda_kangaroo_grass",
+    "name": "Themeda (Kangaroo Grass)",
+    "normalized_name": "themeda (kangaroo grass)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      539
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:tiger_lily",
+    "name": "Tiger Lily",
+    "normalized_name": "tiger lily",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      488
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:toad_lily",
+    "name": "Toad Lily",
+    "normalized_name": "toad lily",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      124
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:tobacco_plant",
+    "name": "Tobacco Plant",
+    "normalized_name": "tobacco plant",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      540
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:tomato",
+    "name": "Tomato",
+    "normalized_name": "tomato",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      322
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:tuberose_polianthes",
+    "name": "Tuberose (Polianthes)",
+    "normalized_name": "tuberose (polianthes)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      541
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:tulip",
+    "name": "Tulip",
+    "normalized_name": "tulip",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      36
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:tulsi_holy_basil",
+    "name": "Tulsi (Holy Basil)",
+    "normalized_name": "tulsi (holy basil)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      64
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:veronica",
+    "name": "Veronica",
+    "normalized_name": "veronica",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      115
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:violet",
+    "name": "Violet",
+    "normalized_name": "violet",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      491
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:wandering_jew",
+    "name": "Wandering Jew",
+    "normalized_name": "wandering jew",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      175
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:water_lily",
+    "name": "Water Lily",
+    "normalized_name": "water lily",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      542
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:wattle",
+    "name": "Wattle",
+    "normalized_name": "wattle",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      543
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:yarrow",
+    "name": "Yarrow",
+    "normalized_name": "yarrow",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      237
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:yew",
+    "name": "Yew",
+    "normalized_name": "yew",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      544
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:zea_mays_corn",
+    "name": "Zea Mays (Corn)",
+    "normalized_name": "zea mays (corn)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      545
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:zebra_grass",
+    "name": "Zebra Grass",
+    "normalized_name": "zebra grass",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      546
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:zebra_plant",
+    "name": "Zebra Plant",
+    "normalized_name": "zebra plant",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      494
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:zephyranthes_rain_lily",
+    "name": "Zephyranthes (Rain Lily)",
+    "normalized_name": "zephyranthes (rain lily)",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      495
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:zoysia_grass",
+    "name": "Zoysia Grass",
+    "normalized_name": "zoysia grass",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      547
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:zucchini",
+    "name": "Zucchini",
+    "normalized_name": "zucchini",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      306
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "plant:zz_plant",
+    "name": "ZZ Plant",
+    "normalized_name": "zz plant",
+    "source_dataset_id": "kaggle:aribashafaqat/plants-growth-and-care-recommendations",
+    "source_row_numbers": [
+      150
+    ],
+    "review_status": "dataset_accepted",
+    "evidence_level": "single_dataset_claim"
+  }
+]

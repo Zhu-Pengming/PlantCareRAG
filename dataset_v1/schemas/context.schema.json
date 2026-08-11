@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://plant-rag.local/dataset-v1/context.schema.json",
+  "title": "Filtered plant context stress-test sample",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "plant_scientific_name",
+    "health_note",
+    "pest_presence",
+    "pest_severity",
+    "source",
+    "allowed_use",
+    "prohibited_use"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "id": {"type": "string", "pattern": "^context:[0-9]{4}$"},
+    "allowed_use": {"const": "context_stress_test_only"},
+    "prohibited_use": {"const": "ground_truth_or_medical_safety_claim"}
+  }
+}

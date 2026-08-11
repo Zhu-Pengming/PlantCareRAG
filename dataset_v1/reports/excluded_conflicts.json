@@ -1,0 +1,3156 @@
+[
+  {
+    "plant_name": "African Violet",
+    "plant_name_normalized": "african violet",
+    "raw_row_numbers": [
+      177,
+      291
+    ],
+    "conflicts": {
+      "Soil": [
+        "acidic",
+        "well-drained"
+      ],
+      "Watering": [
+        "Keep soil moist",
+        "Water when soil is dry"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Ageratum",
+    "plant_name_normalized": "ageratum",
+    "raw_row_numbers": [
+      202,
+      263,
+      549
+    ],
+    "conflicts": {
+      "Soil": [
+        "loamy",
+        "well-drained"
+      ],
+      "Sunlight": [
+        "full sunlight",
+        "partial sunlight"
+      ],
+      "Watering": [
+        "Keep soil slightly moist",
+        "Regular watering",
+        "Regular, moist soil"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Alyssum",
+    "plant_name_normalized": "alyssum",
+    "raw_row_numbers": [
+      84,
+      248,
+      284
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate"
+      ],
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Sunlight": [
+        "full sunlight",
+        "partial sunlight"
+      ],
+      "Watering": [
+        "Regular, moist soil",
+        "Water weekly"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Amaryllis",
+    "plant_name_normalized": "amaryllis",
+    "raw_row_numbers": [
+      216,
+      271
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate"
+      ],
+      "Soil": [
+        "loamy",
+        "sandy"
+      ],
+      "Watering": [
+        "Keep soil moist",
+        "Water when soil is dry"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Low-nitrogen"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Anthurium",
+    "plant_name_normalized": "anthurium",
+    "raw_row_numbers": [
+      164,
+      398
+    ],
+    "conflicts": {
+      "Growth": [
+        "moderate",
+        "slow"
+      ],
+      "Soil": [
+        "moist",
+        "well-drained"
+      ],
+      "Watering": [
+        "Keep soil moist",
+        "Regular, moist soil"
+      ],
+      "Fertilization Type": [
+        "No",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Areca Palm",
+    "plant_name_normalized": "areca palm",
+    "raw_row_numbers": [
+      160,
+      298
+    ],
+    "conflicts": {
+      "Soil": [
+        "loamy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular, moist soil",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "No",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Aster",
+    "plant_name_normalized": "aster",
+    "raw_row_numbers": [
+      99,
+      238
+    ],
+    "conflicts": {
+      "Watering": [
+        "Regular watering",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "Low-nitrogen",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Balloon Flower",
+    "plant_name_normalized": "balloon flower",
+    "raw_row_numbers": [
+      113,
+      231
+    ],
+    "conflicts": {
+      "Sunlight": [
+        "full sunlight",
+        "partial sunlight"
+      ],
+      "Watering": [
+        "Regular watering",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Low-nitrogen"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Balsam",
+    "plant_name_normalized": "balsam",
+    "raw_row_numbers": [
+      346,
+      402
+    ],
+    "conflicts": {
+      "Soil": [
+        "loamy",
+        "moist"
+      ],
+      "Sunlight": [
+        "full sunlight",
+        "partial sunlight"
+      ],
+      "Watering": [
+        "Regular watering",
+        "Regular, moist soil"
+      ],
+      "Fertilization Type": [
+        "Low-nitrogen",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Bamboo Orchid",
+    "plant_name_normalized": "bamboo orchid",
+    "raw_row_numbers": [
+      345,
+      496
+    ],
+    "conflicts": {
+      "Soil": [
+        "loamy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Keep soil moist",
+        "Regular, well-drained soil"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Bamboo Palm",
+    "plant_name_normalized": "bamboo palm",
+    "raw_row_numbers": [
+      14,
+      159
+    ],
+    "conflicts": {
+      "Growth": [
+        "moderate",
+        "slow"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "No"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Basil",
+    "plant_name_normalized": "basil",
+    "raw_row_numbers": [
+      3,
+      300
+    ],
+    "conflicts": {
+      "Soil": [
+        "loamy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Keep soil evenly moist",
+        "Regular, moist soil"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Begonia",
+    "plant_name_normalized": "begonia",
+    "raw_row_numbers": [
+      32,
+      89,
+      178,
+      312
+    ],
+    "conflicts": {
+      "Watering": [
+        "Keep soil evenly moist",
+        "Keep soil moist",
+        "Regular, moist soil",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Bellflower",
+    "plant_name_normalized": "bellflower",
+    "raw_row_numbers": [
+      235,
+      349,
+      404
+    ],
+    "conflicts": {
+      "Soil": [
+        "loamy",
+        "sandy",
+        "well-drained"
+      ],
+      "Sunlight": [
+        "full sunlight",
+        "partial sunlight"
+      ],
+      "Watering": [
+        "Keep soil moist",
+        "Regular watering",
+        "Regular, moist soil"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Low-nitrogen",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Bergamot",
+    "plant_name_normalized": "bergamot",
+    "raw_row_numbers": [
+      323,
+      553
+    ],
+    "conflicts": {
+      "Watering": [
+        "Regular, moist soil",
+        "Water when soil is dry"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Black-eyed Susan",
+    "plant_name_normalized": "black-eyed susan",
+    "raw_row_numbers": [
+      101,
+      229,
+      556
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate"
+      ],
+      "Soil": [
+        "loamy",
+        "sandy"
+      ],
+      "Watering": [
+        "Water weekly",
+        "Water when topsoil is dry"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Low-nitrogen",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Blanket Flower",
+    "plant_name_normalized": "blanket flower",
+    "raw_row_numbers": [
+      123,
+      247
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate"
+      ],
+      "Fertilization Type": [
+        "Low-nitrogen",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Bluebell",
+    "plant_name_normalized": "bluebell",
+    "raw_row_numbers": [
+      54,
+      201,
+      559
+    ],
+    "conflicts": {
+      "Growth": [
+        "moderate",
+        "slow"
+      ],
+      "Soil": [
+        "moist",
+        "well-drained"
+      ],
+      "Sunlight": [
+        "full sunlight",
+        "partial sunlight"
+      ],
+      "Watering": [
+        "Keep soil slightly moist",
+        "Regular watering",
+        "Water when soil feels dry"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Borage",
+    "plant_name_normalized": "borage",
+    "raw_row_numbers": [
+      334,
+      560
+    ],
+    "conflicts": {
+      "Soil": [
+        "loamy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Keep soil consistently moist",
+        "Regular, moist soil"
+      ],
+      "Fertilization Type": [
+        "No",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Bougainvillea",
+    "plant_name_normalized": "bougainvillea",
+    "raw_row_numbers": [
+      24,
+      59,
+      405
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate"
+      ],
+      "Soil": [
+        "acidic",
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Let soil dry between watering",
+        "Water when soil is dry"
+      ],
+      "Fertilization Type": [
+        "Low-nitrogen",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Brassica",
+    "plant_name_normalized": "brassica",
+    "raw_row_numbers": [
+      352,
+      407
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate"
+      ],
+      "Soil": [
+        "loamy",
+        "moist"
+      ],
+      "Watering": [
+        "Regular watering",
+        "Regular, moist soil"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Low-nitrogen"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Bromeliad",
+    "plant_name_normalized": "bromeliad",
+    "raw_row_numbers": [
+      73,
+      274
+    ],
+    "conflicts": {
+      "Watering": [
+        "Water weekly",
+        "Water when soil is dry"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Cabbage",
+    "plant_name_normalized": "cabbage",
+    "raw_row_numbers": [
+      321,
+      354
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate"
+      ],
+      "Soil": [
+        "moist",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular watering",
+        "Regular, moist soil"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Calendula",
+    "plant_name_normalized": "calendula",
+    "raw_row_numbers": [
+      105,
+      189,
+      244,
+      355,
+      561
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate"
+      ],
+      "Soil": [
+        "loamy",
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Water weekly",
+        "Water when topsoil is dry"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Low-nitrogen",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Calla Lily",
+    "plant_name_normalized": "calla lily",
+    "raw_row_numbers": [
+      203,
+      299,
+      408
+    ],
+    "conflicts": {
+      "Soil": [
+        "moist",
+        "sandy",
+        "well-drained"
+      ],
+      "Sunlight": [
+        "full sunlight",
+        "partial sunlight"
+      ],
+      "Watering": [
+        "Keep soil moist",
+        "Regular, moist soil"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Camellia",
+    "plant_name_normalized": "camellia",
+    "raw_row_numbers": [
+      55,
+      273,
+      356,
+      409
+    ],
+    "conflicts": {
+      "Growth": [
+        "moderate",
+        "slow"
+      ],
+      "Sunlight": [
+        "full sunlight",
+        "partial sunlight"
+      ],
+      "Watering": [
+        "Keep soil moist",
+        "Regular, moist soil",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "Acidic",
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Candytuft",
+    "plant_name_normalized": "candytuft",
+    "raw_row_numbers": [
+      106,
+      246
+    ],
+    "conflicts": {
+      "Watering": [
+        "Regular watering",
+        "Water weekly"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Catmint",
+    "plant_name_normalized": "catmint",
+    "raw_row_numbers": [
+      79,
+      358,
+      564
+    ],
+    "conflicts": {
+      "Watering": [
+        "Keep soil consistently moist",
+        "Regular watering",
+        "Water weekly"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Chayote",
+    "plant_name_normalized": "chayote",
+    "raw_row_numbers": [
+      359,
+      413
+    ],
+    "conflicts": {
+      "Watering": [
+        "Regular watering",
+        "Regular, moist soil"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "No"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Cherry Blossom",
+    "plant_name_normalized": "cherry blossom",
+    "raw_row_numbers": [
+      311,
+      360
+    ],
+    "conflicts": {
+      "Watering": [
+        "Keep soil moist",
+        "Regular, moist soil"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Chestnut",
+    "plant_name_normalized": "chestnut",
+    "raw_row_numbers": [
+      361,
+      414
+    ],
+    "conflicts": {
+      "Growth": [
+        "moderate",
+        "slow"
+      ],
+      "Watering": [
+        "Regular watering",
+        "Regular, well-drained soil"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Chives",
+    "plant_name_normalized": "chives",
+    "raw_row_numbers": [
+      20,
+      136,
+      565
+    ],
+    "conflicts": {
+      "Soil": [
+        "loamy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Keep soil evenly moist",
+        "Keep soil moist"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Low-nitrogen",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Chrysanthemum",
+    "plant_name_normalized": "chrysanthemum",
+    "raw_row_numbers": [
+      33,
+      65,
+      198,
+      331
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate"
+      ],
+      "Watering": [
+        "Regular watering",
+        "Regular, well-drained soil",
+        "Water when soil feels dry"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Cilantro",
+    "plant_name_normalized": "cilantro",
+    "raw_row_numbers": [
+      18,
+      134,
+      326
+    ],
+    "conflicts": {
+      "Soil": [
+        "loamy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Keep soil moist",
+        "Regular, moist soil"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Cineraria",
+    "plant_name_normalized": "cineraria",
+    "raw_row_numbers": [
+      204,
+      265,
+      415
+    ],
+    "conflicts": {
+      "Soil": [
+        "moist",
+        "well-drained"
+      ],
+      "Sunlight": [
+        "indirect sunlight",
+        "partial sunlight"
+      ],
+      "Watering": [
+        "Keep soil moist",
+        "Regular, moist soil"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Clematis",
+    "plant_name_normalized": "clematis",
+    "raw_row_numbers": [
+      199,
+      286,
+      567
+    ],
+    "conflicts": {
+      "Growth": [
+        "moderate",
+        "slow"
+      ],
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Sunlight": [
+        "full sunlight",
+        "partial sunlight"
+      ],
+      "Watering": [
+        "Keep soil consistently moist",
+        "Regular watering",
+        "Regular, well-drained soil"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Coleus",
+    "plant_name_normalized": "coleus",
+    "raw_row_numbers": [
+      209,
+      276,
+      315
+    ],
+    "conflicts": {
+      "Soil": [
+        "acidic",
+        "loamy",
+        "well-drained"
+      ],
+      "Sunlight": [
+        "full sunlight",
+        "indirect sunlight",
+        "partial sunlight"
+      ],
+      "Watering": [
+        "Regular watering",
+        "Regular, moist soil"
+      ],
+      "Fertilization Type": [
+        "Low-nitrogen",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Columbine",
+    "plant_name_normalized": "columbine",
+    "raw_row_numbers": [
+      120,
+      232
+    ],
+    "conflicts": {
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Coneflower",
+    "plant_name_normalized": "coneflower",
+    "raw_row_numbers": [
+      80,
+      417
+    ],
+    "conflicts": {
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular, well-drained soil",
+        "Water weekly"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Coreopsis",
+    "plant_name_normalized": "coreopsis",
+    "raw_row_numbers": [
+      119,
+      228,
+      418
+    ],
+    "conflicts": {
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular, well-drained soil",
+        "Water when soil is dry"
+      ],
+      "Fertilization Type": [
+        "Low-nitrogen",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Cosmos",
+    "plant_name_normalized": "cosmos",
+    "raw_row_numbers": [
+      27,
+      227
+    ],
+    "conflicts": {
+      "Watering": [
+        "Water weekly",
+        "Water when soil feels dry"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Crocus",
+    "plant_name_normalized": "crocus",
+    "raw_row_numbers": [
+      51,
+      324
+    ],
+    "conflicts": {
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular, moist soil",
+        "Water weekly"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Croton",
+    "plant_name_normalized": "croton",
+    "raw_row_numbers": [
+      156,
+      420
+    ],
+    "conflicts": {
+      "Growth": [
+        "moderate",
+        "slow"
+      ],
+      "Sunlight": [
+        "full sunlight",
+        "indirect sunlight"
+      ],
+      "Watering": [
+        "Regular, moist soil",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "No"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Daffodil",
+    "plant_name_normalized": "daffodil",
+    "raw_row_numbers": [
+      34,
+      422
+    ],
+    "conflicts": {
+      "Growth": [
+        "moderate",
+        "slow"
+      ],
+      "Watering": [
+        "Regular, moist soil",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Dahlia",
+    "plant_name_normalized": "dahlia",
+    "raw_row_numbers": [
+      67,
+      102,
+      187,
+      302,
+      423
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate"
+      ],
+      "Soil": [
+        "loamy",
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Keep soil moist",
+        "Regular, well-drained soil",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Low-nitrogen",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Dandelion",
+    "plant_name_normalized": "dandelion",
+    "raw_row_numbers": [
+      52,
+      329,
+      368,
+      500
+    ],
+    "conflicts": {
+      "Soil": [
+        "loamy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular watering",
+        "Regular, moist soil",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Low-nitrogen",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Date Palm",
+    "plant_name_normalized": "date palm",
+    "raw_row_numbers": [
+      369,
+      424
+    ],
+    "conflicts": {
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular, well-drained soil",
+        "Water when soil is dry"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Dianthus",
+    "plant_name_normalized": "dianthus",
+    "raw_row_numbers": [
+      90,
+      200,
+      426
+    ],
+    "conflicts": {
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular, moist soil",
+        "Water weekly",
+        "Water when soil is dry"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Dill",
+    "plant_name_normalized": "dill",
+    "raw_row_numbers": [
+      19,
+      135
+    ],
+    "conflicts": {
+      "Watering": [
+        "Keep soil evenly moist",
+        "Water weekly"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Dracaena",
+    "plant_name_normalized": "dracaena",
+    "raw_row_numbers": [
+      158,
+      297
+    ],
+    "conflicts": {
+      "Growth": [
+        "moderate",
+        "slow"
+      ],
+      "Soil": [
+        "acidic",
+        "sandy"
+      ],
+      "Sunlight": [
+        "indirect sunlight",
+        "partial sunlight"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "No"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Echeveria",
+    "plant_name_normalized": "echeveria",
+    "raw_row_numbers": [
+      78,
+      170
+    ],
+    "conflicts": {
+      "Sunlight": [
+        "full sunlight",
+        "indirect sunlight"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Low-nitrogen"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Echinacea",
+    "plant_name_normalized": "echinacea",
+    "raw_row_numbers": [
+      242,
+      280,
+      427
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate",
+        "slow"
+      ],
+      "Soil": [
+        "loamy",
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Keep soil consistently moist",
+        "Regular, well-drained soil",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Elderberry",
+    "plant_name_normalized": "elderberry",
+    "raw_row_numbers": [
+      372,
+      428
+    ],
+    "conflicts": {
+      "Soil": [
+        "moist",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular watering",
+        "Regular, well-drained soil"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Eucalyptus",
+    "plant_name_normalized": "eucalyptus",
+    "raw_row_numbers": [
+      69,
+      261
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "slow"
+      ],
+      "Fertilization Type": [
+        "Low-nitrogen",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Fennel",
+    "plant_name_normalized": "fennel",
+    "raw_row_numbers": [
+      141,
+      339,
+      373,
+      429
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate"
+      ],
+      "Soil": [
+        "loamy",
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular watering",
+        "Regular, moist soil",
+        "Regular, well-drained soil",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Low-nitrogen",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Foxglove",
+    "plant_name_normalized": "foxglove",
+    "raw_row_numbers": [
+      53,
+      223,
+      431
+    ],
+    "conflicts": {
+      "Growth": [
+        "moderate",
+        "slow"
+      ],
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Keep soil moist",
+        "Regular, moist soil",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Fuchsia",
+    "plant_name_normalized": "fuchsia",
+    "raw_row_numbers": [
+      86,
+      194,
+      278
+    ],
+    "conflicts": {
+      "Growth": [
+        "moderate",
+        "slow"
+      ],
+      "Soil": [
+        "acidic",
+        "well-drained"
+      ],
+      "Sunlight": [
+        "indirect sunlight",
+        "partial sunlight"
+      ],
+      "Watering": [
+        "Regular watering",
+        "Regular, moist soil",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Gardenia",
+    "plant_name_normalized": "gardenia",
+    "raw_row_numbers": [
+      61,
+      317,
+      432
+    ],
+    "conflicts": {
+      "Growth": [
+        "moderate",
+        "slow"
+      ],
+      "Soil": [
+        "acidic",
+        "well-drained"
+      ],
+      "Sunlight": [
+        "full sunlight",
+        "indirect sunlight"
+      ],
+      "Watering": [
+        "Regular, moist soil",
+        "Regular, well-drained soil",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "Acidic",
+        "Balanced",
+        "No"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Gazania",
+    "plant_name_normalized": "gazania",
+    "raw_row_numbers": [
+      207,
+      266
+    ],
+    "conflicts": {
+      "Watering": [
+        "Water when soil feels dry",
+        "Water when soil is dry"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Geranium",
+    "plant_name_normalized": "geranium",
+    "raw_row_numbers": [
+      28,
+      94
+    ],
+    "conflicts": {
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Low-nitrogen"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Globe Thistle",
+    "plant_name_normalized": "globe thistle",
+    "raw_row_numbers": [
+      121,
+      505
+    ],
+    "conflicts": {
+      "Growth": [
+        "moderate",
+        "slow"
+      ],
+      "Soil": [
+        "moist",
+        "sandy"
+      ],
+      "Watering": [
+        "Regular, moist soil",
+        "Water when soil is dry"
+      ],
+      "Fertilization Type": [
+        "Low-nitrogen",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Grape Vine",
+    "plant_name_normalized": "grape vine",
+    "raw_row_numbers": [
+      310,
+      375,
+      433
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate"
+      ],
+      "Soil": [
+        "acidic",
+        "loamy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular watering",
+        "Regular, well-drained soil"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Heliotrope",
+    "plant_name_normalized": "heliotrope",
+    "raw_row_numbers": [
+      205,
+      267,
+      435
+    ],
+    "conflicts": {
+      "Soil": [
+        "loamy",
+        "well-drained"
+      ],
+      "Sunlight": [
+        "full sunlight",
+        "partial sunlight"
+      ],
+      "Watering": [
+        "Let soil dry between watering",
+        "Regular watering",
+        "Regular, well-drained soil"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Low-nitrogen",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Hibiscus",
+    "plant_name_normalized": "hibiscus",
+    "raw_row_numbers": [
+      31,
+      285,
+      338
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate"
+      ],
+      "Soil": [
+        "loamy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular, moist soil",
+        "Regular, well-drained soil",
+        "Water when topsoil is dry"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Hollyhock",
+    "plant_name_normalized": "hollyhock",
+    "raw_row_numbers": [
+      98,
+      225
+    ],
+    "conflicts": {
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular watering",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Hops",
+    "plant_name_normalized": "hops",
+    "raw_row_numbers": [
+      320,
+      377,
+      436
+    ],
+    "conflicts": {
+      "Soil": [
+        "loamy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Keep soil moist",
+        "Regular, moist soil",
+        "Regular, well-drained soil"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Hosta",
+    "plant_name_normalized": "hosta",
+    "raw_row_numbers": [
+      77,
+      250,
+      295
+    ],
+    "conflicts": {
+      "Growth": [
+        "moderate",
+        "slow"
+      ],
+      "Sunlight": [
+        "indirect sunlight",
+        "partial sunlight"
+      ],
+      "Watering": [
+        "Keep soil moist",
+        "Regular, moist soil",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Low-nitrogen"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Impatiens",
+    "plant_name_normalized": "impatiens",
+    "raw_row_numbers": [
+      87,
+      179
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Jade Plant",
+    "plant_name_normalized": "jade plant",
+    "raw_row_numbers": [
+      16,
+      165
+    ],
+    "conflicts": {
+      "Watering": [
+        "Let soil dry between watering",
+        "Water when soil is dry"
+      ],
+      "Fertilization Type": [
+        "Low-nitrogen",
+        "No"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Japanese Maple",
+    "plant_name_normalized": "japanese maple",
+    "raw_row_numbers": [
+      279,
+      508
+    ],
+    "conflicts": {
+      "Soil": [
+        "acidic",
+        "well-drained"
+      ],
+      "Watering": [
+        "Keep soil consistently moist",
+        "Regular, moist soil"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Jasmine",
+    "plant_name_normalized": "jasmine",
+    "raw_row_numbers": [
+      38,
+      316
+    ],
+    "conflicts": {
+      "Watering": [
+        "Regular, moist soil",
+        "Water weekly"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Jasmine (Indoor)",
+    "plant_name_normalized": "jasmine (indoor)",
+    "raw_row_numbers": [
+      379,
+      440
+    ],
+    "conflicts": {
+      "Soil": [
+        "moist",
+        "well-drained"
+      ],
+      "Watering": [
+        "Keep soil moist",
+        "Regular, moist soil"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Jatropha",
+    "plant_name_normalized": "jatropha",
+    "raw_row_numbers": [
+      380,
+      439
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate"
+      ],
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular watering",
+        "Regular, well-drained soil"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Kalanchoe",
+    "plant_name_normalized": "kalanchoe",
+    "raw_row_numbers": [
+      292,
+      441
+    ],
+    "conflicts": {
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Let soil dry between watering",
+        "Regular, well-drained soil"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Lamb's Ear",
+    "plant_name_normalized": "lamb's ear",
+    "raw_row_numbers": [
+      81,
+      510,
+      594
+    ],
+    "conflicts": {
+      "Soil": [
+        "moist",
+        "sandy"
+      ],
+      "Sunlight": [
+        "full sunlight",
+        "partial sunlight"
+      ],
+      "Watering": [
+        "Keep soil slightly moist",
+        "Regular, moist soil",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "No"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Larkspur",
+    "plant_name_normalized": "larkspur",
+    "raw_row_numbers": [
+      107,
+      592
+    ],
+    "conflicts": {
+      "Soil": [
+        "loamy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Keep soil moist",
+        "Water weekly"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Lavender",
+    "plant_name_normalized": "lavender",
+    "raw_row_numbers": [
+      5,
+      129
+    ],
+    "conflicts": {
+      "Growth": [
+        "moderate",
+        "slow"
+      ],
+      "Watering": [
+        "Let soil dry between watering",
+        "Water when soil is dry"
+      ],
+      "Fertilization Type": [
+        "No",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Lavender (English)",
+    "plant_name_normalized": "lavender (english)",
+    "raw_row_numbers": [
+      304,
+      595
+    ],
+    "conflicts": {
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Lavender (French)",
+    "plant_name_normalized": "lavender (french)",
+    "raw_row_numbers": [
+      342,
+      444
+    ],
+    "conflicts": {
+      "Growth": [
+        "moderate",
+        "slow"
+      ],
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Let soil dry between watering",
+        "Regular, well-drained soil"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Lemon Balm",
+    "plant_name_normalized": "lemon balm",
+    "raw_row_numbers": [
+      140,
+      335,
+      445
+    ],
+    "conflicts": {
+      "Soil": [
+        "loamy",
+        "well-drained"
+      ],
+      "Sunlight": [
+        "full sunlight",
+        "partial sunlight"
+      ],
+      "Watering": [
+        "Regular, well-drained soil",
+        "Water weekly"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Lemon Tree",
+    "plant_name_normalized": "lemon tree",
+    "raw_row_numbers": [
+      383,
+      446
+    ],
+    "conflicts": {
+      "Growth": [
+        "moderate",
+        "slow"
+      ],
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular watering",
+        "Regular, moist soil"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Lobelia",
+    "plant_name_normalized": "lobelia",
+    "raw_row_numbers": [
+      93,
+      182,
+      197,
+      294,
+      330,
+      449
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate"
+      ],
+      "Soil": [
+        "moist",
+        "sandy",
+        "well-drained"
+      ],
+      "Sunlight": [
+        "full sunlight",
+        "indirect sunlight",
+        "partial sunlight"
+      ],
+      "Watering": [
+        "Keep soil moist",
+        "Regular, moist soil",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Low-nitrogen",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Magnolia",
+    "plant_name_normalized": "magnolia",
+    "raw_row_numbers": [
+      58,
+      451
+    ],
+    "conflicts": {
+      "Soil": [
+        "acidic",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular, moist soil",
+        "Water when soil is dry"
+      ],
+      "Fertilization Type": [
+        "Acidic",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Mango",
+    "plant_name_normalized": "mango",
+    "raw_row_numbers": [
+      387,
+      453
+    ],
+    "conflicts": {
+      "Growth": [
+        "moderate",
+        "slow"
+      ],
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular watering",
+        "Regular, well-drained soil"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Maranta (Prayer Plant)",
+    "plant_name_normalized": "maranta (prayer plant)",
+    "raw_row_numbers": [
+      290,
+      454
+    ],
+    "conflicts": {
+      "Soil": [
+        "loamy",
+        "moist"
+      ],
+      "Sunlight": [
+        "indirect sunlight",
+        "partial sunlight"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Marigold",
+    "plant_name_normalized": "marigold",
+    "raw_row_numbers": [
+      29,
+      103,
+      181,
+      245,
+      314
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate"
+      ],
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular, well-drained soil",
+        "Water weekly",
+        "Water when soil is dry"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Low-nitrogen",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Mimosa",
+    "plant_name_normalized": "mimosa",
+    "raw_row_numbers": [
+      303,
+      455
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate"
+      ],
+      "Soil": [
+        "loamy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular, moist soil",
+        "Regular, well-drained soil"
+      ],
+      "Fertilization Type": [
+        "No",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Moringa",
+    "plant_name_normalized": "moringa",
+    "raw_row_numbers": [
+      388,
+      457
+    ],
+    "conflicts": {
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular watering",
+        "Regular, well-drained soil"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Morning Glory",
+    "plant_name_normalized": "morning glory",
+    "raw_row_numbers": [
+      46,
+      97,
+      217,
+      456
+    ],
+    "conflicts": {
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular, well-drained soil",
+        "Water weekly",
+        "Water when soil is dry"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Nasturtium",
+    "plant_name_normalized": "nasturtium",
+    "raw_row_numbers": [
+      40,
+      88,
+      185,
+      458
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate"
+      ],
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular, well-drained soil",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Olive Tree",
+    "plant_name_normalized": "olive tree",
+    "raw_row_numbers": [
+      392,
+      461
+    ],
+    "conflicts": {
+      "Growth": [
+        "moderate",
+        "slow"
+      ],
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular, well-drained soil",
+        "Water when soil is dry"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Orchids",
+    "plant_name_normalized": "orchids",
+    "raw_row_numbers": [
+      17,
+      163
+    ],
+    "conflicts": {
+      "Fertilization Type": [
+        "Balanced",
+        "No"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Oregano",
+    "plant_name_normalized": "oregano",
+    "raw_row_numbers": [
+      21,
+      137,
+      462
+    ],
+    "conflicts": {
+      "Growth": [
+        "moderate",
+        "slow"
+      ],
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular, well-drained soil",
+        "Water when soil is dry",
+        "Water when topsoil is dry"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Pansy",
+    "plant_name_normalized": "pansy",
+    "raw_row_numbers": [
+      44,
+      85,
+      192,
+      287
+    ],
+    "conflicts": {
+      "Sunlight": [
+        "full sunlight",
+        "partial sunlight"
+      ],
+      "Watering": [
+        "Keep soil evenly moist",
+        "Keep soil moist",
+        "Regular, moist soil"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Parsley",
+    "plant_name_normalized": "parsley",
+    "raw_row_numbers": [
+      12,
+      133
+    ],
+    "conflicts": {
+      "Watering": [
+        "Keep soil consistently moist",
+        "Keep soil evenly moist"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Peace Lily",
+    "plant_name_normalized": "peace lily",
+    "raw_row_numbers": [
+      10,
+      148
+    ],
+    "conflicts": {
+      "Watering": [
+        "Keep soil moist",
+        "Water when soil feels dry"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "No"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Peony",
+    "plant_name_normalized": "peony",
+    "raw_row_numbers": [
+      37,
+      313,
+      464
+    ],
+    "conflicts": {
+      "Growth": [
+        "moderate",
+        "slow"
+      ],
+      "Soil": [
+        "loamy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular, well-drained soil",
+        "Water weekly"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Periwinkle",
+    "plant_name_normalized": "periwinkle",
+    "raw_row_numbers": [
+      109,
+      243,
+      466
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate"
+      ],
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Sunlight": [
+        "full sunlight",
+        "partial sunlight"
+      ],
+      "Watering": [
+        "Regular watering",
+        "Regular, well-drained soil",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Low-nitrogen",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Petunia",
+    "plant_name_normalized": "petunia",
+    "raw_row_numbers": [
+      41,
+      82,
+      180,
+      305
+    ],
+    "conflicts": {
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular watering",
+        "Regular, moist soil",
+        "Water weekly",
+        "Water when soil feels dry"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Phlox",
+    "plant_name_normalized": "phlox",
+    "raw_row_numbers": [
+      92,
+      214,
+      282,
+      467
+    ],
+    "conflicts": {
+      "Watering": [
+        "Regular watering",
+        "Regular, well-drained soil",
+        "Water when soil is dry"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Poppy",
+    "plant_name_normalized": "poppy",
+    "raw_row_numbers": [
+      56,
+      215,
+      268,
+      332
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate"
+      ],
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular, well-drained soil",
+        "Water when soil is dry"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Low-nitrogen",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Pothos",
+    "plant_name_normalized": "pothos",
+    "raw_row_numbers": [
+      22,
+      151
+    ],
+    "conflicts": {
+      "Watering": [
+        "Water weekly",
+        "Water when soil is dry"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "No"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Pothos (Golden Pathos)",
+    "plant_name_normalized": "pothos (golden pathos)",
+    "raw_row_numbers": [
+      296,
+      470
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate"
+      ],
+      "Soil": [
+        "loamy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular, moist soil",
+        "Water when topsoil is dry"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Rosemary",
+    "plant_name_normalized": "rosemary",
+    "raw_row_numbers": [
+      7,
+      130
+    ],
+    "conflicts": {
+      "Growth": [
+        "moderate",
+        "slow"
+      ],
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Let soil dry between watering",
+        "Water when soil is dry"
+      ],
+      "Fertilization Type": [
+        "No",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Rubber Plant",
+    "plant_name_normalized": "rubber plant",
+    "raw_row_numbers": [
+      23,
+      149
+    ],
+    "conflicts": {
+      "Growth": [
+        "moderate",
+        "slow"
+      ],
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Water weekly",
+        "Water when soil feels dry"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "No"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Rudbeckia",
+    "plant_name_normalized": "rudbeckia",
+    "raw_row_numbers": [
+      240,
+      477
+    ],
+    "conflicts": {
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular, well-drained soil",
+        "Water weekly"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Sage",
+    "plant_name_normalized": "sage",
+    "raw_row_numbers": [
+      26,
+      132,
+      328,
+      478
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate",
+        "slow"
+      ],
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Let soil dry between watering",
+        "Regular, moist soil",
+        "Regular, well-drained soil",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Salvia",
+    "plant_name_normalized": "salvia",
+    "raw_row_numbers": [
+      95,
+      213,
+      272,
+      479
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate"
+      ],
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular watering",
+        "Regular, well-drained soil",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Sedum",
+    "plant_name_normalized": "sedum",
+    "raw_row_numbers": [
+      116,
+      252
+    ],
+    "conflicts": {
+      "Fertilization Type": [
+        "Low-nitrogen",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Shasta Daisy",
+    "plant_name_normalized": "shasta daisy",
+    "raw_row_numbers": [
+      108,
+      241
+    ],
+    "conflicts": {
+      "Watering": [
+        "Regular watering",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "Low-nitrogen",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Snapdragon",
+    "plant_name_normalized": "snapdragon",
+    "raw_row_numbers": [
+      43,
+      83,
+      183,
+      224,
+      333
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate"
+      ],
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular watering",
+        "Regular, well-drained soil",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Spider Plant",
+    "plant_name_normalized": "spider plant",
+    "raw_row_numbers": [
+      11,
+      147
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate"
+      ],
+      "Soil": [
+        "loamy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Keep soil slightly moist",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "No"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Stevia",
+    "plant_name_normalized": "stevia",
+    "raw_row_numbers": [
+      145,
+      535
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "slow"
+      ],
+      "Sunlight": [
+        "full sunlight",
+        "partial sunlight"
+      ],
+      "Watering": [
+        "Regular, moist soil",
+        "Water weekly"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Sunflower",
+    "plant_name_normalized": "sunflower",
+    "raw_row_numbers": [
+      35,
+      100,
+      186,
+      309
+    ],
+    "conflicts": {
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular watering",
+        "Water weekly",
+        "Water when soil is dry"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Low-nitrogen"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Sweet Alyssum",
+    "plant_name_normalized": "sweet alyssum",
+    "raw_row_numbers": [
+      112,
+      249
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate"
+      ],
+      "Watering": [
+        "Keep soil moist",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Low-nitrogen"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Sweet Pea",
+    "plant_name_normalized": "sweet pea",
+    "raw_row_numbers": [
+      45,
+      104,
+      195,
+      336
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate"
+      ],
+      "Soil": [
+        "loamy",
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular watering",
+        "Regular, well-drained soil",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Tarragon",
+    "plant_name_normalized": "tarragon",
+    "raw_row_numbers": [
+      138,
+      143,
+      277
+    ],
+    "conflicts": {
+      "Growth": [
+        "moderate",
+        "slow"
+      ],
+      "Watering": [
+        "Water weekly",
+        "Water when topsoil is dry"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Thyme",
+    "plant_name_normalized": "thyme",
+    "raw_row_numbers": [
+      9,
+      131,
+      487
+    ],
+    "conflicts": {
+      "Growth": [
+        "moderate",
+        "slow"
+      ],
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Let soil dry between watering",
+        "Regular, well-drained soil",
+        "Water when soil is dry"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Tuberose",
+    "plant_name_normalized": "tuberose",
+    "raw_row_numbers": [
+      206,
+      269,
+      489
+    ],
+    "conflicts": {
+      "Growth": [
+        "moderate",
+        "slow"
+      ],
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular watering",
+        "Regular, moist soil",
+        "Regular, well-drained soil"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Verbena",
+    "plant_name_normalized": "verbena",
+    "raw_row_numbers": [
+      47,
+      91,
+      490
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "moderate"
+      ],
+      "Soil": [
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular, well-drained soil",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Low-nitrogen",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Viola",
+    "plant_name_normalized": "viola",
+    "raw_row_numbers": [
+      220,
+      270
+    ],
+    "conflicts": {
+      "Sunlight": [
+        "full sunlight",
+        "partial sunlight"
+      ],
+      "Watering": [
+        "Keep soil moist",
+        "Regular, moist soil"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Wisteria",
+    "plant_name_normalized": "wisteria",
+    "raw_row_numbers": [
+      325,
+      492
+    ],
+    "conflicts": {
+      "Growth": [
+        "fast",
+        "slow"
+      ],
+      "Watering": [
+        "Regular, moist soil",
+        "Regular, well-drained soil"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Low-nitrogen"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Yucca",
+    "plant_name_normalized": "yucca",
+    "raw_row_numbers": [
+      218,
+      493
+    ],
+    "conflicts": {
+      "Soil": [
+        "loamy",
+        "sandy"
+      ],
+      "Watering": [
+        "Regular, moist soil",
+        "Water when topsoil is dry"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  },
+  {
+    "plant_name": "Zinnia",
+    "plant_name_normalized": "zinnia",
+    "raw_row_numbers": [
+      30,
+      96,
+      184,
+      283
+    ],
+    "conflicts": {
+      "Soil": [
+        "acidic",
+        "sandy",
+        "well-drained"
+      ],
+      "Watering": [
+        "Regular watering",
+        "Regular, well-drained soil",
+        "Water weekly"
+      ],
+      "Fertilization Type": [
+        "Balanced",
+        "Low-nitrogen",
+        "Organic"
+      ]
+    },
+    "decision": "excluded_from_kb",
+    "reason": "The source dataset gives conflicting values for the same normalized plant name."
+  }
+]

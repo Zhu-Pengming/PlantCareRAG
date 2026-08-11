@@ -2,4 +2,4 @@ __pycache__/
 *.py[cod]
 .DS_Store
 .venv/
-
+dataset_v1/data/raw/

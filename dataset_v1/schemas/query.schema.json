@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://plant-rag.local/dataset-v1/query.schema.json",
+  "title": "Template retrieval contract query",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "text",
+    "plant_id",
+    "expected_dimension",
+    "gold_entry_id",
+    "split_hash",
+    "benchmark_type",
+    "split"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "id": {"type": "string", "pattern": "^q:[a-z0-9_]+:(growth|soil|lighting|watering|fertilizer)$"},
+    "text": {"type": "string", "minLength": 8},
+    "plant_id": {"type": "string", "pattern": "^plant:[a-z0-9_]+$"},
+    "expected_dimension": {"enum": ["growth", "soil", "lighting", "watering", "fertilizer"]},
+    "gold_entry_id": {"type": "string", "pattern": "^kb:"},
+    "split_hash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "benchmark_type": {"const": "template_contract_test"},
+    "split": {"enum": ["dev", "test"]}
+  }
+}

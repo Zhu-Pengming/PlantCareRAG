@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "built_from_manifest": "config/datasets.json",
+  "care_corpus": {
+    "source_rows": 596,
+    "exact_duplicate_rows_removed": 4,
+    "unique_normalized_plant_names": 387,
+    "accepted_plants": 263,
+    "excluded_conflicted_plants": 124,
+    "entries": 1315,
+    "queries": 1315,
+    "dev_queries": 657,
+    "test_queries": 658,
+    "conflict_fields": {
+      "Fertilization Type": 96,
+      "Growth": 59,
+      "Soil": 85,
+      "Sunlight": 26,
+      "Watering": 112
+    }
+  },
+  "context_stress_data": {
+    "source_rows": 1000,
+    "accepted_context_rows": 650,
+    "excluded_contradictory_rows": 350,
+    "contradictions": {
+      "no_pest_with_severity": 155,
+      "pest_without_severity": 195
+    }
+  }
+}
