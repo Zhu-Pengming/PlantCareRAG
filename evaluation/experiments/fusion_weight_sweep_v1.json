@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "experiment_id": "fusion_weight_sweep_v1",
+  "registered_at": "2026-08-11",
+  "status": "registered_before_weight_sweep",
+  "parent_experiment": "evaluation/experiments/semantic_retrieval_v1.json",
+  "parent_dev_result": "evaluation/results/semantic_retrieval_dev.json",
+  "parent_dev_result_sha256": "c071ff51e2a4ccbb6e2895f4ff34c23685d67ad113e287c00ce0d234d7c4e66d",
+  "split_manifest": "evaluation/splits/main_sha256_20_20_v1.json",
+  "split_manifest_sha256": "e1f4e825662896e8c752a6d8e72007650b10f82c9146d8af751affe4fe34ae47",
+  "development_scope": {
+    "split": "dev",
+    "queries": 20,
+    "gold_pairs": 45,
+    "test_queries_must_not_be_evaluated_or_encoded": true
+  },
+  "frozen_inputs": {
+    "metadata_channel": "existing metadata+content BM25 ranking",
+    "content_channel": "content-only BAAI/bge-m3 dense ranking",
+    "model_id": "BAAI/bge-m3",
+    "model_revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "query_prefix": "",
+    "passage_prefix": "",
+    "normalize_embeddings": true,
+    "documents": "31 approved entries; one entry equals one chunk",
+    "content_field": "content",
+    "candidate_set": "all 31 entries for both channels",
+    "rrf_k": 60,
+    "rank_tie_breaker": "entry_id ascending",
+    "tokenizer": "NFKC + casefold; ASCII alphanumeric tokens with lightweight English stemming; each contiguous Chinese sequence plus overlapping Chinese bigrams; no jieba or word segmenter"
+  },
+  "only_tunable_parameter": {
+    "formula": "score(entry) = 1.0 / (60 + bm25_rank) + embedding_weight / (60 + embedding_rank)",
+    "bm25_weight": 1.0,
+    "embedding_weight_grid": [0.5, 0.75, 1.0, 1.25, 1.5]
+  },
+  "selection": {
+    "primary": "dev query-gold pair hits@5",
+    "tie_breakers_in_order": [
+      "dev macro Recall@5",
+      "dev macro Recall@|gold|",
+      "smallest absolute distance from equal weight 1.0",
+      "smaller embedding weight"
+    ]
+  },
+  "pre_registered_stop_condition": {
+    "condition": "maximum dev query-gold pair hits@5 <= 28 of 45",
+    "action_if_true": "accept the original equal-weight RRF with embedding_weight=1.0 and stop fusion tuning",
+    "action_if_false": "freeze the selected weighted RRF and stop fusion tuning"
+  },
+  "prohibited_changes": [
+    "no third embedding model",
+    "no RRF k change",
+    "no tokenizer change",
+    "no candidate construction change",
+    "no reranker",
+    "no additional weight grid after observing results"
+  ],
+  "test_plan_after_dev_decision": {
+    "run_test_once": true,
+    "freeze_final_config_before_test": true,
+    "stages": [
+      "content-only BM25",
+      "content-only BGE-M3",
+      "metadata+content BM25",
+      "metadata+content final RRF hybrid"
+    ],
+    "report_regardless_of_result": true
+  }
+}

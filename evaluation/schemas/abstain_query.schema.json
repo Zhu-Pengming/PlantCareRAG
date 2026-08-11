@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://plant-rag.local/schemas/abstain-query.schema.json",
+  "title": "Abstention evaluation query",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "query_id",
+    "raw_text",
+    "platform",
+    "url",
+    "source_location",
+    "language",
+    "plant_id",
+    "expected_dimensions",
+    "reason"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "query_id": {"type": "string", "pattern": "^q:abstain:[0-9]{3}$"},
+    "raw_text": {"type": "string", "minLength": 3},
+    "platform": {"enum": ["reddit", "zhihu", "tieba"]},
+    "url": {"type": "string", "format": "uri"},
+    "source_location": {"enum": ["post_title", "post_body", "comment"]},
+    "language": {"enum": ["en", "zh-CN"]},
+    "plant_id": {
+      "oneOf": [
+        {"type": "string", "pattern": "^plant:[a-z0-9_]+$"},
+        {"type": "null"}
+      ]
+    },
+    "expected_dimensions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "reason": {"enum": ["out_of_scope_plant", "missing_dimension", "insufficient_evidence", "image_required"]},
+    "notes": {"type": "string"}
+  }
+}
+

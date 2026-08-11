@@ -1,0 +1,3610 @@
+{
+  "schema_version": "1.1.0",
+  "configuration": {
+    "k": 3,
+    "abstain_threshold": 1.0,
+    "documents": 31,
+    "main_queries": 40,
+    "queries_with_gold": 40,
+    "single_turn_queries": 30,
+    "excluded_thread_context_queries": 10,
+    "abstain_queries": 10
+  },
+  "knowledge_coverage": {
+    "covered": {
+      "count": 30,
+      "rate": 0.75
+    },
+    "partial": {
+      "count": 10,
+      "rate": 0.25
+    },
+    "gap": {
+      "count": 0,
+      "rate": 0.0
+    }
+  },
+  "question_columns": {
+    "A_direct": "direct",
+    "B_alias_or_coreference": "alias_or_coreference",
+    "C_symptom": "symptom",
+    "D_compound": "compound",
+    "E_judgment_or_premise": "judgment_or_premise"
+  },
+  "structural_abstention_gate": {
+    "method": "lexical_entity_linking_then_lexical_dimension_linking_then_kb_pair_coverage",
+    "abstain_set_accuracy": {
+      "value": 1.0,
+      "correct_abstentions": 10,
+      "n": 10
+    },
+    "covered_query_acceptance": {
+      "value": 0.8,
+      "accepted": 24,
+      "n": 30
+    },
+    "context_free_covered_query_acceptance": {
+      "value": 1.0,
+      "accepted": 16,
+      "n": 16
+    },
+    "abstain_details": [
+      {
+        "query_id": "q:abstain:001",
+        "abstained": true,
+        "reason": "entity_unresolved_or_ambiguous",
+        "detected_plant_id": null,
+        "detected_dimensions": [],
+        "missing_dimensions": [],
+        "explanation": "无法唯一识别植物，或该植物不在当前知识库范围内。"
+      },
+      {
+        "query_id": "q:abstain:002",
+        "abstained": true,
+        "reason": "entity_unresolved_or_ambiguous",
+        "detected_plant_id": null,
+        "detected_dimensions": [],
+        "missing_dimensions": [],
+        "explanation": "无法唯一识别植物，或该植物不在当前知识库范围内。"
+      },
+      {
+        "query_id": "q:abstain:003",
+        "abstained": true,
+        "reason": "entity_unresolved_or_ambiguous",
+        "detected_plant_id": null,
+        "detected_dimensions": [],
+        "missing_dimensions": [],
+        "explanation": "无法唯一识别植物，或该植物不在当前知识库范围内。"
+      },
+      {
+        "query_id": "q:abstain:004",
+        "abstained": true,
+        "reason": "entity_unresolved_or_ambiguous",
+        "detected_plant_id": null,
+        "detected_dimensions": [],
+        "missing_dimensions": [],
+        "explanation": "无法唯一识别植物，或该植物不在当前知识库范围内。"
+      },
+      {
+        "query_id": "q:abstain:005",
+        "abstained": true,
+        "reason": "missing_plant_dimension",
+        "detected_plant_id": "plant:monstera_deliciosa",
+        "detected_dimensions": [
+          "repotting"
+        ],
+        "missing_dimensions": [
+          "repotting"
+        ],
+        "explanation": "我还没有龟背竹的换盆资料。"
+      },
+      {
+        "query_id": "q:abstain:006",
+        "abstained": true,
+        "reason": "entity_unresolved_or_ambiguous",
+        "detected_plant_id": null,
+        "detected_dimensions": [],
+        "missing_dimensions": [],
+        "explanation": "无法唯一识别植物，或该植物不在当前知识库范围内。"
+      },
+      {
+        "query_id": "q:abstain:007",
+        "abstained": true,
+        "reason": "missing_plant_dimension",
+        "detected_plant_id": "plant:dracaena_trifasciata",
+        "detected_dimensions": [
+          "propagation"
+        ],
+        "missing_dimensions": [
+          "propagation"
+        ],
+        "explanation": "我还没有虎尾兰的繁殖资料。"
+      },
+      {
+        "query_id": "q:abstain:008",
+        "abstained": true,
+        "reason": "entity_unresolved_or_ambiguous",
+        "detected_plant_id": null,
+        "detected_dimensions": [],
+        "missing_dimensions": [],
+        "explanation": "无法唯一识别植物，或该植物不在当前知识库范围内。"
+      },
+      {
+        "query_id": "q:abstain:009",
+        "abstained": true,
+        "reason": "entity_unresolved_or_ambiguous",
+        "detected_plant_id": null,
+        "detected_dimensions": [],
+        "missing_dimensions": [],
+        "explanation": "无法唯一识别植物，或该植物不在当前知识库范围内。"
+      },
+      {
+        "query_id": "q:abstain:010",
+        "abstained": true,
+        "reason": "entity_unresolved_or_ambiguous",
+        "detected_plant_id": null,
+        "detected_dimensions": [],
+        "missing_dimensions": [],
+        "explanation": "无法唯一识别植物，或该植物不在当前知识库范围内。"
+      }
+    ],
+    "main_details": [
+      {
+        "query_id": "q:main:001",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:epipremnum_aureum",
+        "detected_dimensions": [
+          "taxonomy"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      },
+      {
+        "query_id": "q:main:002",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:dracaena_trifasciata",
+        "detected_dimensions": [
+          "taxonomy"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      },
+      {
+        "query_id": "q:main:003",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:dracaena_trifasciata",
+        "detected_dimensions": [
+          "taxonomy"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      },
+      {
+        "query_id": "q:main:004",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:monstera_deliciosa",
+        "detected_dimensions": [
+          "taxonomy"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      },
+      {
+        "query_id": "q:main:005",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:epipremnum_aureum",
+        "detected_dimensions": [
+          "lighting"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      },
+      {
+        "query_id": "q:main:006",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:epipremnum_aureum",
+        "detected_dimensions": [
+          "lighting"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      },
+      {
+        "query_id": "q:main:007",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:dracaena_trifasciata",
+        "detected_dimensions": [
+          "lighting"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      },
+      {
+        "query_id": "q:main:008",
+        "abstained": true,
+        "reason": "entity_unresolved_or_ambiguous",
+        "detected_plant_id": null,
+        "detected_dimensions": [],
+        "missing_dimensions": [],
+        "explanation": "无法唯一识别植物，或该植物不在当前知识库范围内。"
+      },
+      {
+        "query_id": "q:main:009",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:monstera_deliciosa",
+        "detected_dimensions": [
+          "lighting"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      },
+      {
+        "query_id": "q:main:010",
+        "abstained": true,
+        "reason": "entity_unresolved_or_ambiguous",
+        "detected_plant_id": null,
+        "detected_dimensions": [],
+        "missing_dimensions": [],
+        "explanation": "无法唯一识别植物，或该植物不在当前知识库范围内。"
+      },
+      {
+        "query_id": "q:main:011",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:dracaena_trifasciata",
+        "detected_dimensions": [
+          "lighting"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      },
+      {
+        "query_id": "q:main:012",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:epipremnum_aureum",
+        "detected_dimensions": [
+          "watering"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      },
+      {
+        "query_id": "q:main:013",
+        "abstained": true,
+        "reason": "entity_unresolved_or_ambiguous",
+        "detected_plant_id": null,
+        "detected_dimensions": [],
+        "missing_dimensions": [],
+        "explanation": "无法唯一识别植物，或该植物不在当前知识库范围内。"
+      },
+      {
+        "query_id": "q:main:014",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:monstera_deliciosa",
+        "detected_dimensions": [
+          "watering"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      },
+      {
+        "query_id": "q:main:015",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:monstera_deliciosa",
+        "detected_dimensions": [
+          "watering"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      },
+      {
+        "query_id": "q:main:016",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:dracaena_trifasciata",
+        "detected_dimensions": [
+          "watering"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      },
+      {
+        "query_id": "q:main:017",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:dracaena_trifasciata",
+        "detected_dimensions": [
+          "watering"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      },
+      {
+        "query_id": "q:main:018",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:dracaena_trifasciata",
+        "detected_dimensions": [
+          "watering"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      },
+      {
+        "query_id": "q:main:019",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:dracaena_trifasciata",
+        "detected_dimensions": [
+          "watering"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      },
+      {
+        "query_id": "q:main:020",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:dracaena_trifasciata",
+        "detected_dimensions": [
+          "watering"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      },
+      {
+        "query_id": "q:main:021",
+        "abstained": true,
+        "reason": "entity_unresolved_or_ambiguous",
+        "detected_plant_id": null,
+        "detected_dimensions": [],
+        "missing_dimensions": [],
+        "explanation": "无法唯一识别植物，或该植物不在当前知识库范围内。"
+      },
+      {
+        "query_id": "q:main:022",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:epipremnum_aureum",
+        "detected_dimensions": [
+          "humidity"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      },
+      {
+        "query_id": "q:main:023",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:epipremnum_aureum",
+        "detected_dimensions": [
+          "humidity"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      },
+      {
+        "query_id": "q:main:024",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:epipremnum_aureum",
+        "detected_dimensions": [
+          "humidity",
+          "temperature"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      },
+      {
+        "query_id": "q:main:025",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:monstera_deliciosa",
+        "detected_dimensions": [
+          "symptom",
+          "watering"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      },
+      {
+        "query_id": "q:main:026",
+        "abstained": true,
+        "reason": "missing_plant_dimension",
+        "detected_plant_id": "plant:monstera_deliciosa",
+        "detected_dimensions": [
+          "disease",
+          "pest",
+          "symptom"
+        ],
+        "missing_dimensions": [
+          "disease",
+          "pest"
+        ],
+        "explanation": "我还没有龟背竹的病害、虫害资料。"
+      },
+      {
+        "query_id": "q:main:027",
+        "abstained": true,
+        "reason": "entity_unresolved_or_ambiguous",
+        "detected_plant_id": null,
+        "detected_dimensions": [],
+        "missing_dimensions": [],
+        "explanation": "无法唯一识别植物，或该植物不在当前知识库范围内。"
+      },
+      {
+        "query_id": "q:main:028",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:monstera_deliciosa",
+        "detected_dimensions": [
+          "lighting",
+          "symptom",
+          "watering"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      },
+      {
+        "query_id": "q:main:029",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:epipremnum_aureum",
+        "detected_dimensions": [
+          "symptom",
+          "watering"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      },
+      {
+        "query_id": "q:main:030",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:epipremnum_aureum",
+        "detected_dimensions": [
+          "symptom"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      },
+      {
+        "query_id": "q:main:031",
+        "abstained": true,
+        "reason": "entity_unresolved_or_ambiguous",
+        "detected_plant_id": null,
+        "detected_dimensions": [],
+        "missing_dimensions": [],
+        "explanation": "无法唯一识别植物，或该植物不在当前知识库范围内。"
+      },
+      {
+        "query_id": "q:main:032",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:epipremnum_aureum",
+        "detected_dimensions": [
+          "symptom"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      },
+      {
+        "query_id": "q:main:033",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:dracaena_trifasciata",
+        "detected_dimensions": [
+          "lighting",
+          "symptom"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      },
+      {
+        "query_id": "q:main:034",
+        "abstained": true,
+        "reason": "dimension_unresolved",
+        "detected_plant_id": "plant:dracaena_trifasciata",
+        "detected_dimensions": [],
+        "missing_dimensions": [],
+        "explanation": "已识别为虎尾兰，但无法确定问题所属的知识维度。"
+      },
+      {
+        "query_id": "q:main:035",
+        "abstained": true,
+        "reason": "entity_unresolved_or_ambiguous",
+        "detected_plant_id": null,
+        "detected_dimensions": [],
+        "missing_dimensions": [],
+        "explanation": "无法唯一识别植物，或该植物不在当前知识库范围内。"
+      },
+      {
+        "query_id": "q:main:036",
+        "abstained": true,
+        "reason": "entity_unresolved_or_ambiguous",
+        "detected_plant_id": null,
+        "detected_dimensions": [],
+        "missing_dimensions": [],
+        "explanation": "无法唯一识别植物，或该植物不在当前知识库范围内。"
+      },
+      {
+        "query_id": "q:main:037",
+        "abstained": true,
+        "reason": "missing_plant_dimension",
+        "detected_plant_id": "plant:dracaena_trifasciata",
+        "detected_dimensions": [
+          "repotting",
+          "watering"
+        ],
+        "missing_dimensions": [
+          "repotting"
+        ],
+        "explanation": "我还没有虎尾兰的换盆资料。"
+      },
+      {
+        "query_id": "q:main:038",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:monstera_deliciosa",
+        "detected_dimensions": [
+          "pet_safety"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      },
+      {
+        "query_id": "q:main:039",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:epipremnum_aureum",
+        "detected_dimensions": [
+          "pet_safety"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      },
+      {
+        "query_id": "q:main:040",
+        "abstained": false,
+        "reason": "covered_plant_dimensions",
+        "detected_plant_id": "plant:dracaena_trifasciata",
+        "detected_dimensions": [
+          "pet_safety"
+        ],
+        "missing_dimensions": [],
+        "explanation": null
+      }
+    ],
+    "limitations": [
+      "This is a lexical dimension linker, not an oracle label evaluation.",
+      "A missing dimension pair can be explained, but an existing pair may still lack the requested answer shape or fact granularity."
+    ]
+  },
+  "modes": [
+    {
+      "name": "bm25_raw",
+      "retrieval": {
+        "aggregate": {
+          "eligible_queries": 40,
+          "gold_size_distribution": {
+            "1": 14,
+            "2": 13,
+            "3": 4,
+            "4": 7,
+            "5": 1,
+            "6": 1
+          },
+          "hit_at_3": {
+            "value": 0.85,
+            "hits": 34,
+            "n": 40
+          },
+          "recall_at_3_macro": {
+            "value": 0.612083,
+            "sum_query_recall": 24.483333,
+            "n": 40
+          },
+          "recall_at_3_ceiling_macro": {
+            "value": 0.93375,
+            "sum_query_ceiling": 37.35,
+            "n": 40
+          },
+          "recall_at_5_macro": {
+            "value": 0.742083,
+            "sum_query_recall": 29.683333,
+            "n": 40
+          },
+          "recall_at_gold_macro": {
+            "value": 0.529583,
+            "sum_query_recall": 21.183333,
+            "n": 40
+          },
+          "mrr": {
+            "value": 0.769087,
+            "sum_reciprocal_rank": 30.763492,
+            "n": 40
+          }
+        },
+        "by_question_column": {
+          "A_direct": {
+            "eligible_queries": 11,
+            "gold_size_distribution": {
+              "1": 4,
+              "2": 6,
+              "3": 1
+            },
+            "hit_at_3": {
+              "value": 0.909091,
+              "hits": 10,
+              "n": 11
+            },
+            "recall_at_3_macro": {
+              "value": 0.681818,
+              "sum_query_recall": 7.5,
+              "n": 11
+            },
+            "recall_at_3_ceiling_macro": {
+              "value": 1.0,
+              "sum_query_ceiling": 11.0,
+              "n": 11
+            },
+            "recall_at_5_macro": {
+              "value": 0.818182,
+              "sum_query_recall": 9.0,
+              "n": 11
+            },
+            "recall_at_gold_macro": {
+              "value": 0.590909,
+              "sum_query_recall": 6.5,
+              "n": 11
+            },
+            "mrr": {
+              "value": 0.876623,
+              "sum_reciprocal_rank": 9.642857,
+              "n": 11
+            },
+            "total_queries": 11,
+            "queries_without_gold": 0
+          },
+          "B_alias_or_coreference": {
+            "eligible_queries": 6,
+            "gold_size_distribution": {
+              "1": 5,
+              "2": 1
+            },
+            "hit_at_3": {
+              "value": 0.666667,
+              "hits": 4,
+              "n": 6
+            },
+            "recall_at_3_macro": {
+              "value": 0.583333,
+              "sum_query_recall": 3.5,
+              "n": 6
+            },
+            "recall_at_3_ceiling_macro": {
+              "value": 1.0,
+              "sum_query_ceiling": 6.0,
+              "n": 6
+            },
+            "recall_at_5_macro": {
+              "value": 1.0,
+              "sum_query_recall": 6.0,
+              "n": 6
+            },
+            "recall_at_gold_macro": {
+              "value": 0.416667,
+              "sum_query_recall": 2.5,
+              "n": 6
+            },
+            "mrr": {
+              "value": 0.638889,
+              "sum_reciprocal_rank": 3.833333,
+              "n": 6
+            },
+            "total_queries": 6,
+            "queries_without_gold": 0
+          },
+          "C_symptom": {
+            "eligible_queries": 6,
+            "gold_size_distribution": {
+              "2": 2,
+              "3": 1,
+              "4": 2,
+              "5": 1
+            },
+            "hit_at_3": {
+              "value": 0.833333,
+              "hits": 5,
+              "n": 6
+            },
+            "recall_at_3_macro": {
+              "value": 0.427778,
+              "sum_query_recall": 2.566667,
+              "n": 6
+            },
+            "recall_at_3_ceiling_macro": {
+              "value": 0.85,
+              "sum_query_ceiling": 5.1,
+              "n": 6
+            },
+            "recall_at_5_macro": {
+              "value": 0.461111,
+              "sum_query_recall": 2.766667,
+              "n": 6
+            },
+            "recall_at_gold_macro": {
+              "value": 0.461111,
+              "sum_query_recall": 2.766667,
+              "n": 6
+            },
+            "mrr": {
+              "value": 0.601852,
+              "sum_reciprocal_rank": 3.611111,
+              "n": 6
+            },
+            "total_queries": 6,
+            "queries_without_gold": 0
+          },
+          "D_compound": {
+            "eligible_queries": 9,
+            "gold_size_distribution": {
+              "2": 2,
+              "3": 2,
+              "4": 4,
+              "6": 1
+            },
+            "hit_at_3": {
+              "value": 0.777778,
+              "hits": 7,
+              "n": 9
+            },
+            "recall_at_3_macro": {
+              "value": 0.435185,
+              "sum_query_recall": 3.916667,
+              "n": 9
+            },
+            "recall_at_3_ceiling_macro": {
+              "value": 0.833333,
+              "sum_query_ceiling": 7.5,
+              "n": 9
+            },
+            "recall_at_5_macro": {
+              "value": 0.518519,
+              "sum_query_recall": 4.666667,
+              "n": 9
+            },
+            "recall_at_gold_macro": {
+              "value": 0.462963,
+              "sum_query_recall": 4.166667,
+              "n": 9
+            },
+            "mrr": {
+              "value": 0.815873,
+              "sum_reciprocal_rank": 7.342857,
+              "n": 9
+            },
+            "total_queries": 9,
+            "queries_without_gold": 0
+          },
+          "E_judgment_or_premise": {
+            "eligible_queries": 8,
+            "gold_size_distribution": {
+              "1": 5,
+              "2": 2,
+              "4": 1
+            },
+            "hit_at_3": {
+              "value": 1.0,
+              "hits": 8,
+              "n": 8
+            },
+            "recall_at_3_macro": {
+              "value": 0.875,
+              "sum_query_recall": 7.0,
+              "n": 8
+            },
+            "recall_at_3_ceiling_macro": {
+              "value": 0.96875,
+              "sum_query_ceiling": 7.75,
+              "n": 8
+            },
+            "recall_at_5_macro": {
+              "value": 0.90625,
+              "sum_query_recall": 7.25,
+              "n": 8
+            },
+            "recall_at_gold_macro": {
+              "value": 0.65625,
+              "sum_query_recall": 5.25,
+              "n": 8
+            },
+            "mrr": {
+              "value": 0.791667,
+              "sum_reciprocal_rank": 6.333333,
+              "n": 8
+            },
+            "total_queries": 8,
+            "queries_without_gold": 0
+          }
+        },
+        "per_query": [
+          {
+            "query_id": "q:main:001",
+            "question_column": "B_alias_or_coreference",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.3333333333333333,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:002",
+            "question_column": "B_alias_or_coreference",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:003",
+            "question_column": "B_alias_or_coreference",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:004",
+            "question_column": "B_alias_or_coreference",
+            "gold_size": 1,
+            "hit_at_3": 0,
+            "recall_at_3": 0.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.25,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:005",
+            "question_column": "A_direct",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:006",
+            "question_column": "D_compound",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:007",
+            "question_column": "A_direct",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.5,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:008",
+            "question_column": "B_alias_or_coreference",
+            "gold_size": 1,
+            "hit_at_3": 0,
+            "recall_at_3": 0.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.25,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:009",
+            "question_column": "E_judgment_or_premise",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.5,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:010",
+            "question_column": "A_direct",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:011",
+            "question_column": "E_judgment_or_premise",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.3333333333333333,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:012",
+            "question_column": "A_direct",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "supported"
+          },
+          {
+            "query_id": "q:main:013",
+            "question_column": "B_alias_or_coreference",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "supported"
+          },
+          {
+            "query_id": "q:main:014",
+            "question_column": "A_direct",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "supported"
+          },
+          {
+            "query_id": "q:main:015",
+            "question_column": "A_direct",
+            "gold_size": 1,
+            "hit_at_3": 0,
+            "recall_at_3": 0.0,
+            "recall_at_5": 0.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.14285714285714285,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:016",
+            "question_column": "A_direct",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 0.5,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "supported"
+          },
+          {
+            "query_id": "q:main:017",
+            "question_column": "D_compound",
+            "gold_size": 4,
+            "hit_at_3": 1,
+            "recall_at_3": 0.25,
+            "recall_at_5": 0.5,
+            "recall_at_gold": 0.25,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:018",
+            "question_column": "A_direct",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 0.5,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:019",
+            "question_column": "A_direct",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "conditional_substitute"
+          },
+          {
+            "query_id": "q:main:020",
+            "question_column": "A_direct",
+            "gold_size": 3,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:021",
+            "question_column": "E_judgment_or_premise",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:022",
+            "question_column": "E_judgment_or_premise",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:023",
+            "question_column": "E_judgment_or_premise",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 0.5,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:024",
+            "question_column": "D_compound",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:025",
+            "question_column": "C_symptom",
+            "gold_size": 2,
+            "hit_at_3": 0,
+            "recall_at_3": 0.0,
+            "recall_at_5": 0.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.1111111111111111,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:026",
+            "question_column": "C_symptom",
+            "gold_size": 4,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 0.5,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 0.5,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:027",
+            "question_column": "C_symptom",
+            "gold_size": 4,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 0.5,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 0.5,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:028",
+            "question_column": "D_compound",
+            "gold_size": 4,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 0.75,
+            "recall_at_gold": 0.75,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:029",
+            "question_column": "D_compound",
+            "gold_size": 3,
+            "hit_at_3": 1,
+            "recall_at_3": 0.6666666666666666,
+            "recall_at_5": 0.6666666666666666,
+            "recall_at_gold": 0.6666666666666666,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:030",
+            "question_column": "C_symptom",
+            "gold_size": 5,
+            "hit_at_3": 1,
+            "recall_at_3": 0.4,
+            "recall_at_5": 0.6,
+            "recall_at_gold": 0.6,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:031",
+            "question_column": "D_compound",
+            "gold_size": 4,
+            "hit_at_3": 0,
+            "recall_at_3": 0.0,
+            "recall_at_5": 0.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.14285714285714285,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:032",
+            "question_column": "C_symptom",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 0.5,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 0.5,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:033",
+            "question_column": "D_compound",
+            "gold_size": 4,
+            "hit_at_3": 0,
+            "recall_at_3": 0.0,
+            "recall_at_5": 0.25,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.2,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:034",
+            "question_column": "C_symptom",
+            "gold_size": 3,
+            "hit_at_3": 1,
+            "recall_at_3": 0.6666666666666666,
+            "recall_at_5": 0.6666666666666666,
+            "recall_at_gold": 0.6666666666666666,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:035",
+            "question_column": "D_compound",
+            "gold_size": 6,
+            "hit_at_3": 1,
+            "recall_at_3": 0.16666666666666666,
+            "recall_at_5": 0.16666666666666666,
+            "recall_at_gold": 0.16666666666666666,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:036",
+            "question_column": "D_compound",
+            "gold_size": 3,
+            "hit_at_3": 1,
+            "recall_at_3": 0.3333333333333333,
+            "recall_at_5": 0.3333333333333333,
+            "recall_at_gold": 0.3333333333333333,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:037",
+            "question_column": "E_judgment_or_premise",
+            "gold_size": 4,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 0.75,
+            "recall_at_gold": 0.75,
+            "reciprocal_rank": 0.5,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:038",
+            "question_column": "E_judgment_or_premise",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:039",
+            "question_column": "E_judgment_or_premise",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:040",
+            "question_column": "A_direct",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          }
+        ]
+      },
+      "retrieval_single_turn": {
+        "aggregate": {
+          "eligible_queries": 30,
+          "gold_size_distribution": {
+            "1": 13,
+            "2": 10,
+            "3": 1,
+            "4": 5,
+            "5": 1
+          },
+          "hit_at_3": {
+            "value": 0.866667,
+            "hits": 26,
+            "n": 30
+          },
+          "recall_at_3_macro": {
+            "value": 0.660556,
+            "sum_query_recall": 19.816667,
+            "n": 30
+          },
+          "recall_at_3_ceiling_macro": {
+            "value": 0.945,
+            "sum_query_ceiling": 28.35,
+            "n": 30
+          },
+          "recall_at_5_macro": {
+            "value": 0.783889,
+            "sum_query_recall": 23.516667,
+            "n": 30
+          },
+          "recall_at_gold_macro": {
+            "value": 0.550556,
+            "sum_query_recall": 16.516667,
+            "n": 30
+          },
+          "mrr": {
+            "value": 0.762354,
+            "sum_reciprocal_rank": 22.870635,
+            "n": 30
+          }
+        },
+        "by_question_column": {
+          "A_direct": {
+            "eligible_queries": 10,
+            "gold_size_distribution": {
+              "1": 4,
+              "2": 6
+            },
+            "hit_at_3": {
+              "value": 0.9,
+              "hits": 9,
+              "n": 10
+            },
+            "recall_at_3_macro": {
+              "value": 0.65,
+              "sum_query_recall": 6.5,
+              "n": 10
+            },
+            "recall_at_3_ceiling_macro": {
+              "value": 1.0,
+              "sum_query_ceiling": 10.0,
+              "n": 10
+            },
+            "recall_at_5_macro": {
+              "value": 0.8,
+              "sum_query_recall": 8.0,
+              "n": 10
+            },
+            "recall_at_gold_macro": {
+              "value": 0.55,
+              "sum_query_recall": 5.5,
+              "n": 10
+            },
+            "mrr": {
+              "value": 0.864286,
+              "sum_reciprocal_rank": 8.642857,
+              "n": 10
+            },
+            "total_queries": 10,
+            "queries_without_gold": 0
+          },
+          "B_alias_or_coreference": {
+            "eligible_queries": 4,
+            "gold_size_distribution": {
+              "1": 4
+            },
+            "hit_at_3": {
+              "value": 0.75,
+              "hits": 3,
+              "n": 4
+            },
+            "recall_at_3_macro": {
+              "value": 0.75,
+              "sum_query_recall": 3.0,
+              "n": 4
+            },
+            "recall_at_3_ceiling_macro": {
+              "value": 1.0,
+              "sum_query_ceiling": 4.0,
+              "n": 4
+            },
+            "recall_at_5_macro": {
+              "value": 1.0,
+              "sum_query_recall": 4.0,
+              "n": 4
+            },
+            "recall_at_gold_macro": {
+              "value": 0.5,
+              "sum_query_recall": 2.0,
+              "n": 4
+            },
+            "mrr": {
+              "value": 0.645833,
+              "sum_reciprocal_rank": 2.583333,
+              "n": 4
+            },
+            "total_queries": 4,
+            "queries_without_gold": 0
+          },
+          "C_symptom": {
+            "eligible_queries": 4,
+            "gold_size_distribution": {
+              "2": 2,
+              "4": 1,
+              "5": 1
+            },
+            "hit_at_3": {
+              "value": 0.75,
+              "hits": 3,
+              "n": 4
+            },
+            "recall_at_3_macro": {
+              "value": 0.35,
+              "sum_query_recall": 1.4,
+              "n": 4
+            },
+            "recall_at_3_ceiling_macro": {
+              "value": 0.8375,
+              "sum_query_ceiling": 3.35,
+              "n": 4
+            },
+            "recall_at_5_macro": {
+              "value": 0.4,
+              "sum_query_recall": 1.6,
+              "n": 4
+            },
+            "recall_at_gold_macro": {
+              "value": 0.4,
+              "sum_query_recall": 1.6,
+              "n": 4
+            },
+            "mrr": {
+              "value": 0.527778,
+              "sum_reciprocal_rank": 2.111111,
+              "n": 4
+            },
+            "total_queries": 4,
+            "queries_without_gold": 0
+          },
+          "D_compound": {
+            "eligible_queries": 6,
+            "gold_size_distribution": {
+              "2": 2,
+              "3": 1,
+              "4": 3
+            },
+            "hit_at_3": {
+              "value": 0.833333,
+              "hits": 5,
+              "n": 6
+            },
+            "recall_at_3_macro": {
+              "value": 0.569444,
+              "sum_query_recall": 3.416667,
+              "n": 6
+            },
+            "recall_at_3_ceiling_macro": {
+              "value": 0.875,
+              "sum_query_ceiling": 5.25,
+              "n": 6
+            },
+            "recall_at_5_macro": {
+              "value": 0.694444,
+              "sum_query_recall": 4.166667,
+              "n": 6
+            },
+            "recall_at_gold_macro": {
+              "value": 0.611111,
+              "sum_query_recall": 3.666667,
+              "n": 6
+            },
+            "mrr": {
+              "value": 0.866667,
+              "sum_reciprocal_rank": 5.2,
+              "n": 6
+            },
+            "total_queries": 6,
+            "queries_without_gold": 0
+          },
+          "E_judgment_or_premise": {
+            "eligible_queries": 6,
+            "gold_size_distribution": {
+              "1": 5,
+              "4": 1
+            },
+            "hit_at_3": {
+              "value": 1.0,
+              "hits": 6,
+              "n": 6
+            },
+            "recall_at_3_macro": {
+              "value": 0.916667,
+              "sum_query_recall": 5.5,
+              "n": 6
+            },
+            "recall_at_3_ceiling_macro": {
+              "value": 0.958333,
+              "sum_query_ceiling": 5.75,
+              "n": 6
+            },
+            "recall_at_5_macro": {
+              "value": 0.958333,
+              "sum_query_recall": 5.75,
+              "n": 6
+            },
+            "recall_at_gold_macro": {
+              "value": 0.625,
+              "sum_query_recall": 3.75,
+              "n": 6
+            },
+            "mrr": {
+              "value": 0.722222,
+              "sum_reciprocal_rank": 4.333333,
+              "n": 6
+            },
+            "total_queries": 6,
+            "queries_without_gold": 0
+          }
+        },
+        "per_query": [
+          {
+            "query_id": "q:main:001",
+            "question_column": "B_alias_or_coreference",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.3333333333333333,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:002",
+            "question_column": "B_alias_or_coreference",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:003",
+            "question_column": "B_alias_or_coreference",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:004",
+            "question_column": "B_alias_or_coreference",
+            "gold_size": 1,
+            "hit_at_3": 0,
+            "recall_at_3": 0.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.25,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:005",
+            "question_column": "A_direct",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:006",
+            "question_column": "D_compound",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:007",
+            "question_column": "A_direct",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.5,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:009",
+            "question_column": "E_judgment_or_premise",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.5,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:010",
+            "question_column": "A_direct",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:011",
+            "question_column": "E_judgment_or_premise",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.3333333333333333,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:012",
+            "question_column": "A_direct",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "supported"
+          },
+          {
+            "query_id": "q:main:014",
+            "question_column": "A_direct",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "supported"
+          },
+          {
+            "query_id": "q:main:015",
+            "question_column": "A_direct",
+            "gold_size": 1,
+            "hit_at_3": 0,
+            "recall_at_3": 0.0,
+            "recall_at_5": 0.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.14285714285714285,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:016",
+            "question_column": "A_direct",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 0.5,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "supported"
+          },
+          {
+            "query_id": "q:main:017",
+            "question_column": "D_compound",
+            "gold_size": 4,
+            "hit_at_3": 1,
+            "recall_at_3": 0.25,
+            "recall_at_5": 0.5,
+            "recall_at_gold": 0.25,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:018",
+            "question_column": "A_direct",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 0.5,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:019",
+            "question_column": "A_direct",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "conditional_substitute"
+          },
+          {
+            "query_id": "q:main:022",
+            "question_column": "E_judgment_or_premise",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:024",
+            "question_column": "D_compound",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:025",
+            "question_column": "C_symptom",
+            "gold_size": 2,
+            "hit_at_3": 0,
+            "recall_at_3": 0.0,
+            "recall_at_5": 0.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.1111111111111111,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:026",
+            "question_column": "C_symptom",
+            "gold_size": 4,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 0.5,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 0.5,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:028",
+            "question_column": "D_compound",
+            "gold_size": 4,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 0.75,
+            "recall_at_gold": 0.75,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:029",
+            "question_column": "D_compound",
+            "gold_size": 3,
+            "hit_at_3": 1,
+            "recall_at_3": 0.6666666666666666,
+            "recall_at_5": 0.6666666666666666,
+            "recall_at_gold": 0.6666666666666666,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:030",
+            "question_column": "C_symptom",
+            "gold_size": 5,
+            "hit_at_3": 1,
+            "recall_at_3": 0.4,
+            "recall_at_5": 0.6,
+            "recall_at_gold": 0.6,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:032",
+            "question_column": "C_symptom",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 0.5,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 0.5,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:033",
+            "question_column": "D_compound",
+            "gold_size": 4,
+            "hit_at_3": 0,
+            "recall_at_3": 0.0,
+            "recall_at_5": 0.25,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.2,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:037",
+            "question_column": "E_judgment_or_premise",
+            "gold_size": 4,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 0.75,
+            "recall_at_gold": 0.75,
+            "reciprocal_rank": 0.5,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:038",
+            "question_column": "E_judgment_or_premise",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:039",
+            "question_column": "E_judgment_or_premise",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:040",
+            "question_column": "A_direct",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          }
+        ]
+      },
+      "entity_linking": {
+        "overall": {
+          "value": 0.820513,
+          "correct": 32,
+          "n": 39
+        },
+        "context_free": {
+          "value": 1.0,
+          "correct": 22,
+          "n": 22
+        }
+      },
+      "score_threshold_abstention": {
+        "accuracy": {
+          "value": 0.1,
+          "correct_abstentions": 1,
+          "n": 10
+        },
+        "details": [
+          {
+            "query_id": "q:abstain:001",
+            "abstained": false,
+            "top_score": 7.459488,
+            "top_entry_id": "kb:monstera_symptom_root_stem_rot_001",
+            "detected_plant_id": null
+          },
+          {
+            "query_id": "q:abstain:002",
+            "abstained": false,
+            "top_score": 3.421629,
+            "top_entry_id": "kb:monstera_symptom_root_stem_rot_001",
+            "detected_plant_id": null
+          },
+          {
+            "query_id": "q:abstain:003",
+            "abstained": false,
+            "top_score": 1.324534,
+            "top_entry_id": "kb:monstera_taxonomy_001",
+            "detected_plant_id": null
+          },
+          {
+            "query_id": "q:abstain:004",
+            "abstained": false,
+            "top_score": 2.759704,
+            "top_entry_id": "kb:monstera_humidity_leaf_spot_001",
+            "detected_plant_id": null
+          },
+          {
+            "query_id": "q:abstain:005",
+            "abstained": false,
+            "top_score": 3.30684,
+            "top_entry_id": "kb:monstera_watering_frequency_001",
+            "detected_plant_id": "plant:monstera_deliciosa"
+          },
+          {
+            "query_id": "q:abstain:006",
+            "abstained": false,
+            "top_score": 4.882381,
+            "top_entry_id": "kb:pothos_symptom_fertilizer_salts_001",
+            "detected_plant_id": null
+          },
+          {
+            "query_id": "q:abstain:007",
+            "abstained": false,
+            "top_score": 4.628862,
+            "top_entry_id": "kb:snake_plant_symptom_overwatering_001",
+            "detected_plant_id": "plant:dracaena_trifasciata"
+          },
+          {
+            "query_id": "q:abstain:008",
+            "abstained": false,
+            "top_score": 7.618425,
+            "top_entry_id": "kb:snake_plant_pet_safety_001",
+            "detected_plant_id": null
+          },
+          {
+            "query_id": "q:abstain:009",
+            "abstained": true,
+            "top_score": 0.0,
+            "top_entry_id": "kb:monstera_humidity_001",
+            "detected_plant_id": null
+          },
+          {
+            "query_id": "q:abstain:010",
+            "abstained": false,
+            "top_score": 3.361996,
+            "top_entry_id": "kb:monstera_watering_frequency_001",
+            "detected_plant_id": null
+          }
+        ]
+      },
+      "answer_shape_analysis": {
+        "shape_gap_queries": 1,
+        "retrieval_complete_at_3": {
+          "value": 0.0,
+          "queries_with_all_gold_retrieved": 0,
+          "n": 1
+        },
+        "query_ids": [
+          "q:main:019"
+        ]
+      },
+      "retrieval_failures_at_3": [
+        {
+          "query_id": "q:main:004",
+          "gold": [
+            "kb:monstera_taxonomy_001"
+          ],
+          "top_k": [
+            "kb:monstera_humidity_leaf_spot_001",
+            "kb:monstera_symptom_bacterial_leaf_spot_001",
+            "kb:monstera_symptom_anthracnose_001"
+          ],
+          "detected_plant_id": "plant:monstera_deliciosa"
+        },
+        {
+          "query_id": "q:main:008",
+          "gold": [
+            "kb:monstera_lighting_001"
+          ],
+          "top_k": [
+            "kb:monstera_symptom_bacterial_leaf_spot_001",
+            "kb:snake_plant_lighting_001",
+            "kb:monstera_humidity_leaf_spot_001"
+          ],
+          "detected_plant_id": null
+        },
+        {
+          "query_id": "q:main:015",
+          "gold": [
+            "kb:monstera_watering_001"
+          ],
+          "top_k": [
+            "kb:pothos_watering_frequency_001",
+            "kb:monstera_watering_frequency_001",
+            "kb:snake_plant_watering_frequency_001"
+          ],
+          "detected_plant_id": "plant:monstera_deliciosa"
+        },
+        {
+          "query_id": "q:main:025",
+          "gold": [
+            "kb:monstera_symptom_root_stem_rot_001",
+            "kb:monstera_watering_001"
+          ],
+          "top_k": [
+            "kb:monstera_symptom_anthracnose_001",
+            "kb:monstera_humidity_leaf_spot_001",
+            "kb:pothos_symptom_old_leaf_001"
+          ],
+          "detected_plant_id": "plant:monstera_deliciosa"
+        },
+        {
+          "query_id": "q:main:031",
+          "gold": [
+            "kb:pothos_lighting_001",
+            "kb:pothos_symptom_fertilizer_salts_001",
+            "kb:pothos_symptom_overwatering_001",
+            "kb:pothos_watering_001"
+          ],
+          "top_k": [
+            "kb:monstera_symptom_anthracnose_001",
+            "kb:monstera_symptom_bacterial_leaf_spot_001",
+            "kb:monstera_humidity_leaf_spot_001"
+          ],
+          "detected_plant_id": null
+        },
+        {
+          "query_id": "q:main:033",
+          "gold": [
+            "kb:snake_plant_lighting_001",
+            "kb:snake_plant_symptom_overwatering_001",
+            "kb:snake_plant_symptom_overwatering_signs_001",
+            "kb:snake_plant_watering_001"
+          ],
+          "top_k": [
+            "kb:snake_plant_pet_safety_001",
+            "kb:pothos_symptom_old_leaf_001",
+            "kb:monstera_humidity_leaf_spot_001"
+          ],
+          "detected_plant_id": "plant:dracaena_trifasciata"
+        }
+      ]
+    },
+    {
+      "name": "bm25_entity",
+      "retrieval": {
+        "aggregate": {
+          "eligible_queries": 40,
+          "gold_size_distribution": {
+            "1": 14,
+            "2": 13,
+            "3": 4,
+            "4": 7,
+            "5": 1,
+            "6": 1
+          },
+          "hit_at_3": {
+            "value": 0.9,
+            "hits": 36,
+            "n": 40
+          },
+          "recall_at_3_macro": {
+            "value": 0.687083,
+            "sum_query_recall": 27.483333,
+            "n": 40
+          },
+          "recall_at_3_ceiling_macro": {
+            "value": 0.93375,
+            "sum_query_ceiling": 37.35,
+            "n": 40
+          },
+          "recall_at_5_macro": {
+            "value": 0.819167,
+            "sum_query_recall": 32.766667,
+            "n": 40
+          },
+          "recall_at_gold_macro": {
+            "value": 0.573333,
+            "sum_query_recall": 22.933333,
+            "n": 40
+          },
+          "mrr": {
+            "value": 0.809821,
+            "sum_reciprocal_rank": 32.392857,
+            "n": 40
+          }
+        },
+        "by_question_column": {
+          "A_direct": {
+            "eligible_queries": 11,
+            "gold_size_distribution": {
+              "1": 4,
+              "2": 6,
+              "3": 1
+            },
+            "hit_at_3": {
+              "value": 1.0,
+              "hits": 11,
+              "n": 11
+            },
+            "recall_at_3_macro": {
+              "value": 0.909091,
+              "sum_query_recall": 10.0,
+              "n": 11
+            },
+            "recall_at_3_ceiling_macro": {
+              "value": 1.0,
+              "sum_query_ceiling": 11.0,
+              "n": 11
+            },
+            "recall_at_5_macro": {
+              "value": 1.0,
+              "sum_query_recall": 11.0,
+              "n": 11
+            },
+            "recall_at_gold_macro": {
+              "value": 0.681818,
+              "sum_query_recall": 7.5,
+              "n": 11
+            },
+            "mrr": {
+              "value": 0.909091,
+              "sum_reciprocal_rank": 10.0,
+              "n": 11
+            },
+            "total_queries": 11,
+            "queries_without_gold": 0
+          },
+          "B_alias_or_coreference": {
+            "eligible_queries": 6,
+            "gold_size_distribution": {
+              "1": 5,
+              "2": 1
+            },
+            "hit_at_3": {
+              "value": 0.666667,
+              "hits": 4,
+              "n": 6
+            },
+            "recall_at_3_macro": {
+              "value": 0.583333,
+              "sum_query_recall": 3.5,
+              "n": 6
+            },
+            "recall_at_3_ceiling_macro": {
+              "value": 1.0,
+              "sum_query_ceiling": 6.0,
+              "n": 6
+            },
+            "recall_at_5_macro": {
+              "value": 1.0,
+              "sum_query_recall": 6.0,
+              "n": 6
+            },
+            "recall_at_gold_macro": {
+              "value": 0.416667,
+              "sum_query_recall": 2.5,
+              "n": 6
+            },
+            "mrr": {
+              "value": 0.638889,
+              "sum_reciprocal_rank": 3.833333,
+              "n": 6
+            },
+            "total_queries": 6,
+            "queries_without_gold": 0
+          },
+          "C_symptom": {
+            "eligible_queries": 6,
+            "gold_size_distribution": {
+              "2": 2,
+              "3": 1,
+              "4": 2,
+              "5": 1
+            },
+            "hit_at_3": {
+              "value": 0.833333,
+              "hits": 5,
+              "n": 6
+            },
+            "recall_at_3_macro": {
+              "value": 0.427778,
+              "sum_query_recall": 2.566667,
+              "n": 6
+            },
+            "recall_at_3_ceiling_macro": {
+              "value": 0.85,
+              "sum_query_ceiling": 5.1,
+              "n": 6
+            },
+            "recall_at_5_macro": {
+              "value": 0.544444,
+              "sum_query_recall": 3.266667,
+              "n": 6
+            },
+            "recall_at_gold_macro": {
+              "value": 0.461111,
+              "sum_query_recall": 2.766667,
+              "n": 6
+            },
+            "mrr": {
+              "value": 0.791667,
+              "sum_reciprocal_rank": 4.75,
+              "n": 6
+            },
+            "total_queries": 6,
+            "queries_without_gold": 0
+          },
+          "D_compound": {
+            "eligible_queries": 9,
+            "gold_size_distribution": {
+              "2": 2,
+              "3": 2,
+              "4": 4,
+              "6": 1
+            },
+            "hit_at_3": {
+              "value": 0.888889,
+              "hits": 8,
+              "n": 9
+            },
+            "recall_at_3_macro": {
+              "value": 0.490741,
+              "sum_query_recall": 4.416667,
+              "n": 9
+            },
+            "recall_at_3_ceiling_macro": {
+              "value": 0.833333,
+              "sum_query_ceiling": 7.5,
+              "n": 9
+            },
+            "recall_at_5_macro": {
+              "value": 0.583333,
+              "sum_query_recall": 5.25,
+              "n": 9
+            },
+            "recall_at_gold_macro": {
+              "value": 0.546296,
+              "sum_query_recall": 4.916667,
+              "n": 9
+            },
+            "mrr": {
+              "value": 0.830688,
+              "sum_reciprocal_rank": 7.47619,
+              "n": 9
+            },
+            "total_queries": 9,
+            "queries_without_gold": 0
+          },
+          "E_judgment_or_premise": {
+            "eligible_queries": 8,
+            "gold_size_distribution": {
+              "1": 5,
+              "2": 2,
+              "4": 1
+            },
+            "hit_at_3": {
+              "value": 1.0,
+              "hits": 8,
+              "n": 8
+            },
+            "recall_at_3_macro": {
+              "value": 0.875,
+              "sum_query_recall": 7.0,
+              "n": 8
+            },
+            "recall_at_3_ceiling_macro": {
+              "value": 0.96875,
+              "sum_query_ceiling": 7.75,
+              "n": 8
+            },
+            "recall_at_5_macro": {
+              "value": 0.90625,
+              "sum_query_recall": 7.25,
+              "n": 8
+            },
+            "recall_at_gold_macro": {
+              "value": 0.65625,
+              "sum_query_recall": 5.25,
+              "n": 8
+            },
+            "mrr": {
+              "value": 0.791667,
+              "sum_reciprocal_rank": 6.333333,
+              "n": 8
+            },
+            "total_queries": 8,
+            "queries_without_gold": 0
+          }
+        },
+        "per_query": [
+          {
+            "query_id": "q:main:001",
+            "question_column": "B_alias_or_coreference",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.3333333333333333,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:002",
+            "question_column": "B_alias_or_coreference",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:003",
+            "question_column": "B_alias_or_coreference",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:004",
+            "question_column": "B_alias_or_coreference",
+            "gold_size": 1,
+            "hit_at_3": 0,
+            "recall_at_3": 0.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.25,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:005",
+            "question_column": "A_direct",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:006",
+            "question_column": "D_compound",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:007",
+            "question_column": "A_direct",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.5,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:008",
+            "question_column": "B_alias_or_coreference",
+            "gold_size": 1,
+            "hit_at_3": 0,
+            "recall_at_3": 0.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.25,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:009",
+            "question_column": "E_judgment_or_premise",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.5,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:010",
+            "question_column": "A_direct",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:011",
+            "question_column": "E_judgment_or_premise",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.3333333333333333,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:012",
+            "question_column": "A_direct",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "supported"
+          },
+          {
+            "query_id": "q:main:013",
+            "question_column": "B_alias_or_coreference",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "supported"
+          },
+          {
+            "query_id": "q:main:014",
+            "question_column": "A_direct",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "supported"
+          },
+          {
+            "query_id": "q:main:015",
+            "question_column": "A_direct",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.5,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:016",
+            "question_column": "A_direct",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "supported"
+          },
+          {
+            "query_id": "q:main:017",
+            "question_column": "D_compound",
+            "gold_size": 4,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 0.5,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:018",
+            "question_column": "A_direct",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:019",
+            "question_column": "A_direct",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "conditional_substitute"
+          },
+          {
+            "query_id": "q:main:020",
+            "question_column": "A_direct",
+            "gold_size": 3,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:021",
+            "question_column": "E_judgment_or_premise",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:022",
+            "question_column": "E_judgment_or_premise",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:023",
+            "question_column": "E_judgment_or_premise",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 0.5,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:024",
+            "question_column": "D_compound",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:025",
+            "question_column": "C_symptom",
+            "gold_size": 2,
+            "hit_at_3": 0,
+            "recall_at_3": 0.0,
+            "recall_at_5": 0.5,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.25,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:026",
+            "question_column": "C_symptom",
+            "gold_size": 4,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 0.5,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:027",
+            "question_column": "C_symptom",
+            "gold_size": 4,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 0.5,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 0.5,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:028",
+            "question_column": "D_compound",
+            "gold_size": 4,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 0.75,
+            "recall_at_gold": 0.75,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:029",
+            "question_column": "D_compound",
+            "gold_size": 3,
+            "hit_at_3": 1,
+            "recall_at_3": 0.6666666666666666,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.6666666666666666,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:030",
+            "question_column": "C_symptom",
+            "gold_size": 5,
+            "hit_at_3": 1,
+            "recall_at_3": 0.4,
+            "recall_at_5": 0.6,
+            "recall_at_gold": 0.6,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:031",
+            "question_column": "D_compound",
+            "gold_size": 4,
+            "hit_at_3": 0,
+            "recall_at_3": 0.0,
+            "recall_at_5": 0.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.14285714285714285,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:032",
+            "question_column": "C_symptom",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 0.5,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:033",
+            "question_column": "D_compound",
+            "gold_size": 4,
+            "hit_at_3": 1,
+            "recall_at_3": 0.25,
+            "recall_at_5": 0.5,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 0.3333333333333333,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:034",
+            "question_column": "C_symptom",
+            "gold_size": 3,
+            "hit_at_3": 1,
+            "recall_at_3": 0.6666666666666666,
+            "recall_at_5": 0.6666666666666666,
+            "recall_at_gold": 0.6666666666666666,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:035",
+            "question_column": "D_compound",
+            "gold_size": 6,
+            "hit_at_3": 1,
+            "recall_at_3": 0.16666666666666666,
+            "recall_at_5": 0.16666666666666666,
+            "recall_at_gold": 0.16666666666666666,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:036",
+            "question_column": "D_compound",
+            "gold_size": 3,
+            "hit_at_3": 1,
+            "recall_at_3": 0.3333333333333333,
+            "recall_at_5": 0.3333333333333333,
+            "recall_at_gold": 0.3333333333333333,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:037",
+            "question_column": "E_judgment_or_premise",
+            "gold_size": 4,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 0.75,
+            "recall_at_gold": 0.75,
+            "reciprocal_rank": 0.5,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:038",
+            "question_column": "E_judgment_or_premise",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:039",
+            "question_column": "E_judgment_or_premise",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:040",
+            "question_column": "A_direct",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          }
+        ]
+      },
+      "retrieval_single_turn": {
+        "aggregate": {
+          "eligible_queries": 30,
+          "gold_size_distribution": {
+            "1": 13,
+            "2": 10,
+            "3": 1,
+            "4": 5,
+            "5": 1
+          },
+          "hit_at_3": {
+            "value": 0.933333,
+            "hits": 28,
+            "n": 30
+          },
+          "recall_at_3_macro": {
+            "value": 0.760556,
+            "sum_query_recall": 22.816667,
+            "n": 30
+          },
+          "recall_at_3_ceiling_macro": {
+            "value": 0.945,
+            "sum_query_ceiling": 28.35,
+            "n": 30
+          },
+          "recall_at_5_macro": {
+            "value": 0.886667,
+            "sum_query_recall": 26.6,
+            "n": 30
+          },
+          "recall_at_gold_macro": {
+            "value": 0.608889,
+            "sum_query_recall": 18.266667,
+            "n": 30
+          },
+          "mrr": {
+            "value": 0.816667,
+            "sum_reciprocal_rank": 24.5,
+            "n": 30
+          }
+        },
+        "by_question_column": {
+          "A_direct": {
+            "eligible_queries": 10,
+            "gold_size_distribution": {
+              "1": 4,
+              "2": 6
+            },
+            "hit_at_3": {
+              "value": 1.0,
+              "hits": 10,
+              "n": 10
+            },
+            "recall_at_3_macro": {
+              "value": 0.9,
+              "sum_query_recall": 9.0,
+              "n": 10
+            },
+            "recall_at_3_ceiling_macro": {
+              "value": 1.0,
+              "sum_query_ceiling": 10.0,
+              "n": 10
+            },
+            "recall_at_5_macro": {
+              "value": 1.0,
+              "sum_query_recall": 10.0,
+              "n": 10
+            },
+            "recall_at_gold_macro": {
+              "value": 0.65,
+              "sum_query_recall": 6.5,
+              "n": 10
+            },
+            "mrr": {
+              "value": 0.9,
+              "sum_reciprocal_rank": 9.0,
+              "n": 10
+            },
+            "total_queries": 10,
+            "queries_without_gold": 0
+          },
+          "B_alias_or_coreference": {
+            "eligible_queries": 4,
+            "gold_size_distribution": {
+              "1": 4
+            },
+            "hit_at_3": {
+              "value": 0.75,
+              "hits": 3,
+              "n": 4
+            },
+            "recall_at_3_macro": {
+              "value": 0.75,
+              "sum_query_recall": 3.0,
+              "n": 4
+            },
+            "recall_at_3_ceiling_macro": {
+              "value": 1.0,
+              "sum_query_ceiling": 4.0,
+              "n": 4
+            },
+            "recall_at_5_macro": {
+              "value": 1.0,
+              "sum_query_recall": 4.0,
+              "n": 4
+            },
+            "recall_at_gold_macro": {
+              "value": 0.5,
+              "sum_query_recall": 2.0,
+              "n": 4
+            },
+            "mrr": {
+              "value": 0.645833,
+              "sum_reciprocal_rank": 2.583333,
+              "n": 4
+            },
+            "total_queries": 4,
+            "queries_without_gold": 0
+          },
+          "C_symptom": {
+            "eligible_queries": 4,
+            "gold_size_distribution": {
+              "2": 2,
+              "4": 1,
+              "5": 1
+            },
+            "hit_at_3": {
+              "value": 0.75,
+              "hits": 3,
+              "n": 4
+            },
+            "recall_at_3_macro": {
+              "value": 0.35,
+              "sum_query_recall": 1.4,
+              "n": 4
+            },
+            "recall_at_3_ceiling_macro": {
+              "value": 0.8375,
+              "sum_query_ceiling": 3.35,
+              "n": 4
+            },
+            "recall_at_5_macro": {
+              "value": 0.525,
+              "sum_query_recall": 2.1,
+              "n": 4
+            },
+            "recall_at_gold_macro": {
+              "value": 0.4,
+              "sum_query_recall": 1.6,
+              "n": 4
+            },
+            "mrr": {
+              "value": 0.8125,
+              "sum_reciprocal_rank": 3.25,
+              "n": 4
+            },
+            "total_queries": 4,
+            "queries_without_gold": 0
+          },
+          "D_compound": {
+            "eligible_queries": 6,
+            "gold_size_distribution": {
+              "2": 2,
+              "3": 1,
+              "4": 3
+            },
+            "hit_at_3": {
+              "value": 1.0,
+              "hits": 6,
+              "n": 6
+            },
+            "recall_at_3_macro": {
+              "value": 0.652778,
+              "sum_query_recall": 3.916667,
+              "n": 6
+            },
+            "recall_at_3_ceiling_macro": {
+              "value": 0.875,
+              "sum_query_ceiling": 5.25,
+              "n": 6
+            },
+            "recall_at_5_macro": {
+              "value": 0.791667,
+              "sum_query_recall": 4.75,
+              "n": 6
+            },
+            "recall_at_gold_macro": {
+              "value": 0.736111,
+              "sum_query_recall": 4.416667,
+              "n": 6
+            },
+            "mrr": {
+              "value": 0.888889,
+              "sum_reciprocal_rank": 5.333333,
+              "n": 6
+            },
+            "total_queries": 6,
+            "queries_without_gold": 0
+          },
+          "E_judgment_or_premise": {
+            "eligible_queries": 6,
+            "gold_size_distribution": {
+              "1": 5,
+              "4": 1
+            },
+            "hit_at_3": {
+              "value": 1.0,
+              "hits": 6,
+              "n": 6
+            },
+            "recall_at_3_macro": {
+              "value": 0.916667,
+              "sum_query_recall": 5.5,
+              "n": 6
+            },
+            "recall_at_3_ceiling_macro": {
+              "value": 0.958333,
+              "sum_query_ceiling": 5.75,
+              "n": 6
+            },
+            "recall_at_5_macro": {
+              "value": 0.958333,
+              "sum_query_recall": 5.75,
+              "n": 6
+            },
+            "recall_at_gold_macro": {
+              "value": 0.625,
+              "sum_query_recall": 3.75,
+              "n": 6
+            },
+            "mrr": {
+              "value": 0.722222,
+              "sum_reciprocal_rank": 4.333333,
+              "n": 6
+            },
+            "total_queries": 6,
+            "queries_without_gold": 0
+          }
+        },
+        "per_query": [
+          {
+            "query_id": "q:main:001",
+            "question_column": "B_alias_or_coreference",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.3333333333333333,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:002",
+            "question_column": "B_alias_or_coreference",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:003",
+            "question_column": "B_alias_or_coreference",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:004",
+            "question_column": "B_alias_or_coreference",
+            "gold_size": 1,
+            "hit_at_3": 0,
+            "recall_at_3": 0.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.25,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:005",
+            "question_column": "A_direct",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:006",
+            "question_column": "D_compound",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:007",
+            "question_column": "A_direct",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.5,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:009",
+            "question_column": "E_judgment_or_premise",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.5,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:010",
+            "question_column": "A_direct",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:011",
+            "question_column": "E_judgment_or_premise",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.3333333333333333,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:012",
+            "question_column": "A_direct",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "supported"
+          },
+          {
+            "query_id": "q:main:014",
+            "question_column": "A_direct",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "supported"
+          },
+          {
+            "query_id": "q:main:015",
+            "question_column": "A_direct",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.5,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:016",
+            "question_column": "A_direct",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "supported"
+          },
+          {
+            "query_id": "q:main:017",
+            "question_column": "D_compound",
+            "gold_size": 4,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 0.5,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:018",
+            "question_column": "A_direct",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:019",
+            "question_column": "A_direct",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "conditional_substitute"
+          },
+          {
+            "query_id": "q:main:022",
+            "question_column": "E_judgment_or_premise",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:024",
+            "question_column": "D_compound",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:025",
+            "question_column": "C_symptom",
+            "gold_size": 2,
+            "hit_at_3": 0,
+            "recall_at_3": 0.0,
+            "recall_at_5": 0.5,
+            "recall_at_gold": 0.0,
+            "reciprocal_rank": 0.25,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:026",
+            "question_column": "C_symptom",
+            "gold_size": 4,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 0.5,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:028",
+            "question_column": "D_compound",
+            "gold_size": 4,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 0.75,
+            "recall_at_gold": 0.75,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:029",
+            "question_column": "D_compound",
+            "gold_size": 3,
+            "hit_at_3": 1,
+            "recall_at_3": 0.6666666666666666,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 0.6666666666666666,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:030",
+            "question_column": "C_symptom",
+            "gold_size": 5,
+            "hit_at_3": 1,
+            "recall_at_3": 0.4,
+            "recall_at_5": 0.6,
+            "recall_at_gold": 0.6,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:032",
+            "question_column": "C_symptom",
+            "gold_size": 2,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 0.5,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:033",
+            "question_column": "D_compound",
+            "gold_size": 4,
+            "hit_at_3": 1,
+            "recall_at_3": 0.25,
+            "recall_at_5": 0.5,
+            "recall_at_gold": 0.5,
+            "reciprocal_rank": 0.3333333333333333,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:037",
+            "question_column": "E_judgment_or_premise",
+            "gold_size": 4,
+            "hit_at_3": 1,
+            "recall_at_3": 0.5,
+            "recall_at_5": 0.75,
+            "recall_at_gold": 0.75,
+            "reciprocal_rank": 0.5,
+            "all_gold_at_3": false,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:038",
+            "question_column": "E_judgment_or_premise",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:039",
+            "question_column": "E_judgment_or_premise",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          },
+          {
+            "query_id": "q:main:040",
+            "question_column": "A_direct",
+            "gold_size": 1,
+            "hit_at_3": 1,
+            "recall_at_3": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_gold": 1.0,
+            "reciprocal_rank": 1.0,
+            "all_gold_at_3": true,
+            "answer_shape_support": "not_audited"
+          }
+        ]
+      },
+      "entity_linking": {
+        "overall": {
+          "value": 0.820513,
+          "correct": 32,
+          "n": 39
+        },
+        "context_free": {
+          "value": 1.0,
+          "correct": 22,
+          "n": 22
+        }
+      },
+      "score_threshold_abstention": {
+        "accuracy": {
+          "value": 0.1,
+          "correct_abstentions": 1,
+          "n": 10
+        },
+        "details": [
+          {
+            "query_id": "q:abstain:001",
+            "abstained": false,
+            "top_score": 7.459488,
+            "top_entry_id": "kb:monstera_symptom_root_stem_rot_001",
+            "detected_plant_id": null
+          },
+          {
+            "query_id": "q:abstain:002",
+            "abstained": false,
+            "top_score": 3.421629,
+            "top_entry_id": "kb:monstera_symptom_root_stem_rot_001",
+            "detected_plant_id": null
+          },
+          {
+            "query_id": "q:abstain:003",
+            "abstained": false,
+            "top_score": 1.324534,
+            "top_entry_id": "kb:monstera_taxonomy_001",
+            "detected_plant_id": null
+          },
+          {
+            "query_id": "q:abstain:004",
+            "abstained": false,
+            "top_score": 2.759704,
+            "top_entry_id": "kb:monstera_humidity_leaf_spot_001",
+            "detected_plant_id": null
+          },
+          {
+            "query_id": "q:abstain:005",
+            "abstained": false,
+            "top_score": 3.30684,
+            "top_entry_id": "kb:monstera_watering_frequency_001",
+            "detected_plant_id": "plant:monstera_deliciosa"
+          },
+          {
+            "query_id": "q:abstain:006",
+            "abstained": false,
+            "top_score": 4.882381,
+            "top_entry_id": "kb:pothos_symptom_fertilizer_salts_001",
+            "detected_plant_id": null
+          },
+          {
+            "query_id": "q:abstain:007",
+            "abstained": false,
+            "top_score": 4.628862,
+            "top_entry_id": "kb:snake_plant_symptom_overwatering_001",
+            "detected_plant_id": "plant:dracaena_trifasciata"
+          },
+          {
+            "query_id": "q:abstain:008",
+            "abstained": false,
+            "top_score": 7.618425,
+            "top_entry_id": "kb:snake_plant_pet_safety_001",
+            "detected_plant_id": null
+          },
+          {
+            "query_id": "q:abstain:009",
+            "abstained": true,
+            "top_score": 0.0,
+            "top_entry_id": "kb:monstera_humidity_001",
+            "detected_plant_id": null
+          },
+          {
+            "query_id": "q:abstain:010",
+            "abstained": false,
+            "top_score": 3.361996,
+            "top_entry_id": "kb:monstera_watering_frequency_001",
+            "detected_plant_id": null
+          }
+        ]
+      },
+      "answer_shape_analysis": {
+        "shape_gap_queries": 1,
+        "retrieval_complete_at_3": {
+          "value": 1.0,
+          "queries_with_all_gold_retrieved": 1,
+          "n": 1
+        },
+        "query_ids": [
+          "q:main:019"
+        ]
+      },
+      "retrieval_failures_at_3": [
+        {
+          "query_id": "q:main:004",
+          "gold": [
+            "kb:monstera_taxonomy_001"
+          ],
+          "top_k": [
+            "kb:monstera_humidity_leaf_spot_001",
+            "kb:monstera_symptom_bacterial_leaf_spot_001",
+            "kb:monstera_symptom_anthracnose_001"
+          ],
+          "detected_plant_id": "plant:monstera_deliciosa"
+        },
+        {
+          "query_id": "q:main:008",
+          "gold": [
+            "kb:monstera_lighting_001"
+          ],
+          "top_k": [
+            "kb:monstera_symptom_bacterial_leaf_spot_001",
+            "kb:snake_plant_lighting_001",
+            "kb:monstera_humidity_leaf_spot_001"
+          ],
+          "detected_plant_id": null
+        },
+        {
+          "query_id": "q:main:025",
+          "gold": [
+            "kb:monstera_symptom_root_stem_rot_001",
+            "kb:monstera_watering_001"
+          ],
+          "top_k": [
+            "kb:monstera_symptom_anthracnose_001",
+            "kb:monstera_humidity_leaf_spot_001",
+            "kb:monstera_watering_frequency_001"
+          ],
+          "detected_plant_id": "plant:monstera_deliciosa"
+        },
+        {
+          "query_id": "q:main:031",
+          "gold": [
+            "kb:pothos_lighting_001",
+            "kb:pothos_symptom_fertilizer_salts_001",
+            "kb:pothos_symptom_overwatering_001",
+            "kb:pothos_watering_001"
+          ],
+          "top_k": [
+            "kb:monstera_symptom_anthracnose_001",
+            "kb:monstera_symptom_bacterial_leaf_spot_001",
+            "kb:monstera_humidity_leaf_spot_001"
+          ],
+          "detected_plant_id": null
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Community posts are query sources only; gold entries come from the curated knowledge base.",
+    "Gap queries are excluded from Hit/Recall/MRR and retained in coverage analysis.",
+    "Every retrieval metric includes its own denominator; aggregate scores exclude queries without gold.",
+    "retrieval is the full N=40 view; retrieval_single_turn uniformly excludes all queries marked excluded_from_single_turn.",
+    "The single-turn exclusion is defined by thread_context, not by observed model success or failure.",
+    "Recall@5 and Recall@|gold| are macro averages over per-query recall.",
+    "Score-threshold abstention is retained only as a weak comparison baseline."
+  ]
+}

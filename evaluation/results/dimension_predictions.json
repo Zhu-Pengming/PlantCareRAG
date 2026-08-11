@@ -1,0 +1,270 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-08-11T21:57:59.074753+00:00",
+  "provider": "codex_cli",
+  "codex_binary": "/Applications/ChatGPT.app/Contents/Resources/codex",
+  "model": "gpt-5.6-terra",
+  "reasoning_effort": "low",
+  "prompt_version": "1.0.0",
+  "prompt_sha256": "ec0df8625260114fe647973515ad9fe20c76272666766b832cdac67af5dac1ae",
+  "label_source": "model_prediction_without_expected_dimensions",
+  "few_shot_source": "synthetic_examples_not_present_in_evaluation_set",
+  "predictions": [
+    {
+      "query_id": "q:main:001",
+      "dimensions": [
+        "taxonomy"
+      ]
+    },
+    {
+      "query_id": "q:main:002",
+      "dimensions": [
+        "taxonomy"
+      ]
+    },
+    {
+      "query_id": "q:main:003",
+      "dimensions": [
+        "taxonomy"
+      ]
+    },
+    {
+      "query_id": "q:main:004",
+      "dimensions": [
+        "taxonomy"
+      ]
+    },
+    {
+      "query_id": "q:main:005",
+      "dimensions": [
+        "lighting"
+      ]
+    },
+    {
+      "query_id": "q:main:006",
+      "dimensions": [
+        "symptom",
+        "lighting"
+      ]
+    },
+    {
+      "query_id": "q:main:007",
+      "dimensions": [
+        "lighting"
+      ]
+    },
+    {
+      "query_id": "q:main:008",
+      "dimensions": [
+        "lighting"
+      ]
+    },
+    {
+      "query_id": "q:main:009",
+      "dimensions": [
+        "lighting"
+      ]
+    },
+    {
+      "query_id": "q:main:010",
+      "dimensions": [
+        "lighting"
+      ]
+    },
+    {
+      "query_id": "q:main:011",
+      "dimensions": [
+        "lighting"
+      ]
+    },
+    {
+      "query_id": "q:main:012",
+      "dimensions": [
+        "watering"
+      ]
+    },
+    {
+      "query_id": "q:main:013",
+      "dimensions": [
+        "watering"
+      ]
+    },
+    {
+      "query_id": "q:main:014",
+      "dimensions": [
+        "watering"
+      ]
+    },
+    {
+      "query_id": "q:main:015",
+      "dimensions": [
+        "watering"
+      ]
+    },
+    {
+      "query_id": "q:main:016",
+      "dimensions": [
+        "watering"
+      ]
+    },
+    {
+      "query_id": "q:main:017",
+      "dimensions": [
+        "watering"
+      ]
+    },
+    {
+      "query_id": "q:main:018",
+      "dimensions": [
+        "watering"
+      ]
+    },
+    {
+      "query_id": "q:main:019",
+      "dimensions": [
+        "watering"
+      ]
+    },
+    {
+      "query_id": "q:main:020",
+      "dimensions": [
+        "watering"
+      ]
+    },
+    {
+      "query_id": "q:main:021",
+      "dimensions": [
+        "humidity"
+      ]
+    },
+    {
+      "query_id": "q:main:022",
+      "dimensions": [
+        "humidity"
+      ]
+    },
+    {
+      "query_id": "q:main:023",
+      "dimensions": [
+        "humidity"
+      ]
+    },
+    {
+      "query_id": "q:main:024",
+      "dimensions": [
+        "humidity",
+        "temperature"
+      ]
+    },
+    {
+      "query_id": "q:main:025",
+      "dimensions": [
+        "symptom",
+        "watering"
+      ]
+    },
+    {
+      "query_id": "q:main:026",
+      "dimensions": [
+        "symptom",
+        "disease",
+        "pest"
+      ]
+    },
+    {
+      "query_id": "q:main:027",
+      "dimensions": [
+        "symptom",
+        "watering"
+      ]
+    },
+    {
+      "query_id": "q:main:028",
+      "dimensions": [
+        "symptom",
+        "watering",
+        "lighting"
+      ]
+    },
+    {
+      "query_id": "q:main:029",
+      "dimensions": [
+        "symptom",
+        "watering"
+      ]
+    },
+    {
+      "query_id": "q:main:030",
+      "dimensions": [
+        "symptom"
+      ]
+    },
+    {
+      "query_id": "q:main:031",
+      "dimensions": [
+        "symptom",
+        "watering"
+      ]
+    },
+    {
+      "query_id": "q:main:032",
+      "dimensions": [
+        "symptom"
+      ]
+    },
+    {
+      "query_id": "q:main:033",
+      "dimensions": [
+        "symptom",
+        "lighting"
+      ]
+    },
+    {
+      "query_id": "q:main:034",
+      "dimensions": [
+        "watering"
+      ]
+    },
+    {
+      "query_id": "q:main:035",
+      "dimensions": [
+        "symptom",
+        "watering",
+        "lighting"
+      ]
+    },
+    {
+      "query_id": "q:main:036",
+      "dimensions": [
+        "symptom",
+        "watering"
+      ]
+    },
+    {
+      "query_id": "q:main:037",
+      "dimensions": [
+        "symptom",
+        "watering",
+        "repotting"
+      ]
+    },
+    {
+      "query_id": "q:main:038",
+      "dimensions": [
+        "pet_safety"
+      ]
+    },
+    {
+      "query_id": "q:main:039",
+      "dimensions": [
+        "pet_safety"
+      ]
+    },
+    {
+      "query_id": "q:main:040",
+      "dimensions": [
+        "pet_safety"
+      ]
+    }
+  ]
+}

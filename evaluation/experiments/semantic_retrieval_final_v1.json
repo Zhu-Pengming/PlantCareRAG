@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0.0",
+  "experiment_id": "semantic_retrieval_final_v1",
+  "registered_at": "2026-08-11",
+  "status": "frozen_before_single_test_run",
+  "parent_experiment": {
+    "path": "evaluation/experiments/semantic_retrieval_v1.json",
+    "sha256": "81354bd6a50934e88ff563622875236e219aee47447dd0850220ac5f9c717b58"
+  },
+  "fusion_sweep": {
+    "registration_path": "evaluation/experiments/fusion_weight_sweep_v1.json",
+    "registration_sha256": "40c6f231af87f1cb20e60c69178c488169cd7a1c4694418c252d18296236f76a",
+    "result_path": "evaluation/results/fusion_weight_sweep_dev.json",
+    "result_sha256": "840f64b002a1e6540c3a3853b3cfc0631f6c0612c1c971708c8e4f632716d420",
+    "observed_best": "embedding_weight=0.50 reached 28/45 pair hits@5",
+    "pre_registered_decision": "Because the best result was <= 28/45, retain equal-weight RRF and stop tuning."
+  },
+  "split_manifest": "evaluation/splits/main_sha256_20_20_v1.json",
+  "split_manifest_sha256": "e1f4e825662896e8c752a6d8e72007650b10f82c9146d8af751affe4fe34ae47",
+  "frozen_data": {
+    "queries_path": "evaluation/data/main_queries.json",
+    "queries_sha256": "3c8e42b87f649e328a90300b75aa88f74f99dcd40c1b4ce07a22aac142ee6686",
+    "knowledge_entries_tree_sha256": "655577e57c49c58e7db4fdd0c23229651e1aede6fd9842aaf751a2d2c066c070",
+    "knowledge_entry_files": 3,
+    "approved_entries": 31
+  },
+  "development_scope": {
+    "split": "test",
+    "queries": 20,
+    "test_queries_must_be_evaluated_exactly_once": true
+  },
+  "documents": {
+    "unit": "one approved knowledge entry equals one chunk",
+    "count": 31,
+    "secondary_chunking": false,
+    "content_only_field": "content",
+    "content_only_candidate_set": "all 31 entries",
+    "metadata_plus_content_candidate_set": "all 31 entries",
+    "entity_or_dimension_filtering": false
+  },
+  "lexical_floor": {
+    "method": "BM25 over content only",
+    "tokenizer": "NFKC + casefold; ASCII alphanumeric tokens with lightweight English stemming; each contiguous Chinese sequence plus overlapping Chinese bigrams; no jieba or word segmenter",
+    "report_signal_only_and_forced_top_k": true
+  },
+  "embedding_candidates": [
+    {
+      "model_id": "BAAI/bge-m3",
+      "model_revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "query_prefix": "",
+      "passage_prefix": "",
+      "normalize_embeddings": true,
+      "model_card": "https://huggingface.co/BAAI/bge-m3"
+    }
+  ],
+  "selection": {
+    "status": "already frozen on dev",
+    "selected_model_id": "BAAI/bge-m3",
+    "basis": "pre-registered dev content-only macro Recall@5"
+  },
+  "hybrid": {
+    "inputs": [
+      "metadata+content BM25 full ranking",
+      "content-only BAAI/bge-m3 full ranking"
+    ],
+    "fusion": "weighted reciprocal rank fusion",
+    "rrf_k": 60,
+    "weights": [1.0, 1.0],
+    "rank_tie_breaker": "entry_id ascending",
+    "tunable_after_test": false
+  },
+  "reporting": {
+    "retrieval_k": 3,
+    "metrics": [
+      "Hit@3",
+      "macro Recall@5",
+      "macro Recall@|gold|",
+      "query-gold pair Recall@5"
+    ],
+    "pre_registered_stages": [
+      "content-only BM25",
+      "content-only BGE-M3",
+      "metadata+content BM25",
+      "metadata+content equal-weight RRF hybrid"
+    ],
+    "views": ["full split", "non-thread-context split"],
+    "per_plant_use": "failure detection only; never model selection or superiority claims"
+  },
+  "test_gate": {
+    "run_selected_model_only": true,
+    "explicit_confirmation_required": true,
+    "output": "evaluation/results/semantic_retrieval_test.json",
+    "report_regardless_of_result": true,
+    "no_test_driven_changes": true
+  },
+  "comparison_caveat": "BGE-M3 used no instruction while multilingual-E5-large used query:/passage: prefixes as required by their respective model cards; dev model comparison was therefore protocol-correct but not identical-input."
+}

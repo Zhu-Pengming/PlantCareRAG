@@ -1,0 +1,221 @@
+[
+  {
+    "schema_version": "1.0.0",
+    "id": "kb:monstera_taxonomy_001",
+    "plant_id": "plant:monstera_deliciosa",
+    "language": "zh-CN",
+    "dimension": "taxonomy",
+    "topics": ["accepted_name", "family"],
+    "claim_type": "fact",
+    "content": "龟背竹的接受学名为 Monstera deliciosa，隶属天南星科（Araceae）龟背竹属（Monstera）。",
+    "conditions": [],
+    "retrieval": {
+      "aliases": ["龟背竹", "Monstera deliciosa", "Swiss cheese plant"],
+      "intents": ["identify", "learn"],
+      "symptoms": []
+    },
+    "source_refs": [
+      {"source_id": "source:gbif_monstera_deliciosa", "locator": "Classification and Name", "support": "paraphrase"}
+    ],
+    "review_status": "approved",
+    "updated_at": "2026-08-11"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "kb:monstera_lighting_001",
+    "plant_id": "plant:monstera_deliciosa",
+    "language": "zh-CN",
+    "dimension": "lighting",
+    "topics": ["indirect_light", "direct_sun"],
+    "claim_type": "recommendation",
+    "content": "室内龟背竹适合中等明亮、避开直射阳光的环境；斑叶品种通常比深绿色品种需要更多光照。",
+    "conditions": ["室内种植", "斑叶品种存在额外光照需求"],
+    "retrieval": {
+      "aliases": ["龟背竹", "Monstera deliciosa"],
+      "intents": ["care", "learn"],
+      "symptoms": []
+    },
+    "source_refs": [
+      {"source_id": "source:ncsu_monstera_deliciosa", "locator": "Description, paragraph 2", "support": "paraphrase"}
+    ],
+    "review_status": "approved",
+    "updated_at": "2026-08-11"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "kb:monstera_watering_001",
+    "plant_id": "plant:monstera_deliciosa",
+    "language": "zh-CN",
+    "dimension": "watering",
+    "topics": ["soil_dryness", "watering_trigger"],
+    "claim_type": "recommendation",
+    "content": "给龟背竹一次浇透后，应等盆土表层约四分之一到三分之一深度变干，再进行下一次浇水。",
+    "conditions": ["室内容器栽培", "以土壤干湿而非固定日历作为触发条件"],
+    "retrieval": {
+      "aliases": ["龟背竹", "Monstera deliciosa"],
+      "intents": ["care", "diagnose"],
+      "symptoms": ["土一直湿", "多久浇水"]
+    },
+    "source_refs": [
+      {"source_id": "source:ncsu_monstera_deliciosa", "locator": "Description, paragraph 2", "support": "paraphrase"}
+    ],
+    "review_status": "approved",
+    "updated_at": "2026-08-11"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "kb:monstera_humidity_001",
+    "plant_id": "plant:monstera_deliciosa",
+    "language": "zh-CN",
+    "dimension": "humidity",
+    "topics": ["high_humidity", "dry_indoor_air"],
+    "claim_type": "fact",
+    "content": "龟背竹偏好较高空气湿度；室内空气干燥时，可用加湿器或湿石托盘提高植株周围湿度。",
+    "conditions": ["室内空气干燥"],
+    "retrieval": {
+      "aliases": ["龟背竹", "Monstera deliciosa"],
+      "intents": ["care", "learn"],
+      "symptoms": ["空气干燥"]
+    },
+    "source_refs": [
+      {"source_id": "source:ncsu_monstera_deliciosa", "locator": "Description, paragraph 2", "support": "paraphrase"}
+    ],
+    "review_status": "approved",
+    "updated_at": "2026-08-11"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "kb:monstera_watering_frequency_001",
+    "plant_id": "plant:monstera_deliciosa",
+    "language": "zh-CN",
+    "dimension": "watering",
+    "topics": ["watering_frequency_practical", "soil_dryness"],
+    "claim_type": "recommendation",
+    "answer_shape": "numeric_request",
+    "content": "成熟龟背竹可把每周检查并可能浇水作为粗略参考；若盆土表层约 1–2 英寸仍未干，应延后浇水，不能把七天当作无条件周期。",
+    "conditions": ["成熟室内植株", "光照、温度、盆器和基质会改变实际间隔"],
+    "retrieval": {
+      "aliases": ["龟背竹", "Monstera deliciosa", "Monstera"],
+      "intents": ["care"],
+      "symptoms": ["how often to water monstera", "weekly watering", "多久浇一次", "一周浇水"]
+    },
+    "source_refs": [
+      {"source_id": "source:umn_monstera_deliciosa", "locator": "Care guidance, mature plants watering", "support": "paraphrase"}
+    ],
+    "review_status": "approved",
+    "updated_at": "2026-08-11"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "kb:monstera_pet_safety_001",
+    "plant_id": "plant:monstera_deliciosa",
+    "language": "zh-CN",
+    "dimension": "pet_safety",
+    "topics": ["cats", "dogs", "calcium_oxalate_crystals", "ingestion"],
+    "claim_type": "safety",
+    "answer_shape": "yes_no",
+    "content": "龟背竹对猫和狗有毒，草酸钙晶体可在咀嚼或吞食后引起口腔灼痛、流涎、呕吐或吞咽困难；疑似摄入时应尽快联系兽医或动物毒物咨询机构。",
+    "conditions": ["宠物接触或疑似摄入", "不替代兽医诊断"],
+    "retrieval": {
+      "aliases": ["龟背竹", "Monstera deliciosa", "Monstera", "Swiss cheese plant"],
+      "intents": ["safety"],
+      "symptoms": ["safe for cats", "toxic to cats", "cat ate monstera", "猫能不能碰", "宠物误食"]
+    },
+    "source_refs": [
+      {"source_id": "source:aspca_monstera_deliciosa", "locator": "Scientific Name, Toxicity, Toxic Principles, Clinical Signs", "support": "paraphrase"},
+      {"source_id": "source:ncsu_monstera_deliciosa", "locator": "Poisonous to Humans and Problems attributes", "support": "paraphrase"}
+    ],
+    "review_status": "approved",
+    "updated_at": "2026-08-11"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "kb:monstera_symptom_bacterial_leaf_spot_001",
+    "plant_id": "plant:monstera_deliciosa",
+    "language": "zh-CN",
+    "dimension": "symptom",
+    "topics": ["bacterial_leaf_spot", "brown_spots", "yellow_halo"],
+    "claim_type": "diagnostic_association",
+    "answer_shape": "diagnosis_list",
+    "content": "龟背竹细菌性叶斑常表现为大小相近的深褐色斑点并带黄色边缘，有时可见黏性渗出；这些特征出现时应把细菌性叶斑列入鉴别，而不是直接归因于浇水。",
+    "conditions": ["仅凭照片不能确诊", "需与日灼、根腐和真菌病害区分"],
+    "retrieval": {
+      "aliases": ["龟背竹", "Monstera deliciosa", "Monstera"],
+      "intents": ["diagnose"],
+      "symptoms": ["brown spots yellow border", "bacterial leaf spot", "sticky ooze", "褐斑黄边", "叶斑"]
+    },
+    "source_refs": [
+      {"source_id": "source:uconn_monstera_deliciosa", "locator": "Common Diseases and Disorders, Bacterial leaf spot", "support": "paraphrase"}
+    ],
+    "review_status": "approved",
+    "updated_at": "2026-08-11"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "kb:monstera_symptom_anthracnose_001",
+    "plant_id": "plant:monstera_deliciosa",
+    "language": "zh-CN",
+    "dimension": "symptom",
+    "topics": ["anthracnose", "yellow_leaf_edge", "brown_lesion"],
+    "claim_type": "diagnostic_association",
+    "answer_shape": "diagnosis_list",
+    "content": "龟背竹炭疽病可从叶缘黄化开始，随后变为黄褐色至深褐色并向叶片内部扩展；若黄边持续扩展成坏死斑，应把炭疽病列入鉴别。",
+    "conditions": ["仅凭叶色不能确诊", "需结合病斑扩展方式和植株环境"],
+    "retrieval": {
+      "aliases": ["龟背竹", "Monstera deliciosa", "Monstera"],
+      "intents": ["diagnose"],
+      "symptoms": ["yellow edge turning brown", "anthracnose", "black spots", "叶缘发黄", "黑褐斑"]
+    },
+    "source_refs": [
+      {"source_id": "source:uconn_monstera_deliciosa", "locator": "Common Diseases and Disorders, Anthracnose", "support": "paraphrase"}
+    ],
+    "review_status": "approved",
+    "updated_at": "2026-08-11"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "kb:monstera_symptom_root_stem_rot_001",
+    "plant_id": "plant:monstera_deliciosa",
+    "language": "zh-CN",
+    "dimension": "symptom",
+    "topics": ["root_rot", "stem_rot", "wilting", "mushy_roots"],
+    "claim_type": "diagnostic_association",
+    "answer_shape": "diagnosis_list",
+    "content": "龟背竹根茎腐烂可伴随萎蔫、茎基部腐败，以及棕黑色、柔软且容易脱落的根；室内植株更常与过湿和排水不良相关，但缺水损伤也可能增加根系患病风险。",
+    "conditions": ["需要脱盆检查根系和茎基部", "叶片黄化本身不足以确诊"],
+    "retrieval": {
+      "aliases": ["龟背竹", "Monstera deliciosa", "Monstera"],
+      "intents": ["diagnose"],
+      "symptoms": ["root rot", "mushy roots", "brown black roots", "wilting monstera", "烂根", "根发黑发软"]
+    },
+    "source_refs": [
+      {"source_id": "source:uconn_monstera_deliciosa", "locator": "Common Diseases and Disorders, Root and stem rot", "support": "paraphrase"},
+      {"source_id": "source:umn_monstera_deliciosa", "locator": "Caring for cuttings, healthy versus brown soft roots", "support": "paraphrase"}
+    ],
+    "review_status": "approved",
+    "updated_at": "2026-08-11"
+  },
+  {
+    "schema_version": "1.0.0",
+    "id": "kb:monstera_humidity_leaf_spot_001",
+    "plant_id": "plant:monstera_deliciosa",
+    "language": "zh-CN",
+    "dimension": "humidity",
+    "topics": ["leaf_wetness", "airflow", "leaf_spot_risk"],
+    "claim_type": "recommendation",
+    "answer_shape": "conditional",
+    "content": "龟背竹偏好较高空气湿度，但若已出现疑似叶斑，应避免继续喷湿叶片，并通过减少拥挤、增加空气流动来降低病害传播条件。",
+    "conditions": ["出现褐斑、黄边或疑似病害时", "空气湿度与叶面长期潮湿不是同一概念"],
+    "retrieval": {
+      "aliases": ["龟背竹", "Monstera deliciosa", "Monstera"],
+      "intents": ["care", "diagnose"],
+      "symptoms": ["too much humidity", "misting with brown spots", "leaf wetness", "湿度太高", "喷雾后长斑"]
+    },
+    "source_refs": [
+      {"source_id": "source:uconn_monstera_deliciosa", "locator": "Common Diseases and Disorders, bacterial leaf spot and anthracnose management", "support": "paraphrase"},
+      {"source_id": "source:ncsu_monstera_deliciosa", "locator": "Description, humidity guidance", "support": "paraphrase"}
+    ],
+    "review_status": "approved",
+    "updated_at": "2026-08-11"
+  }
+]

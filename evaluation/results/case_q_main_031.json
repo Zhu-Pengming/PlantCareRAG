@@ -1,0 +1,752 @@
+{
+  "schema_version": "1.0.0",
+  "query": {
+    "query_id": "q:main:031",
+    "raw_text": "The soil is still wet. The one leaf had the brown spot, now it’s turning yellow and a few other leaves are getting brown spots. Why is it turning yellow and how do I fix it?",
+    "plant_id": "plant:epipremnum_aureum",
+    "detected_plant_id": null,
+    "expected_dimensions": [
+      "symptom",
+      "watering",
+      "lighting"
+    ],
+    "predicted_dimensions": [
+      "symptom",
+      "watering"
+    ],
+    "gold_entry_ids": [
+      "kb:pothos_watering_001",
+      "kb:pothos_symptom_overwatering_001",
+      "kb:pothos_lighting_001",
+      "kb:pothos_symptom_fertilizer_salts_001"
+    ],
+    "answer_shape": "diagnosis_list",
+    "context_requirement": "thread_context",
+    "excluded_from_single_turn": true,
+    "status": "partial"
+  },
+  "query_tokens": [
+    "a",
+    "and",
+    "are",
+    "brown",
+    "do",
+    "few",
+    "fix",
+    "get",
+    "getting",
+    "had",
+    "how",
+    "i",
+    "is",
+    "it",
+    "leaf",
+    "leaves",
+    "now",
+    "one",
+    "other",
+    "s",
+    "soil",
+    "spot",
+    "spots",
+    "still",
+    "the",
+    "turn",
+    "turning",
+    "wet",
+    "why",
+    "yellow"
+  ],
+  "rankings": [
+    {
+      "name": "bm25_raw",
+      "plant_filter": null,
+      "dimension_filter": null,
+      "first_gold_rank": 7,
+      "gold_ranks": {
+        "kb:pothos_lighting_001": 25,
+        "kb:pothos_symptom_fertilizer_salts_001": 7,
+        "kb:pothos_symptom_overwatering_001": 13,
+        "kb:pothos_watering_001": 17
+      },
+      "top": [
+        {
+          "rank": 1,
+          "entry_id": "kb:monstera_symptom_anthracnose_001",
+          "plant_id": "plant:monstera_deliciosa",
+          "dimension": "symptom",
+          "score": 29.140061,
+          "is_gold": false
+        },
+        {
+          "rank": 2,
+          "entry_id": "kb:monstera_symptom_bacterial_leaf_spot_001",
+          "plant_id": "plant:monstera_deliciosa",
+          "dimension": "symptom",
+          "score": 22.52589,
+          "is_gold": false
+        },
+        {
+          "rank": 3,
+          "entry_id": "kb:monstera_humidity_leaf_spot_001",
+          "plant_id": "plant:monstera_deliciosa",
+          "dimension": "humidity",
+          "score": 14.855273,
+          "is_gold": false
+        },
+        {
+          "rank": 4,
+          "entry_id": "kb:pothos_symptom_old_leaf_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "symptom",
+          "score": 12.734149,
+          "is_gold": false
+        },
+        {
+          "rank": 5,
+          "entry_id": "kb:snake_plant_symptom_overwatering_signs_001",
+          "plant_id": "plant:dracaena_trifasciata",
+          "dimension": "symptom",
+          "score": 12.465117,
+          "is_gold": false
+        },
+        {
+          "rank": 6,
+          "entry_id": "kb:pothos_symptom_underwatering_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "symptom",
+          "score": 12.016374,
+          "is_gold": false
+        },
+        {
+          "rank": 7,
+          "entry_id": "kb:pothos_symptom_fertilizer_salts_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "symptom",
+          "score": 10.946317,
+          "is_gold": true
+        },
+        {
+          "rank": 8,
+          "entry_id": "kb:snake_plant_symptom_underwatering_001",
+          "plant_id": "plant:dracaena_trifasciata",
+          "dimension": "symptom",
+          "score": 10.909391,
+          "is_gold": false
+        },
+        {
+          "rank": 9,
+          "entry_id": "kb:pothos_watering_frequency_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "watering",
+          "score": 3.926157,
+          "is_gold": false
+        },
+        {
+          "rank": 10,
+          "entry_id": "kb:monstera_watering_frequency_001",
+          "plant_id": "plant:monstera_deliciosa",
+          "dimension": "watering",
+          "score": 3.226686,
+          "is_gold": false
+        },
+        {
+          "rank": 11,
+          "entry_id": "kb:monstera_symptom_root_stem_rot_001",
+          "plant_id": "plant:monstera_deliciosa",
+          "dimension": "symptom",
+          "score": 3.088694,
+          "is_gold": false
+        },
+        {
+          "rank": 12,
+          "entry_id": "kb:snake_plant_watering_frequency_001",
+          "plant_id": "plant:dracaena_trifasciata",
+          "dimension": "watering",
+          "score": 3.007722,
+          "is_gold": false
+        }
+      ]
+    },
+    {
+      "name": "bm25_entity",
+      "plant_filter": null,
+      "dimension_filter": null,
+      "first_gold_rank": 7,
+      "gold_ranks": {
+        "kb:pothos_lighting_001": 25,
+        "kb:pothos_symptom_fertilizer_salts_001": 7,
+        "kb:pothos_symptom_overwatering_001": 13,
+        "kb:pothos_watering_001": 17
+      },
+      "top": [
+        {
+          "rank": 1,
+          "entry_id": "kb:monstera_symptom_anthracnose_001",
+          "plant_id": "plant:monstera_deliciosa",
+          "dimension": "symptom",
+          "score": 29.140061,
+          "is_gold": false
+        },
+        {
+          "rank": 2,
+          "entry_id": "kb:monstera_symptom_bacterial_leaf_spot_001",
+          "plant_id": "plant:monstera_deliciosa",
+          "dimension": "symptom",
+          "score": 22.52589,
+          "is_gold": false
+        },
+        {
+          "rank": 3,
+          "entry_id": "kb:monstera_humidity_leaf_spot_001",
+          "plant_id": "plant:monstera_deliciosa",
+          "dimension": "humidity",
+          "score": 14.855273,
+          "is_gold": false
+        },
+        {
+          "rank": 4,
+          "entry_id": "kb:pothos_symptom_old_leaf_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "symptom",
+          "score": 12.734149,
+          "is_gold": false
+        },
+        {
+          "rank": 5,
+          "entry_id": "kb:snake_plant_symptom_overwatering_signs_001",
+          "plant_id": "plant:dracaena_trifasciata",
+          "dimension": "symptom",
+          "score": 12.465117,
+          "is_gold": false
+        },
+        {
+          "rank": 6,
+          "entry_id": "kb:pothos_symptom_underwatering_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "symptom",
+          "score": 12.016374,
+          "is_gold": false
+        },
+        {
+          "rank": 7,
+          "entry_id": "kb:pothos_symptom_fertilizer_salts_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "symptom",
+          "score": 10.946317,
+          "is_gold": true
+        },
+        {
+          "rank": 8,
+          "entry_id": "kb:snake_plant_symptom_underwatering_001",
+          "plant_id": "plant:dracaena_trifasciata",
+          "dimension": "symptom",
+          "score": 10.909391,
+          "is_gold": false
+        },
+        {
+          "rank": 9,
+          "entry_id": "kb:pothos_watering_frequency_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "watering",
+          "score": 3.926157,
+          "is_gold": false
+        },
+        {
+          "rank": 10,
+          "entry_id": "kb:monstera_watering_frequency_001",
+          "plant_id": "plant:monstera_deliciosa",
+          "dimension": "watering",
+          "score": 3.226686,
+          "is_gold": false
+        },
+        {
+          "rank": 11,
+          "entry_id": "kb:monstera_symptom_root_stem_rot_001",
+          "plant_id": "plant:monstera_deliciosa",
+          "dimension": "symptom",
+          "score": 3.088694,
+          "is_gold": false
+        },
+        {
+          "rank": 12,
+          "entry_id": "kb:snake_plant_watering_frequency_001",
+          "plant_id": "plant:dracaena_trifasciata",
+          "dimension": "watering",
+          "score": 3.007722,
+          "is_gold": false
+        }
+      ]
+    },
+    {
+      "name": "bm25_entity_predicted_dimensions",
+      "plant_filter": null,
+      "dimension_filter": [
+        "symptom",
+        "watering"
+      ],
+      "first_gold_rank": 6,
+      "gold_ranks": {
+        "kb:pothos_lighting_001": null,
+        "kb:pothos_symptom_fertilizer_salts_001": 6,
+        "kb:pothos_symptom_overwatering_001": 12,
+        "kb:pothos_watering_001": 14
+      },
+      "top": [
+        {
+          "rank": 1,
+          "entry_id": "kb:monstera_symptom_anthracnose_001",
+          "plant_id": "plant:monstera_deliciosa",
+          "dimension": "symptom",
+          "score": 29.140061,
+          "is_gold": false
+        },
+        {
+          "rank": 2,
+          "entry_id": "kb:monstera_symptom_bacterial_leaf_spot_001",
+          "plant_id": "plant:monstera_deliciosa",
+          "dimension": "symptom",
+          "score": 22.52589,
+          "is_gold": false
+        },
+        {
+          "rank": 3,
+          "entry_id": "kb:pothos_symptom_old_leaf_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "symptom",
+          "score": 12.734149,
+          "is_gold": false
+        },
+        {
+          "rank": 4,
+          "entry_id": "kb:snake_plant_symptom_overwatering_signs_001",
+          "plant_id": "plant:dracaena_trifasciata",
+          "dimension": "symptom",
+          "score": 12.465117,
+          "is_gold": false
+        },
+        {
+          "rank": 5,
+          "entry_id": "kb:pothos_symptom_underwatering_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "symptom",
+          "score": 12.016374,
+          "is_gold": false
+        },
+        {
+          "rank": 6,
+          "entry_id": "kb:pothos_symptom_fertilizer_salts_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "symptom",
+          "score": 10.946317,
+          "is_gold": true
+        },
+        {
+          "rank": 7,
+          "entry_id": "kb:snake_plant_symptom_underwatering_001",
+          "plant_id": "plant:dracaena_trifasciata",
+          "dimension": "symptom",
+          "score": 10.909391,
+          "is_gold": false
+        },
+        {
+          "rank": 8,
+          "entry_id": "kb:pothos_watering_frequency_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "watering",
+          "score": 3.926157,
+          "is_gold": false
+        },
+        {
+          "rank": 9,
+          "entry_id": "kb:monstera_watering_frequency_001",
+          "plant_id": "plant:monstera_deliciosa",
+          "dimension": "watering",
+          "score": 3.226686,
+          "is_gold": false
+        },
+        {
+          "rank": 10,
+          "entry_id": "kb:monstera_symptom_root_stem_rot_001",
+          "plant_id": "plant:monstera_deliciosa",
+          "dimension": "symptom",
+          "score": 3.088694,
+          "is_gold": false
+        },
+        {
+          "rank": 11,
+          "entry_id": "kb:snake_plant_watering_frequency_001",
+          "plant_id": "plant:dracaena_trifasciata",
+          "dimension": "watering",
+          "score": 3.007722,
+          "is_gold": false
+        },
+        {
+          "rank": 12,
+          "entry_id": "kb:pothos_symptom_overwatering_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "symptom",
+          "score": 2.506116,
+          "is_gold": true
+        }
+      ]
+    },
+    {
+      "name": "bm25_entity_oracle_dimensions",
+      "plant_filter": null,
+      "dimension_filter": [
+        "lighting",
+        "symptom",
+        "watering"
+      ],
+      "first_gold_rank": 6,
+      "gold_ranks": {
+        "kb:pothos_lighting_001": 18,
+        "kb:pothos_symptom_fertilizer_salts_001": 6,
+        "kb:pothos_symptom_overwatering_001": 12,
+        "kb:pothos_watering_001": 14
+      },
+      "top": [
+        {
+          "rank": 1,
+          "entry_id": "kb:monstera_symptom_anthracnose_001",
+          "plant_id": "plant:monstera_deliciosa",
+          "dimension": "symptom",
+          "score": 29.140061,
+          "is_gold": false
+        },
+        {
+          "rank": 2,
+          "entry_id": "kb:monstera_symptom_bacterial_leaf_spot_001",
+          "plant_id": "plant:monstera_deliciosa",
+          "dimension": "symptom",
+          "score": 22.52589,
+          "is_gold": false
+        },
+        {
+          "rank": 3,
+          "entry_id": "kb:pothos_symptom_old_leaf_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "symptom",
+          "score": 12.734149,
+          "is_gold": false
+        },
+        {
+          "rank": 4,
+          "entry_id": "kb:snake_plant_symptom_overwatering_signs_001",
+          "plant_id": "plant:dracaena_trifasciata",
+          "dimension": "symptom",
+          "score": 12.465117,
+          "is_gold": false
+        },
+        {
+          "rank": 5,
+          "entry_id": "kb:pothos_symptom_underwatering_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "symptom",
+          "score": 12.016374,
+          "is_gold": false
+        },
+        {
+          "rank": 6,
+          "entry_id": "kb:pothos_symptom_fertilizer_salts_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "symptom",
+          "score": 10.946317,
+          "is_gold": true
+        },
+        {
+          "rank": 7,
+          "entry_id": "kb:snake_plant_symptom_underwatering_001",
+          "plant_id": "plant:dracaena_trifasciata",
+          "dimension": "symptom",
+          "score": 10.909391,
+          "is_gold": false
+        },
+        {
+          "rank": 8,
+          "entry_id": "kb:pothos_watering_frequency_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "watering",
+          "score": 3.926157,
+          "is_gold": false
+        },
+        {
+          "rank": 9,
+          "entry_id": "kb:monstera_watering_frequency_001",
+          "plant_id": "plant:monstera_deliciosa",
+          "dimension": "watering",
+          "score": 3.226686,
+          "is_gold": false
+        },
+        {
+          "rank": 10,
+          "entry_id": "kb:monstera_symptom_root_stem_rot_001",
+          "plant_id": "plant:monstera_deliciosa",
+          "dimension": "symptom",
+          "score": 3.088694,
+          "is_gold": false
+        },
+        {
+          "rank": 11,
+          "entry_id": "kb:snake_plant_watering_frequency_001",
+          "plant_id": "plant:dracaena_trifasciata",
+          "dimension": "watering",
+          "score": 3.007722,
+          "is_gold": false
+        },
+        {
+          "rank": 12,
+          "entry_id": "kb:pothos_symptom_overwatering_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "symptom",
+          "score": 2.506116,
+          "is_gold": true
+        }
+      ]
+    },
+    {
+      "name": "bm25_oracle_entity",
+      "plant_filter": "plant:epipremnum_aureum",
+      "dimension_filter": null,
+      "first_gold_rank": 3,
+      "gold_ranks": {
+        "kb:pothos_lighting_001": 9,
+        "kb:pothos_symptom_fertilizer_salts_001": 3,
+        "kb:pothos_symptom_overwatering_001": 5,
+        "kb:pothos_watering_001": 7
+      },
+      "top": [
+        {
+          "rank": 1,
+          "entry_id": "kb:pothos_symptom_old_leaf_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "symptom",
+          "score": 12.734149,
+          "is_gold": false
+        },
+        {
+          "rank": 2,
+          "entry_id": "kb:pothos_symptom_underwatering_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "symptom",
+          "score": 12.016374,
+          "is_gold": false
+        },
+        {
+          "rank": 3,
+          "entry_id": "kb:pothos_symptom_fertilizer_salts_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "symptom",
+          "score": 10.946317,
+          "is_gold": true
+        },
+        {
+          "rank": 4,
+          "entry_id": "kb:pothos_watering_frequency_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "watering",
+          "score": 3.926157,
+          "is_gold": false
+        },
+        {
+          "rank": 5,
+          "entry_id": "kb:pothos_symptom_overwatering_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "symptom",
+          "score": 2.506116,
+          "is_gold": true
+        },
+        {
+          "rank": 6,
+          "entry_id": "kb:pothos_pet_safety_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "pet_safety",
+          "score": 2.000769,
+          "is_gold": false
+        },
+        {
+          "rank": 7,
+          "entry_id": "kb:pothos_watering_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "watering",
+          "score": 1.679836,
+          "is_gold": true
+        },
+        {
+          "rank": 8,
+          "entry_id": "kb:pothos_humidity_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "humidity",
+          "score": 0.0,
+          "is_gold": false
+        },
+        {
+          "rank": 9,
+          "entry_id": "kb:pothos_lighting_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "lighting",
+          "score": 0.0,
+          "is_gold": true
+        },
+        {
+          "rank": 10,
+          "entry_id": "kb:pothos_symptom_low_light_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "symptom",
+          "score": 0.0,
+          "is_gold": false
+        },
+        {
+          "rank": 11,
+          "entry_id": "kb:pothos_taxonomy_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "taxonomy",
+          "score": 0.0,
+          "is_gold": false
+        },
+        {
+          "rank": 12,
+          "entry_id": "kb:pothos_temperature_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "temperature",
+          "score": 0.0,
+          "is_gold": false
+        }
+      ]
+    },
+    {
+      "name": "bm25_oracle_entity_oracle_dimensions",
+      "plant_filter": "plant:epipremnum_aureum",
+      "dimension_filter": [
+        "lighting",
+        "symptom",
+        "watering"
+      ],
+      "first_gold_rank": 3,
+      "gold_ranks": {
+        "kb:pothos_lighting_001": 7,
+        "kb:pothos_symptom_fertilizer_salts_001": 3,
+        "kb:pothos_symptom_overwatering_001": 5,
+        "kb:pothos_watering_001": 6
+      },
+      "top": [
+        {
+          "rank": 1,
+          "entry_id": "kb:pothos_symptom_old_leaf_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "symptom",
+          "score": 12.734149,
+          "is_gold": false
+        },
+        {
+          "rank": 2,
+          "entry_id": "kb:pothos_symptom_underwatering_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "symptom",
+          "score": 12.016374,
+          "is_gold": false
+        },
+        {
+          "rank": 3,
+          "entry_id": "kb:pothos_symptom_fertilizer_salts_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "symptom",
+          "score": 10.946317,
+          "is_gold": true
+        },
+        {
+          "rank": 4,
+          "entry_id": "kb:pothos_watering_frequency_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "watering",
+          "score": 3.926157,
+          "is_gold": false
+        },
+        {
+          "rank": 5,
+          "entry_id": "kb:pothos_symptom_overwatering_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "symptom",
+          "score": 2.506116,
+          "is_gold": true
+        },
+        {
+          "rank": 6,
+          "entry_id": "kb:pothos_watering_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "watering",
+          "score": 1.679836,
+          "is_gold": true
+        },
+        {
+          "rank": 7,
+          "entry_id": "kb:pothos_lighting_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "lighting",
+          "score": 0.0,
+          "is_gold": true
+        },
+        {
+          "rank": 8,
+          "entry_id": "kb:pothos_symptom_low_light_001",
+          "plant_id": "plant:epipremnum_aureum",
+          "dimension": "symptom",
+          "score": 0.0,
+          "is_gold": false
+        }
+      ]
+    }
+  ],
+  "gold_lexical_overlap": [
+    {
+      "entry_id": "kb:pothos_lighting_001",
+      "plant_id": "plant:epipremnum_aureum",
+      "dimension": "lighting",
+      "overlap_tokens": [],
+      "overlap_count": 0,
+      "query_token_coverage": 0.0,
+      "jaccard": 0.0
+    },
+    {
+      "entry_id": "kb:pothos_symptom_fertilizer_salts_001",
+      "plant_id": "plant:epipremnum_aureum",
+      "dimension": "symptom",
+      "overlap_tokens": [
+        "leaf",
+        "leaves",
+        "yellow"
+      ],
+      "overlap_count": 3,
+      "query_token_coverage": 0.1,
+      "jaccard": 0.017647
+    },
+    {
+      "entry_id": "kb:pothos_symptom_overwatering_001",
+      "plant_id": "plant:epipremnum_aureum",
+      "dimension": "symptom",
+      "overlap_tokens": [
+        "leaf"
+      ],
+      "overlap_count": 1,
+      "query_token_coverage": 0.033333,
+      "jaccard": 0.006623
+    },
+    {
+      "entry_id": "kb:pothos_watering_001",
+      "plant_id": "plant:epipremnum_aureum",
+      "dimension": "watering",
+      "overlap_tokens": [
+        "soil"
+      ],
+      "overlap_count": 1,
+      "query_token_coverage": 0.033333,
+      "jaccard": 0.008197
+    }
+  ],
+  "notes": [
+    "Ranks use the same global BM25 index as the main ablation.",
+    "Lexical overlap uses the baseline tokenizer over the query and indexed entry text.",
+    "This report records evidence only; lexical-gap versus ranking-gap interpretation remains a human judgment."
+  ]
+}
