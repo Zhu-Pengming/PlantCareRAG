@@ -1,4 +1,4 @@
-# Dataset-backed Plant RAG v1
+# PlantCareRAG dataset-backed v1
 
 This is the replacement v1. It stops hand-authoring a tiny botanical KB and
 instead treats dataset ingestion, provenance, conflict isolation, and retrieval

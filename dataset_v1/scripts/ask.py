@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Ask the dataset-backed Plant RAG v1 from the command line."""
+"""Ask the dataset-backed PlantCareRAG v1 from the command line."""
 
 from __future__ import annotations
 

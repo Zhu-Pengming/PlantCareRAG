@@ -1,4 +1,4 @@
-# Plant RAG — dataset-backed v1 rebuild
+# PlantCareRAG — dataset-backed v1
 
 The active implementation is now the dataset-backed rebuild in
 [`dataset_v1/`](dataset_v1/README.md). It replaces manual knowledge authoring

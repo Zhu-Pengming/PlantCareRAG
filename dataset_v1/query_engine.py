@@ -1,4 +1,4 @@
-"""Runtime query engine for the dataset-backed Plant RAG v1 corpus."""
+"""Runtime query engine for the dataset-backed PlantCareRAG v1 corpus."""
 
 from __future__ import annotations
 

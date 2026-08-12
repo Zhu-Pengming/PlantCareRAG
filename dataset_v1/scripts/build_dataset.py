@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a quality-gated atomic Plant RAG corpus from the frozen datasets."""
+"""Build a quality-gated atomic PlantCareRAG corpus from frozen datasets."""
 
 from __future__ import annotations
 

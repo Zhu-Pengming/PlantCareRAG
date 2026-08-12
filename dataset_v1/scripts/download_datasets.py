@@ -30,7 +30,7 @@ def load_manifest(path: Path = MANIFEST) -> dict:
 
 
 def download(url: str, destination: Path) -> None:
-    request = urllib.request.Request(url, headers={"User-Agent": "plant-rag-dataset-v1/1.0"})
+    request = urllib.request.Request(url, headers={"User-Agent": "plant-care-rag-dataset-v1/1.0"})
     with urllib.request.urlopen(request) as response, destination.open("wb") as output:
         while block := response.read(1024 * 1024):
             output.write(block)

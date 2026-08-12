@@ -1,1 +1,1 @@
-"""Dataset-backed Plant RAG v1 rebuild."""
+"""Dataset-backed PlantCareRAG v1."""
