@@ -30,3 +30,11 @@ scope.
 The previous hand-built 3-plant experiment remains immutable at Git tag
 `v1-frozen`. The abandoned scaling draft remains on branch
 `codex/v2-scaling`; neither is mixed into the replacement result.
+
+## v1.2 evidence work
+
+[`evaluation_v1_2/`](evaluation_v1_2/README.md) adds answerability states,
+multi-label routing, qualifier-aware refusal, and claim-to-evidence contracts
+without changing the frozen v1 metrics. Its first overlay contains 24 care
+claims for 10 accepted plants from Extension pages; all remain explicitly
+pending human review and are not yet used by the runtime.

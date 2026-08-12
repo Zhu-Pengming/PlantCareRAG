@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://plant-care-rag.local/v1.2/evaluation-query.schema.json",
+  "title": "Real-query annotation contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "query_id", "raw_text", "provenance", "source_url", "benchmark_eligible", "plant_id", "expected_dimensions", "qualifiers", "answerability", "gold_evidence_ids", "expected_behavior", "split_hash"],
+  "properties": {
+    "schema_version": {"const": "1.2.0"},
+    "query_id": {"type": "string", "pattern": "^qv12:[a-z0-9_:]+$"},
+    "raw_text": {"type": "string", "minLength": 3},
+    "provenance": {"enum": ["real_user_query", "authored_contract_case"]},
+    "source_url": {"type": ["string", "null"], "format": "uri"},
+    "benchmark_eligible": {"type": "boolean"},
+    "plant_id": {"type": ["string", "null"]},
+    "expected_dimensions": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "qualifiers": {"type": "object"},
+    "answerability": {"enum": ["answerable", "insufficient_evidence", "clarification_needed", "unsupported", "conflicting_evidence"]},
+    "gold_evidence_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "expected_behavior": {"enum": ["answer", "abstain", "clarify", "report_conflict"]},
+    "split_hash": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"provenance": {"const": "real_user_query"}}},
+      "then": {
+        "properties": {
+          "source_url": {"type": "string", "format": "uri"},
+          "benchmark_eligible": {"const": true}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"provenance": {"const": "authored_contract_case"}}},
+      "then": {
+        "properties": {
+          "source_url": {"type": "null"},
+          "benchmark_eligible": {"const": false}
+        }
+      }
+    }
+  ]
+}
