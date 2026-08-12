@@ -14,6 +14,8 @@ contracts as the engineering problem.
 - 1,315 template-derived retrieval contract queries, split by unsalted SHA-256
   into dev 657 / test 658;
 - a standard-library BM25 baseline and an entity + dimension candidate gate.
+- a runnable query engine with conflict, unsupported-dimension, and unknown-
+  entity refusal gates plus row-level citations.
 
 The KB seed and context dataset are both CC BY 4.0. Attribution and the exact
 transformations are in `ATTRIBUTION.md`; immutable source URLs and SHA-256
@@ -46,6 +48,29 @@ At this scale the test caught an entity/intent collision that the old three-
 plant KB could not expose: `Water Lily` initially triggered the watering rule.
 The final pipeline masks the linked entity phrase before dimension routing.
 
+## Ask it a question
+
+The runtime deliberately answers only growth, soil, lighting, watering, and
+fertilizer questions. Every result includes the dataset page, CC BY license,
+and raw CSV row number. It refuses unsupported safety/diagnosis questions and
+plants quarantined by the conflict audit.
+
+```bash
+python3 dataset_v1/scripts/ask.py \
+  "When should I water Snake Plant?"
+
+python3 dataset_v1/scripts/ask.py \
+  "Which plants need indirect sunlight?" --top-k 3
+
+python3 dataset_v1/scripts/ask.py \
+  "Is Peace Lily toxic to cats?" --json
+```
+
+Response reason codes distinguish `supported_entity_care`,
+`supported_discovery`, `conflicted_entity`, `unsupported_dimension`,
+`unknown_entity`, and `ambiguous_intent`. Refused CLI requests exit with code
+2, while answered requests exit with code 0.
+
 ## Reproduce
 
 Python 3.9+ and the standard library are sufficient.
@@ -72,9 +97,14 @@ dataset_v1/
   reports/                  # build counts, conflicts, quality decision
   results/baseline.json
   schemas/
-  scripts/                  # download, build, validate, evaluate
+  query_engine.py           # runtime linking, routing, retrieval, refusal
+  scripts/                  # download, build, validate, evaluate, ask
   tests/
 ```
+
+GitHub Actions repeats compilation, validation, tests, artifact checksums,
+baseline byte-for-byte reproduction, and a query-engine smoke test without
+downloading models or installing dependencies.
 
 The previous hand-built experiment remains recoverable at Git tag
 `v1-frozen`; it is not mixed into this dataset-backed result.

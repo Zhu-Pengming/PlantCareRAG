@@ -4,7 +4,8 @@ The active implementation is now the dataset-backed rebuild in
 [`dataset_v1/`](dataset_v1/README.md). It replaces manual knowledge authoring
 with a reproducible Kaggle download, license manifest, conflict quarantine,
 atomic corpus build, deterministic validation, and a minimal retrieval contract
-benchmark.
+benchmark. It now also includes a runnable query engine with source-row
+citations and structural refusal gates.
 
 Current output:
 
@@ -14,6 +15,12 @@ Current output:
 - 650 consistency-filtered context samples;
 - test N=658 raw BM25 Hit@1 26.4% / Hit@3 66.9%;
 - entity + dimension gate Hit@1 / Hit@3 100% on the template contract test.
+
+Try it:
+
+```bash
+python3 dataset_v1/scripts/ask.py "When should I water Snake Plant?"
+```
 
 These numbers do not establish botanical truth or real-user QA performance.
 The source supports only five shallow care dimensions, and every record remains

@@ -1,0 +1,31 @@
+name: verify-dataset-v1
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Compile Python sources
+        run: python -m compileall -q dataset_v1
+      - name: Validate processed artifacts
+        run: python dataset_v1/scripts/validate_dataset.py
+      - name: Run tests
+        run: python -m unittest discover -s dataset_v1/tests -v
+      - name: Verify frozen artifact checksums
+        run: sha256sum -c dataset_v1/reports/artifact_checksums.sha256
+      - name: Reproduce baseline
+        run: |
+          python dataset_v1/scripts/evaluate_baseline.py --output /tmp/baseline.json
+          cmp /tmp/baseline.json dataset_v1/results/baseline.json
+      - name: Smoke-test query engine
+        run: python dataset_v1/scripts/ask.py "When should I water Snake Plant?" --json

@@ -44,8 +44,18 @@ def fetch_dataset(dataset: dict, raw_root: Path, force: bool = False) -> Path:
 
     if force or not archive.exists():
         temporary = archive.with_suffix(archive.suffix + ".part")
-        download(dataset["download_url"], temporary)
-        temporary.replace(archive)
+        try:
+            download(dataset["download_url"], temporary)
+            temporary_hash = sha256(temporary)
+            if temporary_hash != dataset["archive_sha256"]:
+                raise ValueError(
+                    f"{dataset['id']}: downloaded archive SHA-256 mismatch: "
+                    f"{temporary_hash}"
+                )
+            temporary.replace(archive)
+        finally:
+            if temporary.exists():
+                temporary.unlink()
     actual_archive_hash = sha256(archive)
     if actual_archive_hash != dataset["archive_sha256"]:
         raise ValueError(

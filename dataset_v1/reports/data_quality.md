@@ -86,3 +86,24 @@ The first implementation misclassified four Water Lily questions because the
 entity token “water” triggered the watering rule. The final pipeline links and
 masks the plant name before classifying the dimension. This is a retrieval
 plumbing fix, not a claim about a learned intent model.
+
+## Runtime controls
+
+The deployable query layer carries the audit decisions forward instead of
+forgetting them after preprocessing:
+
+- accepted entities can answer only the five source-backed care dimensions;
+- all 124 quarantined names remain linkable so the system can return an
+  explicit conflict refusal rather than pretending the plant is unknown;
+- pet safety, disease/symptom, pest, temperature, humidity, and taxonomy
+  questions are structurally refused;
+- an unrecognized entity cannot silently fall through to arbitrary global
+  search results;
+- global discovery is allowed only when the wording explicitly asks for plant
+  recommendations or a list;
+- answered results expose evidence level, dataset page, license, and raw row
+  numbers.
+
+These controls reduce misuse risk but do not upgrade the underlying claims.
+They remain single-dataset assertions with no independent horticultural
+verification.
