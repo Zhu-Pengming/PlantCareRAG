@@ -11,7 +11,7 @@ claims, then change only the reviewed records to `human_verified`.
 - [x] [Aloe vera](https://plants.ces.ncsu.edu/plants/aloe-vera/common-name/aloe-vera/): lighting; soil; general and winter watering.
 - [ ] [Philodendron](https://plants.ces.ncsu.edu/plants/philodendron/): genus scope; lighting; soil.
 - [ ] [Chinese Evergreen — Aglaonema](https://plants.ces.ncsu.edu/plants/aglaonema/common-name/chinese-evergreen/): genus scope; lighting; watering.
-- [ ] [Fiddle-leaf Fig — Ficus lyrata](https://plants.ces.ncsu.edu/plants/ficus-lyrata/common-name/fiddle-leaf-fig/): lighting; watering.
+- [x] [Fiddle-leaf Fig — Ficus lyrata](https://plants.ces.ncsu.edu/plants/ficus-lyrata/common-name/fiddle-leaf-fig/): lighting; soil; watering.
 - [ ] [Peperomia](https://plants.ces.ncsu.edu/plants/peperomia/common-name/peperomia/): genus scope; lighting; watering.
 - [ ] [Hoya carnosa](https://plants.ces.ncsu.edu/plants/hoya-carnosa/): common-name mapping; lighting; watering.
 - [ ] [Devil's Ivy — Epipremnum aureum](https://plants.ces.ncsu.edu/plants/epipremnum-aureum/common-name/devils-vine/): lighting; watering; fertilizer.

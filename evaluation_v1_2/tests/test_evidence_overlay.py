@@ -20,7 +20,7 @@ class EvidenceOverlayTests(unittest.TestCase):
         errors, stats = validate()
         self.assertEqual(errors, [])
         self.assertEqual(stats["plants"], 10)
-        self.assertEqual(stats["claims"], 28)
+        self.assertEqual(stats["claims"], 29)
         self.assertEqual(stats["sources"], 10)
 
     def test_committed_overlay_contains_no_unreviewed_records(self):
@@ -148,6 +148,23 @@ class EvidenceOverlayTests(unittest.TestCase):
         )
         self.assertEqual(lighting["qualifiers"], {})
         self.assertNotIn("indoors", lighting["claim_text"].casefold())
+
+    def test_fiddle_leaf_fig_review_findings_are_dimension_atomic(self):
+        evidence = json.loads(
+            (ROOT / "data" / "evidence_overlay.json").read_text(encoding="utf-8")
+        )
+        claims = {
+            item["dimension"]: item
+            for item in evidence
+            if item["plant_id"] == "plant:fiddle_leaf_fig"
+        }
+        self.assertEqual(set(claims), {"lighting", "soil", "watering"})
+        self.assertEqual(claims["lighting"]["qualifiers"], {})
+        self.assertEqual(
+            claims["soil"]["claim_text"],
+            "Use moist, well-drained, loamy, acidic soil.",
+        )
+        self.assertNotIn("soil", claims["watering"]["claim_text"].casefold())
 
 
 if __name__ == "__main__":

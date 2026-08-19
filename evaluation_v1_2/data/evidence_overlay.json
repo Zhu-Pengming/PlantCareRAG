@@ -502,10 +502,8 @@
     "scientific_name": "Ficus lyrata",
     "entity_scope": "species",
     "dimension": "lighting",
-    "qualifiers": {
-      "environment": "indoor"
-    },
-    "claim_text": "Provide bright indirect light or partial shade and protect the plant from strong afternoon sun.",
+    "qualifiers": {},
+    "claim_text": "Provide bright indirect light or partial shade and protect the plant from afternoon sun.",
     "source_id": "ncsu:ficus-lyrata",
     "source_title": "Fiddle-leaf Fig — Ficus lyrata",
     "source_type": "extension",
@@ -515,11 +513,11 @@
     "locator": {
       "url": "https://plants.ces.ncsu.edu/plants/ficus-lyrata/common-name/fiddle-leaf-fig/",
       "section": "Description",
-      "paragraph": "Care paragraph"
+      "paragraph": "Description paragraph 4"
     },
-    "review_status": "agent_source_checked_pending_human_review",
+    "review_status": "human_verified",
     "accessed_at": "2026-08-12",
-    "review_notes": null
+    "review_notes": "Revised after human rejection: removed the inferred indoor scope and unsupported intensity hedge, corrected the locator, and was human re-approved."
   },
   {
     "schema_version": "1.2.0",
@@ -530,7 +528,7 @@
     "entity_scope": "species",
     "dimension": "watering",
     "qualifiers": {},
-    "claim_text": "Use moist, well-drained soil and avoid overwatering.",
+    "claim_text": "This plant is sensitive to overwatering.",
     "source_id": "ncsu:ficus-lyrata",
     "source_title": "Fiddle-leaf Fig — Ficus lyrata",
     "source_type": "extension",
@@ -540,11 +538,36 @@
     "locator": {
       "url": "https://plants.ces.ncsu.edu/plants/ficus-lyrata/common-name/fiddle-leaf-fig/",
       "section": "Description",
-      "paragraph": "Care paragraph"
+      "paragraph": "Description paragraph 4"
     },
-    "review_status": "agent_source_checked_pending_human_review",
+    "review_status": "human_verified",
     "accessed_at": "2026-08-12",
-    "review_notes": null
+    "review_notes": "Revised after human rejection to retain only the watering trait, corrected the locator, and was human re-approved."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:fiddle_leaf_fig:soil:001",
+    "plant_id": "plant:fiddle_leaf_fig",
+    "plant_name": "Fiddle Leaf Fig",
+    "scientific_name": "Ficus lyrata",
+    "entity_scope": "species",
+    "dimension": "soil",
+    "qualifiers": {},
+    "claim_text": "Use moist, well-drained, loamy, acidic soil.",
+    "source_id": "ncsu:ficus-lyrata",
+    "source_title": "Fiddle-leaf Fig — Ficus lyrata",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/ficus-lyrata/common-name/fiddle-leaf-fig/",
+      "section": "Description",
+      "paragraph": "Description paragraph 4"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Created from the soil clause separated from claim:fiddle_leaf_fig:watering:001 during human review; human approved."
   },
   {
     "schema_version": "1.2.0",

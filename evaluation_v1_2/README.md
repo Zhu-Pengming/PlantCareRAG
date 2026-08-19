@@ -11,7 +11,7 @@ changing or relabeling the frozen dataset-backed v1 benchmark.
 - claim-to-evidence bindings for every answered factual claim;
 - schemas for reviewed evidence, real-query annotations, and runtime responses;
 - six authored smoke-test cases explicitly excluded from benchmark reporting.
-- a 10-plant, 28-claim authoritative-source overlay under human review.
+- a 10-plant, 29-claim authoritative-source overlay under human review.
 
 It does **not** add embeddings or LLM generation. Those components should be
 evaluated only after a frozen real-query set and reviewed evidence overlay exist.
@@ -52,9 +52,9 @@ silently merge them.
 
 ## First evidence overlay
 
-The overlay covers 10 accepted entities with 28 care claims from 10 NC State
-Extension Plant Toolbox pages. It began with 24 claims; human review split two
-mixed-scope watering claims and recovered two directly supported soil claims.
+The overlay covers 10 accepted entities with 29 care claims from 10 NC State
+Extension Plant Toolbox pages. It began with 24 claims; human review split three
+mixed-scope or mixed-dimension claims and recovered three directly supported soil claims.
 Coverage remains intentionally uneven: a claim is included only when the plant
 page states it directly.
 
@@ -89,7 +89,7 @@ never returns pending or rejected records.
 
 Before adding semantic retrieval or generation:
 
-1. Complete human review of the 28-claim overlay.
+1. Complete human review of the 29-claim overlay.
 2. Collect and manually label 50–80 real English questions.
 3. Freeze query IDs, hashes, evidence IDs, and the dev/test split.
 4. Report structured retrieval and answerability baselines.
