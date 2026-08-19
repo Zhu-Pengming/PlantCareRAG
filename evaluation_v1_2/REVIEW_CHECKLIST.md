@@ -1,13 +1,14 @@
 # Evidence overlay review checklist
 
-All 24 claims are source-checked by the agent but remain pending human review.
+The overlay now contains 28 claims after review-driven atomization and coverage
+repairs. Claims edited or created from review findings return to pending status.
 Open each unique page, verify the scientific identity and the paraphrased care
 claims, then change only the reviewed records to `human_verified`.
 
-- [x] [Snake Plant — Dracaena trifasciata](https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/): lighting; spring–autumn and winter watering.
+- [x] [Snake Plant — Dracaena trifasciata](https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/): lighting; soil; spring–autumn, winter, and general watering.
 - [x] [ZZ Plant — Zamioculcas zamiifolia](https://plants.ces.ncsu.edu/plants/zamioculcas-zamiifolia/common-name/zz-plant/): lighting; summer/winter watering; fertilizer.
 - [ ] [Monstera deliciosa](https://plants.ces.ncsu.edu/plants/monstera-deliciosa/): common-name mapping; lighting; watering.
-- [ ] [Aloe vera](https://plants.ces.ncsu.edu/plants/aloe-vera/common-name/aloe-vera/): lighting; watering.
+- [x] [Aloe vera](https://plants.ces.ncsu.edu/plants/aloe-vera/common-name/aloe-vera/): lighting; soil; general and winter watering.
 - [ ] [Philodendron](https://plants.ces.ncsu.edu/plants/philodendron/): genus scope; lighting; soil.
 - [ ] [Chinese Evergreen — Aglaonema](https://plants.ces.ncsu.edu/plants/aglaonema/common-name/chinese-evergreen/): genus scope; lighting; watering.
 - [ ] [Fiddle-leaf Fig — Ficus lyrata](https://plants.ces.ncsu.edu/plants/ficus-lyrata/common-name/fiddle-leaf-fig/): lighting; watering.

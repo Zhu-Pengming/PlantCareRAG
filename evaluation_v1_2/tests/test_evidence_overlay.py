@@ -20,7 +20,7 @@ class EvidenceOverlayTests(unittest.TestCase):
         errors, stats = validate()
         self.assertEqual(errors, [])
         self.assertEqual(stats["plants"], 10)
-        self.assertEqual(stats["claims"], 24)
+        self.assertEqual(stats["claims"], 28)
         self.assertEqual(stats["sources"], 10)
 
     def test_committed_overlay_contains_no_unreviewed_records(self):
@@ -117,6 +117,37 @@ class EvidenceOverlayTests(unittest.TestCase):
             and item["qualifiers"] == {"season": "winter"}
         ]
         self.assertEqual(len(matches), 1)
+
+    def test_review_findings_are_split_by_qualifier_scope(self):
+        evidence = json.loads(
+            (ROOT / "data" / "evidence_overlay.json").read_text(encoding="utf-8")
+        )
+        aloe_watering = {
+            json.dumps(item["qualifiers"], sort_keys=True): item["claim_text"]
+            for item in evidence
+            if item["plant_id"] == "plant:aloe_vera"
+            and item["dimension"] == "watering"
+        }
+        self.assertEqual(
+            aloe_watering["{}"],
+            "Allow the soil to dry completely between waterings.",
+        )
+        self.assertEqual(
+            aloe_watering['{"season": "winter"}'],
+            "Water less frequently in winter.",
+        )
+
+    def test_inferred_snake_plant_indoor_qualifier_was_removed(self):
+        evidence = json.loads(
+            (ROOT / "data" / "evidence_overlay.json").read_text(encoding="utf-8")
+        )
+        lighting = next(
+            item
+            for item in evidence
+            if item["claim_id"] == "claim:snake_plant:lighting:001"
+        )
+        self.assertEqual(lighting["qualifiers"], {})
+        self.assertNotIn("indoors", lighting["claim_text"].casefold())
 
 
 if __name__ == "__main__":

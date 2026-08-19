@@ -7,37 +7,8 @@
     "scientific_name": "Dracaena trifasciata",
     "entity_scope": "species",
     "dimension": "lighting",
-    "qualifiers": {
-      "environment": "indoor"
-    },
-    "claim_text": "Place indoors where direct sun is limited to part of the day; the plant also tolerates very low light.",
-    "source_id": "ncsu:dracaena-trifasciata",
-    "source_title": "Dracaena trifasciata",
-    "source_type": "extension",
-    "authority_for": [
-      "horticultural_care"
-    ],
-    "locator": {
-      "url": "https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/",
-      "section": "Description",
-      "paragraph": "Care paragraph"
-    },
-    "review_status": "human_verified",
-    "accessed_at": "2026-08-12",
-    "review_notes": null
-  },
-  {
-    "schema_version": "1.2.0",
-    "claim_id": "claim:snake_plant:watering:001",
-    "plant_id": "plant:snake_plant",
-    "plant_name": "Snake Plant",
-    "scientific_name": "Dracaena trifasciata",
-    "entity_scope": "species",
-    "dimension": "watering",
-    "qualifiers": {
-      "season": "spring_to_autumn"
-    },
-    "claim_text": "From spring through autumn, let the soil dry between waterings and avoid overwatering.",
+    "qualifiers": {},
+    "claim_text": "Place where direct sun is limited to 2 to 6 hours per day; the plant also tolerates very low light.",
     "source_id": "ncsu:dracaena-trifasciata",
     "source_title": "Dracaena trifasciata",
     "source_type": "extension",
@@ -51,7 +22,34 @@
     },
     "review_status": "human_verified",
     "accessed_at": "2026-08-12",
-    "review_notes": "Source's \"do not overwater\" is unqualified, not seasonal; consider splitting it into a season-free claim (also supports soil dimension). Locator should be Description paragraph 2."
+    "review_notes": "Revised after human rejection to restore the source's actionable 2-to-6-hour range; human re-approved."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:snake_plant:watering:001",
+    "plant_id": "plant:snake_plant",
+    "plant_name": "Snake Plant",
+    "scientific_name": "Dracaena trifasciata",
+    "entity_scope": "species",
+    "dimension": "watering",
+    "qualifiers": {
+      "season": "spring_to_autumn"
+    },
+    "claim_text": "From spring through autumn, let the soil dry between waterings.",
+    "source_id": "ncsu:dracaena-trifasciata",
+    "source_title": "Dracaena trifasciata",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/",
+      "section": "Description",
+      "paragraph": "Description paragraph 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Removed the season-free overwatering rule from this seasonal claim; human re-approved."
   },
   {
     "schema_version": "1.2.0",
@@ -79,6 +77,56 @@
     "review_status": "human_verified",
     "accessed_at": "2026-08-12",
     "review_notes": "Locator should be Description paragraph 2. Wording is near-verbatim from source."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:snake_plant:watering:003",
+    "plant_id": "plant:snake_plant",
+    "plant_name": "Snake Plant",
+    "scientific_name": "Dracaena trifasciata",
+    "entity_scope": "species",
+    "dimension": "watering",
+    "qualifiers": {},
+    "claim_text": "Avoid overwatering because the roots can rot.",
+    "source_id": "ncsu:dracaena-trifasciata",
+    "source_title": "Dracaena trifasciata",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/",
+      "section": "Description",
+      "paragraph": "Description paragraph 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Created by splitting a season-free rule from claim:snake_plant:watering:001 after human review."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:snake_plant:soil:001",
+    "plant_id": "plant:snake_plant",
+    "plant_name": "Snake Plant",
+    "scientific_name": "Dracaena trifasciata",
+    "entity_scope": "species",
+    "dimension": "soil",
+    "qualifiers": {},
+    "claim_text": "Use well-drained soil.",
+    "source_id": "ncsu:dracaena-trifasciata",
+    "source_title": "Dracaena trifasciata",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/",
+      "section": "Description",
+      "paragraph": "Description paragraph 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Coverage gap identified during human review; human approved."
   },
   {
     "schema_version": "1.2.0",
@@ -259,11 +307,11 @@
     "locator": {
       "url": "https://plants.ces.ncsu.edu/plants/aloe-vera/common-name/aloe-vera/",
       "section": "Description",
-      "paragraph": "Care paragraph"
+      "paragraph": "Description paragraph 2"
     },
-    "review_status": "agent_source_checked_pending_human_review",
+    "review_status": "human_verified",
     "accessed_at": "2026-08-12",
-    "review_notes": null
+    "review_notes": "Human review confirmed that qualifiers reflect only explicit source limits; the structured Light field agrees with the prose."
   },
   {
     "schema_version": "1.2.0",
@@ -274,7 +322,7 @@
     "entity_scope": "species",
     "dimension": "watering",
     "qualifiers": {},
-    "claim_text": "Allow the soil to dry completely between waterings and water less frequently in winter.",
+    "claim_text": "Allow the soil to dry completely between waterings.",
     "source_id": "ncsu:aloe-vera",
     "source_title": "Aloe Vera — Aloe vera",
     "source_type": "extension",
@@ -284,11 +332,63 @@
     "locator": {
       "url": "https://plants.ces.ncsu.edu/plants/aloe-vera/common-name/aloe-vera/",
       "section": "Description",
-      "paragraph": "Care paragraph"
+      "paragraph": "Description paragraph 2"
     },
-    "review_status": "agent_source_checked_pending_human_review",
+    "review_status": "human_verified",
     "accessed_at": "2026-08-12",
-    "review_notes": null
+    "review_notes": "Revised after human rejection to contain only the season-free rule; human re-approved."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:aloe_vera:watering:002",
+    "plant_id": "plant:aloe_vera",
+    "plant_name": "Aloe Vera",
+    "scientific_name": "Aloe vera",
+    "entity_scope": "species",
+    "dimension": "watering",
+    "qualifiers": {
+      "season": "winter"
+    },
+    "claim_text": "Water less frequently in winter.",
+    "source_id": "ncsu:aloe-vera",
+    "source_title": "Aloe Vera — Aloe vera",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/aloe-vera/common-name/aloe-vera/",
+      "section": "Description",
+      "paragraph": "Description paragraph 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Created from the winter-scoped clause rejected as non-atomic in claim:aloe_vera:watering:001."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:aloe_vera:soil:001",
+    "plant_id": "plant:aloe_vera",
+    "plant_name": "Aloe Vera",
+    "scientific_name": "Aloe vera",
+    "entity_scope": "species",
+    "dimension": "soil",
+    "qualifiers": {},
+    "claim_text": "Use very well-drained soil suitable for succulents.",
+    "source_id": "ncsu:aloe-vera",
+    "source_title": "Aloe Vera — Aloe vera",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/aloe-vera/common-name/aloe-vera/",
+      "section": "Description",
+      "paragraph": "Description paragraph 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Coverage gap identified during human review; human approved."
   },
   {
     "schema_version": "1.2.0",

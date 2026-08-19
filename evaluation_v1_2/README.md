@@ -11,7 +11,7 @@ changing or relabeling the frozen dataset-backed v1 benchmark.
 - claim-to-evidence bindings for every answered factual claim;
 - schemas for reviewed evidence, real-query annotations, and runtime responses;
 - six authored smoke-test cases explicitly excluded from benchmark reporting.
-- a 10-plant, 24-claim authoritative-source overlay awaiting human review.
+- a 10-plant, 28-claim authoritative-source overlay under human review.
 
 It does **not** add embeddings or LLM generation. Those components should be
 evaluated only after a frozen real-query set and reviewed evidence overlay exist.
@@ -52,10 +52,11 @@ silently merge them.
 
 ## First evidence overlay
 
-The initial overlay covers 10 accepted entities with 24 care claims from 10 NC
-State Extension Plant Toolbox pages. Coverage is intentionally uneven: a claim
-is included only when the plant page states it directly, so fertilizer is not
-manufactured for plants whose page only documents light and water.
+The overlay covers 10 accepted entities with 28 care claims from 10 NC State
+Extension Plant Toolbox pages. It began with 24 claims; human review split two
+mixed-scope watering claims and recovered two directly supported soil claims.
+Coverage remains intentionally uneven: a claim is included only when the plant
+page states it directly.
 
 These records are marked
 `agent_source_checked_pending_human_review`, not `human_verified`, and are not
@@ -75,11 +76,20 @@ Each decision is saved atomically and appended to
 explicit confirmation. `VerifiedEvidenceStore` is the runtime boundary: it
 never returns pending or rejected records.
 
+### Atomicity and qualifier policy
+
+- A qualifier records only an applicability limit stated by the source; it is
+  never inferred merely from surrounding page context.
+- One claim has one qualifier scope. A general rule and a seasonal rule must be
+  separate claims even when the source places them in the same sentence.
+- Any content or qualifier edit invalidates the prior approval and resets the
+  claim to pending. The audit log retains the earlier decision and revision.
+
 ## Next data milestone
 
 Before adding semantic retrieval or generation:
 
-1. Complete human review of the 24-claim overlay.
+1. Complete human review of the 28-claim overlay.
 2. Collect and manually label 50–80 real English questions.
 3. Freeze query IDs, hashes, evidence IDs, and the dev/test split.
 4. Report structured retrieval and answerability baselines.
