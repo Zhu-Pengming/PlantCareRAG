@@ -4,7 +4,7 @@ All 24 claims are source-checked by the agent but remain pending human review.
 Open each unique page, verify the scientific identity and the paraphrased care
 claims, then change only the reviewed records to `human_verified`.
 
-- [ ] [Snake Plant — Dracaena trifasciata](https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/): lighting; spring–autumn and winter watering.
+- [x] [Snake Plant — Dracaena trifasciata](https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/): lighting; spring–autumn and winter watering.
 - [ ] [ZZ Plant — Zamioculcas zamiifolia](https://plants.ces.ncsu.edu/plants/zamioculcas-zamiifolia/common-name/zz-plant/): lighting; summer/winter watering; fertilizer.
 - [ ] [Monstera deliciosa](https://plants.ces.ncsu.edu/plants/monstera-deliciosa/): common-name mapping; lighting; watering.
 - [ ] [Aloe vera](https://plants.ces.ncsu.edu/plants/aloe-vera/common-name/aloe-vera/): lighting; watering.

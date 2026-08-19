@@ -230,6 +230,7 @@ def review(
         return
 
     counts = {"approved": 0, "rejected": 0, "skipped": 0}
+    checklist_updates = 0
     print(f"\n待复核 {len(queue)} 条；同一 source 的 claims 连续显示。")
     print("按键: [a]pprove [r]eject [s]kip [n]ote [u]rl [q]uit")
     print("核对 scientific name、claim 范围、限定条件和 locator。")
@@ -251,7 +252,7 @@ def review(
                 counts["skipped"] += 1
                 break
             if choice in {"q", "quit"}:
-                update_checklist(checklist_path, claims)
+                checklist_updates += update_checklist(checklist_path, claims)
                 print_summary(claims)
                 return
             if choice in {"a", "approve"}:
@@ -269,7 +270,7 @@ def review(
                     claim, VERIFIED, claim.get("review_notes"), reviewer,
                     root, overlay_path, audit_path,
                 )
-                update_checklist(checklist_path, claims)
+                checklist_updates += update_checklist(checklist_path, claims)
                 counts["approved"] += 1
                 break
             if choice in {"r", "reject"}:
@@ -286,10 +287,10 @@ def review(
                 break
             print("  未知输入。")
 
-    changed = update_checklist(checklist_path, claims)
+    checklist_updates += update_checklist(checklist_path, claims)
     print(
         f"\napproved={counts['approved']} rejected={counts['rejected']} "
-        f"skipped={counts['skipped']} checklist_updated={changed}"
+        f"skipped={counts['skipped']} checklist_updated={checklist_updates}"
     )
     print_summary(claims)
 
