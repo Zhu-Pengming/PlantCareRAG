@@ -21,6 +21,7 @@ jobs:
         run: |
           python evaluation_v1_2/scripts/validate_contract.py
           python evaluation_v1_2/scripts/validate_evidence_overlay.py
+          python evaluation_v1_2/scripts/review_evidence.py --check
       - name: Run v1.2 contract smoke evaluation
         run: python evaluation_v1_2/scripts/evaluate_contract.py
       - name: Run v1.2 tests

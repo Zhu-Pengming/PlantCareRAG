@@ -10,6 +10,11 @@ from collections import Counter
 from pathlib import Path
 from urllib.parse import urlparse
 
+if __package__ in {None, ""}:
+    sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+
+from evaluation_v1_2.scripts.review_evidence import check, status_counts
+
 
 ROOT = Path(__file__).resolve().parents[1]
 V1_ROOT = ROOT.parent / "dataset_v1" / "data" / "processed"
@@ -116,8 +121,6 @@ def validate() -> tuple[list[str], dict]:
             errors.append(f"source URL is not allowlisted HTTPS: {claim_id}")
         if not locator.get("section") or not locator.get("paragraph"):
             errors.append(f"claim lacks section/paragraph locator: {claim_id}")
-        if claim.get("review_status") != "agent_source_checked_pending_human_review":
-            errors.append(f"first overlay must remain pending human review: {claim_id}")
         if claim.get("accessed_at") != "2026-08-12":
             errors.append(f"unexpected access date: {claim_id}")
 
@@ -140,11 +143,13 @@ def validate() -> tuple[list[str], dict]:
         if "lighting" not in dimensions_per_plant[plant_id]:
             errors.append(f"selected plant lacks lighting evidence: {plant_id}")
 
+    errors.extend(check(evidence))
+
     stats = {
         "plants": len(selected),
         "claims": len(evidence),
         "sources": len(source_contracts),
-        "review_status": "agent_source_checked_pending_human_review",
+        "review_status_counts": status_counts(evidence),
         "dimensions": dict(sorted(Counter(item["dimension"] for item in evidence).items())),
     }
     return errors, stats
@@ -164,4 +169,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

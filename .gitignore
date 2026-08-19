@@ -3,3 +3,7 @@ __pycache__/
 .DS_Store
 .venv/
 dataset_v1/data/raw/
+evaluation_v1_2/data/evidence_overlay.json.bak
+evaluation_v1_2/data/evidence_overlay.json.tmp
+evaluation_v1_2/**/*.bak
+evaluation_v1_2/**/*.tmp

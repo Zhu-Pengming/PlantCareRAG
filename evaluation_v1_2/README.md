@@ -21,6 +21,7 @@ evaluated only after a frozen real-query set and reviewed evidence overlay exist
 ~~~bash
 python3 evaluation_v1_2/scripts/validate_contract.py
 python3 evaluation_v1_2/scripts/validate_evidence_overlay.py
+python3 evaluation_v1_2/scripts/review_evidence.py --check
 python3 evaluation_v1_2/scripts/evaluate_contract.py
 python3 evaluation_v1_2/scripts/ask.py "Should I fertilize Snake Plant during winter?"
 python3 -m unittest discover -s evaluation_v1_2/tests -v
@@ -61,6 +62,18 @@ These records are marked
 yet used by the runtime. The manual pass is tracked in
 [`REVIEW_CHECKLIST.md`](REVIEW_CHECKLIST.md). Genus-level entities and common-
 name-to-species mappings carry explicit scope warnings.
+
+Review interactively without hand-editing JSON:
+
+```bash
+python3 evaluation_v1_2/scripts/review_evidence.py
+python3 evaluation_v1_2/scripts/review_evidence.py --source dracaena
+```
+
+Each decision is saved atomically and appended to
+`data/review_audit.jsonl`. Risky genus/common-name scopes require a second
+explicit confirmation. `VerifiedEvidenceStore` is the runtime boundary: it
+never returns pending or rejected records.
 
 ## Next data milestone
 
