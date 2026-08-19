@@ -282,7 +282,7 @@ def review(
                     claim, REJECTED, note, reviewer,
                     root, overlay_path, audit_path,
                 )
-                update_checklist(checklist_path, claims)
+                checklist_updates += update_checklist(checklist_path, claims)
                 counts["rejected"] += 1
                 break
             print("  未知输入。")

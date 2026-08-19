@@ -101,11 +101,11 @@
     "locator": {
       "url": "https://plants.ces.ncsu.edu/plants/zamioculcas-zamiifolia/common-name/zz-plant/",
       "section": "Description",
-      "paragraph": "Houseplant care paragraph"
+      "paragraph": "Description paragraph 2"
     },
-    "review_status": "agent_source_checked_pending_human_review",
+    "review_status": "human_verified",
     "accessed_at": "2026-08-12",
-    "review_notes": null
+    "review_notes": "Accurate incl. the hedge on scorching. Note: page's structured Light field (Deep shade / Partial Shade = 2-6 hrs direct sun) is landscape-scoped and contradicts this indoor claim — if v2 ingests Cultural Conditions tables, that source needs an environment: landscape qualifier."
   },
   {
     "schema_version": "1.2.0",
@@ -128,9 +128,9 @@
     "locator": {
       "url": "https://plants.ces.ncsu.edu/plants/zamioculcas-zamiifolia/common-name/zz-plant/",
       "section": "Description",
-      "paragraph": "Houseplant care paragraph"
+      "paragraph": "Description paragraph 2"
     },
-    "review_status": "agent_source_checked_pending_human_review",
+    "review_status": "human_verified",
     "accessed_at": "2026-08-12",
     "review_notes": null
   },
@@ -145,7 +145,7 @@
     "qualifiers": {
       "season": "winter"
     },
-    "claim_text": "In winter, water about once a month while the plant is not actively growing.",
+    "claim_text": "In winter, water at most once a month while the plant is not actively growing.",
     "source_id": "ncsu:zamioculcas-zamiifolia",
     "source_title": "ZZ Plant — Zamioculcas zamiifolia",
     "source_type": "extension",
@@ -155,11 +155,11 @@
     "locator": {
       "url": "https://plants.ces.ncsu.edu/plants/zamioculcas-zamiifolia/common-name/zz-plant/",
       "section": "Description",
-      "paragraph": "Houseplant care paragraph"
+      "paragraph": "Description paragraph 2"
     },
-    "review_status": "agent_source_checked_pending_human_review",
+    "review_status": "human_verified",
     "accessed_at": "2026-08-12",
-    "review_notes": null
+    "review_notes": "Revised after human rejection: changed 'about once a month' to the safer ceiling 'at most once a month'; human re-approved."
   },
   {
     "schema_version": "1.2.0",
@@ -180,11 +180,11 @@
     "locator": {
       "url": "https://plants.ces.ncsu.edu/plants/zamioculcas-zamiifolia/common-name/zz-plant/",
       "section": "Description",
-      "paragraph": "Houseplant care paragraph"
+      "paragraph": "Description paragraph 2"
     },
-    "review_status": "agent_source_checked_pending_human_review",
+    "review_status": "human_verified",
     "accessed_at": "2026-08-12",
-    "review_notes": null
+    "review_notes": "Frequency matches source exactly. Qualifiers are empty while some indoor care claims use an inferred environment qualifier; decide one qualifier policy after the full review pass."
   },
   {
     "schema_version": "1.2.0",
