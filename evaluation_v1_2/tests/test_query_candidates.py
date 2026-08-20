@@ -9,6 +9,7 @@ import unittest
 from evaluation_v1_2.scripts.build_query_candidates import alias_pattern, plain_text
 from evaluation_v1_2.scripts.screen_query_candidates import validate as validate_screening
 from evaluation_v1_2.scripts.validate_query_candidates import validate
+from evaluation_v1_2.scripts.validate_query_shortlist import validate as validate_shortlist
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -29,6 +30,13 @@ class QueryCandidateTests(unittest.TestCase):
     def test_empty_screening_file_is_valid(self):
         candidates = json.loads((ROOT / "data" / "query_candidates.json").read_text(encoding="utf-8"))
         self.assertEqual(validate_screening(candidates, []), [])
+
+    def test_automated_shortlist_is_balanced_and_non_gold(self):
+        self.assertEqual(validate_shortlist(), [])
+        rows = json.loads((ROOT / "data" / "query_shortlist.json").read_text(encoding="utf-8"))
+        self.assertEqual(len(rows), 100)
+        self.assertTrue(all("gold_evidence_ids" not in row for row in rows))
+        self.assertTrue(all(row["benchmark_eligible"] is False for row in rows))
 
     def test_validator_rejects_eligible_unreviewed_row(self):
         rows = json.loads((ROOT / "data" / "query_candidates.json").read_text(encoding="utf-8"))

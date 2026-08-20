@@ -33,6 +33,8 @@ Build the observed-query review pool separately:
 python3 evaluation_v1_2/scripts/download_query_sources.py
 python3 evaluation_v1_2/scripts/build_query_candidates.py
 python3 evaluation_v1_2/scripts/validate_query_candidates.py
+python3 evaluation_v1_2/scripts/auto_triage_queries.py
+python3 evaluation_v1_2/scripts/validate_query_shortlist.py
 python3 evaluation_v1_2/scripts/screen_query_candidates.py --plant zz_plant --reviewer "Tom"
 python3 evaluation_v1_2/scripts/screen_query_candidates.py --summary
 ```
@@ -41,6 +43,20 @@ Screening decisions are stored separately in `data/query_screening.json`; the
 frozen candidate text is never edited. `selected_for_annotation` means only
 that a question should receive manual labels. It does not make the question
 benchmark-eligible.
+
+Automated triage reduces the 399 observed candidates to a balanced 100-question
+review shortlist (10 per entity). It predicts dimensions, mapping risks,
+context requirements, answerability, and possible verified evidence. These
+fields are explicitly marked `automation_only`; possible evidence IDs are not
+gold labels. The interactive screener reviews the shortlist by default. Pass
+`--all` only when auditing candidates excluded from the shortlist.
+
+The shortlist is a deliberately balanced evaluation design, not a random
+sample of Gardening Stack Exchange. It must not be used to estimate production
+question prevalence. Ranking favors explicit entity mentions, answered posts,
+care-dimension signals, and text-complete questions; the frozen rules and
+output hashes are recorded in `config/query_triage_rules.json` and
+`reports/query_auto_triage_stats.json`.
 
 ## Benchmark boundary
 

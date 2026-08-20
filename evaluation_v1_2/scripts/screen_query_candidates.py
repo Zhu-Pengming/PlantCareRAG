@@ -16,6 +16,8 @@ import textwrap
 
 ROOT = Path(__file__).resolve().parents[1]
 CANDIDATES = ROOT / "data" / "query_candidates.json"
+TRIAGE = ROOT / "data" / "query_auto_triage.json"
+SHORTLIST = ROOT / "data" / "query_shortlist.json"
 SCREENING = ROOT / "data" / "query_screening.json"
 AUDIT = ROOT / "data" / "query_screening_audit.jsonl"
 SELECTED = "selected_for_annotation"
@@ -52,7 +54,7 @@ def has_title_match(candidate: dict) -> bool:
     return any("title" in match["locations"] for match in candidate["alias_matches"])
 
 
-def show(candidate: dict, index: int, total: int) -> None:
+def show(candidate: dict, auto: dict | None, index: int, total: int) -> None:
     metrics = candidate["source_metrics"]
     print("\n" + "=" * 96)
     print(f"[{index}/{total}] {candidate['candidate_id']}")
@@ -72,6 +74,11 @@ def show(candidate: dict, index: int, total: int) -> None:
     print(f"  license : {candidate['content_license']}")
     print(f"  author  : {candidate['author']['display_name'] or '(deleted user)'}")
     print(f"  url     : {candidate['source_url']}")
+    if auto:
+        print(f"  auto    : {auto['predicted_answerability']} score={auto['priority_score']}")
+        print(f"  dims    : {', '.join(auto['predicted_dimensions']) or '(none)'}")
+        print(f"  risks   : {', '.join(auto['mapping_risks'] + auto['context_flags']) or '(none)'}")
+        print(f"  evidence: {', '.join(auto['candidate_evidence_ids']) or '(none; not gold)'}")
     print("\n  title:")
     print(textwrap.fill(candidate["raw_title"], width=92, initial_indent="    ", subsequent_indent="    "))
     print("\n  body:")
@@ -100,7 +107,9 @@ def validate(candidates: list[dict], decisions: list[dict]) -> list[str]:
     return errors
 
 
-def summary(candidates: list[dict], decisions: list[dict]) -> None:
+def summary(candidates: list[dict], decisions: list[dict], pool_ids: set[str] | None = None) -> None:
+    pool_ids = pool_ids or {row["candidate_id"] for row in candidates}
+    decisions = [row for row in decisions if row["candidate_id"] in pool_ids]
     counts = Counter(row["screen_status"] for row in decisions)
     selected_ids = {row["candidate_id"] for row in decisions if row["screen_status"] == SELECTED}
     by_plant = Counter()
@@ -108,7 +117,8 @@ def summary(candidates: list[dict], decisions: list[dict]) -> None:
         if candidate["candidate_id"] in selected_ids:
             by_plant.update(plant_ids(candidate))
     print("\nscreening tally:")
-    print(f"  pending: {len(candidates) - len(decisions)}")
+    print(f"  pool: {len(pool_ids)}")
+    print(f"  pending: {len(pool_ids) - len(decisions)}")
     for status in sorted(ALLOWED):
         print(f"  {status}: {counts[status]}")
     if by_plant:
@@ -123,8 +133,17 @@ def main() -> int:
     parser.add_argument("--reviewer")
     parser.add_argument("--check", action="store_true")
     parser.add_argument("--summary", action="store_true")
+    parser.add_argument("--all", action="store_true", help="Review all 399 candidates instead of the automated shortlist")
     args = parser.parse_args()
     candidates = json.loads(CANDIDATES.read_text(encoding="utf-8"))
+    auto_rows = json.loads(TRIAGE.read_text(encoding="utf-8")) if TRIAGE.exists() else []
+    auto_by_id = {row["candidate_id"]: row for row in auto_rows}
+    shortlist = json.loads(SHORTLIST.read_text(encoding="utf-8")) if SHORTLIST.exists() else []
+    shortlist_ids = {row["candidate_id"] for row in shortlist}
+    pool_ids = {row["candidate_id"] for row in candidates} if args.all else shortlist_ids
+    if not pool_ids:
+        print("找不到自动 shortlist；先运行 auto_triage_queries.py。", file=sys.stderr)
+        return 2
     decisions = json.loads(SCREENING.read_text(encoding="utf-8"))
     errors = validate(candidates, decisions)
     if errors:
@@ -132,34 +151,40 @@ def main() -> int:
             print(f"- {error}", file=sys.stderr)
         return 1
     if args.check or args.summary:
-        summary(candidates, decisions)
+        summary(candidates, decisions, pool_ids)
         return 0
 
     decided = {row["candidate_id"] for row in decisions}
-    queue = [row for row in candidates if row["candidate_id"] not in decided]
+    queue = [
+        row for row in candidates
+        if row["candidate_id"] in pool_ids and row["candidate_id"] not in decided
+    ]
     if args.plant:
         wanted = args.plant.removeprefix("plant:")
         queue = [
             row for row in queue
             if any(plant.removeprefix("plant:") == wanted for plant in plant_ids(row))
         ]
+    shortlist_order = {
+        row["candidate_id"]: (row["quota_plant_id"], row["quota_rank"])
+        for row in shortlist
+    }
     queue.sort(
-        key=lambda row: (
-            not has_title_match(row),
-            not bool(row["source_metrics"]["accepted_answer_id"]),
-            -row["source_metrics"]["score"],
-            int(row["source_record_id"]),
+        key=lambda row: shortlist_order.get(
+            row["candidate_id"],
+            ("~", not has_title_match(row), -row["source_metrics"]["score"]),
         )
     )
     if not queue:
         print("没有匹配的待筛选 query。")
-        summary(candidates, decisions)
+        summary(candidates, decisions, pool_ids)
         return 0
     reviewer = args.reviewer or getpass.getuser()
-    print(f"待筛选 {len(queue)} 条。这里只判断是否进入人工 gold 标注池。")
+    scope = "全部候选" if args.all else "自动 shortlist"
+    print(f"待筛选 {len(queue)} 条（{scope}）。这里只判断是否进入人工 gold 标注池。")
     print("按键: [a]ccept [r]eject [s]kip [u]rl [q]uit")
     for index, candidate in enumerate(queue, 1):
-        show(candidate, index, len(queue))
+        show(candidate, auto_by_id.get(candidate["candidate_id"]), index, len(queue))
         while True:
             choice = prompt("  decision [a/r/s/u/q] > ").casefold()
             if choice in {"u", "url"}:
@@ -168,7 +193,7 @@ def main() -> int:
             if choice in {"s", "skip", ""}:
                 break
             if choice in {"q", "quit"}:
-                summary(candidates, decisions)
+                summary(candidates, decisions, pool_ids)
                 return 0
             if choice in {"a", "accept"}:
                 status, notes = SELECTED, prompt("  note（可空）> ")
@@ -192,7 +217,7 @@ def main() -> int:
             atomic_json(SCREENING, decisions)
             append_audit(AUDIT, record)
             break
-    summary(candidates, decisions)
+    summary(candidates, decisions, pool_ids)
     return 0
 
 

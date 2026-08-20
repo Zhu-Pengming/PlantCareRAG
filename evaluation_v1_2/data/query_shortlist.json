@@ -1,0 +1,3578 @@
+[
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:24457",
+    "predicted_plant_ids": [
+      "plant:aloe_vera"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "watering",
+      "soil",
+      "disease_or_symptom",
+      "pest"
+    ],
+    "covered_dimensions": [
+      "lighting",
+      "soil",
+      "watering"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:aloe_vera:lighting:001",
+      "claim:aloe_vera:soil:001",
+      "claim:aloe_vera:watering:001",
+      "claim:aloe_vera:watering:002"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 58,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+5",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:aloe_vera",
+    "quota_rank": 1
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:2600",
+    "predicted_plant_ids": [
+      "plant:aloe_vera"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "watering",
+      "soil",
+      "fertilizer",
+      "flowering"
+    ],
+    "covered_dimensions": [
+      "soil",
+      "watering"
+    ],
+    "missing_supported_dimensions": [
+      "fertilizer"
+    ],
+    "candidate_evidence_ids": [
+      "claim:aloe_vera:soil:001",
+      "claim:aloe_vera:watering:001",
+      "claim:aloe_vera:watering:002"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 58,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+5",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:aloe_vera",
+    "quota_rank": 2
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:29403",
+    "predicted_plant_ids": [
+      "plant:aloe_vera"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "watering",
+      "soil",
+      "growth"
+    ],
+    "covered_dimensions": [
+      "soil",
+      "watering"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:aloe_vera:soil:001",
+      "claim:aloe_vera:watering:001",
+      "claim:aloe_vera:watering:002"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 58,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+5",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:aloe_vera",
+    "quota_rank": 3
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:36855",
+    "predicted_plant_ids": [
+      "plant:aloe_vera"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "soil",
+      "disease_or_symptom",
+      "temperature"
+    ],
+    "covered_dimensions": [
+      "soil"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:aloe_vera:soil:001"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 58,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+5",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:aloe_vera",
+    "quota_rank": 4
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:49908",
+    "predicted_plant_ids": [
+      "plant:aloe_vera"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "watering",
+      "flowering"
+    ],
+    "covered_dimensions": [
+      "lighting",
+      "watering"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:aloe_vera:lighting:001",
+      "claim:aloe_vera:watering:001",
+      "claim:aloe_vera:watering:002"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 58,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+5",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:aloe_vera",
+    "quota_rank": 5
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:61067",
+    "predicted_plant_ids": [
+      "plant:aloe_vera"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "watering",
+      "disease_or_symptom",
+      "growth"
+    ],
+    "covered_dimensions": [
+      "lighting",
+      "watering"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:aloe_vera:lighting:001",
+      "claim:aloe_vera:watering:001",
+      "claim:aloe_vera:watering:002"
+    ],
+    "context_flags": [],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 57,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+4",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:aloe_vera",
+    "quota_rank": 6
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:14677",
+    "predicted_plant_ids": [
+      "plant:aloe_vera"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "growth"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [],
+    "context_flags": [],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 50,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+5",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:aloe_vera",
+    "quota_rank": 7
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:2601",
+    "predicted_plant_ids": [
+      "plant:aloe_vera"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "disease_or_symptom",
+      "pet_safety"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 50,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+5",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:aloe_vera",
+    "quota_rank": 8
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:29479",
+    "predicted_plant_ids": [
+      "plant:aloe_vera"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "disease_or_symptom"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 48,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+3",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:aloe_vera",
+    "quota_rank": 9
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:48995",
+    "predicted_plant_ids": [
+      "plant:aloe_vera"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "disease_or_symptom"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 48,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+3",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:aloe_vera",
+    "quota_rank": 10
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:9265",
+    "predicted_plant_ids": [
+      "plant:chinese_evergreen"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "disease_or_symptom"
+    ],
+    "covered_dimensions": [
+      "lighting"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:chinese_evergreen:lighting:001",
+      "claim:chinese_evergreen:lighting:002",
+      "claim:chinese_evergreen:lighting:003"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 58,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+5",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:chinese_evergreen",
+    "quota_rank": 1
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:46353",
+    "predicted_plant_ids": [
+      "plant:chinese_evergreen"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "watering",
+      "disease_or_symptom",
+      "temperature"
+    ],
+    "covered_dimensions": [
+      "lighting",
+      "watering"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:chinese_evergreen:lighting:001",
+      "claim:chinese_evergreen:lighting:002",
+      "claim:chinese_evergreen:lighting:003",
+      "claim:chinese_evergreen:watering:001",
+      "claim:chinese_evergreen:watering:002",
+      "claim:chinese_evergreen:watering:003",
+      "claim:chinese_evergreen:watering:004"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 53,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+0",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:chinese_evergreen",
+    "quota_rank": 2
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:58009",
+    "predicted_plant_ids": [
+      "plant:chinese_evergreen"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting"
+    ],
+    "covered_dimensions": [
+      "lighting"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:chinese_evergreen:lighting:001",
+      "claim:chinese_evergreen:lighting:002",
+      "claim:chinese_evergreen:lighting:003"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "potentially_answerable",
+    "priority_score": 51,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+1",
+      "supported_dimension_signal:+8"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:chinese_evergreen",
+    "quota_rank": 3
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:53372",
+    "predicted_plant_ids": [
+      "plant:chinese_evergreen"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "flowering"
+    ],
+    "covered_dimensions": [
+      "lighting"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:chinese_evergreen:lighting:001",
+      "claim:chinese_evergreen:lighting:002",
+      "claim:chinese_evergreen:lighting:003"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 48,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+3",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:chinese_evergreen",
+    "quota_rank": 4
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:49019",
+    "predicted_plant_ids": [
+      "plant:chinese_evergreen"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "watering",
+      "soil",
+      "disease_or_symptom"
+    ],
+    "covered_dimensions": [
+      "watering"
+    ],
+    "missing_supported_dimensions": [
+      "soil"
+    ],
+    "candidate_evidence_ids": [
+      "claim:chinese_evergreen:watering:001",
+      "claim:chinese_evergreen:watering:002",
+      "claim:chinese_evergreen:watering:003",
+      "claim:chinese_evergreen:watering:004"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 47,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+2",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:chinese_evergreen",
+    "quota_rank": 5
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:55245",
+    "predicted_plant_ids": [
+      "plant:chinese_evergreen"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "watering",
+      "disease_or_symptom"
+    ],
+    "covered_dimensions": [
+      "lighting",
+      "watering"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:chinese_evergreen:lighting:001",
+      "claim:chinese_evergreen:lighting:002",
+      "claim:chinese_evergreen:lighting:003",
+      "claim:chinese_evergreen:watering:001",
+      "claim:chinese_evergreen:watering:002",
+      "claim:chinese_evergreen:watering:003",
+      "claim:chinese_evergreen:watering:004"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 47,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+2",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:chinese_evergreen",
+    "quota_rank": 6
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:29213",
+    "predicted_plant_ids": [
+      "plant:chinese_evergreen"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "repotting"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 48,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+3",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:chinese_evergreen",
+    "quota_rank": 7
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:31512",
+    "predicted_plant_ids": [
+      "plant:chinese_evergreen"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "disease_or_symptom"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [],
+    "context_flags": [],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 42,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+5",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:chinese_evergreen",
+    "quota_rank": 8
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:44224",
+    "predicted_plant_ids": [
+      "plant:chinese_evergreen"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "disease_or_symptom"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 39,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+2",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:chinese_evergreen",
+    "quota_rank": 9
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:56791",
+    "predicted_plant_ids": [
+      "plant:chinese_evergreen"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "disease_or_symptom",
+      "pest"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 39,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+2",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:chinese_evergreen",
+    "quota_rank": 10
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:20020",
+    "predicted_plant_ids": [
+      "plant:devils_ivy"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "watering",
+      "soil",
+      "growth"
+    ],
+    "covered_dimensions": [
+      "watering"
+    ],
+    "missing_supported_dimensions": [
+      "soil"
+    ],
+    "candidate_evidence_ids": [
+      "claim:devils_ivy:watering:001"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 58,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+5",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:devils_ivy",
+    "quota_rank": 1
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:23701",
+    "predicted_plant_ids": [
+      "plant:devils_ivy"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "watering",
+      "soil",
+      "propagation",
+      "growth"
+    ],
+    "covered_dimensions": [
+      "watering"
+    ],
+    "missing_supported_dimensions": [
+      "soil"
+    ],
+    "candidate_evidence_ids": [
+      "claim:devils_ivy:watering:001"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 58,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+5",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:devils_ivy",
+    "quota_rank": 2
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:5534",
+    "predicted_plant_ids": [
+      "plant:devils_ivy"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "watering",
+      "fertilizer",
+      "disease_or_symptom"
+    ],
+    "covered_dimensions": [
+      "fertilizer",
+      "watering"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:devils_ivy:fertilizer:001",
+      "claim:devils_ivy:watering:001"
+    ],
+    "context_flags": [],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 57,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+4",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:devils_ivy",
+    "quota_rank": 3
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:27123",
+    "predicted_plant_ids": [
+      "plant:devils_ivy"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "watering",
+      "soil",
+      "disease_or_symptom",
+      "propagation"
+    ],
+    "covered_dimensions": [
+      "lighting",
+      "watering"
+    ],
+    "missing_supported_dimensions": [
+      "soil"
+    ],
+    "candidate_evidence_ids": [
+      "claim:devils_ivy:lighting:001",
+      "claim:devils_ivy:lighting:002",
+      "claim:devils_ivy:watering:001"
+    ],
+    "context_flags": [],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 56,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+3",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:devils_ivy",
+    "quota_rank": 4
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:7487",
+    "predicted_plant_ids": [
+      "plant:devils_ivy"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "watering",
+      "soil",
+      "fertilizer",
+      "disease_or_symptom",
+      "growth"
+    ],
+    "covered_dimensions": [
+      "fertilizer",
+      "lighting",
+      "watering"
+    ],
+    "missing_supported_dimensions": [
+      "soil"
+    ],
+    "candidate_evidence_ids": [
+      "claim:devils_ivy:fertilizer:001",
+      "claim:devils_ivy:lighting:001",
+      "claim:devils_ivy:lighting:002",
+      "claim:devils_ivy:watering:001"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 56,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+3",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:devils_ivy",
+    "quota_rank": 5
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:43261",
+    "predicted_plant_ids": [
+      "plant:devils_ivy"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "identification"
+    ],
+    "covered_dimensions": [
+      "lighting"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:devils_ivy:lighting:001",
+      "claim:devils_ivy:lighting:002"
+    ],
+    "context_flags": [],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 53,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+0",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:devils_ivy",
+    "quota_rank": 6
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:19934",
+    "predicted_plant_ids": [
+      "plant:devils_ivy"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "soil",
+      "growth"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [
+      "soil"
+    ],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 47,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+2",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:devils_ivy",
+    "quota_rank": 7
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:34923",
+    "predicted_plant_ids": [
+      "plant:devils_ivy"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "soil",
+      "disease_or_symptom",
+      "propagation"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [
+      "soil"
+    ],
+    "candidate_evidence_ids": [],
+    "context_flags": [],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 44,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "bounded_post_score:+3",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:devils_ivy",
+    "quota_rank": 8
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:43259",
+    "predicted_plant_ids": [
+      "plant:devils_ivy"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "pest"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 39,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+2",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:devils_ivy",
+    "quota_rank": 9
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:43419",
+    "predicted_plant_ids": [
+      "plant:devils_ivy"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "disease_or_symptom",
+      "pest"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 38,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+1",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:devils_ivy",
+    "quota_rank": 10
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:46894",
+    "predicted_plant_ids": [
+      "plant:fiddle_leaf_fig"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "watering",
+      "disease_or_symptom",
+      "pruning",
+      "growth"
+    ],
+    "covered_dimensions": [
+      "watering"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:fiddle_leaf_fig:watering:001"
+    ],
+    "context_flags": [],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 54,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+1",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:fiddle_leaf_fig",
+    "quota_rank": 1
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:65537",
+    "predicted_plant_ids": [
+      "plant:fiddle_leaf_fig"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "watering"
+    ],
+    "covered_dimensions": [
+      "lighting",
+      "watering"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:fiddle_leaf_fig:lighting:001",
+      "claim:fiddle_leaf_fig:watering:001"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "potentially_answerable",
+    "priority_score": 52,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+2",
+      "supported_dimension_signal:+8"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:fiddle_leaf_fig",
+    "quota_rank": 2
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:65246",
+    "predicted_plant_ids": [
+      "plant:fiddle_leaf_fig"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "watering",
+      "fertilizer",
+      "temperature",
+      "growth"
+    ],
+    "covered_dimensions": [
+      "watering"
+    ],
+    "missing_supported_dimensions": [
+      "fertilizer"
+    ],
+    "candidate_evidence_ids": [
+      "claim:fiddle_leaf_fig:watering:001"
+    ],
+    "context_flags": [],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 48,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+3",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:fiddle_leaf_fig",
+    "quota_rank": 3
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:42587",
+    "predicted_plant_ids": [
+      "plant:fiddle_leaf_fig"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "watering",
+      "soil",
+      "pruning",
+      "growth"
+    ],
+    "covered_dimensions": [
+      "soil",
+      "watering"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:fiddle_leaf_fig:soil:001",
+      "claim:fiddle_leaf_fig:watering:001"
+    ],
+    "context_flags": [],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 45,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "bounded_post_score:+4",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:fiddle_leaf_fig",
+    "quota_rank": 4
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:47919",
+    "predicted_plant_ids": [
+      "plant:fiddle_leaf_fig"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "disease_or_symptom"
+    ],
+    "covered_dimensions": [
+      "lighting"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:fiddle_leaf_fig:lighting:001"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 43,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "bounded_post_score:+2",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:fiddle_leaf_fig",
+    "quota_rank": 5
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:51629",
+    "predicted_plant_ids": [
+      "plant:fiddle_leaf_fig"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "disease_or_symptom"
+    ],
+    "covered_dimensions": [
+      "lighting"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:fiddle_leaf_fig:lighting:001"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 42,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "bounded_post_score:+1",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:fiddle_leaf_fig",
+    "quota_rank": 6
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:62186",
+    "predicted_plant_ids": [
+      "plant:fiddle_leaf_fig"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "fertilizer"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [
+      "fertilizer"
+    ],
+    "candidate_evidence_ids": [],
+    "context_flags": [],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 51,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+1",
+      "supported_dimension_signal:+8"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:fiddle_leaf_fig",
+    "quota_rank": 7
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:27237",
+    "predicted_plant_ids": [
+      "plant:fiddle_leaf_fig"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "repotting"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 49,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+4",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:fiddle_leaf_fig",
+    "quota_rank": 8
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:29200",
+    "predicted_plant_ids": [
+      "plant:fiddle_leaf_fig"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "growth"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 48,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+3",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:fiddle_leaf_fig",
+    "quota_rank": 9
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:26869",
+    "predicted_plant_ids": [
+      "plant:fiddle_leaf_fig"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "pruning",
+      "growth"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 41,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+4",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:fiddle_leaf_fig",
+    "quota_rank": 10
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:33810",
+    "predicted_plant_ids": [
+      "plant:hoya_wax_plant"
+    ],
+    "mapping_risks": [
+      "unresolved_common_name_mapping"
+    ],
+    "predicted_dimensions": [
+      "lighting",
+      "disease_or_symptom"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [
+      "lighting"
+    ],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "entity_scope_unresolved",
+    "priority_score": 55,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+2",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:hoya_wax_plant",
+    "quota_rank": 1
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:14832",
+    "predicted_plant_ids": [
+      "plant:hoya_wax_plant"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "pest"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [
+      "lighting"
+    ],
+    "candidate_evidence_ids": [],
+    "context_flags": [],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 50,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+5",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:hoya_wax_plant",
+    "quota_rank": 2
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:47644",
+    "predicted_plant_ids": [
+      "plant:hoya_wax_plant"
+    ],
+    "mapping_risks": [
+      "unresolved_common_name_mapping"
+    ],
+    "predicted_dimensions": [
+      "lighting",
+      "humidity",
+      "growth"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [
+      "lighting"
+    ],
+    "candidate_evidence_ids": [],
+    "context_flags": [],
+    "predicted_answerability": "entity_scope_unresolved",
+    "priority_score": 46,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+1",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:hoya_wax_plant",
+    "quota_rank": 3
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:32952",
+    "predicted_plant_ids": [
+      "plant:hoya_wax_plant"
+    ],
+    "mapping_risks": [
+      "unresolved_common_name_mapping"
+    ],
+    "predicted_dimensions": [
+      "watering",
+      "repotting",
+      "flowering"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [
+      "watering"
+    ],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "entity_scope_unresolved",
+    "priority_score": 45,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "bounded_post_score:+4",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:hoya_wax_plant",
+    "quota_rank": 4
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:45502",
+    "predicted_plant_ids": [
+      "plant:hoya_wax_plant"
+    ],
+    "mapping_risks": [
+      "unresolved_common_name_mapping"
+    ],
+    "predicted_dimensions": [
+      "lighting",
+      "watering",
+      "temperature",
+      "propagation",
+      "growth",
+      "flowering"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [
+      "lighting",
+      "watering"
+    ],
+    "candidate_evidence_ids": [],
+    "context_flags": [],
+    "predicted_answerability": "entity_scope_unresolved",
+    "priority_score": 42,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "bounded_post_score:+1",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:hoya_wax_plant",
+    "quota_rank": 5
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:41446",
+    "predicted_plant_ids": [
+      "plant:hoya_wax_plant"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "flowering"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [],
+    "context_flags": [],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 41,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+4",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:hoya_wax_plant",
+    "quota_rank": 6
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:41751",
+    "predicted_plant_ids": [
+      "plant:hoya_wax_plant"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "flowering"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [],
+    "context_flags": [],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 40,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+3",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:hoya_wax_plant",
+    "quota_rank": 7
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:43757",
+    "predicted_plant_ids": [
+      "plant:hoya_wax_plant"
+    ],
+    "mapping_risks": [
+      "unresolved_common_name_mapping"
+    ],
+    "predicted_dimensions": [
+      "flowering"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "entity_scope_unresolved",
+    "priority_score": 39,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+2",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:hoya_wax_plant",
+    "quota_rank": 8
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:66172",
+    "predicted_plant_ids": [
+      "plant:hoya_wax_plant"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "watering",
+      "disease_or_symptom",
+      "pest",
+      "humidity"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [
+      "watering"
+    ],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present",
+      "image_likely_required"
+    ],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 39,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+2",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3",
+      "image_likely_required:-8"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:hoya_wax_plant",
+    "quota_rank": 9
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:61272",
+    "predicted_plant_ids": [
+      "plant:devils_ivy",
+      "plant:hoya_wax_plant"
+    ],
+    "mapping_risks": [
+      "multi_entity_query",
+      "unresolved_common_name_mapping"
+    ],
+    "predicted_dimensions": [
+      "disease_or_symptom",
+      "pest",
+      "humidity"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "entity_scope_unresolved",
+    "priority_score": 36,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "bounded_post_score:+3",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:hoya_wax_plant",
+    "quota_rank": 10
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:55943",
+    "predicted_plant_ids": [
+      "plant:monstera"
+    ],
+    "mapping_risks": [
+      "unresolved_common_name_mapping"
+    ],
+    "predicted_dimensions": [
+      "watering",
+      "propagation"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [
+      "watering"
+    ],
+    "candidate_evidence_ids": [],
+    "context_flags": [],
+    "predicted_answerability": "entity_scope_unresolved",
+    "priority_score": 58,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+5",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:monstera",
+    "quota_rank": 1
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:59662",
+    "predicted_plant_ids": [
+      "plant:monstera"
+    ],
+    "mapping_risks": [
+      "unresolved_common_name_mapping"
+    ],
+    "predicted_dimensions": [
+      "lighting",
+      "growth"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [
+      "lighting"
+    ],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "entity_scope_unresolved",
+    "priority_score": 58,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+5",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:monstera",
+    "quota_rank": 2
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:60788",
+    "predicted_plant_ids": [
+      "plant:monstera"
+    ],
+    "mapping_risks": [
+      "unresolved_common_name_mapping"
+    ],
+    "predicted_dimensions": [
+      "soil",
+      "disease_or_symptom",
+      "growth"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [
+      "soil"
+    ],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "entity_scope_unresolved",
+    "priority_score": 58,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+5",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:monstera",
+    "quota_rank": 3
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:43046",
+    "predicted_plant_ids": [
+      "plant:monstera"
+    ],
+    "mapping_risks": [
+      "unresolved_common_name_mapping"
+    ],
+    "predicted_dimensions": [
+      "lighting",
+      "watering",
+      "soil",
+      "propagation",
+      "pruning",
+      "growth"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [
+      "lighting",
+      "soil",
+      "watering"
+    ],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "entity_scope_unresolved",
+    "priority_score": 56,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+3",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:monstera",
+    "quota_rank": 4
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:56594",
+    "predicted_plant_ids": [
+      "plant:monstera"
+    ],
+    "mapping_risks": [
+      "unresolved_common_name_mapping"
+    ],
+    "predicted_dimensions": [
+      "soil",
+      "repotting",
+      "pruning",
+      "growth"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [
+      "soil"
+    ],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "entity_scope_unresolved",
+    "priority_score": 56,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+3",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:monstera",
+    "quota_rank": 5
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:52475",
+    "predicted_plant_ids": [
+      "plant:monstera"
+    ],
+    "mapping_risks": [
+      "unresolved_common_name_mapping"
+    ],
+    "predicted_dimensions": [
+      "watering",
+      "soil",
+      "disease_or_symptom"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [
+      "soil",
+      "watering"
+    ],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "entity_scope_unresolved",
+    "priority_score": 55,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+2",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:monstera",
+    "quota_rank": 6
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:56403",
+    "predicted_plant_ids": [
+      "plant:monstera"
+    ],
+    "mapping_risks": [
+      "unresolved_common_name_mapping"
+    ],
+    "predicted_dimensions": [
+      "lighting",
+      "watering",
+      "disease_or_symptom",
+      "growth"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [
+      "lighting",
+      "watering"
+    ],
+    "candidate_evidence_ids": [],
+    "context_flags": [],
+    "predicted_answerability": "entity_scope_unresolved",
+    "priority_score": 55,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+2",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:monstera",
+    "quota_rank": 7
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:56430",
+    "predicted_plant_ids": [
+      "plant:monstera"
+    ],
+    "mapping_risks": [
+      "unresolved_common_name_mapping"
+    ],
+    "predicted_dimensions": [
+      "watering",
+      "disease_or_symptom",
+      "propagation",
+      "pruning",
+      "growth"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [
+      "watering"
+    ],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "entity_scope_unresolved",
+    "priority_score": 55,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+2",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:monstera",
+    "quota_rank": 8
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:49053",
+    "predicted_plant_ids": [
+      "plant:monstera"
+    ],
+    "mapping_risks": [
+      "unresolved_common_name_mapping"
+    ],
+    "predicted_dimensions": [
+      "watering",
+      "propagation"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [
+      "watering"
+    ],
+    "candidate_evidence_ids": [],
+    "context_flags": [],
+    "predicted_answerability": "entity_scope_unresolved",
+    "priority_score": 54,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+1",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:monstera",
+    "quota_rank": 9
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:47379",
+    "predicted_plant_ids": [
+      "plant:monstera"
+    ],
+    "mapping_risks": [
+      "unresolved_common_name_mapping"
+    ],
+    "predicted_dimensions": [
+      "lighting",
+      "watering",
+      "soil",
+      "disease_or_symptom"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [
+      "lighting",
+      "soil",
+      "watering"
+    ],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "entity_scope_unresolved",
+    "priority_score": 49,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+4",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:monstera",
+    "quota_rank": 10
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:22688",
+    "predicted_plant_ids": [
+      "plant:peperomia"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting"
+    ],
+    "covered_dimensions": [
+      "lighting"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:peperomia:lighting:001",
+      "claim:peperomia:lighting:002"
+    ],
+    "context_flags": [],
+    "predicted_answerability": "potentially_answerable",
+    "priority_score": 55,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+5",
+      "supported_dimension_signal:+8"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:peperomia",
+    "quota_rank": 1
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:55996",
+    "predicted_plant_ids": [
+      "plant:peperomia"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "watering",
+      "soil",
+      "disease_or_symptom",
+      "temperature",
+      "humidity",
+      "growth"
+    ],
+    "covered_dimensions": [
+      "soil",
+      "watering"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:peperomia:soil:001",
+      "claim:peperomia:watering:001",
+      "claim:peperomia:watering:002"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 48,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+3",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:peperomia",
+    "quota_rank": 2
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:42870",
+    "predicted_plant_ids": [
+      "plant:peperomia"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "watering"
+    ],
+    "covered_dimensions": [
+      "lighting",
+      "watering"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:peperomia:lighting:001",
+      "claim:peperomia:lighting:002",
+      "claim:peperomia:watering:001",
+      "claim:peperomia:watering:002"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "potentially_answerable",
+    "priority_score": 47,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+5",
+      "supported_dimension_signal:+8"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:peperomia",
+    "quota_rank": 3
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:47198",
+    "predicted_plant_ids": [
+      "plant:peperomia"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "disease_or_symptom",
+      "pest",
+      "growth"
+    ],
+    "covered_dimensions": [
+      "lighting"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:peperomia:lighting:001",
+      "claim:peperomia:lighting:002"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 47,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+2",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:peperomia",
+    "quota_rank": 4
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:65705",
+    "predicted_plant_ids": [
+      "plant:peperomia"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "watering",
+      "disease_or_symptom"
+    ],
+    "covered_dimensions": [
+      "watering"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:peperomia:watering:001",
+      "claim:peperomia:watering:002"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 47,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+2",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:peperomia",
+    "quota_rank": 5
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:29783",
+    "predicted_plant_ids": [
+      "plant:peperomia"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "watering",
+      "soil"
+    ],
+    "covered_dimensions": [
+      "lighting",
+      "soil",
+      "watering"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:peperomia:lighting:001",
+      "claim:peperomia:lighting:002",
+      "claim:peperomia:soil:001",
+      "claim:peperomia:watering:001",
+      "claim:peperomia:watering:002"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "potentially_answerable",
+    "priority_score": 46,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+4",
+      "supported_dimension_signal:+8"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:peperomia",
+    "quota_rank": 6
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:19877",
+    "predicted_plant_ids": [
+      "plant:peperomia"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "identification"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present",
+      "image_likely_required"
+    ],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 39,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+2",
+      "boundary_dimension_signal:+3",
+      "image_likely_required:-8"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:peperomia",
+    "quota_rank": 7
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:48019",
+    "predicted_plant_ids": [
+      "plant:peperomia"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "identification",
+      "growth"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present",
+      "image_likely_required"
+    ],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 13,
+    "priority_reasons": [
+      "entity_alias_only_in_body:+5",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+1",
+      "boundary_dimension_signal:+3",
+      "image_likely_required:-8"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:peperomia",
+    "quota_rank": 8
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:9035",
+    "predicted_plant_ids": [
+      "plant:hoya_wax_plant",
+      "plant:peperomia"
+    ],
+    "mapping_risks": [
+      "multi_entity_query",
+      "unresolved_common_name_mapping"
+    ],
+    "predicted_dimensions": [
+      "identification"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present",
+      "image_likely_required"
+    ],
+    "predicted_answerability": "entity_scope_unresolved",
+    "priority_score": 6,
+    "priority_reasons": [
+      "entity_alias_only_in_body:+5",
+      "has_answer:+4",
+      "bounded_post_score:+2",
+      "boundary_dimension_signal:+3",
+      "image_likely_required:-8"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:peperomia",
+    "quota_rank": 9
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:42975",
+    "predicted_plant_ids": [
+      "plant:peperomia"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "watering",
+      "soil",
+      "pest"
+    ],
+    "covered_dimensions": [
+      "soil",
+      "watering"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:peperomia:soil:001",
+      "claim:peperomia:watering:001",
+      "claim:peperomia:watering:002"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 46,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+1",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:peperomia",
+    "quota_rank": 10
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:47619",
+    "predicted_plant_ids": [
+      "plant:philodendron"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "watering",
+      "soil",
+      "disease_or_symptom"
+    ],
+    "covered_dimensions": [
+      "lighting",
+      "soil"
+    ],
+    "missing_supported_dimensions": [
+      "watering"
+    ],
+    "candidate_evidence_ids": [
+      "claim:philodendron:lighting:001",
+      "claim:philodendron:soil:001"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 56,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+3",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:philodendron",
+    "quota_rank": 1
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:53088",
+    "predicted_plant_ids": [
+      "plant:philodendron"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "disease_or_symptom"
+    ],
+    "covered_dimensions": [
+      "lighting"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:philodendron:lighting:001"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 47,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+2",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:philodendron",
+    "quota_rank": 2
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:55219",
+    "predicted_plant_ids": [
+      "plant:philodendron"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "watering",
+      "soil",
+      "growth"
+    ],
+    "covered_dimensions": [
+      "soil"
+    ],
+    "missing_supported_dimensions": [
+      "watering"
+    ],
+    "candidate_evidence_ids": [
+      "claim:philodendron:soil:001"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 46,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+1",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:philodendron",
+    "quota_rank": 3
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:19799",
+    "predicted_plant_ids": [
+      "plant:philodendron"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "soil",
+      "disease_or_symptom"
+    ],
+    "covered_dimensions": [
+      "lighting",
+      "soil"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:philodendron:lighting:001",
+      "claim:philodendron:soil:001"
+    ],
+    "context_flags": [],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 42,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "bounded_post_score:+1",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:philodendron",
+    "quota_rank": 4
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:43597",
+    "predicted_plant_ids": [
+      "plant:philodendron"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "watering",
+      "soil",
+      "disease_or_symptom",
+      "temperature",
+      "humidity"
+    ],
+    "covered_dimensions": [
+      "soil"
+    ],
+    "missing_supported_dimensions": [
+      "watering"
+    ],
+    "candidate_evidence_ids": [
+      "claim:philodendron:soil:001"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 42,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "bounded_post_score:+1",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:philodendron",
+    "quota_rank": 5
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:51470",
+    "predicted_plant_ids": [
+      "plant:philodendron"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "disease_or_symptom"
+    ],
+    "covered_dimensions": [
+      "lighting"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:philodendron:lighting:001"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 42,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "bounded_post_score:+1",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:philodendron",
+    "quota_rank": 6
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:14949",
+    "predicted_plant_ids": [
+      "plant:philodendron"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "disease_or_symptom"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 48,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+3",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:philodendron",
+    "quota_rank": 7
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:21868",
+    "predicted_plant_ids": [
+      "plant:philodendron"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "watering",
+      "disease_or_symptom",
+      "temperature"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [
+      "watering"
+    ],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 48,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+3",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:philodendron",
+    "quota_rank": 8
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:48719",
+    "predicted_plant_ids": [
+      "plant:philodendron"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "fertilizer",
+      "pest"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [
+      "fertilizer"
+    ],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 47,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+2",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:philodendron",
+    "quota_rank": 9
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:36093",
+    "predicted_plant_ids": [
+      "plant:philodendron"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "disease_or_symptom"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [],
+    "context_flags": [],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 41,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+4",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:philodendron",
+    "quota_rank": 10
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:16185",
+    "predicted_plant_ids": [
+      "plant:snake_plant"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "watering",
+      "soil",
+      "disease_or_symptom",
+      "growth"
+    ],
+    "covered_dimensions": [
+      "lighting",
+      "soil",
+      "watering"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:snake_plant:lighting:001",
+      "claim:snake_plant:soil:001",
+      "claim:snake_plant:watering:001",
+      "claim:snake_plant:watering:002",
+      "claim:snake_plant:watering:003"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 58,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+5",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:snake_plant",
+    "quota_rank": 1
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:41287",
+    "predicted_plant_ids": [
+      "plant:snake_plant"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "watering",
+      "soil",
+      "disease_or_symptom",
+      "pruning"
+    ],
+    "covered_dimensions": [
+      "soil",
+      "watering"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:snake_plant:soil:001",
+      "claim:snake_plant:watering:001",
+      "claim:snake_plant:watering:002",
+      "claim:snake_plant:watering:003"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 58,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+5",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:snake_plant",
+    "quota_rank": 2
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:5492",
+    "predicted_plant_ids": [
+      "plant:snake_plant"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "watering",
+      "soil",
+      "growth"
+    ],
+    "covered_dimensions": [
+      "lighting",
+      "soil",
+      "watering"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:snake_plant:lighting:001",
+      "claim:snake_plant:soil:001",
+      "claim:snake_plant:watering:001",
+      "claim:snake_plant:watering:002",
+      "claim:snake_plant:watering:003"
+    ],
+    "context_flags": [],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 58,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+5",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:snake_plant",
+    "quota_rank": 3
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:27539",
+    "predicted_plant_ids": [
+      "plant:snake_plant"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "watering",
+      "soil",
+      "disease_or_symptom"
+    ],
+    "covered_dimensions": [
+      "lighting",
+      "soil",
+      "watering"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:snake_plant:lighting:001",
+      "claim:snake_plant:soil:001",
+      "claim:snake_plant:watering:001",
+      "claim:snake_plant:watering:002",
+      "claim:snake_plant:watering:003"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 57,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+4",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:snake_plant",
+    "quota_rank": 4
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:30521",
+    "predicted_plant_ids": [
+      "plant:snake_plant"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "watering",
+      "disease_or_symptom",
+      "temperature",
+      "propagation"
+    ],
+    "covered_dimensions": [
+      "watering"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:snake_plant:watering:001",
+      "claim:snake_plant:watering:002",
+      "claim:snake_plant:watering:003"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 57,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+4",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:snake_plant",
+    "quota_rank": 5
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:65616",
+    "predicted_plant_ids": [
+      "plant:snake_plant"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "watering",
+      "soil",
+      "pet_safety"
+    ],
+    "covered_dimensions": [
+      "lighting",
+      "soil",
+      "watering"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:snake_plant:lighting:001",
+      "claim:snake_plant:soil:001",
+      "claim:snake_plant:watering:001",
+      "claim:snake_plant:watering:002",
+      "claim:snake_plant:watering:003"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 56,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+3",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:snake_plant",
+    "quota_rank": 6
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:29511",
+    "predicted_plant_ids": [
+      "plant:snake_plant"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "fertilizer",
+      "growth"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [
+      "fertilizer"
+    ],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 58,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+5",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:snake_plant",
+    "quota_rank": 7
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:29658",
+    "predicted_plant_ids": [
+      "plant:snake_plant"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "disease_or_symptom",
+      "growth"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [],
+    "context_flags": [],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 50,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+5",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:snake_plant",
+    "quota_rank": 8
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:28661",
+    "predicted_plant_ids": [
+      "plant:snake_plant"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "disease_or_symptom",
+      "repotting"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 49,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+4",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:snake_plant",
+    "quota_rank": 9
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:43604",
+    "predicted_plant_ids": [
+      "plant:snake_plant"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "growth"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 48,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+3",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:snake_plant",
+    "quota_rank": 10
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:31029",
+    "predicted_plant_ids": [
+      "plant:zz_plant"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "watering",
+      "humidity",
+      "propagation"
+    ],
+    "covered_dimensions": [
+      "lighting",
+      "watering"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:zz_plant:lighting:001",
+      "claim:zz_plant:watering:001",
+      "claim:zz_plant:watering:002"
+    ],
+    "context_flags": [],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 58,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+5",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:zz_plant",
+    "quota_rank": 1
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:38655",
+    "predicted_plant_ids": [
+      "plant:zz_plant"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "soil",
+      "repotting",
+      "growth"
+    ],
+    "covered_dimensions": [
+      "lighting"
+    ],
+    "missing_supported_dimensions": [
+      "soil"
+    ],
+    "candidate_evidence_ids": [
+      "claim:zz_plant:lighting:001"
+    ],
+    "context_flags": [],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 56,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+3",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:zz_plant",
+    "quota_rank": 2
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:56153",
+    "predicted_plant_ids": [
+      "plant:zz_plant"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "watering",
+      "disease_or_symptom",
+      "growth",
+      "flowering"
+    ],
+    "covered_dimensions": [
+      "lighting",
+      "watering"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:zz_plant:lighting:001",
+      "claim:zz_plant:watering:001",
+      "claim:zz_plant:watering:002"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 55,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+2",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:zz_plant",
+    "quota_rank": 3
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:64506",
+    "predicted_plant_ids": [
+      "plant:zz_plant"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting"
+    ],
+    "covered_dimensions": [
+      "lighting"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:zz_plant:lighting:001"
+    ],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "potentially_answerable",
+    "priority_score": 51,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+1",
+      "supported_dimension_signal:+8"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:zz_plant",
+    "quota_rank": 4
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:31460",
+    "predicted_plant_ids": [
+      "plant:zz_plant"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "temperature",
+      "identification"
+    ],
+    "covered_dimensions": [
+      "lighting"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:zz_plant:lighting:001"
+    ],
+    "context_flags": [
+      "image_present",
+      "image_likely_required"
+    ],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 50,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+5",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3",
+      "image_likely_required:-8"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:zz_plant",
+    "quota_rank": 5
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:33907",
+    "predicted_plant_ids": [
+      "plant:zz_plant"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "lighting",
+      "soil",
+      "fertilizer",
+      "repotting",
+      "growth"
+    ],
+    "covered_dimensions": [
+      "fertilizer",
+      "lighting"
+    ],
+    "missing_supported_dimensions": [
+      "soil"
+    ],
+    "candidate_evidence_ids": [
+      "claim:zz_plant:fertilizer:001",
+      "claim:zz_plant:lighting:001"
+    ],
+    "context_flags": [],
+    "predicted_answerability": "mixed_or_partial",
+    "priority_score": 50,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+5",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:zz_plant",
+    "quota_rank": 6
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:29349",
+    "predicted_plant_ids": [
+      "plant:zz_plant"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "disease_or_symptom"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 48,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+3",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:zz_plant",
+    "quota_rank": 7
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:44047",
+    "predicted_plant_ids": [
+      "plant:zz_plant"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "disease_or_symptom"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 47,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+2",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:zz_plant",
+    "quota_rank": 8
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:46987",
+    "predicted_plant_ids": [
+      "plant:zz_plant"
+    ],
+    "mapping_risks": [],
+    "predicted_dimensions": [
+      "disease_or_symptom"
+    ],
+    "covered_dimensions": [],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [],
+    "context_flags": [
+      "image_present"
+    ],
+    "predicted_answerability": "unsupported_or_insufficient",
+    "priority_score": 37,
+    "priority_reasons": [
+      "entity_alias_in_title:+30",
+      "has_answer:+4",
+      "bounded_post_score:+0",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:zz_plant",
+    "quota_rank": 9
+  },
+  {
+    "schema_version": "1.2.0-auto-triage",
+    "candidate_id": "qv12:stackexchange_gardening:56079",
+    "predicted_plant_ids": [
+      "plant:aloe_vera",
+      "plant:devils_ivy",
+      "plant:monstera",
+      "plant:philodendron",
+      "plant:zz_plant"
+    ],
+    "mapping_risks": [
+      "multi_entity_query",
+      "unresolved_common_name_mapping"
+    ],
+    "predicted_dimensions": [
+      "fertilizer",
+      "growth"
+    ],
+    "covered_dimensions": [
+      "fertilizer"
+    ],
+    "missing_supported_dimensions": [],
+    "candidate_evidence_ids": [
+      "claim:devils_ivy:fertilizer:001",
+      "claim:zz_plant:fertilizer:001"
+    ],
+    "context_flags": [],
+    "predicted_answerability": "entity_scope_unresolved",
+    "priority_score": 28,
+    "priority_reasons": [
+      "entity_alias_only_in_body:+5",
+      "accepted_answer_available:+8",
+      "has_answer:+4",
+      "bounded_post_score:+0",
+      "supported_dimension_signal:+8",
+      "boundary_dimension_signal:+3"
+    ],
+    "automation_only": true,
+    "benchmark_eligible": false,
+    "quota_plant_id": "plant:zz_plant",
+    "quota_rank": 10
+  }
+]
