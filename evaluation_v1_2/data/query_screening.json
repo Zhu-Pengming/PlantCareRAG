@@ -1,1 +1,65 @@
-[]
+[
+  {
+    "candidate_id": "qv12:stackexchange_gardening:24457",
+    "screen_status": "selected_for_annotation",
+    "reviewer": "Tom",
+    "reviewed_at": "2026-08-20T19:58:47+00:00",
+    "review_notes": ""
+  },
+  {
+    "candidate_id": "qv12:stackexchange_gardening:2600",
+    "screen_status": "rejected_irrelevant",
+    "reviewer": "Tom",
+    "reviewed_at": "2026-08-20T19:59:45+00:00",
+    "review_notes": "主维度 flowering 在 KB 无证据；挂载的 soil/watering claim 与提问意图不匹配，属同物种共现的假阳性覆盖。另 body 中 EDIT 段已含答案，存在答案泄漏。"
+  },
+  {
+    "candidate_id": "qv12:stackexchange_gardening:29403",
+    "screen_status": "selected_for_annotation",
+    "reviewer": "Tom",
+    "reviewed_at": "2026-08-20T19:59:59+00:00",
+    "review_notes": ""
+  },
+  {
+    "candidate_id": "qv12:stackexchange_gardening:36855",
+    "screen_status": "selected_for_annotation",
+    "reviewer": "Tom",
+    "reviewed_at": "2026-08-20T20:00:16+00:00",
+    "review_notes": ""
+  },
+  {
+    "candidate_id": "qv12:stackexchange_gardening:49908",
+    "screen_status": "rejected_irrelevant",
+    "reviewer": "Tom",
+    "reviewed_at": "2026-08-20T20:00:40+00:00",
+    "review_notes": "判别依赖图像（叶腋新生结构 vs 根蘖），纯文本题干不完整；主维度flowering在KB无证据，挂载claim为同物种共现假阳性。"
+  },
+  {
+    "candidate_id": "qv12:stackexchange_gardening:61067",
+    "screen_status": "selected_for_annotation",
+    "reviewer": "Tom",
+    "reviewed_at": "2026-08-20T20:00:55+00:00",
+    "review_notes": ""
+  },
+  {
+    "candidate_id": "qv12:stackexchange_gardening:14677",
+    "screen_status": "selected_for_annotation",
+    "reviewer": "Tom",
+    "reviewed_at": "2026-08-20T20:01:21+00:00",
+    "review_notes": ""
+  },
+  {
+    "candidate_id": "qv12:stackexchange_gardening:2601",
+    "screen_status": "rejected_irrelevant",
+    "reviewer": "Tom",
+    "reviewed_at": "2026-08-20T20:01:47+00:00",
+    "review_notes": "零证据且症状判别依赖图像（kink形态纯文本不可辨）；dims中pet_safety系从排除句\"isn't the cat\"误提，非真实维度。"
+  },
+  {
+    "candidate_id": "qv12:stackexchange_gardening:29479",
+    "screen_status": "rejected_irrelevant",
+    "reviewer": "Tom",
+    "reviewed_at": "2026-08-20T20:02:18+00:00",
+    "review_notes": "零证据；症状判别依赖图像（黑斑处叶片变薄的形态差异纯文本不可辨），且交叉引用他帖导致题干指代残缺。病害诊断超出KB范畴。"
+  }
+]
