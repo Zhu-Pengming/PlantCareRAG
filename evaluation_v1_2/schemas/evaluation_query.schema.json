@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://plant-care-rag.local/v1.2/evaluation-query.schema.json",
-  "title": "Real-query annotation contract",
+  "title": "Evaluation-query contract",
   "type": "object",
   "additionalProperties": false,
   "required": ["schema_version", "query_id", "raw_text", "provenance", "source_url", "benchmark_eligible", "plant_id", "expected_dimensions", "qualifiers", "answerability", "gold_evidence_ids", "expected_behavior", "split_hash"],
@@ -9,7 +9,7 @@
     "schema_version": {"const": "1.2.0"},
     "query_id": {"type": "string", "pattern": "^qv12:[a-z0-9_:]+$"},
     "raw_text": {"type": "string", "minLength": 3},
-    "provenance": {"enum": ["real_user_query", "authored_contract_case"]},
+    "provenance": {"enum": ["real_user_query", "authored_contract_case", "synthetic_generated_case"]},
     "source_url": {"type": ["string", "null"], "format": "uri"},
     "benchmark_eligible": {"type": "boolean"},
     "plant_id": {"type": ["string", "null"]},
@@ -45,6 +45,15 @@
         "properties": {
           "source_url": {"type": "null"},
           "benchmark_eligible": {"const": false}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"provenance": {"const": "synthetic_generated_case"}}},
+      "then": {
+        "properties": {
+          "source_url": {"type": "null"},
+          "benchmark_eligible": {"const": true}
         }
       }
     }

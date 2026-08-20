@@ -58,6 +58,35 @@ care-dimension signals, and text-complete questions; the frozen rules and
 output hashes are recorded in `config/query_triage_rules.json` and
 `reports/query_auto_triage_stats.json`.
 
+## Fully automated synthetic benchmark
+
+The default no-human-review path is an 80-question, evidence-conditioned
+synthetic contract benchmark:
+
+```bash
+python3 evaluation_v1_2/scripts/generate_synthetic_benchmark.py
+python3 evaluation_v1_2/scripts/validate_synthetic_benchmark.py
+python3 evaluation_v1_2/scripts/evaluate_synthetic_benchmark.py
+```
+
+It contains 66 single-dimension paraphrases, eight multi-dimension questions,
+four unsupported pet-safety cases, and two unresolved common-name mapping
+cases. Gold evidence is complete by construction because each broad
+plant/dimension question is generated from every verified claim for that pair.
+No human approval is required.
+
+The benchmark deliberately separates direct wording (`v1`), novice wording
+with an explicit dimension cue (`v2`), and frozen implicit paraphrases (`v3`).
+The first baseline scores 100% on entity linking and on the direct, novice,
+multi-dimension, refusal, and clarification groups. Implicit paraphrases expose
+a real lexical routing gap: dimension/evidence exact match is 7/22 (31.8%) for
+`v3`, producing 81.25% exact match overall and 84.8% evidence micro-recall.
+
+This is a regression and component benchmark, not evidence of real-user
+performance: the questions were generated from the same evidence they test.
+The observed Stack Exchange candidate pipeline remains available only when
+external-validity evaluation is wanted later.
+
 ## Benchmark boundary
 
 The query annotation seed contains authored contract examples, not observed
@@ -142,11 +171,12 @@ never returns pending or rejected records.
 - Any content or qualifier edit invalidates the prior approval and resets the
   claim to pending. The audit log retains the earlier decision and revision.
 
-## Next data milestone
+## Next milestone
 
-The evidence review milestone is complete. Before adding semantic retrieval or
-generation:
+The evidence and automated benchmark milestones are complete. The next
+engineering experiment is to improve implicit dimension routing without
+changing the frozen synthetic questions:
 
-1. Manually screen the observed candidate pool and label 50–80 real English questions.
-2. Freeze query IDs, hashes, evidence IDs, and the dev/test split.
-3. Report structured retrieval and answerability baselines.
+1. Keep `synthetic_benchmark.json` and its SHA-256 frozen.
+2. Add semantic or LLM dimension routing using dev only.
+3. Report the final test split once, alongside the direct/implicit breakdown.
