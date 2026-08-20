@@ -39,3 +39,35 @@ without changing the frozen v1 metrics. Its evidence overlay started with 24
 care claims for 10 accepted plants and expanded to 38 through human-review
 atomization and coverage findings. Only individually verified claims are
 visible through the runtime evidence boundary.
+
+The citation-first v1.3 runtime completes the local RAG path over that verified
+overlay: entity linking → dimension routing → structured evidence retrieval →
+extractive grounded answer → inline claim/source citations. It defaults to a
+dependency-free lexical router; the frozen BGE semantic fallback is optional.
+
+```bash
+# Ask with the dependency-free router
+python3 -m evaluation_v1_2 ask "How should I water Snake Plant?"
+
+# Rebuild the 80-case grounded-answer contract artifact
+python3 -m evaluation_v1_2 evaluate
+
+# Run every v1.2/v1.3 offline validator and unit test
+make verify
+```
+
+For implicit wording, create a Python 3.10+ environment, install the pinned
+embedding dependency, and enable the frozen semantic fallback:
+
+```bash
+python3.12 -m venv .venv-embed
+.venv-embed/bin/python -m pip install -r evaluation_v1_2/requirements-embedding.txt
+.venv-embed/bin/python -m evaluation_v1_2 ask --semantic \
+  "What should I know before watering my Aloe Vera again?"
+```
+
+The 80 synthetic questions are evidence-conditioned regression cases, not a
+real-user benchmark. On the frozen semantic routes, all answers pass citation
+and verified-evidence checks; test behavior is 35/35 and test evidence exact
+match is 34/35. The remaining retrieval error is preserved rather than tuned
+after test access.

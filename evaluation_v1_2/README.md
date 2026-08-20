@@ -220,3 +220,33 @@ prototype adjustment was made.
 FastEmbed uses lightweight ONNX inference rather than requiring PyTorch; see
 the [official FastEmbed documentation](https://qdrant.github.io/fastembed/)
 and [supported-model table](https://qdrant.github.io/fastembed/examples/Supported_Models/).
+
+## Citation-first answer runtime
+
+`GroundedRAGEngine` completes the evaluated path without requiring a cloud
+model or API key. The default generator is extractive by design: each factual
+sentence is copied from one `human_verified` claim and followed by its
+`claim_id`. Evidence objects include the source URL, section, paragraph, access
+date, and review status. Unsupported dimensions expose no claims; the unresolved
+Monstera and Hoya common-name mappings request a scientific name.
+
+```bash
+python3 -m evaluation_v1_2 ask "How should I water Snake Plant?"
+python3 -m evaluation_v1_2 ask --json "Is Aloe Vera pet safe?"
+python3 -m evaluation_v1_2 evaluate
+python3 -m evaluation_v1_2 verify
+```
+
+The end-to-end contract evaluator reuses the frozen route decisions instead of
+rerunning or tuning the embedding model. Across all 80 synthetic cases:
+
+- grounded-response validation: 80/80;
+- answered citation validity: 100%;
+- verified-only evidence: 100%;
+- numeric assertions supported by cited evidence: 100%;
+- unsafe answers to abstain/clarify cases: 0;
+- evidence exact match: 75/80 (93.75%).
+
+On the untouched 35-case test split, behavior is 35/35 and evidence exact match
+is 34/35. These remain component/regression results because the questions were
+generated from the same evidence being evaluated.
