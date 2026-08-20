@@ -251,19 +251,19 @@ On the untouched 35-case test split, behavior is 35/35 and evidence exact match
 is 34/35. These remain component/regression results because the questions were
 generated from the same evidence being evaluated.
 
-### Optional OpenAI Structured Outputs generator
+### Optional DeepSeek JSON Output generator
 
-Natural-language rewriting is opt-in. The adapter uses the Responses API
-Structured Outputs helper, requires an explicit model ID, sets `store=False`,
-and returns sentence-level evidence IDs. See the
-[official Structured Outputs guide](https://developers.openai.com/api/docs/guides/structured-outputs).
+Natural-language rewriting is opt-in. The adapter uses DeepSeek's OpenAI-
+compatible `chat.completions` API with `base_url=https://api.deepseek.com`,
+requires an explicit model ID, and returns sentence-level evidence IDs. See the
+[official DeepSeek JSON Output guide](https://api-docs.deepseek.com/guides/json_mode).
 
 ```bash
 python3.12 -m venv .venv-llm
 .venv-llm/bin/python -m pip install -r evaluation_v1_2/requirements-llm.txt
-export OPENAI_API_KEY="..."
+export DEEPSEEK_API_KEY="..."
 .venv-llm/bin/python -m evaluation_v1_2 ask \
-  --generator openai --model "YOUR_MODEL_ID" \
+  --generator deepseek --model "YOUR_DEEPSEEK_MODEL_ID" \
   "How should I water Snake Plant?"
 ```
 

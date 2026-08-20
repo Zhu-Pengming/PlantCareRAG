@@ -1,32 +1,36 @@
 import unittest
+import json
 from types import SimpleNamespace
 
 from evaluation_v1_2.rag_engine import (
+    DeepSeekJSONGenerator,
     GroundedRAGEngine,
-    OpenAIStructuredGenerator,
     RouteDecision,
     validate_grounded_response,
 )
 from evaluation_v1_2.scripts.evaluate_grounded_answers import evaluate
 
 
-class FakeResponses:
+class FakeCompletions:
     def __init__(self, payload=None, error=None):
         self.payload = payload
         self.error = error
         self.last_request = None
 
-    def parse(self, **kwargs):
+    def create(self, **kwargs):
         self.last_request = kwargs
         if self.error:
             raise self.error
-        parsed = kwargs["text_format"](**self.payload)
-        return SimpleNamespace(output_parsed=parsed, id="resp_fake")
+        content = self.payload if isinstance(self.payload, str) else json.dumps(self.payload)
+        message = SimpleNamespace(content=content)
+        return SimpleNamespace(
+            choices=[SimpleNamespace(message=message)], id="resp_fake"
+        )
 
 
-class FakeOpenAIClient:
+class FakeDeepSeekClient:
     def __init__(self, payload=None, error=None):
-        self.responses = FakeResponses(payload, error)
+        self.chat = SimpleNamespace(completions=FakeCompletions(payload, error))
 
 
 class GroundedRAGEngineTests(unittest.TestCase):
@@ -78,8 +82,8 @@ class GroundedRAGEngineTests(unittest.TestCase):
             validate_grounded_response(response),
         )
 
-    def test_openai_structured_generator_returns_citation_bound_paraphrase(self):
-        client = FakeOpenAIClient(
+    def test_deepseek_json_generator_returns_citation_bound_paraphrase(self):
+        client = FakeDeepSeekClient(
             {
                 "sentences": [
                     {
@@ -89,21 +93,22 @@ class GroundedRAGEngineTests(unittest.TestCase):
                 ]
             }
         )
-        generator = OpenAIStructuredGenerator(model="test-model", client=client)
+        generator = DeepSeekJSONGenerator(model="test-model", client=client)
         engine = GroundedRAGEngine(generator=generator)
         response = engine.response(
             "What soil should I use for Aloe Vera?",
             route_decision=RouteDecision(("soil",), "test_route"),
         )
-        self.assertEqual(response["generation"]["mode"], "llm_structured")
+        self.assertEqual(response["generation"]["mode"], "llm_json")
         self.assertFalse(response["generation"]["fallback"])
         self.assertEqual(validate_grounded_response(response), [])
-        request = client.responses.last_request
-        self.assertFalse(request["store"])
+        request = client.chat.completions.last_request
         self.assertEqual(request["model"], "test-model")
+        self.assertEqual(request["response_format"], {"type": "json_object"})
+        self.assertIn("JSON", request["messages"][0]["content"])
 
     def test_invalid_llm_number_falls_back_to_extractive_answer(self):
-        client = FakeOpenAIClient(
+        client = FakeDeepSeekClient(
             {
                 "sentences": [
                     {
@@ -118,7 +123,7 @@ class GroundedRAGEngineTests(unittest.TestCase):
             }
         )
         engine = GroundedRAGEngine(
-            generator=OpenAIStructuredGenerator(model="test-model", client=client)
+            generator=DeepSeekJSONGenerator(model="test-model", client=client)
         )
         response = engine.response(
             "How should I water Aloe Vera?",
@@ -129,10 +134,10 @@ class GroundedRAGEngineTests(unittest.TestCase):
         self.assertIn("adds a number", response["generation"]["fallback_reason"])
         self.assertEqual(validate_grounded_response(response), [])
 
-    def test_openai_transport_failure_falls_back_without_error_text_leak(self):
-        client = FakeOpenAIClient(error=RuntimeError("secret transport detail"))
+    def test_deepseek_transport_failure_falls_back_without_error_text_leak(self):
+        client = FakeDeepSeekClient(error=RuntimeError("secret transport detail"))
         engine = GroundedRAGEngine(
-            generator=OpenAIStructuredGenerator(model="test-model", client=client)
+            generator=DeepSeekJSONGenerator(model="test-model", client=client)
         )
         response = engine.response(
             "What soil should I use for Aloe Vera?",
@@ -141,6 +146,19 @@ class GroundedRAGEngineTests(unittest.TestCase):
         self.assertEqual(response["generation"]["fallback_reason"], "RuntimeError")
         self.assertNotIn("secret transport detail", str(response))
         self.assertEqual(validate_grounded_response(response), [])
+
+    def test_empty_deepseek_json_output_falls_back_to_extractive(self):
+        client = FakeDeepSeekClient(payload="")
+        engine = GroundedRAGEngine(
+            generator=DeepSeekJSONGenerator(model="test-model", client=client)
+        )
+        response = engine.response(
+            "What soil should I use for Aloe Vera?",
+            route_decision=RouteDecision(("soil",), "test_route"),
+        )
+        self.assertEqual(response["generation"]["mode"], "extractive")
+        self.assertTrue(response["generation"]["fallback"])
+        self.assertEqual(response["generation"]["fallback_reason"], "RuntimeError")
 
     def test_multi_dimension_route_requires_complete_dimension_coverage(self):
         response = self.engine.response(

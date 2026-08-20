@@ -9,6 +9,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 import json
+import os
 from pathlib import Path
 import re
 from typing import Protocol
@@ -24,6 +25,7 @@ from evaluation_v1_2.evidence_store import VerifiedEvidenceStore
 
 ROOT = Path(__file__).resolve().parent
 SEMANTIC_CONFIG = ROOT / "config" / "semantic_dimension_router.json"
+DEEPSEEK_BASE_URL = "https://api.deepseek.com"
 UNRESOLVED_COMMON_NAME_MAPPINGS = frozenset(
     {"plant:monstera", "plant:hoya_wax_plant"}
 )
@@ -95,44 +97,36 @@ class ExtractiveGroundedGenerator:
         }
 
 
-class OpenAIStructuredGenerator:
-    """Optional natural-language generator with deterministic post-validation."""
+class DeepSeekJSONGenerator:
+    """Optional DeepSeek JSON Output generator with local post-validation."""
 
-    def __init__(self, *, model: str, client=None) -> None:
+    def __init__(self, *, model: str, client=None, api_key: str | None = None) -> None:
         if not model or not model.strip():
-            raise ValueError("an explicit OpenAI model ID is required")
-        try:
-            from pydantic import BaseModel
-        except ImportError as exc:
-            raise RuntimeError(
-                "OpenAI generation requires evaluation_v1_2/requirements-llm.txt"
-            ) from exc
-
-        class GeneratedSentence(BaseModel):
-            text: str
-            evidence_ids: list[str]
-
-        class GeneratedAnswer(BaseModel):
-            sentences: list[GeneratedSentence]
-
+            raise ValueError("an explicit DeepSeek model ID is required")
         if client is None:
             try:
                 from openai import OpenAI
             except ImportError as exc:
                 raise RuntimeError(
-                    "OpenAI generation requires evaluation_v1_2/requirements-llm.txt"
+                    "DeepSeek generation requires evaluation_v1_2/requirements-llm.txt"
                 ) from exc
+            resolved_key = api_key or os.environ.get("DEEPSEEK_API_KEY")
+            if not resolved_key:
+                raise RuntimeError("DeepSeek client requires DEEPSEEK_API_KEY")
             try:
-                client = OpenAI()
+                client = OpenAI(api_key=resolved_key, base_url=DEEPSEEK_BASE_URL)
             except Exception as exc:
                 raise RuntimeError(
-                    "OpenAI client initialization failed; check OPENAI_API_KEY"
+                    "DeepSeek client initialization failed; check DEEPSEEK_API_KEY"
                 ) from exc
-        if not hasattr(client, "responses") or not hasattr(client.responses, "parse"):
-            raise RuntimeError("installed OpenAI SDK does not support responses.parse")
+        if not (
+            hasattr(client, "chat")
+            and hasattr(client.chat, "completions")
+            and hasattr(client.chat.completions, "create")
+        ):
+            raise RuntimeError("client does not support chat.completions.create")
         self.client = client
         self.model = model.strip()
-        self.output_type = GeneratedAnswer
 
     def generate(
         self, query: str, evidence: list[dict]
@@ -146,32 +140,62 @@ class OpenAIStructuredGenerator:
             }
             for record in evidence
         ]
-        response = self.client.responses.parse(
+        schema_example = {
+            "sentences": [
+                {
+                    "text": "A concise sentence supported only by the cited claims.",
+                    "evidence_ids": ["claim:example:dimension:001"],
+                }
+            ]
+        }
+        response = self.client.chat.completions.create(
             model=self.model,
-            store=False,
-            max_output_tokens=800,
-            instructions=(
-                "Answer the plant-care question using only the supplied evidence. "
-                "Use every claim_id exactly once. Each output sentence must list all "
-                "claim_ids that support it. Do not add facts, numbers, frequencies, "
-                "diagnoses, or safety claims absent from those cited claims."
-            ),
-            input=json.dumps(
-                {"question": query, "evidence": evidence_payload},
-                ensure_ascii=False,
-            ),
-            text_format=self.output_type,
+            max_tokens=800,
+            response_format={"type": "json_object"},
+            messages=[
+                {
+                    "role": "system",
+                    "content": (
+                        "Return JSON only. Answer the plant-care question using only "
+                        "the supplied evidence. Use every claim_id exactly once. Each "
+                        "sentence must list all claim_ids that support it. Do not add "
+                        "facts, numbers, frequencies, diagnoses, or safety claims absent "
+                        "from those claims. The required JSON shape is: "
+                        + json.dumps(schema_example)
+                    ),
+                },
+                {
+                    "role": "user",
+                    "content": json.dumps(
+                        {"question": query, "evidence": evidence_payload},
+                        ensure_ascii=False,
+                    ),
+                },
+            ],
         )
-        parsed = response.output_parsed
-        if parsed is None:
-            raise RuntimeError("OpenAI response did not contain parsed structured output")
-        payload = parsed.model_dump() if hasattr(parsed, "model_dump") else parsed.dict()
+        if not response.choices:
+            raise RuntimeError("DeepSeek response contained no choices")
+        content = response.choices[0].message.content
+        if not content:
+            raise RuntimeError("DeepSeek JSON Output returned empty content")
+        try:
+            payload = json.loads(content)
+        except json.JSONDecodeError as exc:
+            raise RuntimeError("DeepSeek response was not valid JSON") from exc
         claims = payload.get("sentences") or []
-        if not claims:
-            raise RuntimeError("OpenAI response contained no answer sentences")
+        if not isinstance(claims, list) or not claims:
+            raise RuntimeError("DeepSeek response contained no answer sentences")
+        if any(
+            not isinstance(claim, dict)
+            or not isinstance(claim.get("text"), str)
+            or not isinstance(claim.get("evidence_ids"), list)
+            or not all(isinstance(value, str) for value in claim["evidence_ids"])
+            for claim in claims
+        ):
+            raise RuntimeError("DeepSeek response did not match the local answer schema")
         return render_claims(claims), claims, {
-            "mode": "llm_structured",
-            "provider": "openai",
+            "mode": "llm_json",
+            "provider": "deepseek",
             "model": self.model,
             "response_id": getattr(response, "id", None),
             "fallback": False,
@@ -359,7 +383,7 @@ class GroundedRAGEngine:
             answer, claims, generation = ExtractiveGroundedGenerator.generate(query, records)
             generation.update(
                 fallback=True,
-                requested_mode="llm_structured",
+                requested_mode="llm_json",
                 fallback_reason=generation_error,
             )
         result.update(
@@ -382,7 +406,7 @@ class GroundedRAGEngine:
             answer, claims, fallback = ExtractiveGroundedGenerator.generate(query, records)
             fallback.update(
                 fallback=True,
-                requested_mode="llm_structured",
+                requested_mode="llm_json",
                 fallback_reason="; ".join(validation_errors),
             )
             result.update(

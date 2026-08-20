@@ -75,19 +75,19 @@ after test access.
 ### Optional structured LLM generation
 
 The extractive generator remains the default and safety fallback. A natural-
-language layer can be enabled explicitly through the OpenAI Responses API; the
+language layer can be enabled explicitly through DeepSeek's API; the
 CLI never guesses a model ID, and the API is not called unless requested.
 
 ```bash
 python3.12 -m venv .venv-llm
 .venv-llm/bin/python -m pip install -r evaluation_v1_2/requirements-llm.txt
-export OPENAI_API_KEY="..."
+export DEEPSEEK_API_KEY="..."
 .venv-llm/bin/python -m evaluation_v1_2 ask \
-  --generator openai --model "YOUR_MODEL_ID" \
+  --generator deepseek --model "YOUR_DEEPSEEK_MODEL_ID" \
   "How should I water Snake Plant?"
 ```
 
-The model returns Structured Outputs with sentence-level evidence IDs. Unknown
+The model returns JSON Output with sentence-level evidence IDs. Unknown
 citations, missing evidence, duplicate citations, unsupported numbers, malformed
 output, and provider failures trigger the local extractive fallback. These are
 structural guardrails; they do not prove semantic entailment of arbitrary LLM

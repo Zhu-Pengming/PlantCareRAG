@@ -10,9 +10,9 @@ import sys
 import unittest
 
 from evaluation_v1_2.rag_engine import (
+    DeepSeekJSONGenerator,
     GroundedRAGEngine,
     LiveSemanticDimensionRouter,
-    OpenAIStructuredGenerator,
 )
 
 
@@ -32,13 +32,13 @@ def build_parser() -> argparse.ArgumentParser:
     ask.add_argument("--json", action="store_true", help="print the full response contract")
     ask.add_argument(
         "--generator",
-        choices=("extractive", "openai"),
+        choices=("extractive", "deepseek"),
         default="extractive",
-        help="answer generator; OpenAI remains optional",
+        help="answer generator; DeepSeek remains optional",
     )
     ask.add_argument(
         "--model",
-        help="OpenAI model ID (or set OPENAI_MODEL); never inferred by the CLI",
+        help="DeepSeek model ID (or set DEEPSEEK_MODEL); never inferred by the CLI",
     )
     commands.add_parser("evaluate", help="rebuild the frozen-route answer contract result")
     commands.add_parser("verify", help="run offline validators and unit tests")
@@ -56,18 +56,18 @@ def ask_command(args: argparse.Namespace) -> int:
         )
         return 2
     generator = None
-    if args.generator == "openai":
-        model = args.model or os.environ.get("OPENAI_MODEL")
+    if args.generator == "deepseek":
+        model = args.model or os.environ.get("DEEPSEEK_MODEL")
         if not model:
             print(
-                "OpenAI generation requires --model or OPENAI_MODEL.",
+                "DeepSeek generation requires --model or DEEPSEEK_MODEL.",
                 file=sys.stderr,
             )
             return 2
         try:
-            generator = OpenAIStructuredGenerator(model=model)
+            generator = DeepSeekJSONGenerator(model=model)
         except (ImportError, RuntimeError, ValueError) as exc:
-            print(f"OpenAI generator unavailable: {exc}", file=sys.stderr)
+            print(f"DeepSeek generator unavailable: {exc}", file=sys.stderr)
             print(
                 "Use Python 3.10+ and install evaluation_v1_2/requirements-llm.txt.",
                 file=sys.stderr,

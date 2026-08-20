@@ -17,8 +17,8 @@
       "type": "object",
       "required": ["mode", "provider", "model", "fallback"],
       "properties": {
-        "mode": {"enum": ["none", "extractive", "llm_structured"]},
-        "provider": {"enum": ["local", "openai"]},
+        "mode": {"enum": ["none", "extractive", "llm_json"]},
+        "provider": {"enum": ["local", "deepseek"]},
         "model": {"type": ["string", "null"]},
         "fallback": {"type": "boolean"},
         "response_id": {"type": ["string", "null"]},
