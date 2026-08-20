@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "source_dataset_id": "stackexchange:gardening:2024-03",
+  "candidate_count": 399,
+  "benchmark_eligible_count": 0,
+  "missing_author_count": 1,
+  "multi_entity_candidate_count": 12,
+  "per_plant_alias_match_count": {
+    "plant:aloe_vera": 100,
+    "plant:chinese_evergreen": 21,
+    "plant:devils_ivy": 57,
+    "plant:fiddle_leaf_fig": 21,
+    "plant:hoya_wax_plant": 19,
+    "plant:monstera": 55,
+    "plant:peperomia": 19,
+    "plant:philodendron": 33,
+    "plant:snake_plant": 68,
+    "plant:zz_plant": 22
+  },
+  "per_license_count": {
+    "CC BY-SA 3.0": 123,
+    "CC BY-SA 4.0": 276
+  },
+  "candidate_file_sha256": "7c7555386abacb28b766a00d83c353b7fd28f36e4679f558b636ab45caffcd42"
+}

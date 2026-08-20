@@ -1,0 +1,23 @@
+{
+  "manifest_version": "1.0.0",
+  "frozen_at": "2026-08-20",
+  "sources": [
+    {
+      "id": "stackexchange:gardening:2024-03",
+      "title": "Gardening & Landscaping Stack Exchange public data dump",
+      "page_url": "https://archive.org/details/stackexchange",
+      "download_url": "https://archive.org/download/stackexchange/gardening.stackexchange.com.7z",
+      "archive_name": "gardening.stackexchange.com.7z",
+      "archive_sha1": "718db7040d0b608b1c969d4630d8bb95db87eec5",
+      "archive_sha256": "f739cc994a19445f6c2b54277e762980f28c82f7b1c2d1a12028f1fca3387d63",
+      "archive_mtime_unix": 1712447652,
+      "members": ["Posts.xml", "Users.xml"],
+      "site_url": "https://gardening.stackexchange.com",
+      "role": "real_user_query_candidates",
+      "decision": "accepted_with_manual_relevance_gate",
+      "license_policy": "Use each post's ContentLicense attribute; retain source URL and author attribution.",
+      "observed_question_count": 17860,
+      "observed_date_max": "2024-03-31T20:07:29.273"
+    }
+  ]
+}

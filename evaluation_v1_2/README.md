@@ -27,13 +27,36 @@ python3 evaluation_v1_2/scripts/ask.py "Should I fertilize Snake Plant during wi
 python3 -m unittest discover -s evaluation_v1_2/tests -v
 ~~~
 
+Build the observed-query review pool separately:
+
+```bash
+python3 evaluation_v1_2/scripts/download_query_sources.py
+python3 evaluation_v1_2/scripts/build_query_candidates.py
+python3 evaluation_v1_2/scripts/validate_query_candidates.py
+python3 evaluation_v1_2/scripts/screen_query_candidates.py --plant zz_plant --reviewer "Tom"
+python3 evaluation_v1_2/scripts/screen_query_candidates.py --summary
+```
+
+Screening decisions are stored separately in `data/query_screening.json`; the
+frozen candidate text is never edited. `selected_for_annotation` means only
+that a question should receive manual labels. It does not make the question
+benchmark-eligible.
+
 ## Benchmark boundary
 
 The query annotation seed contains authored contract examples, not observed
 user questions. Every record is marked as authored and benchmark-ineligible.
-The future real-query set must retain an immutable source URL and raw wording,
-receive manual answerability and gold-evidence labels, and be split by the
-stored unsalted SHA-256 of its ID.
+The real-query candidate pool comes from the frozen Gardening & Landscaping
+Stack Exchange public data dump. Candidates retain the immutable Post ID,
+canonical URL, raw wording, author attribution, creation time, and per-post
+license. The reproducible build currently yields 399 unique candidates across
+all 10 overlay entities (minimum 19 alias-matched candidates per entity).
+Deterministic alias matching only selects records for review: every candidate
+remains `pending_human_annotation` and benchmark-ineligible until a person
+confirms relevance, plant identity, dimensions, answerability, and gold
+evidence. Split assignment uses the stored unsalted SHA-256 of the stable ID.
+See [`QUERY_SOURCE_ATTRIBUTION.md`](QUERY_SOURCE_ATTRIBUTION.md) and
+`reports/query_candidate_stats.json`.
 
 ## Source authority is claim-specific
 
@@ -108,6 +131,6 @@ never returns pending or rejected records.
 The evidence review milestone is complete. Before adding semantic retrieval or
 generation:
 
-1. Collect and manually label 50–80 real English questions.
+1. Manually screen the observed candidate pool and label 50–80 real English questions.
 2. Freeze query IDs, hashes, evidence IDs, and the dev/test split.
 3. Report structured retrieval and answerability baselines.
