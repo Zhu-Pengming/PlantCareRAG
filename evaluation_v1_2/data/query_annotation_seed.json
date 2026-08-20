@@ -1,0 +1,110 @@
+[
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:contract:001",
+    "raw_text": "When should I water Snake Plant?",
+    "provenance": "authored_contract_case",
+    "source_url": null,
+    "benchmark_eligible": false,
+    "plant_id": "plant:snake_plant",
+    "expected_dimensions": [
+      "watering"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "kb:snake_plant:watering"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "f8e19e69446d67e0aff94aafe27c7fc7b994aaea3d54cd8422f0e2b51bd5bd17"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:contract:002",
+    "raw_text": "Does Snake Plant need indirect light and frequent watering?",
+    "provenance": "authored_contract_case",
+    "source_url": null,
+    "benchmark_eligible": false,
+    "plant_id": "plant:snake_plant",
+    "expected_dimensions": [
+      "watering",
+      "lighting"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "kb:snake_plant:watering",
+      "kb:snake_plant:lighting"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "b29d688b2d68054f2404d25da82069b8c671acd8a505cab4b7c5c1f60ae8b0e8"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:contract:003",
+    "raw_text": "Should I fertilize Snake Plant during winter?",
+    "provenance": "authored_contract_case",
+    "source_url": null,
+    "benchmark_eligible": false,
+    "plant_id": "plant:snake_plant",
+    "expected_dimensions": [
+      "fertilizer"
+    ],
+    "qualifiers": {
+      "season": "winter"
+    },
+    "answerability": "insufficient_evidence",
+    "gold_evidence_ids": [],
+    "expected_behavior": "abstain",
+    "split_hash": "ba6924be3ec4867258832a4d5c9650d18fd7aa9110770e0f9b8c6c2f2d266dab"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:contract:004",
+    "raw_text": "My plant is dying.",
+    "provenance": "authored_contract_case",
+    "source_url": null,
+    "benchmark_eligible": false,
+    "plant_id": null,
+    "expected_dimensions": [],
+    "qualifiers": {},
+    "answerability": "clarification_needed",
+    "gold_evidence_ids": [],
+    "expected_behavior": "clarify",
+    "split_hash": "fa17c00f066d7271ef6c7826b9d444869cef90cc9a512e66b2cf244d23e03ce5"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:contract:005",
+    "raw_text": "When should I water Peace Lily?",
+    "provenance": "authored_contract_case",
+    "source_url": null,
+    "benchmark_eligible": false,
+    "plant_id": null,
+    "expected_dimensions": [
+      "watering"
+    ],
+    "qualifiers": {},
+    "answerability": "conflicting_evidence",
+    "gold_evidence_ids": [],
+    "expected_behavior": "report_conflict",
+    "split_hash": "53e592c57e5135f1489624d430d490c6218832a22eb842d0cfb69088c94ffdc4"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:contract:006",
+    "raw_text": "Is Snake Plant toxic to cats?",
+    "provenance": "authored_contract_case",
+    "source_url": null,
+    "benchmark_eligible": false,
+    "plant_id": "plant:snake_plant",
+    "expected_dimensions": [
+      "pet_safety"
+    ],
+    "qualifiers": {},
+    "answerability": "unsupported",
+    "gold_evidence_ids": [],
+    "expected_behavior": "abstain",
+    "split_hash": "07c7a96caf65ada128b160e9160be77afb1f8035cc58cf22c386f760b677b645"
+  }
+]

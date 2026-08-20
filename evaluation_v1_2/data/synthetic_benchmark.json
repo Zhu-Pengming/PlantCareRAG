@@ -1,0 +1,1569 @@
+[
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:aloe_vera:lighting:v1",
+    "raw_text": "What light does Aloe Vera need?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:aloe_vera",
+    "expected_dimensions": [
+      "lighting"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:aloe_vera:lighting:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "f91048cceac91a9c485dd863b9fccf419ad3d26ff35ef3c64af23d8a36b3536e"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:aloe_vera:lighting:v2",
+    "raw_text": "Where should I place my Aloe Vera so it gets suitable light?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:aloe_vera",
+    "expected_dimensions": [
+      "lighting"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:aloe_vera:lighting:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "3eb576915e59c4f8bcedb16d0769c82e0d713afce62f6a18f293886228e6cd53"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:aloe_vera:lighting:v3",
+    "raw_text": "Will Aloe Vera be okay in a dim corner?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:aloe_vera",
+    "expected_dimensions": [
+      "lighting"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:aloe_vera:lighting:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "fc62630fbb0c82023ffe4481f0a39e218e935cf674991cf3d56bb5a457e67fcb"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:aloe_vera:multi",
+    "raw_text": "What light and soil guidance should I follow for Aloe Vera?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:aloe_vera",
+    "expected_dimensions": [
+      "lighting",
+      "soil"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:aloe_vera:lighting:001",
+      "claim:aloe_vera:soil:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "cb3923249b4ad6d01f9cca16d5a2cab5906347df3b9995a7129a1ad0a26aae1b"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:aloe_vera:pet_safety",
+    "raw_text": "Is Aloe Vera pet safe?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:aloe_vera",
+    "expected_dimensions": [
+      "pet_safety"
+    ],
+    "qualifiers": {},
+    "answerability": "unsupported",
+    "gold_evidence_ids": [],
+    "expected_behavior": "abstain",
+    "split_hash": "749586ab536e63ab9bf92a00f078205d10f9eaf2356dfc33b59842fcc498cc9e"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:aloe_vera:soil:v1",
+    "raw_text": "What soil should I use for Aloe Vera?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:aloe_vera",
+    "expected_dimensions": [
+      "soil"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:aloe_vera:soil:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "a1e11deb9680ab88354bf351627dd6ada8096948af9f50a76b75ded7ee754a48"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:aloe_vera:soil:v2",
+    "raw_text": "What kind of potting soil is suitable for Aloe Vera?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:aloe_vera",
+    "expected_dimensions": [
+      "soil"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:aloe_vera:soil:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "7343c261c2a496e2c6e178b8395e5bfc279fc4cf7c14d4e6303bb7bd76b3521c"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:aloe_vera:soil:v3",
+    "raw_text": "What should I fill the pot with for Aloe Vera?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:aloe_vera",
+    "expected_dimensions": [
+      "soil"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:aloe_vera:soil:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "e2b8d0196998e5839e96d39637c94233111a3631fdf33d48d67ef38b4094986e"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:aloe_vera:watering:v1",
+    "raw_text": "How should I water Aloe Vera?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:aloe_vera",
+    "expected_dimensions": [
+      "watering"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:aloe_vera:watering:001",
+      "claim:aloe_vera:watering:002"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "bb60373b96186aefbd599c6b323a93cbc74a764d89e7415fec75f04a35f4d86e"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:aloe_vera:watering:v2",
+    "raw_text": "What watering routine is suitable for Aloe Vera?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:aloe_vera",
+    "expected_dimensions": [
+      "watering"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:aloe_vera:watering:001",
+      "claim:aloe_vera:watering:002"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "3b5b7ab017934b6fd507c5e12dc1589985845963fa5d7c4e9cb3667214a0c850"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:aloe_vera:watering:v3",
+    "raw_text": "What should I know before watering my Aloe Vera again?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:aloe_vera",
+    "expected_dimensions": [
+      "watering"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:aloe_vera:watering:001",
+      "claim:aloe_vera:watering:002"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "89526d9d808024beba21e6bf328a8dbb4f621a580917036465417bf366996a2e"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:chinese_evergreen:lighting:v1",
+    "raw_text": "What light does Chinese Evergreen need?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:chinese_evergreen",
+    "expected_dimensions": [
+      "lighting"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:chinese_evergreen:lighting:001",
+      "claim:chinese_evergreen:lighting:002",
+      "claim:chinese_evergreen:lighting:003"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "fa2b41020172ed6bc49f0fbbea3067c5574a4da60c3924e549a2c0c7d14d839d"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:chinese_evergreen:lighting:v2",
+    "raw_text": "Where should I place my Chinese Evergreen so it gets suitable light?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:chinese_evergreen",
+    "expected_dimensions": [
+      "lighting"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:chinese_evergreen:lighting:001",
+      "claim:chinese_evergreen:lighting:002",
+      "claim:chinese_evergreen:lighting:003"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "51010e717ec93b317c5232a8c7a10e13916c0720f471a3f966b7b49558c69ccc"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:chinese_evergreen:lighting:v3",
+    "raw_text": "Will Chinese Evergreen be okay in a dim corner?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:chinese_evergreen",
+    "expected_dimensions": [
+      "lighting"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:chinese_evergreen:lighting:001",
+      "claim:chinese_evergreen:lighting:002",
+      "claim:chinese_evergreen:lighting:003"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "1ca24b665cff844b700a35c387c98b31c25771be3146252c940b10beef6d7f00"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:chinese_evergreen:multi",
+    "raw_text": "What light and watering guidance should I follow for Chinese Evergreen?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:chinese_evergreen",
+    "expected_dimensions": [
+      "lighting",
+      "watering"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:chinese_evergreen:lighting:001",
+      "claim:chinese_evergreen:lighting:002",
+      "claim:chinese_evergreen:lighting:003",
+      "claim:chinese_evergreen:watering:001",
+      "claim:chinese_evergreen:watering:002",
+      "claim:chinese_evergreen:watering:003",
+      "claim:chinese_evergreen:watering:004"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "1398cf5be6bd183c248f4468e872ae914b58994b655cc6ba0c9b1653f2e54a3d"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:chinese_evergreen:pet_safety",
+    "raw_text": "Is Chinese Evergreen pet safe?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:chinese_evergreen",
+    "expected_dimensions": [
+      "pet_safety"
+    ],
+    "qualifiers": {},
+    "answerability": "unsupported",
+    "gold_evidence_ids": [],
+    "expected_behavior": "abstain",
+    "split_hash": "75fab397590e523dc3e44486487731cc3753918b839b982968eac996dbb5f5cf"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:chinese_evergreen:watering:v1",
+    "raw_text": "How should I water Chinese Evergreen?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:chinese_evergreen",
+    "expected_dimensions": [
+      "watering"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:chinese_evergreen:watering:001",
+      "claim:chinese_evergreen:watering:002",
+      "claim:chinese_evergreen:watering:003",
+      "claim:chinese_evergreen:watering:004"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "dac1b3ad4b048074039f5ec2943115d59f9a3a1273cb426924ee60096b528c3a"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:chinese_evergreen:watering:v2",
+    "raw_text": "What watering routine is suitable for Chinese Evergreen?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:chinese_evergreen",
+    "expected_dimensions": [
+      "watering"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:chinese_evergreen:watering:001",
+      "claim:chinese_evergreen:watering:002",
+      "claim:chinese_evergreen:watering:003",
+      "claim:chinese_evergreen:watering:004"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "5fc9365a4f5ee6d7a844100f5b0a9e405f4d549a87531648465e79ee04b70eb9"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:chinese_evergreen:watering:v3",
+    "raw_text": "What should I know before watering my Chinese Evergreen again?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:chinese_evergreen",
+    "expected_dimensions": [
+      "watering"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:chinese_evergreen:watering:001",
+      "claim:chinese_evergreen:watering:002",
+      "claim:chinese_evergreen:watering:003",
+      "claim:chinese_evergreen:watering:004"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "8f6f460d378e60b00f3cf61c3870f39d47af7d3ecc87734a746f78ee0f16d3d2"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:devils_ivy:fertilizer:v1",
+    "raw_text": "How should I fertilize Devil’s Ivy?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:devils_ivy",
+    "expected_dimensions": [
+      "fertilizer"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:devils_ivy:fertilizer:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "b32b1028490684e11f2b6d5d30b2027c8fac0e16cc3c4b6dc2cd1e028a1659a9"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:devils_ivy:fertilizer:v2",
+    "raw_text": "What fertilizer routine is suitable for Devil’s Ivy?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:devils_ivy",
+    "expected_dimensions": [
+      "fertilizer"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:devils_ivy:fertilizer:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "04f93979b1f7f88a91b07d3a194c81a3e736d730114acdf4b573e3267474a67a"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:devils_ivy:fertilizer:v3",
+    "raw_text": "Does Devil’s Ivy need extra nutrients, and how often?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:devils_ivy",
+    "expected_dimensions": [
+      "fertilizer"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:devils_ivy:fertilizer:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "8e727d846ac4bf8c02969d2345a50cab1733ab455e9b484e670bb05e55237051"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:devils_ivy:lighting:v1",
+    "raw_text": "What light does Devil’s Ivy need?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:devils_ivy",
+    "expected_dimensions": [
+      "lighting"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:devils_ivy:lighting:001",
+      "claim:devils_ivy:lighting:002"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "2c63ee3047fbb3ac0c987e2a7c8cfb48d07e45ec5b5e5765ed53da3e4b00b62f"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:devils_ivy:lighting:v2",
+    "raw_text": "Where should I place my Devil’s Ivy so it gets suitable light?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:devils_ivy",
+    "expected_dimensions": [
+      "lighting"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:devils_ivy:lighting:001",
+      "claim:devils_ivy:lighting:002"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "89f17c06c91c1e00958dea11eed06c4dcaacc1382aa02e5fc6142278b9e00eaf"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:devils_ivy:lighting:v3",
+    "raw_text": "Will Devil’s Ivy be okay in a dim corner?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:devils_ivy",
+    "expected_dimensions": [
+      "lighting"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:devils_ivy:lighting:001",
+      "claim:devils_ivy:lighting:002"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "af8998a3dba07cf2fc75daf1c0471296499cd620aa7fa89a794075a4a4d6b28f"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:devils_ivy:multi",
+    "raw_text": "What fertilizer and light guidance should I follow for Devil’s Ivy?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:devils_ivy",
+    "expected_dimensions": [
+      "fertilizer",
+      "lighting"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:devils_ivy:fertilizer:001",
+      "claim:devils_ivy:lighting:001",
+      "claim:devils_ivy:lighting:002"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "e5104a4f52d8a97302d7c10cecd7b1754fd0beda6d8e05caab8fa0e4591b6d00"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:devils_ivy:watering:v1",
+    "raw_text": "How should I water Devil’s Ivy?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:devils_ivy",
+    "expected_dimensions": [
+      "watering"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:devils_ivy:watering:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "891a954a7f001e43ccb18d02674f0d81b346cc9a0173b582b624fea91871f2da"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:devils_ivy:watering:v2",
+    "raw_text": "What watering routine is suitable for Devil’s Ivy?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:devils_ivy",
+    "expected_dimensions": [
+      "watering"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:devils_ivy:watering:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "9995dcd0b963498e4f9a83141feea7f04793b92b21526ef038fcd7e477ad9b16"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:devils_ivy:watering:v3",
+    "raw_text": "What should I know before watering my Devil’s Ivy again?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:devils_ivy",
+    "expected_dimensions": [
+      "watering"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:devils_ivy:watering:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "b9cad0f5081a41d1394f63561d47b7bbb8a230441adcaeaf07840a87945f8783"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:fiddle_leaf_fig:lighting:v1",
+    "raw_text": "What light does Fiddle Leaf Fig need?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:fiddle_leaf_fig",
+    "expected_dimensions": [
+      "lighting"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:fiddle_leaf_fig:lighting:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "9e2ffc584e323685f23d51a5afbb6a727086a4345e5576cb020ac47fa342b124"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:fiddle_leaf_fig:lighting:v2",
+    "raw_text": "Where should I place my Fiddle Leaf Fig so it gets suitable light?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:fiddle_leaf_fig",
+    "expected_dimensions": [
+      "lighting"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:fiddle_leaf_fig:lighting:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "c6d2ac63683483dfd7a10e0886aa6ae359a2846139b19bfd57d3d6c8aef40268"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:fiddle_leaf_fig:lighting:v3",
+    "raw_text": "Will Fiddle Leaf Fig be okay in a dim corner?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:fiddle_leaf_fig",
+    "expected_dimensions": [
+      "lighting"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:fiddle_leaf_fig:lighting:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "ca2bde488297e977f83111b5a68731f157622eeb104465c87110273ac1f60642"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:fiddle_leaf_fig:multi",
+    "raw_text": "What light and soil guidance should I follow for Fiddle Leaf Fig?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:fiddle_leaf_fig",
+    "expected_dimensions": [
+      "lighting",
+      "soil"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:fiddle_leaf_fig:lighting:001",
+      "claim:fiddle_leaf_fig:soil:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "c10b1df0a1fcb7f5c5910bb6f88cf73d98db09b1a8eaed07936228de2789d1da"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:fiddle_leaf_fig:soil:v1",
+    "raw_text": "What soil should I use for Fiddle Leaf Fig?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:fiddle_leaf_fig",
+    "expected_dimensions": [
+      "soil"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:fiddle_leaf_fig:soil:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "a38b6605f32b6b26be9b1aa217368680e7521449aac2a9ff8709274ab5563c7f"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:fiddle_leaf_fig:soil:v2",
+    "raw_text": "What kind of potting soil is suitable for Fiddle Leaf Fig?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:fiddle_leaf_fig",
+    "expected_dimensions": [
+      "soil"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:fiddle_leaf_fig:soil:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "76f5d9a36010b4daf4e694741a1d3ed62c6fe42ad9c313270a51b933f6c8bc07"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:fiddle_leaf_fig:soil:v3",
+    "raw_text": "What should I fill the pot with for Fiddle Leaf Fig?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:fiddle_leaf_fig",
+    "expected_dimensions": [
+      "soil"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:fiddle_leaf_fig:soil:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "6389c80dd78f364f422a00abd0dd4b9310f51d783247072c8be63abc49216ea9"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:fiddle_leaf_fig:watering:v1",
+    "raw_text": "How should I water Fiddle Leaf Fig?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:fiddle_leaf_fig",
+    "expected_dimensions": [
+      "watering"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:fiddle_leaf_fig:watering:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "427116458e5f5f57e79e9cba78371a16156978479de0b75dc06eb5bb8e8fc030"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:fiddle_leaf_fig:watering:v2",
+    "raw_text": "What watering routine is suitable for Fiddle Leaf Fig?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:fiddle_leaf_fig",
+    "expected_dimensions": [
+      "watering"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:fiddle_leaf_fig:watering:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "4aafcf66f843d8544722ae782404bf6c7be4e6b9e23fe410494f6648b2cf2f2f"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:fiddle_leaf_fig:watering:v3",
+    "raw_text": "What should I know before watering my Fiddle Leaf Fig again?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:fiddle_leaf_fig",
+    "expected_dimensions": [
+      "watering"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:fiddle_leaf_fig:watering:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "b60db7b266b9759ba3d11251d88ef7e0a5494ef7c61181807511338e0db15589"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:hoya_wax_plant:mapping_clarification",
+    "raw_text": "How should I water Hoya (Wax Plant)?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:hoya_wax_plant",
+    "expected_dimensions": [
+      "watering"
+    ],
+    "qualifiers": {},
+    "answerability": "clarification_needed",
+    "gold_evidence_ids": [],
+    "expected_behavior": "clarify",
+    "split_hash": "6d224cfa6e6dd795bd45f5e9b717234b36148de538e6c315c7cf44d48833ad20"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:monstera:mapping_clarification",
+    "raw_text": "What light does Monstera need?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:monstera",
+    "expected_dimensions": [
+      "lighting"
+    ],
+    "qualifiers": {},
+    "answerability": "clarification_needed",
+    "gold_evidence_ids": [],
+    "expected_behavior": "clarify",
+    "split_hash": "e5b315e0c88fcf4d2faaba37e711918d14dde902a0388b380a7189a97ee9ec4e"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:peperomia:lighting:v1",
+    "raw_text": "What light does Peperomia need?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:peperomia",
+    "expected_dimensions": [
+      "lighting"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:peperomia:lighting:001",
+      "claim:peperomia:lighting:002"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "cf0db179fa34a3451f019e936fab4608f7ad86cd545baf6de859efbff5cf2645"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:peperomia:lighting:v2",
+    "raw_text": "Where should I place my Peperomia so it gets suitable light?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:peperomia",
+    "expected_dimensions": [
+      "lighting"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:peperomia:lighting:001",
+      "claim:peperomia:lighting:002"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "1bfbc42306cffea36971e9e9b32b956716b586976d2d60edd85c90e7051005dc"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:peperomia:lighting:v3",
+    "raw_text": "Will Peperomia be okay in a dim corner?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:peperomia",
+    "expected_dimensions": [
+      "lighting"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:peperomia:lighting:001",
+      "claim:peperomia:lighting:002"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "b9400ffe148b948d88a4a5fb6139565c048d411baaf32e1bc07713ff0c04e853"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:peperomia:multi",
+    "raw_text": "What light and soil guidance should I follow for Peperomia?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:peperomia",
+    "expected_dimensions": [
+      "lighting",
+      "soil"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:peperomia:lighting:001",
+      "claim:peperomia:lighting:002",
+      "claim:peperomia:soil:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "b4f6fd3e1338a72febe20d2613764381c165d9325240f6ca516baec2854ae8fb"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:peperomia:soil:v1",
+    "raw_text": "What soil should I use for Peperomia?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:peperomia",
+    "expected_dimensions": [
+      "soil"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:peperomia:soil:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "20b975bfc4cef7e751b71a86d27e58933eedc290c011028eddbeb4a19a4b31ad"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:peperomia:soil:v2",
+    "raw_text": "What kind of potting soil is suitable for Peperomia?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:peperomia",
+    "expected_dimensions": [
+      "soil"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:peperomia:soil:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "359d72a0dce5b3a6ab6c6653efd3d8362d686c6c625ddb679c66072ebd10d807"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:peperomia:soil:v3",
+    "raw_text": "What should I fill the pot with for Peperomia?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:peperomia",
+    "expected_dimensions": [
+      "soil"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:peperomia:soil:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "f26628eb4c317a0ab98ecb0e6e342bd898f434f2fc49d7b327ad85d03f8d1978"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:peperomia:watering:v1",
+    "raw_text": "How should I water Peperomia?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:peperomia",
+    "expected_dimensions": [
+      "watering"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:peperomia:watering:001",
+      "claim:peperomia:watering:002"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "164a78557d2fbd9ae9499641ad5f1356f825c271e1245faaebf30312425e898e"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:peperomia:watering:v2",
+    "raw_text": "What watering routine is suitable for Peperomia?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:peperomia",
+    "expected_dimensions": [
+      "watering"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:peperomia:watering:001",
+      "claim:peperomia:watering:002"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "cbbc445d057c83edab2bb88c029634656031fe0d824b3249f2bd27096f853adf"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:peperomia:watering:v3",
+    "raw_text": "What should I know before watering my Peperomia again?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:peperomia",
+    "expected_dimensions": [
+      "watering"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:peperomia:watering:001",
+      "claim:peperomia:watering:002"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "98f718c915ed055ff993ef1d1a44b03aace4b1d334206e2968606b9ccf27984b"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:philodendron:lighting:v1",
+    "raw_text": "What light does Philodendron need?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:philodendron",
+    "expected_dimensions": [
+      "lighting"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:philodendron:lighting:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "1ab5612daf300484e9ebb800dfcf18479ca1cd0612272bfb5299179cc56b3e16"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:philodendron:lighting:v2",
+    "raw_text": "Where should I place my Philodendron so it gets suitable light?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:philodendron",
+    "expected_dimensions": [
+      "lighting"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:philodendron:lighting:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "420375e5afc4c92dab143279d9d209cf9b04739714696e6f68cbe3f6a44dbc15"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:philodendron:lighting:v3",
+    "raw_text": "Will Philodendron be okay in a dim corner?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:philodendron",
+    "expected_dimensions": [
+      "lighting"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:philodendron:lighting:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "66f22653b750d1a9e9c01fa511190a4595f61270dd0d2fc8737e4e37a0e6f25a"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:philodendron:multi",
+    "raw_text": "What light and soil guidance should I follow for Philodendron?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:philodendron",
+    "expected_dimensions": [
+      "lighting",
+      "soil"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:philodendron:lighting:001",
+      "claim:philodendron:soil:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "4e8bcbf46a96052b93fd7817afe553950f758e7029d9b043023a3b411848caf3"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:philodendron:soil:v1",
+    "raw_text": "What soil should I use for Philodendron?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:philodendron",
+    "expected_dimensions": [
+      "soil"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:philodendron:soil:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "07e1cd15185302c74e22175413d388df7c8b973c5d4b3cd876ad5b9dc21c1b4b"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:philodendron:soil:v2",
+    "raw_text": "What kind of potting soil is suitable for Philodendron?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:philodendron",
+    "expected_dimensions": [
+      "soil"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:philodendron:soil:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "0d2edee72616acc44b48aad13ce6e69b6072561c9d33991895e6a0f49cae9596"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:philodendron:soil:v3",
+    "raw_text": "What should I fill the pot with for Philodendron?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:philodendron",
+    "expected_dimensions": [
+      "soil"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:philodendron:soil:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "d12183e8df79da2de8f47ca61bf33518d3f9c091b811ffc0fe20550e8435ba12"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:snake_plant:lighting:v1",
+    "raw_text": "What light does Snake Plant need?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:snake_plant",
+    "expected_dimensions": [
+      "lighting"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:snake_plant:lighting:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "66d89df1f4f362153bc89a7618673a330e76bb0593916b6595568b9be2e2876e"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:snake_plant:lighting:v2",
+    "raw_text": "Where should I place my Snake Plant so it gets suitable light?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:snake_plant",
+    "expected_dimensions": [
+      "lighting"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:snake_plant:lighting:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "fc891a5f1981e03ed30240c608f66da61f1725f56f4a6c1aa5097cff4c55542a"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:snake_plant:lighting:v3",
+    "raw_text": "Will Snake Plant be okay in a dim corner?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:snake_plant",
+    "expected_dimensions": [
+      "lighting"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:snake_plant:lighting:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "629117821b144b9bcd4f8edecb5fd52cfc6bf5d1ac122801877964e5830ddab7"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:snake_plant:multi",
+    "raw_text": "What light and soil guidance should I follow for Snake Plant?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:snake_plant",
+    "expected_dimensions": [
+      "lighting",
+      "soil"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:snake_plant:lighting:001",
+      "claim:snake_plant:soil:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "8142b66ba5d8bb5d6b9a038baab1e6b30817ab55a53bb483196ffc87d3a022a6"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:snake_plant:pet_safety",
+    "raw_text": "Is Snake Plant pet safe?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:snake_plant",
+    "expected_dimensions": [
+      "pet_safety"
+    ],
+    "qualifiers": {},
+    "answerability": "unsupported",
+    "gold_evidence_ids": [],
+    "expected_behavior": "abstain",
+    "split_hash": "17d77f556e5596963c56f70baba6aef3f9cfc1c6dc2fad755e7e1bd86a8c047c"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:snake_plant:soil:v1",
+    "raw_text": "What soil should I use for Snake Plant?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:snake_plant",
+    "expected_dimensions": [
+      "soil"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:snake_plant:soil:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "d2fd2c15097c0c7400c3c6fccd32103a918362754305a21f06cb24218b9177d2"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:snake_plant:soil:v2",
+    "raw_text": "What kind of potting soil is suitable for Snake Plant?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:snake_plant",
+    "expected_dimensions": [
+      "soil"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:snake_plant:soil:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "e6babf780aa5ac1a5f74b84dfb41bb973c0cb3b1df63bcf78964d407310613c0"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:snake_plant:soil:v3",
+    "raw_text": "What should I fill the pot with for Snake Plant?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:snake_plant",
+    "expected_dimensions": [
+      "soil"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:snake_plant:soil:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "187ba6bb7ffd843c0914845ed39c38813103ce640b7f64c88f8f5ab564771cbe"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:snake_plant:watering:v1",
+    "raw_text": "How should I water Snake Plant?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:snake_plant",
+    "expected_dimensions": [
+      "watering"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:snake_plant:watering:001",
+      "claim:snake_plant:watering:002",
+      "claim:snake_plant:watering:003"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "62a80fc38afd2ddc1d11004adbec1551b17be569ff4273dec6a2dbdc8d08a622"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:snake_plant:watering:v2",
+    "raw_text": "What watering routine is suitable for Snake Plant?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:snake_plant",
+    "expected_dimensions": [
+      "watering"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:snake_plant:watering:001",
+      "claim:snake_plant:watering:002",
+      "claim:snake_plant:watering:003"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "e68245f7da6e01dc312e89316db504f5371fa916b5cb54e3e02b498eee65e40b"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:snake_plant:watering:v3",
+    "raw_text": "What should I know before watering my Snake Plant again?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:snake_plant",
+    "expected_dimensions": [
+      "watering"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:snake_plant:watering:001",
+      "claim:snake_plant:watering:002",
+      "claim:snake_plant:watering:003"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "5d9660d8029b7b62afb6eff3a211533e7590258412b6be9fcb4cca9beb5d4e3e"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:zz_plant:fertilizer:v1",
+    "raw_text": "How should I fertilize ZZ Plant?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:zz_plant",
+    "expected_dimensions": [
+      "fertilizer"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:zz_plant:fertilizer:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "6987aeea4d5383255625cd56777e7b2f846bfbc71f277788b5366f782ee9bee6"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:zz_plant:fertilizer:v2",
+    "raw_text": "What fertilizer routine is suitable for ZZ Plant?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:zz_plant",
+    "expected_dimensions": [
+      "fertilizer"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:zz_plant:fertilizer:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "bb8f7da586fc6ef947bc145a8daac18f8584ea866d0f0dec2dc430c387454654"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:zz_plant:fertilizer:v3",
+    "raw_text": "Does ZZ Plant need extra nutrients, and how often?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:zz_plant",
+    "expected_dimensions": [
+      "fertilizer"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:zz_plant:fertilizer:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "60b1a8cbc01165f4649cf97e6e3fde8798b5ad5bba382383002c521531fe5dcd"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:zz_plant:lighting:v1",
+    "raw_text": "What light does ZZ Plant need?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:zz_plant",
+    "expected_dimensions": [
+      "lighting"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:zz_plant:lighting:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "f8f8d64d972a14c4edd07396690d38288cdd4b47f5a70f01c467b54a0ccab1b2"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:zz_plant:lighting:v2",
+    "raw_text": "Where should I place my ZZ Plant so it gets suitable light?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:zz_plant",
+    "expected_dimensions": [
+      "lighting"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:zz_plant:lighting:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "f74ee6f3a5efb17f4642cf83bfb55821712d11ab71e9c4c7864addee8a5adaee"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:zz_plant:lighting:v3",
+    "raw_text": "Will ZZ Plant be okay in a dim corner?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:zz_plant",
+    "expected_dimensions": [
+      "lighting"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:zz_plant:lighting:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "f2a921757a7b7ec19fce5ca6bf26abdbe54f59fe72aa2c68798d4a9c312abe69"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:zz_plant:multi",
+    "raw_text": "What fertilizer and light guidance should I follow for ZZ Plant?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:zz_plant",
+    "expected_dimensions": [
+      "fertilizer",
+      "lighting"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:zz_plant:fertilizer:001",
+      "claim:zz_plant:lighting:001"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "208bd777f41d2d840aad16060179bb9188ea36ce4a23bcc711a0d245dd3599fd"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:zz_plant:pet_safety",
+    "raw_text": "Is ZZ Plant pet safe?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:zz_plant",
+    "expected_dimensions": [
+      "pet_safety"
+    ],
+    "qualifiers": {},
+    "answerability": "unsupported",
+    "gold_evidence_ids": [],
+    "expected_behavior": "abstain",
+    "split_hash": "7460ee6f52a0acbc664939086e5e3c7e3516db9c67b44c0cc17510869e76921a"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:zz_plant:watering:v1",
+    "raw_text": "How should I water ZZ Plant?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:zz_plant",
+    "expected_dimensions": [
+      "watering"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:zz_plant:watering:001",
+      "claim:zz_plant:watering:002"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "6e7997f500ed5d70587fba1f6a8d59a8844794878aaba717dd2f12ce440716c0"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:zz_plant:watering:v2",
+    "raw_text": "What watering routine is suitable for ZZ Plant?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:zz_plant",
+    "expected_dimensions": [
+      "watering"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:zz_plant:watering:001",
+      "claim:zz_plant:watering:002"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "1d74dd386a5471e83a902e9d8d5566a2981b24f0b948ee05afeb911aedefbc2d"
+  },
+  {
+    "schema_version": "1.2.0",
+    "query_id": "qv12:synthetic:zz_plant:watering:v3",
+    "raw_text": "What should I know before watering my ZZ Plant again?",
+    "provenance": "synthetic_generated_case",
+    "source_url": null,
+    "benchmark_eligible": true,
+    "plant_id": "plant:zz_plant",
+    "expected_dimensions": [
+      "watering"
+    ],
+    "qualifiers": {},
+    "answerability": "answerable",
+    "gold_evidence_ids": [
+      "claim:zz_plant:watering:001",
+      "claim:zz_plant:watering:002"
+    ],
+    "expected_behavior": "answer",
+    "split_hash": "68dcf93c8c95b063b30932b314eb6c9553f1534748d3b53c33d62508d0c520a9"
+  }
+]

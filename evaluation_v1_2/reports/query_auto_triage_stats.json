@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "rules_version": "1.0.0",
+  "candidate_count": 399,
+  "shortlist_count": 100,
+  "shortlist_per_plant_target": 10,
+  "benchmark_eligible_count": 0,
+  "triage_answerability_counts": {
+    "entity_scope_unresolved": 68,
+    "mixed_or_partial": 165,
+    "needs_manual_intent_review": 24,
+    "potentially_answerable": 33,
+    "unsupported_or_insufficient": 109
+  },
+  "shortlist_answerability_counts": {
+    "entity_scope_unresolved": 18,
+    "mixed_or_partial": 43,
+    "potentially_answerable": 6,
+    "unsupported_or_insufficient": 33
+  },
+  "shortlist_quota_counts": {
+    "plant:aloe_vera": 10,
+    "plant:chinese_evergreen": 10,
+    "plant:devils_ivy": 10,
+    "plant:fiddle_leaf_fig": 10,
+    "plant:hoya_wax_plant": 10,
+    "plant:monstera": 10,
+    "plant:peperomia": 10,
+    "plant:philodendron": 10,
+    "plant:snake_plant": 10,
+    "plant:zz_plant": 10
+  },
+  "shortlist_dimension_counts": {
+    "disease_or_symptom": 50,
+    "fertilizer": 9,
+    "flowering": 9,
+    "growth": 33,
+    "humidity": 6,
+    "identification": 5,
+    "lighting": 40,
+    "pest": 10,
+    "pet_safety": 2,
+    "propagation": 10,
+    "pruning": 7,
+    "repotting": 7,
+    "soil": 31,
+    "temperature": 9,
+    "watering": 44
+  },
+  "triage_sha256": "2684a2073452bb97d333eb7e7b65e1db4080e73c5b807c150e127f4edb5c723c",
+  "shortlist_sha256": "39c86db588ca13dbe8c1298b2e48bdef169351aaed5e89fda90a6bc80ef8bd7c"
+}

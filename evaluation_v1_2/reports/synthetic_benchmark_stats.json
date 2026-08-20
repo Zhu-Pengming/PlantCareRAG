@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "evaluation_type": "evidence_conditioned_synthetic_contract_benchmark",
+  "external_validity": false,
+  "warning": "Generated from the evidence being tested; do not report as real-user performance.",
+  "generation_styles": {
+    "v1": "direct attribute wording",
+    "v2": "novice wording with explicit dimension cue",
+    "v3": "implicit paraphrase; frozen before baseline evaluation"
+  },
+  "query_count": 80,
+  "answerability_counts": {
+    "answerable": 74,
+    "clarification_needed": 2,
+    "unsupported": 4
+  },
+  "dimension_counts": {
+    "fertilizer": 8,
+    "lighting": 33,
+    "pet_safety": 4,
+    "soil": 20,
+    "watering": 23
+  },
+  "split_counts": {
+    "dev": 45,
+    "test": 35
+  },
+  "benchmark_sha256": "baa68e29651fd84ceb3e2512316c330d828a6852df4aaba404dd726b2ab2fcd1"
+}

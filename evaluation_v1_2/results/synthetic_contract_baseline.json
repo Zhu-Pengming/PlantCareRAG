@@ -1,0 +1,2279 @@
+{
+  "schema_version": "1.0.0",
+  "evaluation_type": "evidence_conditioned_synthetic_contract_benchmark",
+  "external_validity": false,
+  "warning": "Generated from the evaluated evidence; do not report as real-user QA performance.",
+  "overall": {
+    "n": 80,
+    "entity_accuracy": 1.0,
+    "dimension_exact_match": 0.8125,
+    "behavior_accuracy": 0.8125,
+    "evidence_exact_match": 0.8125,
+    "evidence_micro_recall": 0.848
+  },
+  "by_split": {
+    "dev": {
+      "n": 45,
+      "entity_accuracy": 1.0,
+      "dimension_exact_match": 0.8444444444444444,
+      "behavior_accuracy": 0.8444444444444444,
+      "evidence_exact_match": 0.8444444444444444,
+      "evidence_micro_recall": 0.859375
+    },
+    "test": {
+      "n": 35,
+      "entity_accuracy": 1.0,
+      "dimension_exact_match": 0.7714285714285715,
+      "behavior_accuracy": 0.7714285714285715,
+      "evidence_exact_match": 0.7714285714285715,
+      "evidence_micro_recall": 0.8360655737704918
+    }
+  },
+  "by_generation_style": {
+    "mapping_clarification": {
+      "n": 2,
+      "entity_accuracy": 1.0,
+      "dimension_exact_match": 1.0,
+      "behavior_accuracy": 1.0,
+      "evidence_exact_match": 1.0,
+      "evidence_micro_recall": 1.0
+    },
+    "multi_dimension": {
+      "n": 8,
+      "entity_accuracy": 1.0,
+      "dimension_exact_match": 1.0,
+      "behavior_accuracy": 1.0,
+      "evidence_exact_match": 1.0,
+      "evidence_micro_recall": 1.0
+    },
+    "unsupported_boundary": {
+      "n": 4,
+      "entity_accuracy": 1.0,
+      "dimension_exact_match": 1.0,
+      "behavior_accuracy": 1.0,
+      "evidence_exact_match": 1.0,
+      "evidence_micro_recall": 1.0
+    },
+    "v1": {
+      "n": 22,
+      "entity_accuracy": 1.0,
+      "dimension_exact_match": 1.0,
+      "behavior_accuracy": 1.0,
+      "evidence_exact_match": 1.0,
+      "evidence_micro_recall": 1.0
+    },
+    "v2": {
+      "n": 22,
+      "entity_accuracy": 1.0,
+      "dimension_exact_match": 1.0,
+      "behavior_accuracy": 1.0,
+      "evidence_exact_match": 1.0,
+      "evidence_micro_recall": 1.0
+    },
+    "v3": {
+      "n": 22,
+      "entity_accuracy": 1.0,
+      "dimension_exact_match": 0.3181818181818182,
+      "behavior_accuracy": 0.3181818181818182,
+      "evidence_exact_match": 0.3181818181818182,
+      "evidence_micro_recall": 0.4411764705882353
+    }
+  },
+  "failure_counts": {
+    "dimension": 15,
+    "behavior": 15,
+    "evidence": 15
+  },
+  "queries": [
+    {
+      "query_id": "qv12:synthetic:aloe_vera:lighting:v1",
+      "split": "dev",
+      "expected_plant_id": "plant:aloe_vera",
+      "actual_plant_id": "plant:aloe_vera",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting"
+      ],
+      "actual_dimensions": [
+        "lighting"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:aloe_vera:lighting:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:aloe_vera:lighting:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v1"
+    },
+    {
+      "query_id": "qv12:synthetic:aloe_vera:lighting:v2",
+      "split": "test",
+      "expected_plant_id": "plant:aloe_vera",
+      "actual_plant_id": "plant:aloe_vera",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting"
+      ],
+      "actual_dimensions": [
+        "lighting"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:aloe_vera:lighting:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:aloe_vera:lighting:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v2"
+    },
+    {
+      "query_id": "qv12:synthetic:aloe_vera:lighting:v3",
+      "split": "test",
+      "expected_plant_id": "plant:aloe_vera",
+      "actual_plant_id": "plant:aloe_vera",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting"
+      ],
+      "actual_dimensions": [],
+      "dimension_exact_match": false,
+      "expected_behavior": "answer",
+      "actual_behavior": "clarify",
+      "behavior_match": false,
+      "gold_evidence_ids": [
+        "claim:aloe_vera:lighting:001"
+      ],
+      "actual_evidence_ids": [],
+      "evidence_exact_match": false,
+      "gold_recovered": 0,
+      "gold_count": 1,
+      "generation_style": "v3"
+    },
+    {
+      "query_id": "qv12:synthetic:aloe_vera:multi",
+      "split": "test",
+      "expected_plant_id": "plant:aloe_vera",
+      "actual_plant_id": "plant:aloe_vera",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting",
+        "soil"
+      ],
+      "actual_dimensions": [
+        "soil",
+        "lighting"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:aloe_vera:lighting:001",
+        "claim:aloe_vera:soil:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:aloe_vera:lighting:001",
+        "claim:aloe_vera:soil:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 2,
+      "gold_count": 2,
+      "generation_style": "multi_dimension"
+    },
+    {
+      "query_id": "qv12:synthetic:aloe_vera:pet_safety",
+      "split": "dev",
+      "expected_plant_id": "plant:aloe_vera",
+      "actual_plant_id": "plant:aloe_vera",
+      "entity_match": true,
+      "expected_dimensions": [
+        "pet_safety"
+      ],
+      "actual_dimensions": [
+        "pet_safety"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "abstain",
+      "actual_behavior": "abstain",
+      "behavior_match": true,
+      "gold_evidence_ids": [],
+      "actual_evidence_ids": [],
+      "evidence_exact_match": true,
+      "gold_recovered": 0,
+      "gold_count": 0,
+      "generation_style": "unsupported_boundary"
+    },
+    {
+      "query_id": "qv12:synthetic:aloe_vera:soil:v1",
+      "split": "dev",
+      "expected_plant_id": "plant:aloe_vera",
+      "actual_plant_id": "plant:aloe_vera",
+      "entity_match": true,
+      "expected_dimensions": [
+        "soil"
+      ],
+      "actual_dimensions": [
+        "soil"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:aloe_vera:soil:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:aloe_vera:soil:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v1"
+    },
+    {
+      "query_id": "qv12:synthetic:aloe_vera:soil:v2",
+      "split": "dev",
+      "expected_plant_id": "plant:aloe_vera",
+      "actual_plant_id": "plant:aloe_vera",
+      "entity_match": true,
+      "expected_dimensions": [
+        "soil"
+      ],
+      "actual_dimensions": [
+        "soil"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:aloe_vera:soil:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:aloe_vera:soil:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v2"
+    },
+    {
+      "query_id": "qv12:synthetic:aloe_vera:soil:v3",
+      "split": "dev",
+      "expected_plant_id": "plant:aloe_vera",
+      "actual_plant_id": "plant:aloe_vera",
+      "entity_match": true,
+      "expected_dimensions": [
+        "soil"
+      ],
+      "actual_dimensions": [],
+      "dimension_exact_match": false,
+      "expected_behavior": "answer",
+      "actual_behavior": "clarify",
+      "behavior_match": false,
+      "gold_evidence_ids": [
+        "claim:aloe_vera:soil:001"
+      ],
+      "actual_evidence_ids": [],
+      "evidence_exact_match": false,
+      "gold_recovered": 0,
+      "gold_count": 1,
+      "generation_style": "v3"
+    },
+    {
+      "query_id": "qv12:synthetic:aloe_vera:watering:v1",
+      "split": "dev",
+      "expected_plant_id": "plant:aloe_vera",
+      "actual_plant_id": "plant:aloe_vera",
+      "entity_match": true,
+      "expected_dimensions": [
+        "watering"
+      ],
+      "actual_dimensions": [
+        "watering"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:aloe_vera:watering:001",
+        "claim:aloe_vera:watering:002"
+      ],
+      "actual_evidence_ids": [
+        "claim:aloe_vera:watering:001",
+        "claim:aloe_vera:watering:002"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 2,
+      "gold_count": 2,
+      "generation_style": "v1"
+    },
+    {
+      "query_id": "qv12:synthetic:aloe_vera:watering:v2",
+      "split": "dev",
+      "expected_plant_id": "plant:aloe_vera",
+      "actual_plant_id": "plant:aloe_vera",
+      "entity_match": true,
+      "expected_dimensions": [
+        "watering"
+      ],
+      "actual_dimensions": [
+        "watering"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:aloe_vera:watering:001",
+        "claim:aloe_vera:watering:002"
+      ],
+      "actual_evidence_ids": [
+        "claim:aloe_vera:watering:001",
+        "claim:aloe_vera:watering:002"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 2,
+      "gold_count": 2,
+      "generation_style": "v2"
+    },
+    {
+      "query_id": "qv12:synthetic:aloe_vera:watering:v3",
+      "split": "dev",
+      "expected_plant_id": "plant:aloe_vera",
+      "actual_plant_id": "plant:aloe_vera",
+      "entity_match": true,
+      "expected_dimensions": [
+        "watering"
+      ],
+      "actual_dimensions": [
+        "watering"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:aloe_vera:watering:001",
+        "claim:aloe_vera:watering:002"
+      ],
+      "actual_evidence_ids": [
+        "claim:aloe_vera:watering:001",
+        "claim:aloe_vera:watering:002"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 2,
+      "gold_count": 2,
+      "generation_style": "v3"
+    },
+    {
+      "query_id": "qv12:synthetic:chinese_evergreen:lighting:v1",
+      "split": "test",
+      "expected_plant_id": "plant:chinese_evergreen",
+      "actual_plant_id": "plant:chinese_evergreen",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting"
+      ],
+      "actual_dimensions": [
+        "lighting"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:chinese_evergreen:lighting:001",
+        "claim:chinese_evergreen:lighting:002",
+        "claim:chinese_evergreen:lighting:003"
+      ],
+      "actual_evidence_ids": [
+        "claim:chinese_evergreen:lighting:001",
+        "claim:chinese_evergreen:lighting:002",
+        "claim:chinese_evergreen:lighting:003"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 3,
+      "gold_count": 3,
+      "generation_style": "v1"
+    },
+    {
+      "query_id": "qv12:synthetic:chinese_evergreen:lighting:v2",
+      "split": "dev",
+      "expected_plant_id": "plant:chinese_evergreen",
+      "actual_plant_id": "plant:chinese_evergreen",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting"
+      ],
+      "actual_dimensions": [
+        "lighting"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:chinese_evergreen:lighting:001",
+        "claim:chinese_evergreen:lighting:002",
+        "claim:chinese_evergreen:lighting:003"
+      ],
+      "actual_evidence_ids": [
+        "claim:chinese_evergreen:lighting:001",
+        "claim:chinese_evergreen:lighting:002",
+        "claim:chinese_evergreen:lighting:003"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 3,
+      "gold_count": 3,
+      "generation_style": "v2"
+    },
+    {
+      "query_id": "qv12:synthetic:chinese_evergreen:lighting:v3",
+      "split": "dev",
+      "expected_plant_id": "plant:chinese_evergreen",
+      "actual_plant_id": "plant:chinese_evergreen",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting"
+      ],
+      "actual_dimensions": [],
+      "dimension_exact_match": false,
+      "expected_behavior": "answer",
+      "actual_behavior": "clarify",
+      "behavior_match": false,
+      "gold_evidence_ids": [
+        "claim:chinese_evergreen:lighting:001",
+        "claim:chinese_evergreen:lighting:002",
+        "claim:chinese_evergreen:lighting:003"
+      ],
+      "actual_evidence_ids": [],
+      "evidence_exact_match": false,
+      "gold_recovered": 0,
+      "gold_count": 3,
+      "generation_style": "v3"
+    },
+    {
+      "query_id": "qv12:synthetic:chinese_evergreen:multi",
+      "split": "test",
+      "expected_plant_id": "plant:chinese_evergreen",
+      "actual_plant_id": "plant:chinese_evergreen",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting",
+        "watering"
+      ],
+      "actual_dimensions": [
+        "watering",
+        "lighting"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:chinese_evergreen:lighting:001",
+        "claim:chinese_evergreen:lighting:002",
+        "claim:chinese_evergreen:lighting:003",
+        "claim:chinese_evergreen:watering:001",
+        "claim:chinese_evergreen:watering:002",
+        "claim:chinese_evergreen:watering:003",
+        "claim:chinese_evergreen:watering:004"
+      ],
+      "actual_evidence_ids": [
+        "claim:chinese_evergreen:lighting:001",
+        "claim:chinese_evergreen:lighting:002",
+        "claim:chinese_evergreen:lighting:003",
+        "claim:chinese_evergreen:watering:001",
+        "claim:chinese_evergreen:watering:002",
+        "claim:chinese_evergreen:watering:003",
+        "claim:chinese_evergreen:watering:004"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 7,
+      "gold_count": 7,
+      "generation_style": "multi_dimension"
+    },
+    {
+      "query_id": "qv12:synthetic:chinese_evergreen:pet_safety",
+      "split": "test",
+      "expected_plant_id": "plant:chinese_evergreen",
+      "actual_plant_id": "plant:chinese_evergreen",
+      "entity_match": true,
+      "expected_dimensions": [
+        "pet_safety"
+      ],
+      "actual_dimensions": [
+        "pet_safety"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "abstain",
+      "actual_behavior": "abstain",
+      "behavior_match": true,
+      "gold_evidence_ids": [],
+      "actual_evidence_ids": [],
+      "evidence_exact_match": true,
+      "gold_recovered": 0,
+      "gold_count": 0,
+      "generation_style": "unsupported_boundary"
+    },
+    {
+      "query_id": "qv12:synthetic:chinese_evergreen:watering:v1",
+      "split": "dev",
+      "expected_plant_id": "plant:chinese_evergreen",
+      "actual_plant_id": "plant:chinese_evergreen",
+      "entity_match": true,
+      "expected_dimensions": [
+        "watering"
+      ],
+      "actual_dimensions": [
+        "watering"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:chinese_evergreen:watering:001",
+        "claim:chinese_evergreen:watering:002",
+        "claim:chinese_evergreen:watering:003",
+        "claim:chinese_evergreen:watering:004"
+      ],
+      "actual_evidence_ids": [
+        "claim:chinese_evergreen:watering:001",
+        "claim:chinese_evergreen:watering:002",
+        "claim:chinese_evergreen:watering:003",
+        "claim:chinese_evergreen:watering:004"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 4,
+      "gold_count": 4,
+      "generation_style": "v1"
+    },
+    {
+      "query_id": "qv12:synthetic:chinese_evergreen:watering:v2",
+      "split": "test",
+      "expected_plant_id": "plant:chinese_evergreen",
+      "actual_plant_id": "plant:chinese_evergreen",
+      "entity_match": true,
+      "expected_dimensions": [
+        "watering"
+      ],
+      "actual_dimensions": [
+        "watering"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:chinese_evergreen:watering:001",
+        "claim:chinese_evergreen:watering:002",
+        "claim:chinese_evergreen:watering:003",
+        "claim:chinese_evergreen:watering:004"
+      ],
+      "actual_evidence_ids": [
+        "claim:chinese_evergreen:watering:001",
+        "claim:chinese_evergreen:watering:002",
+        "claim:chinese_evergreen:watering:003",
+        "claim:chinese_evergreen:watering:004"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 4,
+      "gold_count": 4,
+      "generation_style": "v2"
+    },
+    {
+      "query_id": "qv12:synthetic:chinese_evergreen:watering:v3",
+      "split": "dev",
+      "expected_plant_id": "plant:chinese_evergreen",
+      "actual_plant_id": "plant:chinese_evergreen",
+      "entity_match": true,
+      "expected_dimensions": [
+        "watering"
+      ],
+      "actual_dimensions": [
+        "watering"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:chinese_evergreen:watering:001",
+        "claim:chinese_evergreen:watering:002",
+        "claim:chinese_evergreen:watering:003",
+        "claim:chinese_evergreen:watering:004"
+      ],
+      "actual_evidence_ids": [
+        "claim:chinese_evergreen:watering:001",
+        "claim:chinese_evergreen:watering:002",
+        "claim:chinese_evergreen:watering:003",
+        "claim:chinese_evergreen:watering:004"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 4,
+      "gold_count": 4,
+      "generation_style": "v3"
+    },
+    {
+      "query_id": "qv12:synthetic:devils_ivy:fertilizer:v1",
+      "split": "test",
+      "expected_plant_id": "plant:devils_ivy",
+      "actual_plant_id": "plant:devils_ivy",
+      "entity_match": true,
+      "expected_dimensions": [
+        "fertilizer"
+      ],
+      "actual_dimensions": [
+        "fertilizer"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:devils_ivy:fertilizer:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:devils_ivy:fertilizer:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v1"
+    },
+    {
+      "query_id": "qv12:synthetic:devils_ivy:fertilizer:v2",
+      "split": "dev",
+      "expected_plant_id": "plant:devils_ivy",
+      "actual_plant_id": "plant:devils_ivy",
+      "entity_match": true,
+      "expected_dimensions": [
+        "fertilizer"
+      ],
+      "actual_dimensions": [
+        "fertilizer"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:devils_ivy:fertilizer:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:devils_ivy:fertilizer:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v2"
+    },
+    {
+      "query_id": "qv12:synthetic:devils_ivy:fertilizer:v3",
+      "split": "test",
+      "expected_plant_id": "plant:devils_ivy",
+      "actual_plant_id": "plant:devils_ivy",
+      "entity_match": true,
+      "expected_dimensions": [
+        "fertilizer"
+      ],
+      "actual_dimensions": [],
+      "dimension_exact_match": false,
+      "expected_behavior": "answer",
+      "actual_behavior": "clarify",
+      "behavior_match": false,
+      "gold_evidence_ids": [
+        "claim:devils_ivy:fertilizer:001"
+      ],
+      "actual_evidence_ids": [],
+      "evidence_exact_match": false,
+      "gold_recovered": 0,
+      "gold_count": 1,
+      "generation_style": "v3"
+    },
+    {
+      "query_id": "qv12:synthetic:devils_ivy:lighting:v1",
+      "split": "test",
+      "expected_plant_id": "plant:devils_ivy",
+      "actual_plant_id": "plant:devils_ivy",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting"
+      ],
+      "actual_dimensions": [
+        "lighting"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:devils_ivy:lighting:001",
+        "claim:devils_ivy:lighting:002"
+      ],
+      "actual_evidence_ids": [
+        "claim:devils_ivy:lighting:001",
+        "claim:devils_ivy:lighting:002"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 2,
+      "gold_count": 2,
+      "generation_style": "v1"
+    },
+    {
+      "query_id": "qv12:synthetic:devils_ivy:lighting:v2",
+      "split": "test",
+      "expected_plant_id": "plant:devils_ivy",
+      "actual_plant_id": "plant:devils_ivy",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting"
+      ],
+      "actual_dimensions": [
+        "lighting"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:devils_ivy:lighting:001",
+        "claim:devils_ivy:lighting:002"
+      ],
+      "actual_evidence_ids": [
+        "claim:devils_ivy:lighting:001",
+        "claim:devils_ivy:lighting:002"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 2,
+      "gold_count": 2,
+      "generation_style": "v2"
+    },
+    {
+      "query_id": "qv12:synthetic:devils_ivy:lighting:v3",
+      "split": "test",
+      "expected_plant_id": "plant:devils_ivy",
+      "actual_plant_id": "plant:devils_ivy",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting"
+      ],
+      "actual_dimensions": [],
+      "dimension_exact_match": false,
+      "expected_behavior": "answer",
+      "actual_behavior": "clarify",
+      "behavior_match": false,
+      "gold_evidence_ids": [
+        "claim:devils_ivy:lighting:001",
+        "claim:devils_ivy:lighting:002"
+      ],
+      "actual_evidence_ids": [],
+      "evidence_exact_match": false,
+      "gold_recovered": 0,
+      "gold_count": 2,
+      "generation_style": "v3"
+    },
+    {
+      "query_id": "qv12:synthetic:devils_ivy:multi",
+      "split": "dev",
+      "expected_plant_id": "plant:devils_ivy",
+      "actual_plant_id": "plant:devils_ivy",
+      "entity_match": true,
+      "expected_dimensions": [
+        "fertilizer",
+        "lighting"
+      ],
+      "actual_dimensions": [
+        "fertilizer",
+        "lighting"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:devils_ivy:fertilizer:001",
+        "claim:devils_ivy:lighting:001",
+        "claim:devils_ivy:lighting:002"
+      ],
+      "actual_evidence_ids": [
+        "claim:devils_ivy:fertilizer:001",
+        "claim:devils_ivy:lighting:001",
+        "claim:devils_ivy:lighting:002"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 3,
+      "gold_count": 3,
+      "generation_style": "multi_dimension"
+    },
+    {
+      "query_id": "qv12:synthetic:devils_ivy:watering:v1",
+      "split": "dev",
+      "expected_plant_id": "plant:devils_ivy",
+      "actual_plant_id": "plant:devils_ivy",
+      "entity_match": true,
+      "expected_dimensions": [
+        "watering"
+      ],
+      "actual_dimensions": [
+        "watering"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:devils_ivy:watering:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:devils_ivy:watering:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v1"
+    },
+    {
+      "query_id": "qv12:synthetic:devils_ivy:watering:v2",
+      "split": "dev",
+      "expected_plant_id": "plant:devils_ivy",
+      "actual_plant_id": "plant:devils_ivy",
+      "entity_match": true,
+      "expected_dimensions": [
+        "watering"
+      ],
+      "actual_dimensions": [
+        "watering"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:devils_ivy:watering:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:devils_ivy:watering:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v2"
+    },
+    {
+      "query_id": "qv12:synthetic:devils_ivy:watering:v3",
+      "split": "test",
+      "expected_plant_id": "plant:devils_ivy",
+      "actual_plant_id": "plant:devils_ivy",
+      "entity_match": true,
+      "expected_dimensions": [
+        "watering"
+      ],
+      "actual_dimensions": [
+        "watering"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:devils_ivy:watering:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:devils_ivy:watering:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v3"
+    },
+    {
+      "query_id": "qv12:synthetic:fiddle_leaf_fig:lighting:v1",
+      "split": "dev",
+      "expected_plant_id": "plant:fiddle_leaf_fig",
+      "actual_plant_id": "plant:fiddle_leaf_fig",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting"
+      ],
+      "actual_dimensions": [
+        "lighting"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:fiddle_leaf_fig:lighting:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:fiddle_leaf_fig:lighting:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v1"
+    },
+    {
+      "query_id": "qv12:synthetic:fiddle_leaf_fig:lighting:v2",
+      "split": "dev",
+      "expected_plant_id": "plant:fiddle_leaf_fig",
+      "actual_plant_id": "plant:fiddle_leaf_fig",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting"
+      ],
+      "actual_dimensions": [
+        "lighting"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:fiddle_leaf_fig:lighting:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:fiddle_leaf_fig:lighting:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v2"
+    },
+    {
+      "query_id": "qv12:synthetic:fiddle_leaf_fig:lighting:v3",
+      "split": "dev",
+      "expected_plant_id": "plant:fiddle_leaf_fig",
+      "actual_plant_id": "plant:fiddle_leaf_fig",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting"
+      ],
+      "actual_dimensions": [],
+      "dimension_exact_match": false,
+      "expected_behavior": "answer",
+      "actual_behavior": "clarify",
+      "behavior_match": false,
+      "gold_evidence_ids": [
+        "claim:fiddle_leaf_fig:lighting:001"
+      ],
+      "actual_evidence_ids": [],
+      "evidence_exact_match": false,
+      "gold_recovered": 0,
+      "gold_count": 1,
+      "generation_style": "v3"
+    },
+    {
+      "query_id": "qv12:synthetic:fiddle_leaf_fig:multi",
+      "split": "dev",
+      "expected_plant_id": "plant:fiddle_leaf_fig",
+      "actual_plant_id": "plant:fiddle_leaf_fig",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting",
+        "soil"
+      ],
+      "actual_dimensions": [
+        "soil",
+        "lighting"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:fiddle_leaf_fig:lighting:001",
+        "claim:fiddle_leaf_fig:soil:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:fiddle_leaf_fig:lighting:001",
+        "claim:fiddle_leaf_fig:soil:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 2,
+      "gold_count": 2,
+      "generation_style": "multi_dimension"
+    },
+    {
+      "query_id": "qv12:synthetic:fiddle_leaf_fig:soil:v1",
+      "split": "test",
+      "expected_plant_id": "plant:fiddle_leaf_fig",
+      "actual_plant_id": "plant:fiddle_leaf_fig",
+      "entity_match": true,
+      "expected_dimensions": [
+        "soil"
+      ],
+      "actual_dimensions": [
+        "soil"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:fiddle_leaf_fig:soil:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:fiddle_leaf_fig:soil:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v1"
+    },
+    {
+      "query_id": "qv12:synthetic:fiddle_leaf_fig:soil:v2",
+      "split": "test",
+      "expected_plant_id": "plant:fiddle_leaf_fig",
+      "actual_plant_id": "plant:fiddle_leaf_fig",
+      "entity_match": true,
+      "expected_dimensions": [
+        "soil"
+      ],
+      "actual_dimensions": [
+        "soil"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:fiddle_leaf_fig:soil:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:fiddle_leaf_fig:soil:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v2"
+    },
+    {
+      "query_id": "qv12:synthetic:fiddle_leaf_fig:soil:v3",
+      "split": "test",
+      "expected_plant_id": "plant:fiddle_leaf_fig",
+      "actual_plant_id": "plant:fiddle_leaf_fig",
+      "entity_match": true,
+      "expected_dimensions": [
+        "soil"
+      ],
+      "actual_dimensions": [],
+      "dimension_exact_match": false,
+      "expected_behavior": "answer",
+      "actual_behavior": "clarify",
+      "behavior_match": false,
+      "gold_evidence_ids": [
+        "claim:fiddle_leaf_fig:soil:001"
+      ],
+      "actual_evidence_ids": [],
+      "evidence_exact_match": false,
+      "gold_recovered": 0,
+      "gold_count": 1,
+      "generation_style": "v3"
+    },
+    {
+      "query_id": "qv12:synthetic:fiddle_leaf_fig:watering:v1",
+      "split": "dev",
+      "expected_plant_id": "plant:fiddle_leaf_fig",
+      "actual_plant_id": "plant:fiddle_leaf_fig",
+      "entity_match": true,
+      "expected_dimensions": [
+        "watering"
+      ],
+      "actual_dimensions": [
+        "watering"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:fiddle_leaf_fig:watering:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:fiddle_leaf_fig:watering:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v1"
+    },
+    {
+      "query_id": "qv12:synthetic:fiddle_leaf_fig:watering:v2",
+      "split": "test",
+      "expected_plant_id": "plant:fiddle_leaf_fig",
+      "actual_plant_id": "plant:fiddle_leaf_fig",
+      "entity_match": true,
+      "expected_dimensions": [
+        "watering"
+      ],
+      "actual_dimensions": [
+        "watering"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:fiddle_leaf_fig:watering:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:fiddle_leaf_fig:watering:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v2"
+    },
+    {
+      "query_id": "qv12:synthetic:fiddle_leaf_fig:watering:v3",
+      "split": "test",
+      "expected_plant_id": "plant:fiddle_leaf_fig",
+      "actual_plant_id": "plant:fiddle_leaf_fig",
+      "entity_match": true,
+      "expected_dimensions": [
+        "watering"
+      ],
+      "actual_dimensions": [
+        "watering"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:fiddle_leaf_fig:watering:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:fiddle_leaf_fig:watering:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v3"
+    },
+    {
+      "query_id": "qv12:synthetic:hoya_wax_plant:mapping_clarification",
+      "split": "dev",
+      "expected_plant_id": "plant:hoya_wax_plant",
+      "actual_plant_id": "plant:hoya_wax_plant",
+      "entity_match": true,
+      "expected_dimensions": [
+        "watering"
+      ],
+      "actual_dimensions": [
+        "watering"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "clarify",
+      "actual_behavior": "clarify",
+      "behavior_match": true,
+      "gold_evidence_ids": [],
+      "actual_evidence_ids": [],
+      "evidence_exact_match": true,
+      "gold_recovered": 0,
+      "gold_count": 0,
+      "generation_style": "mapping_clarification"
+    },
+    {
+      "query_id": "qv12:synthetic:monstera:mapping_clarification",
+      "split": "dev",
+      "expected_plant_id": "plant:monstera",
+      "actual_plant_id": "plant:monstera",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting"
+      ],
+      "actual_dimensions": [
+        "lighting"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "clarify",
+      "actual_behavior": "clarify",
+      "behavior_match": true,
+      "gold_evidence_ids": [],
+      "actual_evidence_ids": [],
+      "evidence_exact_match": true,
+      "gold_recovered": 0,
+      "gold_count": 0,
+      "generation_style": "mapping_clarification"
+    },
+    {
+      "query_id": "qv12:synthetic:peperomia:lighting:v1",
+      "split": "test",
+      "expected_plant_id": "plant:peperomia",
+      "actual_plant_id": "plant:peperomia",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting"
+      ],
+      "actual_dimensions": [
+        "lighting"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:peperomia:lighting:001",
+        "claim:peperomia:lighting:002"
+      ],
+      "actual_evidence_ids": [
+        "claim:peperomia:lighting:001",
+        "claim:peperomia:lighting:002"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 2,
+      "gold_count": 2,
+      "generation_style": "v1"
+    },
+    {
+      "query_id": "qv12:synthetic:peperomia:lighting:v2",
+      "split": "dev",
+      "expected_plant_id": "plant:peperomia",
+      "actual_plant_id": "plant:peperomia",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting"
+      ],
+      "actual_dimensions": [
+        "lighting"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:peperomia:lighting:001",
+        "claim:peperomia:lighting:002"
+      ],
+      "actual_evidence_ids": [
+        "claim:peperomia:lighting:001",
+        "claim:peperomia:lighting:002"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 2,
+      "gold_count": 2,
+      "generation_style": "v2"
+    },
+    {
+      "query_id": "qv12:synthetic:peperomia:lighting:v3",
+      "split": "test",
+      "expected_plant_id": "plant:peperomia",
+      "actual_plant_id": "plant:peperomia",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting"
+      ],
+      "actual_dimensions": [],
+      "dimension_exact_match": false,
+      "expected_behavior": "answer",
+      "actual_behavior": "clarify",
+      "behavior_match": false,
+      "gold_evidence_ids": [
+        "claim:peperomia:lighting:001",
+        "claim:peperomia:lighting:002"
+      ],
+      "actual_evidence_ids": [],
+      "evidence_exact_match": false,
+      "gold_recovered": 0,
+      "gold_count": 2,
+      "generation_style": "v3"
+    },
+    {
+      "query_id": "qv12:synthetic:peperomia:multi",
+      "split": "test",
+      "expected_plant_id": "plant:peperomia",
+      "actual_plant_id": "plant:peperomia",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting",
+        "soil"
+      ],
+      "actual_dimensions": [
+        "soil",
+        "lighting"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:peperomia:lighting:001",
+        "claim:peperomia:lighting:002",
+        "claim:peperomia:soil:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:peperomia:lighting:001",
+        "claim:peperomia:lighting:002",
+        "claim:peperomia:soil:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 3,
+      "gold_count": 3,
+      "generation_style": "multi_dimension"
+    },
+    {
+      "query_id": "qv12:synthetic:peperomia:soil:v1",
+      "split": "test",
+      "expected_plant_id": "plant:peperomia",
+      "actual_plant_id": "plant:peperomia",
+      "entity_match": true,
+      "expected_dimensions": [
+        "soil"
+      ],
+      "actual_dimensions": [
+        "soil"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:peperomia:soil:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:peperomia:soil:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v1"
+    },
+    {
+      "query_id": "qv12:synthetic:peperomia:soil:v2",
+      "split": "test",
+      "expected_plant_id": "plant:peperomia",
+      "actual_plant_id": "plant:peperomia",
+      "entity_match": true,
+      "expected_dimensions": [
+        "soil"
+      ],
+      "actual_dimensions": [
+        "soil"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:peperomia:soil:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:peperomia:soil:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v2"
+    },
+    {
+      "query_id": "qv12:synthetic:peperomia:soil:v3",
+      "split": "dev",
+      "expected_plant_id": "plant:peperomia",
+      "actual_plant_id": "plant:peperomia",
+      "entity_match": true,
+      "expected_dimensions": [
+        "soil"
+      ],
+      "actual_dimensions": [],
+      "dimension_exact_match": false,
+      "expected_behavior": "answer",
+      "actual_behavior": "clarify",
+      "behavior_match": false,
+      "gold_evidence_ids": [
+        "claim:peperomia:soil:001"
+      ],
+      "actual_evidence_ids": [],
+      "evidence_exact_match": false,
+      "gold_recovered": 0,
+      "gold_count": 1,
+      "generation_style": "v3"
+    },
+    {
+      "query_id": "qv12:synthetic:peperomia:watering:v1",
+      "split": "dev",
+      "expected_plant_id": "plant:peperomia",
+      "actual_plant_id": "plant:peperomia",
+      "entity_match": true,
+      "expected_dimensions": [
+        "watering"
+      ],
+      "actual_dimensions": [
+        "watering"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:peperomia:watering:001",
+        "claim:peperomia:watering:002"
+      ],
+      "actual_evidence_ids": [
+        "claim:peperomia:watering:001",
+        "claim:peperomia:watering:002"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 2,
+      "gold_count": 2,
+      "generation_style": "v1"
+    },
+    {
+      "query_id": "qv12:synthetic:peperomia:watering:v2",
+      "split": "test",
+      "expected_plant_id": "plant:peperomia",
+      "actual_plant_id": "plant:peperomia",
+      "entity_match": true,
+      "expected_dimensions": [
+        "watering"
+      ],
+      "actual_dimensions": [
+        "watering"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:peperomia:watering:001",
+        "claim:peperomia:watering:002"
+      ],
+      "actual_evidence_ids": [
+        "claim:peperomia:watering:001",
+        "claim:peperomia:watering:002"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 2,
+      "gold_count": 2,
+      "generation_style": "v2"
+    },
+    {
+      "query_id": "qv12:synthetic:peperomia:watering:v3",
+      "split": "test",
+      "expected_plant_id": "plant:peperomia",
+      "actual_plant_id": "plant:peperomia",
+      "entity_match": true,
+      "expected_dimensions": [
+        "watering"
+      ],
+      "actual_dimensions": [
+        "watering"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:peperomia:watering:001",
+        "claim:peperomia:watering:002"
+      ],
+      "actual_evidence_ids": [
+        "claim:peperomia:watering:001",
+        "claim:peperomia:watering:002"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 2,
+      "gold_count": 2,
+      "generation_style": "v3"
+    },
+    {
+      "query_id": "qv12:synthetic:philodendron:lighting:v1",
+      "split": "dev",
+      "expected_plant_id": "plant:philodendron",
+      "actual_plant_id": "plant:philodendron",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting"
+      ],
+      "actual_dimensions": [
+        "lighting"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:philodendron:lighting:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:philodendron:lighting:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v1"
+    },
+    {
+      "query_id": "qv12:synthetic:philodendron:lighting:v2",
+      "split": "test",
+      "expected_plant_id": "plant:philodendron",
+      "actual_plant_id": "plant:philodendron",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting"
+      ],
+      "actual_dimensions": [
+        "lighting"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:philodendron:lighting:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:philodendron:lighting:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v2"
+    },
+    {
+      "query_id": "qv12:synthetic:philodendron:lighting:v3",
+      "split": "dev",
+      "expected_plant_id": "plant:philodendron",
+      "actual_plant_id": "plant:philodendron",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting"
+      ],
+      "actual_dimensions": [],
+      "dimension_exact_match": false,
+      "expected_behavior": "answer",
+      "actual_behavior": "clarify",
+      "behavior_match": false,
+      "gold_evidence_ids": [
+        "claim:philodendron:lighting:001"
+      ],
+      "actual_evidence_ids": [],
+      "evidence_exact_match": false,
+      "gold_recovered": 0,
+      "gold_count": 1,
+      "generation_style": "v3"
+    },
+    {
+      "query_id": "qv12:synthetic:philodendron:multi",
+      "split": "test",
+      "expected_plant_id": "plant:philodendron",
+      "actual_plant_id": "plant:philodendron",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting",
+        "soil"
+      ],
+      "actual_dimensions": [
+        "soil",
+        "lighting"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:philodendron:lighting:001",
+        "claim:philodendron:soil:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:philodendron:lighting:001",
+        "claim:philodendron:soil:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 2,
+      "gold_count": 2,
+      "generation_style": "multi_dimension"
+    },
+    {
+      "query_id": "qv12:synthetic:philodendron:soil:v1",
+      "split": "test",
+      "expected_plant_id": "plant:philodendron",
+      "actual_plant_id": "plant:philodendron",
+      "entity_match": true,
+      "expected_dimensions": [
+        "soil"
+      ],
+      "actual_dimensions": [
+        "soil"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:philodendron:soil:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:philodendron:soil:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v1"
+    },
+    {
+      "query_id": "qv12:synthetic:philodendron:soil:v2",
+      "split": "dev",
+      "expected_plant_id": "plant:philodendron",
+      "actual_plant_id": "plant:philodendron",
+      "entity_match": true,
+      "expected_dimensions": [
+        "soil"
+      ],
+      "actual_dimensions": [
+        "soil"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:philodendron:soil:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:philodendron:soil:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v2"
+    },
+    {
+      "query_id": "qv12:synthetic:philodendron:soil:v3",
+      "split": "dev",
+      "expected_plant_id": "plant:philodendron",
+      "actual_plant_id": "plant:philodendron",
+      "entity_match": true,
+      "expected_dimensions": [
+        "soil"
+      ],
+      "actual_dimensions": [],
+      "dimension_exact_match": false,
+      "expected_behavior": "answer",
+      "actual_behavior": "clarify",
+      "behavior_match": false,
+      "gold_evidence_ids": [
+        "claim:philodendron:soil:001"
+      ],
+      "actual_evidence_ids": [],
+      "evidence_exact_match": false,
+      "gold_recovered": 0,
+      "gold_count": 1,
+      "generation_style": "v3"
+    },
+    {
+      "query_id": "qv12:synthetic:snake_plant:lighting:v1",
+      "split": "dev",
+      "expected_plant_id": "plant:snake_plant",
+      "actual_plant_id": "plant:snake_plant",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting"
+      ],
+      "actual_dimensions": [
+        "lighting"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:snake_plant:lighting:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:snake_plant:lighting:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v1"
+    },
+    {
+      "query_id": "qv12:synthetic:snake_plant:lighting:v2",
+      "split": "dev",
+      "expected_plant_id": "plant:snake_plant",
+      "actual_plant_id": "plant:snake_plant",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting"
+      ],
+      "actual_dimensions": [
+        "lighting"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:snake_plant:lighting:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:snake_plant:lighting:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v2"
+    },
+    {
+      "query_id": "qv12:synthetic:snake_plant:lighting:v3",
+      "split": "test",
+      "expected_plant_id": "plant:snake_plant",
+      "actual_plant_id": "plant:snake_plant",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting"
+      ],
+      "actual_dimensions": [],
+      "dimension_exact_match": false,
+      "expected_behavior": "answer",
+      "actual_behavior": "clarify",
+      "behavior_match": false,
+      "gold_evidence_ids": [
+        "claim:snake_plant:lighting:001"
+      ],
+      "actual_evidence_ids": [],
+      "evidence_exact_match": false,
+      "gold_recovered": 0,
+      "gold_count": 1,
+      "generation_style": "v3"
+    },
+    {
+      "query_id": "qv12:synthetic:snake_plant:multi",
+      "split": "dev",
+      "expected_plant_id": "plant:snake_plant",
+      "actual_plant_id": "plant:snake_plant",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting",
+        "soil"
+      ],
+      "actual_dimensions": [
+        "soil",
+        "lighting"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:snake_plant:lighting:001",
+        "claim:snake_plant:soil:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:snake_plant:lighting:001",
+        "claim:snake_plant:soil:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 2,
+      "gold_count": 2,
+      "generation_style": "multi_dimension"
+    },
+    {
+      "query_id": "qv12:synthetic:snake_plant:pet_safety",
+      "split": "dev",
+      "expected_plant_id": "plant:snake_plant",
+      "actual_plant_id": "plant:snake_plant",
+      "entity_match": true,
+      "expected_dimensions": [
+        "pet_safety"
+      ],
+      "actual_dimensions": [
+        "pet_safety"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "abstain",
+      "actual_behavior": "abstain",
+      "behavior_match": true,
+      "gold_evidence_ids": [],
+      "actual_evidence_ids": [],
+      "evidence_exact_match": true,
+      "gold_recovered": 0,
+      "gold_count": 0,
+      "generation_style": "unsupported_boundary"
+    },
+    {
+      "query_id": "qv12:synthetic:snake_plant:soil:v1",
+      "split": "dev",
+      "expected_plant_id": "plant:snake_plant",
+      "actual_plant_id": "plant:snake_plant",
+      "entity_match": true,
+      "expected_dimensions": [
+        "soil"
+      ],
+      "actual_dimensions": [
+        "soil"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:snake_plant:soil:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:snake_plant:soil:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v1"
+    },
+    {
+      "query_id": "qv12:synthetic:snake_plant:soil:v2",
+      "split": "dev",
+      "expected_plant_id": "plant:snake_plant",
+      "actual_plant_id": "plant:snake_plant",
+      "entity_match": true,
+      "expected_dimensions": [
+        "soil"
+      ],
+      "actual_dimensions": [
+        "soil"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:snake_plant:soil:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:snake_plant:soil:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v2"
+    },
+    {
+      "query_id": "qv12:synthetic:snake_plant:soil:v3",
+      "split": "dev",
+      "expected_plant_id": "plant:snake_plant",
+      "actual_plant_id": "plant:snake_plant",
+      "entity_match": true,
+      "expected_dimensions": [
+        "soil"
+      ],
+      "actual_dimensions": [],
+      "dimension_exact_match": false,
+      "expected_behavior": "answer",
+      "actual_behavior": "clarify",
+      "behavior_match": false,
+      "gold_evidence_ids": [
+        "claim:snake_plant:soil:001"
+      ],
+      "actual_evidence_ids": [],
+      "evidence_exact_match": false,
+      "gold_recovered": 0,
+      "gold_count": 1,
+      "generation_style": "v3"
+    },
+    {
+      "query_id": "qv12:synthetic:snake_plant:watering:v1",
+      "split": "dev",
+      "expected_plant_id": "plant:snake_plant",
+      "actual_plant_id": "plant:snake_plant",
+      "entity_match": true,
+      "expected_dimensions": [
+        "watering"
+      ],
+      "actual_dimensions": [
+        "watering"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:snake_plant:watering:001",
+        "claim:snake_plant:watering:002",
+        "claim:snake_plant:watering:003"
+      ],
+      "actual_evidence_ids": [
+        "claim:snake_plant:watering:001",
+        "claim:snake_plant:watering:002",
+        "claim:snake_plant:watering:003"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 3,
+      "gold_count": 3,
+      "generation_style": "v1"
+    },
+    {
+      "query_id": "qv12:synthetic:snake_plant:watering:v2",
+      "split": "test",
+      "expected_plant_id": "plant:snake_plant",
+      "actual_plant_id": "plant:snake_plant",
+      "entity_match": true,
+      "expected_dimensions": [
+        "watering"
+      ],
+      "actual_dimensions": [
+        "watering"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:snake_plant:watering:001",
+        "claim:snake_plant:watering:002",
+        "claim:snake_plant:watering:003"
+      ],
+      "actual_evidence_ids": [
+        "claim:snake_plant:watering:001",
+        "claim:snake_plant:watering:002",
+        "claim:snake_plant:watering:003"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 3,
+      "gold_count": 3,
+      "generation_style": "v2"
+    },
+    {
+      "query_id": "qv12:synthetic:snake_plant:watering:v3",
+      "split": "dev",
+      "expected_plant_id": "plant:snake_plant",
+      "actual_plant_id": "plant:snake_plant",
+      "entity_match": true,
+      "expected_dimensions": [
+        "watering"
+      ],
+      "actual_dimensions": [
+        "watering"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:snake_plant:watering:001",
+        "claim:snake_plant:watering:002",
+        "claim:snake_plant:watering:003"
+      ],
+      "actual_evidence_ids": [
+        "claim:snake_plant:watering:001",
+        "claim:snake_plant:watering:002",
+        "claim:snake_plant:watering:003"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 3,
+      "gold_count": 3,
+      "generation_style": "v3"
+    },
+    {
+      "query_id": "qv12:synthetic:zz_plant:fertilizer:v1",
+      "split": "dev",
+      "expected_plant_id": "plant:zz_plant",
+      "actual_plant_id": "plant:zz_plant",
+      "entity_match": true,
+      "expected_dimensions": [
+        "fertilizer"
+      ],
+      "actual_dimensions": [
+        "fertilizer"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:zz_plant:fertilizer:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:zz_plant:fertilizer:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v1"
+    },
+    {
+      "query_id": "qv12:synthetic:zz_plant:fertilizer:v2",
+      "split": "dev",
+      "expected_plant_id": "plant:zz_plant",
+      "actual_plant_id": "plant:zz_plant",
+      "entity_match": true,
+      "expected_dimensions": [
+        "fertilizer"
+      ],
+      "actual_dimensions": [
+        "fertilizer"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:zz_plant:fertilizer:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:zz_plant:fertilizer:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v2"
+    },
+    {
+      "query_id": "qv12:synthetic:zz_plant:fertilizer:v3",
+      "split": "test",
+      "expected_plant_id": "plant:zz_plant",
+      "actual_plant_id": "plant:zz_plant",
+      "entity_match": true,
+      "expected_dimensions": [
+        "fertilizer"
+      ],
+      "actual_dimensions": [],
+      "dimension_exact_match": false,
+      "expected_behavior": "answer",
+      "actual_behavior": "clarify",
+      "behavior_match": false,
+      "gold_evidence_ids": [
+        "claim:zz_plant:fertilizer:001"
+      ],
+      "actual_evidence_ids": [],
+      "evidence_exact_match": false,
+      "gold_recovered": 0,
+      "gold_count": 1,
+      "generation_style": "v3"
+    },
+    {
+      "query_id": "qv12:synthetic:zz_plant:lighting:v1",
+      "split": "dev",
+      "expected_plant_id": "plant:zz_plant",
+      "actual_plant_id": "plant:zz_plant",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting"
+      ],
+      "actual_dimensions": [
+        "lighting"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:zz_plant:lighting:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:zz_plant:lighting:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v1"
+    },
+    {
+      "query_id": "qv12:synthetic:zz_plant:lighting:v2",
+      "split": "dev",
+      "expected_plant_id": "plant:zz_plant",
+      "actual_plant_id": "plant:zz_plant",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting"
+      ],
+      "actual_dimensions": [
+        "lighting"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:zz_plant:lighting:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:zz_plant:lighting:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 1,
+      "gold_count": 1,
+      "generation_style": "v2"
+    },
+    {
+      "query_id": "qv12:synthetic:zz_plant:lighting:v3",
+      "split": "test",
+      "expected_plant_id": "plant:zz_plant",
+      "actual_plant_id": "plant:zz_plant",
+      "entity_match": true,
+      "expected_dimensions": [
+        "lighting"
+      ],
+      "actual_dimensions": [],
+      "dimension_exact_match": false,
+      "expected_behavior": "answer",
+      "actual_behavior": "clarify",
+      "behavior_match": false,
+      "gold_evidence_ids": [
+        "claim:zz_plant:lighting:001"
+      ],
+      "actual_evidence_ids": [],
+      "evidence_exact_match": false,
+      "gold_recovered": 0,
+      "gold_count": 1,
+      "generation_style": "v3"
+    },
+    {
+      "query_id": "qv12:synthetic:zz_plant:multi",
+      "split": "test",
+      "expected_plant_id": "plant:zz_plant",
+      "actual_plant_id": "plant:zz_plant",
+      "entity_match": true,
+      "expected_dimensions": [
+        "fertilizer",
+        "lighting"
+      ],
+      "actual_dimensions": [
+        "fertilizer",
+        "lighting"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:zz_plant:fertilizer:001",
+        "claim:zz_plant:lighting:001"
+      ],
+      "actual_evidence_ids": [
+        "claim:zz_plant:fertilizer:001",
+        "claim:zz_plant:lighting:001"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 2,
+      "gold_count": 2,
+      "generation_style": "multi_dimension"
+    },
+    {
+      "query_id": "qv12:synthetic:zz_plant:pet_safety",
+      "split": "dev",
+      "expected_plant_id": "plant:zz_plant",
+      "actual_plant_id": "plant:zz_plant",
+      "entity_match": true,
+      "expected_dimensions": [
+        "pet_safety"
+      ],
+      "actual_dimensions": [
+        "pet_safety"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "abstain",
+      "actual_behavior": "abstain",
+      "behavior_match": true,
+      "gold_evidence_ids": [],
+      "actual_evidence_ids": [],
+      "evidence_exact_match": true,
+      "gold_recovered": 0,
+      "gold_count": 0,
+      "generation_style": "unsupported_boundary"
+    },
+    {
+      "query_id": "qv12:synthetic:zz_plant:watering:v1",
+      "split": "dev",
+      "expected_plant_id": "plant:zz_plant",
+      "actual_plant_id": "plant:zz_plant",
+      "entity_match": true,
+      "expected_dimensions": [
+        "watering"
+      ],
+      "actual_dimensions": [
+        "watering"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:zz_plant:watering:001",
+        "claim:zz_plant:watering:002"
+      ],
+      "actual_evidence_ids": [
+        "claim:zz_plant:watering:001",
+        "claim:zz_plant:watering:002"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 2,
+      "gold_count": 2,
+      "generation_style": "v1"
+    },
+    {
+      "query_id": "qv12:synthetic:zz_plant:watering:v2",
+      "split": "test",
+      "expected_plant_id": "plant:zz_plant",
+      "actual_plant_id": "plant:zz_plant",
+      "entity_match": true,
+      "expected_dimensions": [
+        "watering"
+      ],
+      "actual_dimensions": [
+        "watering"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:zz_plant:watering:001",
+        "claim:zz_plant:watering:002"
+      ],
+      "actual_evidence_ids": [
+        "claim:zz_plant:watering:001",
+        "claim:zz_plant:watering:002"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 2,
+      "gold_count": 2,
+      "generation_style": "v2"
+    },
+    {
+      "query_id": "qv12:synthetic:zz_plant:watering:v3",
+      "split": "test",
+      "expected_plant_id": "plant:zz_plant",
+      "actual_plant_id": "plant:zz_plant",
+      "entity_match": true,
+      "expected_dimensions": [
+        "watering"
+      ],
+      "actual_dimensions": [
+        "watering"
+      ],
+      "dimension_exact_match": true,
+      "expected_behavior": "answer",
+      "actual_behavior": "answer",
+      "behavior_match": true,
+      "gold_evidence_ids": [
+        "claim:zz_plant:watering:001",
+        "claim:zz_plant:watering:002"
+      ],
+      "actual_evidence_ids": [
+        "claim:zz_plant:watering:001",
+        "claim:zz_plant:watering:002"
+      ],
+      "evidence_exact_match": true,
+      "gold_recovered": 2,
+      "gold_count": 2,
+      "generation_style": "v3"
+    }
+  ]
+}

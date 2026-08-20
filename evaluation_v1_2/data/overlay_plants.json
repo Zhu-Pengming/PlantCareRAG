@@ -1,0 +1,12 @@
+[
+  {"plant_id": "plant:aloe_vera", "plant_name": "Aloe Vera", "scientific_name": "Aloe vera", "entity_scope": "species"},
+  {"plant_id": "plant:chinese_evergreen", "plant_name": "Chinese Evergreen", "scientific_name": "Aglaonema spp.", "entity_scope": "genus"},
+  {"plant_id": "plant:devils_ivy", "plant_name": "Devil’s Ivy", "scientific_name": "Epipremnum aureum", "entity_scope": "species"},
+  {"plant_id": "plant:fiddle_leaf_fig", "plant_name": "Fiddle Leaf Fig", "scientific_name": "Ficus lyrata", "entity_scope": "species"},
+  {"plant_id": "plant:hoya_wax_plant", "plant_name": "Hoya (Wax Plant)", "scientific_name": "Hoya carnosa", "entity_scope": "common_name_mapping"},
+  {"plant_id": "plant:monstera", "plant_name": "Monstera", "scientific_name": "Monstera deliciosa", "entity_scope": "common_name_mapping"},
+  {"plant_id": "plant:peperomia", "plant_name": "Peperomia", "scientific_name": "Peperomia spp.", "entity_scope": "genus"},
+  {"plant_id": "plant:philodendron", "plant_name": "Philodendron", "scientific_name": "Philodendron spp.", "entity_scope": "genus"},
+  {"plant_id": "plant:snake_plant", "plant_name": "Snake Plant", "scientific_name": "Dracaena trifasciata", "entity_scope": "species"},
+  {"plant_id": "plant:zz_plant", "plant_name": "ZZ Plant", "scientific_name": "Zamioculcas zamiifolia", "entity_scope": "species"}
+]

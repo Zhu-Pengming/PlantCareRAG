@@ -1,0 +1,29 @@
+{
+  "rules_version": "1.0.0",
+  "supported_dimensions": {
+    "lighting": ["light", "sun", "sunlight", "shade", "window", "dark", "etiolated", "leggy"],
+    "watering": ["water", "watering", "underwatered", "overwatered", "moisture", "wet soil", "dry soil"],
+    "soil": ["soil", "potting mix", "potting medium", "drainage", "well-drained", "loam", "perlite"],
+    "fertilizer": ["fertilizer", "fertiliser", "fertilize", "fertilise", "plant food", "nutrient", "feeding"]
+  },
+  "boundary_dimensions": {
+    "disease_or_symptom": ["yellow", "brown", "spot", "curl", "wilt", "rot", "dying", "droop", "limp", "wrinkl", "fungus", "mold", "mould", "scorch"],
+    "pest": ["pest", "bug", "insect", "aphid", "mite", "gnat", "whitefly", "white fly", "scale", "thrip"],
+    "temperature": ["temperature", "degrees", "too cold", "too hot", "frost", "freeze", "heat"],
+    "humidity": ["humidity", "humid", "mist", "dry air"],
+    "pet_safety": ["toxic", "poison", "cat", "dog", "pet safe", "safe for pets"],
+    "propagation": ["propagat", "cutting", "root in water", "division"],
+    "repotting": ["repot", "re-pot", "rootbound", "root-bound", "bigger pot", "pot size"],
+    "pruning": ["prune", "pruning", "trim", "cut back"],
+    "identification": ["identify", "identification", "what plant", "what is this", "what type", "which species"],
+    "growth": ["growth", "grow", "growing", "larger leaves", "small leaves", "lanky"],
+    "flowering": ["flower", "bloom"]
+  },
+  "mapping_risk_aliases": {
+    "plant:snake_plant": ["sansevieria"],
+    "plant:monstera": ["monstera", "swiss cheese plant"],
+    "plant:hoya_wax_plant": ["hoya"]
+  },
+  "shortlist_per_plant": 10,
+  "preferred_potentially_answerable_per_plant": 6
+}

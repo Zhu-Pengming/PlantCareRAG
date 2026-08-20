@@ -1,0 +1,989 @@
+[
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:snake_plant:lighting:001",
+    "plant_id": "plant:snake_plant",
+    "plant_name": "Snake Plant",
+    "scientific_name": "Dracaena trifasciata",
+    "entity_scope": "species",
+    "dimension": "lighting",
+    "qualifiers": {},
+    "claim_text": "Place where direct sun is limited to 2 to 6 hours per day; the plant also tolerates very low light.",
+    "source_id": "ncsu:dracaena-trifasciata",
+    "source_title": "Dracaena trifasciata",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/",
+      "section": "Description",
+      "paragraph": "Description paragraph 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Revised after human rejection to restore the source's actionable 2-to-6-hour range; human re-approved."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:snake_plant:watering:001",
+    "plant_id": "plant:snake_plant",
+    "plant_name": "Snake Plant",
+    "scientific_name": "Dracaena trifasciata",
+    "entity_scope": "species",
+    "dimension": "watering",
+    "qualifiers": {
+      "season": "spring_to_autumn"
+    },
+    "claim_text": "From spring through autumn, let the soil dry between waterings.",
+    "source_id": "ncsu:dracaena-trifasciata",
+    "source_title": "Dracaena trifasciata",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/",
+      "section": "Description",
+      "paragraph": "Description paragraph 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Removed the season-free overwatering rule from this seasonal claim; human re-approved."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:snake_plant:watering:002",
+    "plant_id": "plant:snake_plant",
+    "plant_name": "Snake Plant",
+    "scientific_name": "Dracaena trifasciata",
+    "entity_scope": "species",
+    "dimension": "watering",
+    "qualifiers": {
+      "season": "winter"
+    },
+    "claim_text": "In winter, water only every one to two months.",
+    "source_id": "ncsu:dracaena-trifasciata",
+    "source_title": "Dracaena trifasciata",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/",
+      "section": "Description",
+      "paragraph": "Description paragraph 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Locator should be Description paragraph 2. Wording is near-verbatim from source."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:snake_plant:watering:003",
+    "plant_id": "plant:snake_plant",
+    "plant_name": "Snake Plant",
+    "scientific_name": "Dracaena trifasciata",
+    "entity_scope": "species",
+    "dimension": "watering",
+    "qualifiers": {},
+    "claim_text": "Avoid overwatering because the roots can rot.",
+    "source_id": "ncsu:dracaena-trifasciata",
+    "source_title": "Dracaena trifasciata",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/",
+      "section": "Description",
+      "paragraph": "Description paragraph 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Created by splitting a season-free rule from claim:snake_plant:watering:001 after human review."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:snake_plant:soil:001",
+    "plant_id": "plant:snake_plant",
+    "plant_name": "Snake Plant",
+    "scientific_name": "Dracaena trifasciata",
+    "entity_scope": "species",
+    "dimension": "soil",
+    "qualifiers": {},
+    "claim_text": "Use well-drained soil.",
+    "source_id": "ncsu:dracaena-trifasciata",
+    "source_title": "Dracaena trifasciata",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/",
+      "section": "Description",
+      "paragraph": "Description paragraph 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Coverage gap identified during human review; human approved."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:zz_plant:lighting:001",
+    "plant_id": "plant:zz_plant",
+    "plant_name": "ZZ Plant",
+    "scientific_name": "Zamioculcas zamiifolia",
+    "entity_scope": "species",
+    "dimension": "lighting",
+    "qualifiers": {
+      "environment": "indoor"
+    },
+    "claim_text": "ZZ plant tolerates very low light but performs best in bright indirect light; direct sun can scorch foliage.",
+    "source_id": "ncsu:zamioculcas-zamiifolia",
+    "source_title": "ZZ Plant — Zamioculcas zamiifolia",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/zamioculcas-zamiifolia/common-name/zz-plant/",
+      "section": "Description",
+      "paragraph": "Description paragraph 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Accurate incl. the hedge on scorching. Note: page's structured Light field (Deep shade / Partial Shade = 2-6 hrs direct sun) is landscape-scoped and contradicts this indoor claim — if v2 ingests Cultural Conditions tables, that source needs an environment: landscape qualifier."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:zz_plant:watering:001",
+    "plant_id": "plant:zz_plant",
+    "plant_name": "ZZ Plant",
+    "scientific_name": "Zamioculcas zamiifolia",
+    "entity_scope": "species",
+    "dimension": "watering",
+    "qualifiers": {
+      "season": "summer"
+    },
+    "claim_text": "In summer, water about twice monthly only after the soil has dried completely.",
+    "source_id": "ncsu:zamioculcas-zamiifolia",
+    "source_title": "ZZ Plant — Zamioculcas zamiifolia",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/zamioculcas-zamiifolia/common-name/zz-plant/",
+      "section": "Description",
+      "paragraph": "Description paragraph 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": null
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:zz_plant:watering:002",
+    "plant_id": "plant:zz_plant",
+    "plant_name": "ZZ Plant",
+    "scientific_name": "Zamioculcas zamiifolia",
+    "entity_scope": "species",
+    "dimension": "watering",
+    "qualifiers": {
+      "season": "winter"
+    },
+    "claim_text": "In winter, water at most once a month while the plant is not actively growing.",
+    "source_id": "ncsu:zamioculcas-zamiifolia",
+    "source_title": "ZZ Plant — Zamioculcas zamiifolia",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/zamioculcas-zamiifolia/common-name/zz-plant/",
+      "section": "Description",
+      "paragraph": "Description paragraph 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Revised after human rejection: changed 'about once a month' to the safer ceiling 'at most once a month'; human re-approved."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:zz_plant:fertilizer:001",
+    "plant_id": "plant:zz_plant",
+    "plant_name": "ZZ Plant",
+    "scientific_name": "Zamioculcas zamiifolia",
+    "entity_scope": "species",
+    "dimension": "fertilizer",
+    "qualifiers": {},
+    "claim_text": "Apply a balanced liquid houseplant fertilizer once or twice per year.",
+    "source_id": "ncsu:zamioculcas-zamiifolia",
+    "source_title": "ZZ Plant — Zamioculcas zamiifolia",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/zamioculcas-zamiifolia/common-name/zz-plant/",
+      "section": "Description",
+      "paragraph": "Description paragraph 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Frequency matches source exactly. Qualifiers are empty while some indoor care claims use an inferred environment qualifier; decide one qualifier policy after the full review pass."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:monstera:lighting:001",
+    "plant_id": "plant:monstera",
+    "plant_name": "Monstera",
+    "scientific_name": "Monstera deliciosa",
+    "entity_scope": "common_name_mapping",
+    "dimension": "lighting",
+    "qualifiers": {
+      "environment": "indoor"
+    },
+    "claim_text": "Provide moderate brightness without direct sunlight; variegated cultivars need more light than dark-green cultivars.",
+    "source_id": "ncsu:monstera-deliciosa",
+    "source_title": "Monstera deliciosa",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/monstera-deliciosa/",
+      "section": "Description",
+      "paragraph": "Indoor care paragraph"
+    },
+    "review_status": "rejected",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Mapping cannot be verified from this page and the page argues against a blanket one: it lists Monstera adansonii and Rhaphidophora tetrasperma as commonly confused, and adansonii is widely sold as \"Monstera\" with different care needs. Confirm what the dataset's Monstera plant_id actually covers before approving a common_name_mapping record; if the entry is undifferentiated, this needs a narrower scope or a species-level split. Also drop environment: indoor — the source sentence (temperature, moderate brightness, humidity) carries no indoor limit, consistent with the rule applied elsewhere. Locator is Description paragraph 2. Noted, no action: the same sentence's temperature (60-85F) and humidity content has no dimension in the enum; the cultivar clause is cultivar-scoped inside a common_name_mapping record but stays acceptable as lighting."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:monstera:watering:001",
+    "plant_id": "plant:monstera",
+    "plant_name": "Monstera",
+    "scientific_name": "Monstera deliciosa",
+    "entity_scope": "common_name_mapping",
+    "dimension": "watering",
+    "qualifiers": {
+      "environment": "indoor"
+    },
+    "claim_text": "Water thoroughly, then allow the top quarter to one-third of the potting medium to dry before watering again.",
+    "source_id": "ncsu:monstera-deliciosa",
+    "source_title": "Monstera deliciosa",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/monstera-deliciosa/",
+      "section": "Description",
+      "paragraph": "Indoor care paragraph"
+    },
+    "review_status": "rejected",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Text is faithful (proportional range and sequence preserved; \"of the potting medium\" is the only reasonable reading of the source's \"top quarter to one-third part\"). Same two fixes as claim:monstera:lighting:001 — drop environment: indoor, since this sentence carries no indoor limit and the \"dry interior settings\" phrase belongs to the following humidity sentence; and set locator to Description paragraph 2. Blocked on the same unresolved question: whether the dataset's Monstera entry covers only M. deliciosa. This claim carries more practical risk than the lighting one if it does not, since M. adansonii has thinner leaves and dries faster than this drying depth assumes."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:aloe_vera:lighting:001",
+    "plant_id": "plant:aloe_vera",
+    "plant_name": "Aloe Vera",
+    "scientific_name": "Aloe vera",
+    "entity_scope": "species",
+    "dimension": "lighting",
+    "qualifiers": {},
+    "claim_text": "Grow in full sun to partial shade.",
+    "source_id": "ncsu:aloe-vera",
+    "source_title": "Aloe Vera — Aloe vera",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/aloe-vera/common-name/aloe-vera/",
+      "section": "Description",
+      "paragraph": "Description paragraph 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Human review confirmed that qualifiers reflect only explicit source limits; the structured Light field agrees with the prose."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:aloe_vera:watering:001",
+    "plant_id": "plant:aloe_vera",
+    "plant_name": "Aloe Vera",
+    "scientific_name": "Aloe vera",
+    "entity_scope": "species",
+    "dimension": "watering",
+    "qualifiers": {},
+    "claim_text": "Allow the soil to dry completely between waterings.",
+    "source_id": "ncsu:aloe-vera",
+    "source_title": "Aloe Vera — Aloe vera",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/aloe-vera/common-name/aloe-vera/",
+      "section": "Description",
+      "paragraph": "Description paragraph 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Revised after human rejection to contain only the season-free rule; human re-approved."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:aloe_vera:watering:002",
+    "plant_id": "plant:aloe_vera",
+    "plant_name": "Aloe Vera",
+    "scientific_name": "Aloe vera",
+    "entity_scope": "species",
+    "dimension": "watering",
+    "qualifiers": {
+      "season": "winter"
+    },
+    "claim_text": "Water less frequently in winter.",
+    "source_id": "ncsu:aloe-vera",
+    "source_title": "Aloe Vera — Aloe vera",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/aloe-vera/common-name/aloe-vera/",
+      "section": "Description",
+      "paragraph": "Description paragraph 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Created from the winter-scoped clause rejected as non-atomic in claim:aloe_vera:watering:001."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:aloe_vera:soil:001",
+    "plant_id": "plant:aloe_vera",
+    "plant_name": "Aloe Vera",
+    "scientific_name": "Aloe vera",
+    "entity_scope": "species",
+    "dimension": "soil",
+    "qualifiers": {},
+    "claim_text": "Use very well-drained soil suitable for succulents.",
+    "source_id": "ncsu:aloe-vera",
+    "source_title": "Aloe Vera — Aloe vera",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/aloe-vera/common-name/aloe-vera/",
+      "section": "Description",
+      "paragraph": "Description paragraph 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Coverage gap identified during human review; human approved."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:philodendron:lighting:001",
+    "plant_id": "plant:philodendron",
+    "plant_name": "Philodendron",
+    "scientific_name": "Philodendron spp.",
+    "entity_scope": "genus",
+    "dimension": "lighting",
+    "qualifiers": {},
+    "claim_text": "Philodendrons generally prefer bright indirect light and direct sunlight may scorch the leaves, though some species require more light than others.",
+    "source_id": "ncsu:philodendron",
+    "source_title": "Philodendron",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/philodendron/",
+      "section": "Description",
+      "paragraph": "Description paragraph 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Revised after human rejection: retained the source's intra-genus variation caveat, removed inferred indoor scope, corrected the locator, and was human re-approved."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:philodendron:soil:001",
+    "plant_id": "plant:philodendron",
+    "plant_name": "Philodendron",
+    "scientific_name": "Philodendron spp.",
+    "entity_scope": "genus",
+    "dimension": "soil",
+    "qualifiers": {},
+    "claim_text": "Philodendrons generally prefer moist, well-drained soil with high organic matter.",
+    "source_id": "ncsu:philodendron",
+    "source_title": "Philodendron",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/philodendron/",
+      "section": "Description",
+      "paragraph": "Description paragraph 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Human approved the genus-level soil claim; locator corrected to Description paragraph 2."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:chinese_evergreen:lighting:001",
+    "plant_id": "plant:chinese_evergreen",
+    "plant_name": "Chinese Evergreen",
+    "scientific_name": "Aglaonema spp.",
+    "entity_scope": "genus",
+    "dimension": "lighting",
+    "qualifiers": {},
+    "claim_text": "Aglaonema does well in diffuse sun or good indirect light.",
+    "source_id": "ncsu:aglaonema",
+    "source_title": "Chinese Evergreen — Aglaonema",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/aglaonema/common-name/chinese-evergreen/",
+      "section": "Description",
+      "paragraph": "Description paragraph 3"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Revised after human rejection to retain only the scope-neutral paragraph-3 lighting guidance; human re-approved."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:chinese_evergreen:lighting:002",
+    "plant_id": "plant:chinese_evergreen",
+    "plant_name": "Chinese Evergreen",
+    "scientific_name": "Aglaonema spp.",
+    "entity_scope": "genus",
+    "dimension": "lighting",
+    "qualifiers": {
+      "environment": "indoor"
+    },
+    "claim_text": "Aglaonema is an excellent choice for low-light indoor locations.",
+    "source_id": "ncsu:aglaonema",
+    "source_title": "Chinese Evergreen — Aglaonema",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/aglaonema/common-name/chinese-evergreen/",
+      "section": "Description",
+      "paragraph": "Description paragraph 4"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Created by splitting the source-explicit indoor use case from claim:chinese_evergreen:lighting:001; human approved."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:chinese_evergreen:lighting:003",
+    "plant_id": "plant:chinese_evergreen",
+    "plant_name": "Chinese Evergreen",
+    "scientific_name": "Aglaonema spp.",
+    "entity_scope": "genus",
+    "dimension": "lighting",
+    "qualifiers": {
+      "environment": "indoor",
+      "condition": "low_light"
+    },
+    "claim_text": "Aglaonema houseplants may not flower when the light level is low.",
+    "source_id": "ncsu:aglaonema",
+    "source_title": "Chinese Evergreen — Aglaonema",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/aglaonema/common-name/chinese-evergreen/",
+      "section": "Description",
+      "paragraph": "Description paragraph 2, sentence 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Mechanical qualifier-vocabulary migration from light_condition=low_light to condition=low_light; content and scope are unchanged; human re-approved."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:chinese_evergreen:watering:001",
+    "plant_id": "plant:chinese_evergreen",
+    "plant_name": "Chinese Evergreen",
+    "scientific_name": "Aglaonema spp.",
+    "entity_scope": "genus",
+    "dimension": "watering",
+    "qualifiers": {
+      "season": "spring_to_autumn"
+    },
+    "claim_text": "Keep the potting mix moist from spring to fall.",
+    "source_id": "ncsu:aglaonema",
+    "source_title": "Chinese Evergreen — Aglaonema",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/aglaonema/common-name/chinese-evergreen/",
+      "section": "Description",
+      "paragraph": "Description paragraph 3"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Revised after human rejection to contain only the spring-to-fall rule; canonical qualifier uses autumn as the normalized synonym of fall; human re-approved."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:chinese_evergreen:watering:002",
+    "plant_id": "plant:chinese_evergreen",
+    "plant_name": "Chinese Evergreen",
+    "scientific_name": "Aglaonema spp.",
+    "entity_scope": "genus",
+    "dimension": "watering",
+    "qualifiers": {
+      "season": "winter"
+    },
+    "claim_text": "Aglaonema does not require a winter dormancy period but prefers reduced watering in winter.",
+    "source_id": "ncsu:aglaonema",
+    "source_title": "Chinese Evergreen — Aglaonema",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/aglaonema/common-name/chinese-evergreen/",
+      "section": "Description",
+      "paragraph": "Description paragraph 3"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Created from the winter-scoped clause separated during human review; human approved."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:chinese_evergreen:watering:003",
+    "plant_id": "plant:chinese_evergreen",
+    "plant_name": "Chinese Evergreen",
+    "scientific_name": "Aglaonema spp.",
+    "entity_scope": "genus",
+    "dimension": "watering",
+    "qualifiers": {},
+    "claim_text": "Allow the medium to dry between waterings; root rot can occur with overwatering.",
+    "source_id": "ncsu:aglaonema",
+    "source_title": "Chinese Evergreen — Aglaonema",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/aglaonema/common-name/chinese-evergreen/",
+      "section": "Insects, Diseases, and Other Plant Problems",
+      "paragraph": "Sentence 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Human approved the season-free anti-rot rule; the separate cold-water action was moved to claim:chinese_evergreen:watering:004."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:chinese_evergreen:watering:004",
+    "plant_id": "plant:chinese_evergreen",
+    "plant_name": "Chinese Evergreen",
+    "scientific_name": "Aglaonema spp.",
+    "entity_scope": "genus",
+    "dimension": "watering",
+    "qualifiers": {
+      "condition": "cold_water"
+    },
+    "claim_text": "Avoid using cold water.",
+    "source_id": "ncsu:aglaonema",
+    "source_title": "Chinese Evergreen — Aglaonema",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/aglaonema/common-name/chinese-evergreen/",
+      "section": "Insects, Diseases, and Other Plant Problems",
+      "paragraph": "Sentence 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Mechanical qualifier-vocabulary migration from water_temperature=cold to condition=cold_water; content and scope are unchanged; human re-approved."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:fiddle_leaf_fig:lighting:001",
+    "plant_id": "plant:fiddle_leaf_fig",
+    "plant_name": "Fiddle Leaf Fig",
+    "scientific_name": "Ficus lyrata",
+    "entity_scope": "species",
+    "dimension": "lighting",
+    "qualifiers": {},
+    "claim_text": "Provide bright indirect light or partial shade and protect the plant from afternoon sun.",
+    "source_id": "ncsu:ficus-lyrata",
+    "source_title": "Fiddle-leaf Fig — Ficus lyrata",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/ficus-lyrata/common-name/fiddle-leaf-fig/",
+      "section": "Description",
+      "paragraph": "Description paragraph 4"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Revised after human rejection: removed the inferred indoor scope and unsupported intensity hedge, corrected the locator, and was human re-approved."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:fiddle_leaf_fig:watering:001",
+    "plant_id": "plant:fiddle_leaf_fig",
+    "plant_name": "Fiddle Leaf Fig",
+    "scientific_name": "Ficus lyrata",
+    "entity_scope": "species",
+    "dimension": "watering",
+    "qualifiers": {},
+    "claim_text": "This plant is sensitive to overwatering.",
+    "source_id": "ncsu:ficus-lyrata",
+    "source_title": "Fiddle-leaf Fig — Ficus lyrata",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/ficus-lyrata/common-name/fiddle-leaf-fig/",
+      "section": "Description",
+      "paragraph": "Description paragraph 4"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Revised after human rejection to retain only the watering trait, corrected the locator, and was human re-approved."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:fiddle_leaf_fig:soil:001",
+    "plant_id": "plant:fiddle_leaf_fig",
+    "plant_name": "Fiddle Leaf Fig",
+    "scientific_name": "Ficus lyrata",
+    "entity_scope": "species",
+    "dimension": "soil",
+    "qualifiers": {},
+    "claim_text": "Use moist, well-drained, loamy, acidic soil.",
+    "source_id": "ncsu:ficus-lyrata",
+    "source_title": "Fiddle-leaf Fig — Ficus lyrata",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/ficus-lyrata/common-name/fiddle-leaf-fig/",
+      "section": "Description",
+      "paragraph": "Description paragraph 4"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Created from the soil clause separated from claim:fiddle_leaf_fig:watering:001 during human review; human approved."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:peperomia:lighting:001",
+    "plant_id": "plant:peperomia",
+    "plant_name": "Peperomia",
+    "scientific_name": "Peperomia spp.",
+    "entity_scope": "genus",
+    "dimension": "lighting",
+    "qualifiers": {},
+    "claim_text": "Peperomias generally prefer bright indirect light but tolerate low-light conditions.",
+    "source_id": "ncsu:peperomia",
+    "source_title": "Peperomia",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/peperomia/common-name/peperomia/",
+      "section": "Description",
+      "paragraph": "Description paragraph 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Revised after human rejection: removed inferred indoor scope, corrected the locator, and was human re-approved."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:peperomia:lighting:002",
+    "plant_id": "plant:peperomia",
+    "plant_name": "Peperomia",
+    "scientific_name": "Peperomia spp.",
+    "entity_scope": "genus",
+    "dimension": "lighting",
+    "qualifiers": {
+      "condition": "direct_sun"
+    },
+    "claim_text": "Direct sunlight can scorch Peperomia leaves.",
+    "source_id": "ncsu:peperomia",
+    "source_title": "Peperomia",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/peperomia/common-name/peperomia/",
+      "section": "Insects, Diseases, and Other Plant Problems",
+      "paragraph": "Sentence 4"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Mechanical qualifier-vocabulary migration from light_condition=direct_sun to condition=direct_sun; content and scope are unchanged; human re-approved."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:peperomia:watering:001",
+    "plant_id": "plant:peperomia",
+    "plant_name": "Peperomia",
+    "scientific_name": "Peperomia spp.",
+    "entity_scope": "genus",
+    "dimension": "watering",
+    "qualifiers": {},
+    "claim_text": "Avoid overwatering.",
+    "source_id": "ncsu:peperomia",
+    "source_title": "Peperomia",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/peperomia/common-name/peperomia/",
+      "section": "Description",
+      "paragraph": "Description paragraph 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Human approved the atomic watering rule; diagnostic consequences were moved to claim:peperomia:watering:002."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:peperomia:watering:002",
+    "plant_id": "plant:peperomia",
+    "plant_name": "Peperomia",
+    "scientific_name": "Peperomia spp.",
+    "entity_scope": "genus",
+    "dimension": "watering",
+    "qualifiers": {
+      "condition": "overwatering"
+    },
+    "claim_text": "Root rot and yellowing or curling leaves indicate overwatering.",
+    "source_id": "ncsu:peperomia",
+    "source_title": "Peperomia",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/peperomia/common-name/peperomia/",
+      "section": "Insects, Diseases, and Other Plant Problems",
+      "paragraph": "Sentence 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Mechanical qualifier-vocabulary migration from watering_condition=overwatering to condition=overwatering; content and diagnostic direction are unchanged; human re-approved."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:peperomia:soil:001",
+    "plant_id": "plant:peperomia",
+    "plant_name": "Peperomia",
+    "scientific_name": "Peperomia spp.",
+    "entity_scope": "genus",
+    "dimension": "soil",
+    "qualifiers": {},
+    "claim_text": "Use a moist, well-drained mixture of loam and sand.",
+    "source_id": "ncsu:peperomia",
+    "source_title": "Peperomia",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/peperomia/common-name/peperomia/",
+      "section": "Description",
+      "paragraph": "Description paragraph 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Created from the soil clause separated from claim:peperomia:watering:001 during human review; human approved."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:hoya_wax_plant:lighting:001",
+    "plant_id": "plant:hoya_wax_plant",
+    "plant_name": "Hoya (Wax Plant)",
+    "scientific_name": "Hoya carnosa",
+    "entity_scope": "common_name_mapping",
+    "dimension": "lighting",
+    "qualifiers": {
+      "environment": "indoor"
+    },
+    "claim_text": "Bright indirect light throughout the year is ideal.",
+    "source_id": "ncsu:hoya-carnosa",
+    "source_title": "Hoya carnosa",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/hoya-carnosa/",
+      "section": "Description",
+      "paragraph": "Care paragraph"
+    },
+    "review_status": "rejected",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Text is faithful and correctly keeps \"year-round\". Blocked on the same question as the Monstera page: plant_name maps the bare genus name \"Hoya\" (200+ species) to H. carnosa. \"Wax Plant\" is carnosa-specific and fine, but \"Hoya\" alone is not, and this page lists Hoya australis as commonly confused with it. Confirm what the dataset's Hoya entry covers before approving the mapping; check overlay_plants.json alongside the Monstera entry. Also drop environment: indoor — the sentence carries no environment limit, and paragraph 3 explicitly describes summering the plant outdoors on a patio in partial shade. Locator is Description paragraph 2."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:hoya_wax_plant:watering:001",
+    "plant_id": "plant:hoya_wax_plant",
+    "plant_name": "Hoya (Wax Plant)",
+    "scientific_name": "Hoya carnosa",
+    "entity_scope": "common_name_mapping",
+    "dimension": "watering",
+    "qualifiers": {},
+    "claim_text": "Allow the potting medium to dry between waterings and use room-temperature water.",
+    "source_id": "ncsu:hoya-carnosa",
+    "source_title": "Hoya carnosa",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/hoya-carnosa/",
+      "section": "Description",
+      "paragraph": "Care paragraph"
+    },
+    "review_status": "rejected",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Unchanged from the previous rejection; none of the four splits were applied. (1) Merges two sections: \"allow the soil to dry out between watering\" is Description paragraph 2, \"use room-temperature water\" is from the Insects/Diseases section, so no single locator fits. (2) Drops the source's own corrective immediately following the dry-out sentence: too wet OR too dry soil can cause leaf drop; keeping only the first half preserves the exact misreading the source rules out. (3) Split into: \"Allow the soil to dry out between waterings.\" {} Description para 2; \"Soil that is too wet or too dry can cause leaf drop.\" {} Description para 2; \"Use room-temperature water; cold water can shock the plant.\" {\"condition\": \"cold_water\"} Insects/Diseases section. (4) Add dimension soil: \"As an epiphyte, use a loose, fast-draining potting mix high in organic matter in a container with good drainage.\" Description para 2. Mapping question from the lighting record still blocks final approval."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:devils_ivy:lighting:001",
+    "plant_id": "plant:devils_ivy",
+    "plant_name": "Devil’s Ivy",
+    "scientific_name": "Epipremnum aureum",
+    "entity_scope": "species",
+    "dimension": "lighting",
+    "qualifiers": {},
+    "claim_text": "Pothos prefers bright indirect light but can survive for long periods in low light.",
+    "source_id": "ncsu:epipremnum-aureum",
+    "source_title": "Devil's Vine — Epipremnum aureum",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/epipremnum-aureum/common-name/devils-vine/",
+      "section": "Description",
+      "paragraph": "Description paragraph 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Revised after human rejection: removed the inferred indoor scope, corrected the locator, and was human re-approved."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:devils_ivy:lighting:002",
+    "plant_id": "plant:devils_ivy",
+    "plant_name": "Devil’s Ivy",
+    "scientific_name": "Epipremnum aureum",
+    "entity_scope": "species",
+    "dimension": "lighting",
+    "qualifiers": {
+      "condition": "low_light"
+    },
+    "claim_text": "Low-light conditions can cause loss of leaf variegation.",
+    "source_id": "ncsu:epipremnum-aureum",
+    "source_title": "Devil's Vine — Epipremnum aureum",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/epipremnum-aureum/common-name/devils-vine/",
+      "section": "Insects, Diseases, and Other Plant Problems",
+      "paragraph": "Sentence 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Mechanical qualifier-vocabulary migration from light_condition=low_light to condition=low_light; content and source framing are unchanged; human re-approved."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:devils_ivy:watering:001",
+    "plant_id": "plant:devils_ivy",
+    "plant_name": "Devil’s Ivy",
+    "scientific_name": "Epipremnum aureum",
+    "entity_scope": "species",
+    "dimension": "watering",
+    "qualifiers": {},
+    "claim_text": "Let the well-drained potting medium dry out between waterings.",
+    "source_id": "ncsu:epipremnum-aureum",
+    "source_title": "Devil's Vine — Epipremnum aureum",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/epipremnum-aureum/common-name/devils-vine/",
+      "section": "Description",
+      "paragraph": "Description paragraph 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Human approved as a single-dimension watering claim and corrected the locator to Description paragraph 2. Humidity and symptom-consequence coverage remain deferred schema decisions."
+  },
+  {
+    "schema_version": "1.2.0",
+    "claim_id": "claim:devils_ivy:fertilizer:001",
+    "plant_id": "plant:devils_ivy",
+    "plant_name": "Devil’s Ivy",
+    "scientific_name": "Epipremnum aureum",
+    "entity_scope": "species",
+    "dimension": "fertilizer",
+    "qualifiers": {
+      "exception": "winter_dormancy"
+    },
+    "claim_text": "Fertilize every other month except while the plant is dormant in winter.",
+    "source_id": "ncsu:epipremnum-aureum",
+    "source_title": "Devil's Vine — Epipremnum aureum",
+    "source_type": "extension",
+    "authority_for": [
+      "horticultural_care"
+    ],
+    "locator": {
+      "url": "https://plants.ces.ncsu.edu/plants/epipremnum-aureum/common-name/devils-vine/",
+      "section": "Description",
+      "paragraph": "Description paragraph 2"
+    },
+    "review_status": "human_verified",
+    "accessed_at": "2026-08-12",
+    "review_notes": "Human approved the frequency and winter-dormancy exception and corrected the locator to Description paragraph 2. Structured Cultural Conditions require landscape scope if ingested later."
+  }
+]

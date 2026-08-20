@@ -1,0 +1,12 @@
+{
+  "plant:snake_plant": ["snake plant", "snake's plant", "mother-in-law's tongue", "mother in law's tongue", "sansevieria", "dracaena trifasciata"],
+  "plant:zz_plant": ["zz plant", "zanzibar gem", "zamioculcas"],
+  "plant:aloe_vera": ["aloe vera"],
+  "plant:fiddle_leaf_fig": ["fiddle leaf fig", "fiddle-leaf fig", "ficus lyrata"],
+  "plant:devils_ivy": ["pothos", "devil's ivy", "devils ivy", "golden pothos", "epipremnum aureum"],
+  "plant:monstera": ["monstera", "swiss cheese plant"],
+  "plant:philodendron": ["philodendron"],
+  "plant:chinese_evergreen": ["chinese evergreen", "aglaonema"],
+  "plant:peperomia": ["peperomia"],
+  "plant:hoya_wax_plant": ["hoya", "wax plant", "hoya carnosa"]
+}

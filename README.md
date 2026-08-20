@@ -30,3 +30,66 @@ scope.
 The previous hand-built 3-plant experiment remains immutable at Git tag
 `v1-frozen`. The abandoned scaling draft remains on branch
 `codex/v2-scaling`; neither is mixed into the replacement result.
+
+## v1.2 evidence work
+
+[`evaluation_v1_2/`](evaluation_v1_2/README.md) adds answerability states,
+multi-label routing, qualifier-aware refusal, and claim-to-evidence contracts
+without changing the frozen v1 metrics. Its evidence overlay started with 24
+care claims for 10 accepted plants and expanded to 38 through human-review
+atomization and coverage findings. Only individually verified claims are
+visible through the runtime evidence boundary.
+
+The citation-first v1.3 runtime completes the local RAG path over that verified
+overlay: entity linking → dimension routing → structured evidence retrieval →
+extractive grounded answer → inline claim/source citations. It defaults to a
+dependency-free lexical router; the frozen BGE semantic fallback is optional.
+
+```bash
+# Ask with the dependency-free router
+python3 -m evaluation_v1_2 ask "How should I water Snake Plant?"
+
+# Rebuild the 80-case grounded-answer contract artifact
+python3 -m evaluation_v1_2 evaluate
+
+# Run every v1.2/v1.3 offline validator and unit test
+make verify
+```
+
+For implicit wording, create a Python 3.10+ environment, install the pinned
+embedding dependency, and enable the frozen semantic fallback:
+
+```bash
+python3.12 -m venv .venv-embed
+.venv-embed/bin/python -m pip install -r evaluation_v1_2/requirements-embedding.txt
+.venv-embed/bin/python -m evaluation_v1_2 ask --semantic \
+  "What should I know before watering my Aloe Vera again?"
+```
+
+The 80 synthetic questions are evidence-conditioned regression cases, not a
+real-user benchmark. On the frozen semantic routes, all answers pass citation
+and verified-evidence checks; test behavior is 35/35 and test evidence exact
+match is 34/35. The remaining retrieval error is preserved rather than tuned
+after test access.
+
+### Optional structured LLM generation
+
+The extractive generator remains the default and safety fallback. A natural-
+language layer can be enabled explicitly through DeepSeek's API; the
+CLI never guesses a model ID, and the API is not called unless requested.
+
+```bash
+python3.12 -m venv .venv-llm
+.venv-llm/bin/python -m pip install -r evaluation_v1_2/requirements-llm.txt
+cp .env.example .env
+# Edit .env locally and replace sk-your-key-here; .env is ignored by Git.
+.venv-llm/bin/python -m evaluation_v1_2 ask \
+  --generator deepseek \
+  "How should I water Snake Plant?"
+```
+
+The model returns JSON Output with sentence-level evidence IDs. Unknown
+citations, missing evidence, duplicate citations, unsupported numbers, malformed
+output, and provider failures trigger the local extractive fallback. These are
+structural guardrails; they do not prove semantic entailment of arbitrary LLM
+paraphrases.
