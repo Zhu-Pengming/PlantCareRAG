@@ -14,7 +14,16 @@
     "benchmark_eligible": {"type": "boolean"},
     "plant_id": {"type": ["string", "null"]},
     "expected_dimensions": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
-    "qualifiers": {"type": "object"},
+    "qualifiers": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "environment": {"enum": ["indoor", "landscape"]},
+        "season": {"enum": ["winter", "spring", "summer", "autumn", "spring_to_autumn"]},
+        "exception": {"enum": ["winter_dormancy"]},
+        "condition": {"enum": ["low_light", "direct_sun", "cold_water", "overwatering"]}
+      }
+    },
     "answerability": {"enum": ["answerable", "insufficient_evidence", "clarification_needed", "unsupported", "conflicting_evidence"]},
     "gold_evidence_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
     "expected_behavior": {"enum": ["answer", "abstain", "clarify", "report_conflict"]},

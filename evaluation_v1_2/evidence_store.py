@@ -10,6 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 DEFAULT_OVERLAY = ROOT / "data" / "evidence_overlay.json"
 VERIFIED = "human_verified"
+HARD_FILTER_QUALIFIER_KEYS = frozenset({"environment", "season", "exception"})
 
 
 class VerifiedEvidenceStore:
@@ -35,7 +36,11 @@ class VerifiedEvidenceStore:
     ) -> list[dict]:
         """Retrieve verified evidence matching structured constraints."""
         allowed_dimensions = set(dimensions or [])
-        required_qualifiers = qualifiers or {}
+        required_qualifiers = {
+            key: value
+            for key, value in (qualifiers or {}).items()
+            if key in HARD_FILTER_QUALIFIER_KEYS
+        }
         matches = []
         for record in self._verified:
             if record.get("plant_id") != plant_id:

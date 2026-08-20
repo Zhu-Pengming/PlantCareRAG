@@ -9,7 +9,7 @@ from evaluation_v1_2.scripts.review_evidence import (
     record_decision,
     update_checklist,
 )
-from evaluation_v1_2.scripts.validate_evidence_overlay import validate
+from evaluation_v1_2.scripts.validate_evidence_overlay import validate, validate_qualifiers
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -20,7 +20,7 @@ class EvidenceOverlayTests(unittest.TestCase):
         errors, stats = validate()
         self.assertEqual(errors, [])
         self.assertEqual(stats["plants"], 10)
-        self.assertEqual(stats["claims"], 29)
+        self.assertEqual(stats["claims"], 38)
         self.assertEqual(stats["sources"], 10)
 
     def test_committed_overlay_contains_no_unreviewed_records(self):
@@ -43,6 +43,11 @@ class EvidenceOverlayTests(unittest.TestCase):
     def test_rejected_claim_requires_notes(self):
         errors = check([{"claim_id": "a", "review_status": "rejected"}])
         self.assertTrue(errors)
+
+    def test_qualifier_vocabulary_rejects_unknown_keys_and_values(self):
+        self.assertEqual(validate_qualifiers("claim:a", {"season": "winter"}), [])
+        self.assertTrue(validate_qualifiers("claim:a", {"scope": "indoor"}))
+        self.assertTrue(validate_qualifiers("claim:a", {"season": "cold_months"}))
 
     def test_runtime_store_exposes_only_human_verified(self):
         records = [
@@ -165,6 +170,99 @@ class EvidenceOverlayTests(unittest.TestCase):
             "Use moist, well-drained, loamy, acidic soil.",
         )
         self.assertNotIn("soil", claims["watering"]["claim_text"].casefold())
+
+    def test_devils_ivy_low_light_cost_is_separate_from_general_preference(self):
+        evidence = json.loads(
+            (ROOT / "data" / "evidence_overlay.json").read_text(encoding="utf-8")
+        )
+        lighting = [
+            item
+            for item in evidence
+            if item["plant_id"] == "plant:devils_ivy"
+            and item["dimension"] == "lighting"
+        ]
+        self.assertEqual(len(lighting), 2)
+        by_qualifier = {
+            json.dumps(item["qualifiers"], sort_keys=True): item for item in lighting
+        }
+        self.assertEqual(by_qualifier["{}"]["locator"]["paragraph"], "Description paragraph 2")
+        self.assertIn(
+            "loss of leaf variegation",
+            by_qualifier['{"condition": "low_light"}']["claim_text"],
+        )
+
+    def test_aglaonema_review_findings_are_split_by_scope_and_season(self):
+        evidence = json.loads(
+            (ROOT / "data" / "evidence_overlay.json").read_text(encoding="utf-8")
+        )
+        claims = [item for item in evidence if item["plant_id"] == "plant:chinese_evergreen"]
+        self.assertEqual(len(claims), 7)
+        qualifier_keys = {
+            (item["dimension"], json.dumps(item["qualifiers"], sort_keys=True))
+            for item in claims
+        }
+        self.assertIn(("lighting", "{}"), qualifier_keys)
+        self.assertIn(("lighting", '{"environment": "indoor"}'), qualifier_keys)
+        self.assertIn(
+            (
+                "lighting",
+                '{"condition": "low_light", "environment": "indoor"}',
+            ),
+            qualifier_keys,
+        )
+        self.assertIn(("watering", '{"season": "spring_to_autumn"}'), qualifier_keys)
+        self.assertIn(("watering", '{"season": "winter"}'), qualifier_keys)
+        self.assertIn(("watering", "{}"), qualifier_keys)
+        self.assertIn(("watering", '{"condition": "cold_water"}'), qualifier_keys)
+
+    def test_peperomia_review_findings_are_dimension_atomic(self):
+        evidence = json.loads(
+            (ROOT / "data" / "evidence_overlay.json").read_text(encoding="utf-8")
+        )
+        claims = [item for item in evidence if item["plant_id"] == "plant:peperomia"]
+        self.assertEqual(len(claims), 5)
+        soil = next(item for item in claims if item["dimension"] == "soil")
+        watering = next(item for item in claims if item["dimension"] == "watering")
+        direct_sun = next(
+            item for item in claims
+            if item["qualifiers"] == {"condition": "direct_sun"}
+        )
+        self.assertIn("loam and sand", soil["claim_text"])
+        self.assertNotIn("soil", watering["claim_text"].casefold())
+        self.assertIn("scorch", direct_sun["claim_text"].casefold())
+        overwatering = next(
+            item for item in claims
+            if item["qualifiers"] == {"condition": "overwatering"}
+        )
+        self.assertIn("yellowing or curling", overwatering["claim_text"])
+
+    def test_condition_tag_is_not_used_as_a_hard_filter(self):
+        records = [
+            {
+                "claim_id": "claim:a",
+                "plant_id": "plant:a",
+                "dimension": "watering",
+                "qualifiers": {},
+                "review_status": "human_verified",
+            },
+            {
+                "claim_id": "claim:b",
+                "plant_id": "plant:a",
+                "dimension": "watering",
+                "qualifiers": {"condition": "overwatering"},
+                "review_status": "human_verified",
+            },
+        ]
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "overlay.json"
+            path.write_text(json.dumps(records), encoding="utf-8")
+            store = VerifiedEvidenceStore(path)
+            matches = store.retrieve(
+                plant_id="plant:a",
+                dimensions=["watering"],
+                qualifiers={"condition": "overwatering"},
+            )
+        self.assertEqual([item["claim_id"] for item in matches], ["claim:a", "claim:b"])
 
 
 if __name__ == "__main__":

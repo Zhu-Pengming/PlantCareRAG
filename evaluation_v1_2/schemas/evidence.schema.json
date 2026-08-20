@@ -13,7 +13,16 @@
     "scientific_name": {"type": "string", "minLength": 2},
     "entity_scope": {"enum": ["species", "genus", "common_name_mapping"]},
     "dimension": {"enum": ["growth", "soil", "lighting", "watering", "fertilizer", "taxonomy", "pet_safety"]},
-    "qualifiers": {"type": "object"},
+    "qualifiers": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "environment": {"enum": ["indoor", "landscape"]},
+        "season": {"enum": ["winter", "spring", "summer", "autumn", "spring_to_autumn"]},
+        "exception": {"enum": ["winter_dormancy"]},
+        "condition": {"enum": ["low_light", "direct_sun", "cold_water", "overwatering"]}
+      }
+    },
     "claim_text": {"type": "string", "minLength": 8},
     "source_id": {"type": "string", "minLength": 1},
     "source_title": {"type": "string", "minLength": 3},

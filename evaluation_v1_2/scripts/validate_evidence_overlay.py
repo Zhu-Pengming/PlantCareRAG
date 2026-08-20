@@ -32,6 +32,25 @@ ALLOWED_SOURCE_HOSTS = {
     "www.aspca.org",
 }
 CARE_DIMENSIONS = {"growth", "soil", "lighting", "watering", "fertilizer"}
+QUALIFIER_VOCABULARY = {
+    "environment": {"indoor", "landscape"},
+    "season": {"winter", "spring", "summer", "autumn", "spring_to_autumn"},
+    "exception": {"winter_dormancy"},
+    "condition": {"low_light", "direct_sun", "cold_water", "overwatering"},
+}
+
+
+def validate_qualifiers(claim_id: str, qualifiers: object) -> list[str]:
+    if not isinstance(qualifiers, dict):
+        return [f"qualifiers must be an object: {claim_id}"]
+    errors = []
+    for key, value in qualifiers.items():
+        allowed_values = QUALIFIER_VOCABULARY.get(key)
+        if allowed_values is None:
+            errors.append(f"unknown qualifier key {key}: {claim_id}")
+        elif value not in allowed_values:
+            errors.append(f"invalid qualifier value {key}={value}: {claim_id}")
+    return errors
 
 
 def load(path: Path):
@@ -95,8 +114,8 @@ def validate() -> tuple[list[str], dict]:
         dimensions_per_plant[plant_id].add(dimension)
 
         qualifiers = claim.get("qualifiers")
+        errors.extend(validate_qualifiers(claim_id, qualifiers))
         if not isinstance(qualifiers, dict):
-            errors.append(f"qualifiers must be an object: {claim_id}")
             qualifiers = {}
         claim_key = (
             plant_id,

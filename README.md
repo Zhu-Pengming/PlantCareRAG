@@ -36,6 +36,6 @@ The previous hand-built 3-plant experiment remains immutable at Git tag
 [`evaluation_v1_2/`](evaluation_v1_2/README.md) adds answerability states,
 multi-label routing, qualifier-aware refusal, and claim-to-evidence contracts
 without changing the frozen v1 metrics. Its evidence overlay started with 24
-care claims for 10 accepted plants and expanded to 29 through human-review
+care claims for 10 accepted plants and expanded to 38 through human-review
 atomization and coverage findings. Only individually verified claims are
 visible through the runtime evidence boundary.

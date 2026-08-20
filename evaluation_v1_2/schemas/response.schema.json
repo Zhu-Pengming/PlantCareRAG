@@ -11,7 +11,16 @@
     "reason_code": {"type": "string", "minLength": 1},
     "linked_entity": {"type": ["object", "null"]},
     "dimensions": {"type": "array", "items": {"type": "string"}},
-    "qualifiers": {"type": "object"},
+    "qualifiers": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "environment": {"enum": ["indoor", "landscape"]},
+        "season": {"enum": ["winter", "spring", "summer", "autumn", "spring_to_autumn"]},
+        "exception": {"enum": ["winter_dormancy"]},
+        "condition": {"enum": ["low_light", "direct_sun", "cold_water", "overwatering"]}
+      }
+    },
     "answer": {"type": "string", "minLength": 1},
     "claims": {
       "type": "array",
