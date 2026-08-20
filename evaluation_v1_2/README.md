@@ -261,11 +261,16 @@ requires an explicit model ID, and returns sentence-level evidence IDs. See the
 ```bash
 python3.12 -m venv .venv-llm
 .venv-llm/bin/python -m pip install -r evaluation_v1_2/requirements-llm.txt
-export DEEPSEEK_API_KEY="..."
+cp .env.example .env
+# Edit .env locally and replace sk-your-key-here; .env is ignored by Git.
 .venv-llm/bin/python -m evaluation_v1_2 ask \
-  --generator deepseek --model "YOUR_DEEPSEEK_MODEL_ID" \
+  --generator deepseek \
   "How should I water Snake Plant?"
 ```
+
+The CLI reads only `DEEPSEEK_API_KEY` and `DEEPSEEK_MODEL` from the repository-
+root `.env`. Existing shell variables take precedence, and unrelated `.env`
+keys are deliberately ignored.
 
 Before returning an LLM answer, the runtime verifies that every retrieved
 evidence ID is cited exactly once, every citation exists, the rendered answer

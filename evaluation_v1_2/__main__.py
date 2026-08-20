@@ -17,6 +17,28 @@ from evaluation_v1_2.rag_engine import (
 
 
 ROOT = Path(__file__).resolve().parent
+PROJECT_ROOT = ROOT.parent
+LOCAL_ENV_KEYS = frozenset({"DEEPSEEK_API_KEY", "DEEPSEEK_MODEL"})
+
+
+def load_local_env(path: Path = PROJECT_ROOT / ".env") -> None:
+    """Load only the two supported DeepSeek settings without overriding the shell."""
+    if not path.is_file():
+        return
+    for raw_line in path.read_text(encoding="utf-8").splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith("#"):
+            continue
+        if line.startswith("export "):
+            line = line.removeprefix("export ").strip()
+        key, separator, value = line.partition("=")
+        key = key.strip()
+        if not separator or key not in LOCAL_ENV_KEYS or key in os.environ:
+            continue
+        value = value.strip()
+        if len(value) >= 2 and value[0] == value[-1] and value[0] in {"'", '"'}:
+            value = value[1:-1]
+        os.environ[key] = value
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -138,6 +160,7 @@ def verify_command() -> int:
 
 
 def main(argv: list[str] | None = None) -> int:
+    load_local_env()
     args = build_parser().parse_args(argv)
     if args.command == "ask":
         return ask_command(args)

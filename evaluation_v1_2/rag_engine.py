@@ -113,6 +113,8 @@ class DeepSeekJSONGenerator:
             resolved_key = api_key or os.environ.get("DEEPSEEK_API_KEY")
             if not resolved_key:
                 raise RuntimeError("DeepSeek client requires DEEPSEEK_API_KEY")
+            if len(resolved_key) < 12 or resolved_key == "sk-your-key-here":
+                raise RuntimeError("DEEPSEEK_API_KEY is still a placeholder or is too short")
             try:
                 client = OpenAI(api_key=resolved_key, base_url=DEEPSEEK_BASE_URL)
             except Exception as exc:

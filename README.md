@@ -81,9 +81,10 @@ CLI never guesses a model ID, and the API is not called unless requested.
 ```bash
 python3.12 -m venv .venv-llm
 .venv-llm/bin/python -m pip install -r evaluation_v1_2/requirements-llm.txt
-export DEEPSEEK_API_KEY="..."
+cp .env.example .env
+# Edit .env locally and replace sk-your-key-here; .env is ignored by Git.
 .venv-llm/bin/python -m evaluation_v1_2 ask \
-  --generator deepseek --model "YOUR_DEEPSEEK_MODEL_ID" \
+  --generator deepseek \
   "How should I water Snake Plant?"
 ```
 
