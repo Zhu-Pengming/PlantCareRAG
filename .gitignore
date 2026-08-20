@@ -2,6 +2,9 @@ __pycache__/
 *.py[cod]
 .DS_Store
 .venv/
+.venv-embed/
+evaluation_v1_2/models/
+:memory:.ses
 dataset_v1/data/raw/
 evaluation_v1_2/data/raw/
 evaluation_v1_2/data/evidence_overlay.json.bak

@@ -171,12 +171,52 @@ never returns pending or rejected records.
 - Any content or qualifier edit invalidates the prior approval and resets the
   claim to pending. The audit log retains the earlier decision and revision.
 
-## Next milestone
+## Frozen experiment protocol
 
-The evidence and automated benchmark milestones are complete. The next
-engineering experiment is to improve implicit dimension routing without
-changing the frozen synthetic questions:
+The evidence and automated benchmark milestones are complete. Semantic-routing
+development followed this frozen protocol:
 
 1. Keep `synthetic_benchmark.json` and its SHA-256 frozen.
 2. Add semantic or LLM dimension routing using dev only.
 3. Report the final test split once, alongside the direct/implicit breakdown.
+
+## Semantic dimension fallback result
+
+The next experiment is complete. It keeps lexical routing whenever a dimension
+cue is present and invokes a dense semantic fallback only when lexical routing
+returns nothing. Dimension prototypes are the 34 verified claim texts grouped
+by dimension; there is no hand-written mapping from the synthetic implicit
+phrases to labels.
+
+Reproduce the environment and inspect the frozen experiment:
+
+```bash
+/Users/tom/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -m venv .venv-embed
+.venv-embed/bin/python -m pip install -r evaluation_v1_2/requirements-embedding.txt
+.venv-embed/bin/python evaluation_v1_2/scripts/validate_semantic_experiment.py
+```
+
+The evaluator refuses to touch the frozen test result again by default. An
+explicit reproduction requires
+`evaluate_semantic_dimension_router.py --reproduce`.
+
+Model and selection contract:
+
+- FastEmbed `0.8.0` with `BAAI/bge-small-en-v1.5`;
+- resolved quantized ONNX repository revision
+  `qdrant/bge-small-en-v1.5-onnx-q@52398278842ec682c6f32300af41344b1c0b0bb2`;
+- one global threshold, selected on dev dimension exact match;
+- ties resolved with the highest threshold (conservative fallback);
+- frozen threshold `0.70`; test evaluated once after selection.
+
+The semantic fallback raises overall dimension/evidence exact match from 81.25%
+to 93.75% and evidence micro-recall from 84.8% to 96.0%. On the untouched test
+split, exact match rises from 27/35 (77.1%) to 34/35 (97.1%), a 20 percentage
+point gain. The implicit `v3` group rises from 7/22 to 17/22. All five remaining
+errors are the same phrase family—"What should I fill the pot with?"—ranked as
+watering instead of soil. That failure is retained; no post-test threshold or
+prototype adjustment was made.
+
+FastEmbed uses lightweight ONNX inference rather than requiring PyTorch; see
+the [official FastEmbed documentation](https://qdrant.github.io/fastembed/)
+and [supported-model table](https://qdrant.github.io/fastembed/examples/Supported_Models/).
