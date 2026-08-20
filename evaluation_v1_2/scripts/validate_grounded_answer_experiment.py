@@ -36,6 +36,15 @@ def validate() -> list[str]:
         errors.append("frozen test denominator is not 35")
     if any(row.get("grounding_errors") for row in rows):
         errors.append("query rows contain grounding errors")
+    if any(
+        (
+            row.get("response", {}).get("generation", {}).get("mode") != "extractive"
+            or row.get("response", {}).get("generation", {}).get("fallback") is not False
+        )
+        for row in rows
+        if row.get("response", {}).get("status") == "answered"
+    ):
+        errors.append("frozen contract artifact must use the extractive baseline generator")
     return errors
 
 

@@ -3,7 +3,7 @@
   "$id": "https://plant-care-rag.local/v1.3/rag_response.schema.json",
   "title": "Citation-first PlantCareRAG response",
   "type": "object",
-  "required": ["schema_version", "query", "status", "reason_code", "linked_entity", "dimensions", "qualifiers", "route", "answer", "claims", "evidence", "limitations"],
+  "required": ["schema_version", "query", "status", "reason_code", "linked_entity", "dimensions", "qualifiers", "route", "generation", "answer", "claims", "evidence", "limitations"],
   "properties": {
     "schema_version": {"const": "1.3.0"},
     "query": {"type": "string"},
@@ -13,6 +13,19 @@
     "dimensions": {"type": "array", "items": {"type": "string"}},
     "qualifiers": {"type": "object"},
     "route": {"type": "string", "minLength": 1},
+    "generation": {
+      "type": "object",
+      "required": ["mode", "provider", "model", "fallback"],
+      "properties": {
+        "mode": {"enum": ["none", "extractive", "llm_structured"]},
+        "provider": {"enum": ["local", "openai"]},
+        "model": {"type": ["string", "null"]},
+        "fallback": {"type": "boolean"},
+        "response_id": {"type": ["string", "null"]},
+        "requested_mode": {"type": "string"},
+        "fallback_reason": {"type": "string"}
+      }
+    },
     "answer": {"type": "string", "minLength": 1},
     "claims": {
       "type": "array",

@@ -71,3 +71,24 @@ real-user benchmark. On the frozen semantic routes, all answers pass citation
 and verified-evidence checks; test behavior is 35/35 and test evidence exact
 match is 34/35. The remaining retrieval error is preserved rather than tuned
 after test access.
+
+### Optional structured LLM generation
+
+The extractive generator remains the default and safety fallback. A natural-
+language layer can be enabled explicitly through the OpenAI Responses API; the
+CLI never guesses a model ID, and the API is not called unless requested.
+
+```bash
+python3.12 -m venv .venv-llm
+.venv-llm/bin/python -m pip install -r evaluation_v1_2/requirements-llm.txt
+export OPENAI_API_KEY="..."
+.venv-llm/bin/python -m evaluation_v1_2 ask \
+  --generator openai --model "YOUR_MODEL_ID" \
+  "How should I water Snake Plant?"
+```
+
+The model returns Structured Outputs with sentence-level evidence IDs. Unknown
+citations, missing evidence, duplicate citations, unsupported numbers, malformed
+output, and provider failures trigger the local extractive fallback. These are
+structural guardrails; they do not prove semantic entailment of arbitrary LLM
+paraphrases.

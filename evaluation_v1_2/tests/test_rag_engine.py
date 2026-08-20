@@ -1,11 +1,32 @@
 import unittest
+from types import SimpleNamespace
 
 from evaluation_v1_2.rag_engine import (
     GroundedRAGEngine,
+    OpenAIStructuredGenerator,
     RouteDecision,
     validate_grounded_response,
 )
 from evaluation_v1_2.scripts.evaluate_grounded_answers import evaluate
+
+
+class FakeResponses:
+    def __init__(self, payload=None, error=None):
+        self.payload = payload
+        self.error = error
+        self.last_request = None
+
+    def parse(self, **kwargs):
+        self.last_request = kwargs
+        if self.error:
+            raise self.error
+        parsed = kwargs["text_format"](**self.payload)
+        return SimpleNamespace(output_parsed=parsed, id="resp_fake")
+
+
+class FakeOpenAIClient:
+    def __init__(self, payload=None, error=None):
+        self.responses = FakeResponses(payload, error)
 
 
 class GroundedRAGEngineTests(unittest.TestCase):
@@ -53,9 +74,73 @@ class GroundedRAGEngineTests(unittest.TestCase):
         response = self.engine.response("How should I water Snake Plant?")
         response["answer"] += "\nWater every day."
         self.assertIn(
-            "answer contains text outside the cited extractive claims",
+            "answer contains text outside the structured cited claims",
             validate_grounded_response(response),
         )
+
+    def test_openai_structured_generator_returns_citation_bound_paraphrase(self):
+        client = FakeOpenAIClient(
+            {
+                "sentences": [
+                    {
+                        "text": "Choose very well-drained soil made for succulents.",
+                        "evidence_ids": ["claim:aloe_vera:soil:001"],
+                    }
+                ]
+            }
+        )
+        generator = OpenAIStructuredGenerator(model="test-model", client=client)
+        engine = GroundedRAGEngine(generator=generator)
+        response = engine.response(
+            "What soil should I use for Aloe Vera?",
+            route_decision=RouteDecision(("soil",), "test_route"),
+        )
+        self.assertEqual(response["generation"]["mode"], "llm_structured")
+        self.assertFalse(response["generation"]["fallback"])
+        self.assertEqual(validate_grounded_response(response), [])
+        request = client.responses.last_request
+        self.assertFalse(request["store"])
+        self.assertEqual(request["model"], "test-model")
+
+    def test_invalid_llm_number_falls_back_to_extractive_answer(self):
+        client = FakeOpenAIClient(
+            {
+                "sentences": [
+                    {
+                        "text": "Water every 2 days.",
+                        "evidence_ids": ["claim:aloe_vera:watering:001"],
+                    },
+                    {
+                        "text": "Reduce watering in winter.",
+                        "evidence_ids": ["claim:aloe_vera:watering:002"],
+                    },
+                ]
+            }
+        )
+        engine = GroundedRAGEngine(
+            generator=OpenAIStructuredGenerator(model="test-model", client=client)
+        )
+        response = engine.response(
+            "How should I water Aloe Vera?",
+            route_decision=RouteDecision(("watering",), "test_route"),
+        )
+        self.assertEqual(response["generation"]["mode"], "extractive")
+        self.assertTrue(response["generation"]["fallback"])
+        self.assertIn("adds a number", response["generation"]["fallback_reason"])
+        self.assertEqual(validate_grounded_response(response), [])
+
+    def test_openai_transport_failure_falls_back_without_error_text_leak(self):
+        client = FakeOpenAIClient(error=RuntimeError("secret transport detail"))
+        engine = GroundedRAGEngine(
+            generator=OpenAIStructuredGenerator(model="test-model", client=client)
+        )
+        response = engine.response(
+            "What soil should I use for Aloe Vera?",
+            route_decision=RouteDecision(("soil",), "test_route"),
+        )
+        self.assertEqual(response["generation"]["fallback_reason"], "RuntimeError")
+        self.assertNotIn("secret transport detail", str(response))
+        self.assertEqual(validate_grounded_response(response), [])
 
     def test_multi_dimension_route_requires_complete_dimension_coverage(self):
         response = self.engine.response(

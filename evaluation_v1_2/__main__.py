@@ -4,11 +4,16 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from pathlib import Path
 import sys
 import unittest
 
-from evaluation_v1_2.rag_engine import GroundedRAGEngine, LiveSemanticDimensionRouter
+from evaluation_v1_2.rag_engine import (
+    GroundedRAGEngine,
+    LiveSemanticDimensionRouter,
+    OpenAIStructuredGenerator,
+)
 
 
 ROOT = Path(__file__).resolve().parent
@@ -25,6 +30,16 @@ def build_parser() -> argparse.ArgumentParser:
         help="use the frozen BGE lexical-first semantic fallback",
     )
     ask.add_argument("--json", action="store_true", help="print the full response contract")
+    ask.add_argument(
+        "--generator",
+        choices=("extractive", "openai"),
+        default="extractive",
+        help="answer generator; OpenAI remains optional",
+    )
+    ask.add_argument(
+        "--model",
+        help="OpenAI model ID (or set OPENAI_MODEL); never inferred by the CLI",
+    )
     commands.add_parser("evaluate", help="rebuild the frozen-route answer contract result")
     commands.add_parser("verify", help="run offline validators and unit tests")
     return parser
@@ -40,12 +55,34 @@ def ask_command(args: argparse.Namespace) -> int:
             file=sys.stderr,
         )
         return 2
-    response = GroundedRAGEngine(router=router).response(args.query)
+    generator = None
+    if args.generator == "openai":
+        model = args.model or os.environ.get("OPENAI_MODEL")
+        if not model:
+            print(
+                "OpenAI generation requires --model or OPENAI_MODEL.",
+                file=sys.stderr,
+            )
+            return 2
+        try:
+            generator = OpenAIStructuredGenerator(model=model)
+        except (ImportError, RuntimeError, ValueError) as exc:
+            print(f"OpenAI generator unavailable: {exc}", file=sys.stderr)
+            print(
+                "Use Python 3.10+ and install evaluation_v1_2/requirements-llm.txt.",
+                file=sys.stderr,
+            )
+            return 2
+    response = GroundedRAGEngine(router=router, generator=generator).response(args.query)
     if args.json:
         print(json.dumps(response, ensure_ascii=False, indent=2))
     else:
         print(f"status: {response['status']}")
         print(f"route: {response['route']}")
+        print(
+            f"generator: {response['generation']['mode']}"
+            + (" (fallback)" if response["generation"].get("fallback") else "")
+        )
         print(response["answer"])
         if response["evidence"]:
             print("\nSources:")

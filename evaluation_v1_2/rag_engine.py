@@ -10,6 +10,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 import json
 from pathlib import Path
+import re
 from typing import Protocol
 
 from dataset_v1.query_engine import (
@@ -37,6 +38,12 @@ class RouteDecision:
 
 class DimensionRouter(Protocol):
     def route(self, query: str, entity_name: str | None) -> RouteDecision: ...
+
+
+class GroundedGenerator(Protocol):
+    def generate(
+        self, query: str, evidence: list[dict]
+    ) -> tuple[str, list[dict], dict]: ...
 
 
 class LexicalDimensionRouter:
@@ -70,7 +77,9 @@ class ExtractiveGroundedGenerator:
     """Render evidence without introducing unsupported factual language."""
 
     @staticmethod
-    def generate(evidence: list[dict]) -> tuple[str, list[dict]]:
+    def generate(
+        query: str, evidence: list[dict]
+    ) -> tuple[str, list[dict], dict]:
         claims = [
             {
                 "text": record["claim_text"],
@@ -78,11 +87,108 @@ class ExtractiveGroundedGenerator:
             }
             for record in evidence
         ]
-        answer = "\n".join(
-            f"- {record['claim_text']} [{record['claim_id']}]"
+        return render_claims(claims), claims, {
+            "mode": "extractive",
+            "provider": "local",
+            "model": None,
+            "fallback": False,
+        }
+
+
+class OpenAIStructuredGenerator:
+    """Optional natural-language generator with deterministic post-validation."""
+
+    def __init__(self, *, model: str, client=None) -> None:
+        if not model or not model.strip():
+            raise ValueError("an explicit OpenAI model ID is required")
+        try:
+            from pydantic import BaseModel
+        except ImportError as exc:
+            raise RuntimeError(
+                "OpenAI generation requires evaluation_v1_2/requirements-llm.txt"
+            ) from exc
+
+        class GeneratedSentence(BaseModel):
+            text: str
+            evidence_ids: list[str]
+
+        class GeneratedAnswer(BaseModel):
+            sentences: list[GeneratedSentence]
+
+        if client is None:
+            try:
+                from openai import OpenAI
+            except ImportError as exc:
+                raise RuntimeError(
+                    "OpenAI generation requires evaluation_v1_2/requirements-llm.txt"
+                ) from exc
+            try:
+                client = OpenAI()
+            except Exception as exc:
+                raise RuntimeError(
+                    "OpenAI client initialization failed; check OPENAI_API_KEY"
+                ) from exc
+        if not hasattr(client, "responses") or not hasattr(client.responses, "parse"):
+            raise RuntimeError("installed OpenAI SDK does not support responses.parse")
+        self.client = client
+        self.model = model.strip()
+        self.output_type = GeneratedAnswer
+
+    def generate(
+        self, query: str, evidence: list[dict]
+    ) -> tuple[str, list[dict], dict]:
+        evidence_payload = [
+            {
+                "claim_id": record["claim_id"],
+                "claim_text": record["claim_text"],
+                "dimension": record["dimension"],
+                "qualifiers": record.get("qualifiers", {}),
+            }
             for record in evidence
+        ]
+        response = self.client.responses.parse(
+            model=self.model,
+            store=False,
+            max_output_tokens=800,
+            instructions=(
+                "Answer the plant-care question using only the supplied evidence. "
+                "Use every claim_id exactly once. Each output sentence must list all "
+                "claim_ids that support it. Do not add facts, numbers, frequencies, "
+                "diagnoses, or safety claims absent from those cited claims."
+            ),
+            input=json.dumps(
+                {"question": query, "evidence": evidence_payload},
+                ensure_ascii=False,
+            ),
+            text_format=self.output_type,
         )
-        return answer, claims
+        parsed = response.output_parsed
+        if parsed is None:
+            raise RuntimeError("OpenAI response did not contain parsed structured output")
+        payload = parsed.model_dump() if hasattr(parsed, "model_dump") else parsed.dict()
+        claims = payload.get("sentences") or []
+        if not claims:
+            raise RuntimeError("OpenAI response contained no answer sentences")
+        return render_claims(claims), claims, {
+            "mode": "llm_structured",
+            "provider": "openai",
+            "model": self.model,
+            "response_id": getattr(response, "id", None),
+            "fallback": False,
+        }
+
+
+def render_claims(claims: list[dict]) -> str:
+    return "\n".join(
+        "- " + claim["text"] + " " + " ".join(
+            f"[{claim_id}]" for claim_id in claim["evidence_ids"]
+        )
+        for claim in claims
+    )
+
+
+def numeric_tokens(text: str) -> set[str]:
+    return set(re.findall(r"\b\d+(?:\.\d+)?\b", text))
 
 
 class GroundedRAGEngine:
@@ -94,11 +200,12 @@ class GroundedRAGEngine:
         router: DimensionRouter | None = None,
         query_engine: QueryEngine | None = None,
         evidence_store: VerifiedEvidenceStore | None = None,
+        generator: GroundedGenerator | None = None,
     ) -> None:
         self.linker = query_engine or QueryEngine()
         self.store = evidence_store or VerifiedEvidenceStore()
         self.router = router or LexicalDimensionRouter()
-        self.generator = ExtractiveGroundedGenerator()
+        self.generator = generator or ExtractiveGroundedGenerator()
 
     @staticmethod
     def _base(query: str) -> dict:
@@ -111,6 +218,12 @@ class GroundedRAGEngine:
             "dimensions": [],
             "qualifiers": {},
             "route": "none",
+            "generation": {
+                "mode": "none",
+                "provider": "local",
+                "model": None,
+                "fallback": False,
+            },
             "answer": "",
             "claims": [],
             "evidence": [],
@@ -239,17 +352,47 @@ class GroundedRAGEngine:
             return result
 
         evidence = [self._evidence_item(record) for record in records]
-        answer, claims = self.generator.generate(records)
+        try:
+            answer, claims, generation = self.generator.generate(query, records)
+        except Exception as exc:
+            generation_error = type(exc).__name__
+            answer, claims, generation = ExtractiveGroundedGenerator.generate(query, records)
+            generation.update(
+                fallback=True,
+                requested_mode="llm_structured",
+                fallback_reason=generation_error,
+            )
         result.update(
             status="answered",
             reason_code="verified_evidence_answer",
             answer=answer,
             claims=claims,
             evidence=evidence,
+            generation=generation,
             limitations=[
-                "The answer is extractive and limited to individually reviewed source claims."
+                (
+                    "The answer is extractive and limited to individually reviewed source claims."
+                    if generation["mode"] == "extractive"
+                    else "LLM wording passed structural, citation, and numeric checks; automated checks do not prove semantic entailment."
+                )
             ],
         )
+        validation_errors = validate_grounded_response(result)
+        if validation_errors and generation["mode"] != "extractive":
+            answer, claims, fallback = ExtractiveGroundedGenerator.generate(query, records)
+            fallback.update(
+                fallback=True,
+                requested_mode="llm_structured",
+                fallback_reason="; ".join(validation_errors),
+            )
+            result.update(
+                answer=answer,
+                claims=claims,
+                generation=fallback,
+                limitations=[
+                    "LLM output failed grounding checks; returned the extractive safety fallback."
+                ],
+            )
         return result
 
 
@@ -269,27 +412,39 @@ def validate_grounded_response(response: dict) -> list[str]:
         if not citation.get("url") or not citation.get("section") or not citation.get("paragraph"):
             errors.append(f"incomplete citation: {claim_id}")
     referenced_ids: set[str] = set()
+    reference_count = 0
+    generation_mode = response.get("generation", {}).get("mode", "extractive")
     for claim in claims:
+        if not isinstance(claim.get("text"), str) or not claim["text"].strip():
+            errors.append("answer claim has empty text")
         ids = claim.get("evidence_ids", [])
         if not ids:
             errors.append("answer claim lacks evidence_ids")
             continue
         for claim_id in ids:
+            reference_count += 1
             referenced_ids.add(claim_id)
             item = evidence.get(claim_id)
             if item is None:
                 errors.append(f"claim references absent evidence: {claim_id}")
-            elif claim.get("text") != item.get("claim_text"):
+            elif generation_mode == "extractive" and claim.get("text") != item.get("claim_text"):
                 errors.append(f"claim text differs from evidence: {claim_id}")
             if f"[{claim_id}]" not in response.get("answer", ""):
                 errors.append(f"answer omits inline citation: {claim_id}")
     if response.get("status") == "answered":
         if referenced_ids != set(evidence):
             errors.append("claims and evidence do not have one-to-one coverage")
-        expected_answer = "\n".join(
-            f"- {item['claim_text']} [{item['claim_id']}]"
-            for item in response.get("evidence", [])
-        )
+        if reference_count != len(evidence):
+            errors.append("an evidence ID is missing or cited more than once")
+        for claim in claims:
+            cited_text = " ".join(
+                evidence[claim_id]["claim_text"]
+                for claim_id in claim.get("evidence_ids", [])
+                if claim_id in evidence
+            )
+            if not numeric_tokens(claim.get("text", "")) <= numeric_tokens(cited_text):
+                errors.append("generated claim adds a number absent from cited evidence")
+        expected_answer = render_claims(claims)
         if response.get("answer") != expected_answer:
-            errors.append("answer contains text outside the cited extractive claims")
+            errors.append("answer contains text outside the structured cited claims")
     return errors

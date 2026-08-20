@@ -3,6 +3,7 @@ __pycache__/
 .DS_Store
 .venv/
 .venv-embed/
+.venv-llm/
 evaluation_v1_2/models/
 :memory:.ses
 dataset_v1/data/raw/

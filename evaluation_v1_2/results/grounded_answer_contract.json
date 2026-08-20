@@ -88,6 +88,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Grow in full sun to partial shade. [claim:aloe_vera:lighting:001]",
         "claims": [
           {
@@ -161,6 +167,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Grow in full sun to partial shade. [claim:aloe_vera:lighting:001]",
         "claims": [
           {
@@ -234,6 +246,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_semantic_fallback",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Grow in full sun to partial shade. [claim:aloe_vera:lighting:001]",
         "claims": [
           {
@@ -312,6 +330,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Grow in full sun to partial shade. [claim:aloe_vera:lighting:001]\n- Use very well-drained soil suitable for succulents. [claim:aloe_vera:soil:001]",
         "claims": [
           {
@@ -404,6 +428,12 @@
         ],
         "qualifiers": {},
         "route": "unsupported_gate",
+        "generation": {
+          "mode": "none",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "The verified evidence corpus has no pet_safety evidence, so this question cannot be answered safely.",
         "claims": [],
         "evidence": [],
@@ -452,6 +482,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Use very well-drained soil suitable for succulents. [claim:aloe_vera:soil:001]",
         "claims": [
           {
@@ -525,6 +561,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Use very well-drained soil suitable for succulents. [claim:aloe_vera:soil:001]",
         "claims": [
           {
@@ -599,6 +641,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_semantic_fallback",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Allow the soil to dry completely between waterings. [claim:aloe_vera:watering:001]\n- Water less frequently in winter. [claim:aloe_vera:watering:002]",
         "claims": [
           {
@@ -699,6 +747,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Allow the soil to dry completely between waterings. [claim:aloe_vera:watering:001]\n- Water less frequently in winter. [claim:aloe_vera:watering:002]",
         "claims": [
           {
@@ -799,6 +853,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Allow the soil to dry completely between waterings. [claim:aloe_vera:watering:001]\n- Water less frequently in winter. [claim:aloe_vera:watering:002]",
         "claims": [
           {
@@ -899,6 +959,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Allow the soil to dry completely between waterings. [claim:aloe_vera:watering:001]\n- Water less frequently in winter. [claim:aloe_vera:watering:002]",
         "claims": [
           {
@@ -1001,6 +1067,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Aglaonema does well in diffuse sun or good indirect light. [claim:chinese_evergreen:lighting:001]\n- Aglaonema is an excellent choice for low-light indoor locations. [claim:chinese_evergreen:lighting:002]\n- Aglaonema houseplants may not flower when the light level is low. [claim:chinese_evergreen:lighting:003]",
         "claims": [
           {
@@ -1129,6 +1201,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Aglaonema does well in diffuse sun or good indirect light. [claim:chinese_evergreen:lighting:001]\n- Aglaonema is an excellent choice for low-light indoor locations. [claim:chinese_evergreen:lighting:002]\n- Aglaonema houseplants may not flower when the light level is low. [claim:chinese_evergreen:lighting:003]",
         "claims": [
           {
@@ -1257,6 +1335,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_semantic_fallback",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Aglaonema does well in diffuse sun or good indirect light. [claim:chinese_evergreen:lighting:001]\n- Aglaonema is an excellent choice for low-light indoor locations. [claim:chinese_evergreen:lighting:002]\n- Aglaonema houseplants may not flower when the light level is low. [claim:chinese_evergreen:lighting:003]",
         "claims": [
           {
@@ -1396,6 +1480,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Aglaonema does well in diffuse sun or good indirect light. [claim:chinese_evergreen:lighting:001]\n- Aglaonema is an excellent choice for low-light indoor locations. [claim:chinese_evergreen:lighting:002]\n- Aglaonema houseplants may not flower when the light level is low. [claim:chinese_evergreen:lighting:003]\n- Keep the potting mix moist from spring to fall. [claim:chinese_evergreen:watering:001]\n- Aglaonema does not require a winter dormancy period but prefers reduced watering in winter. [claim:chinese_evergreen:watering:002]\n- Allow the medium to dry between waterings; root rot can occur with overwatering. [claim:chinese_evergreen:watering:003]\n- Avoid using cold water. [claim:chinese_evergreen:watering:004]",
         "claims": [
           {
@@ -1614,6 +1704,12 @@
         ],
         "qualifiers": {},
         "route": "unsupported_gate",
+        "generation": {
+          "mode": "none",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "The verified evidence corpus has no pet_safety evidence, so this question cannot be answered safely.",
         "claims": [],
         "evidence": [],
@@ -1668,6 +1764,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Keep the potting mix moist from spring to fall. [claim:chinese_evergreen:watering:001]\n- Aglaonema does not require a winter dormancy period but prefers reduced watering in winter. [claim:chinese_evergreen:watering:002]\n- Allow the medium to dry between waterings; root rot can occur with overwatering. [claim:chinese_evergreen:watering:003]\n- Avoid using cold water. [claim:chinese_evergreen:watering:004]",
         "claims": [
           {
@@ -1822,6 +1924,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Keep the potting mix moist from spring to fall. [claim:chinese_evergreen:watering:001]\n- Aglaonema does not require a winter dormancy period but prefers reduced watering in winter. [claim:chinese_evergreen:watering:002]\n- Allow the medium to dry between waterings; root rot can occur with overwatering. [claim:chinese_evergreen:watering:003]\n- Avoid using cold water. [claim:chinese_evergreen:watering:004]",
         "claims": [
           {
@@ -1976,6 +2084,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Keep the potting mix moist from spring to fall. [claim:chinese_evergreen:watering:001]\n- Aglaonema does not require a winter dormancy period but prefers reduced watering in winter. [claim:chinese_evergreen:watering:002]\n- Allow the medium to dry between waterings; root rot can occur with overwatering. [claim:chinese_evergreen:watering:003]\n- Avoid using cold water. [claim:chinese_evergreen:watering:004]",
         "claims": [
           {
@@ -2124,6 +2238,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Fertilize every other month except while the plant is dormant in winter. [claim:devils_ivy:fertilizer:001]",
         "claims": [
           {
@@ -2199,6 +2319,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Fertilize every other month except while the plant is dormant in winter. [claim:devils_ivy:fertilizer:001]",
         "claims": [
           {
@@ -2274,6 +2400,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_semantic_fallback",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Fertilize every other month except while the plant is dormant in winter. [claim:devils_ivy:fertilizer:001]",
         "claims": [
           {
@@ -2351,6 +2483,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Pothos prefers bright indirect light but can survive for long periods in low light. [claim:devils_ivy:lighting:001]\n- Low-light conditions can cause loss of leaf variegation. [claim:devils_ivy:lighting:002]",
         "claims": [
           {
@@ -2451,6 +2589,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Pothos prefers bright indirect light but can survive for long periods in low light. [claim:devils_ivy:lighting:001]\n- Low-light conditions can cause loss of leaf variegation. [claim:devils_ivy:lighting:002]",
         "claims": [
           {
@@ -2551,6 +2695,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_semantic_fallback",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Pothos prefers bright indirect light but can survive for long periods in low light. [claim:devils_ivy:lighting:001]\n- Low-light conditions can cause loss of leaf variegation. [claim:devils_ivy:lighting:002]",
         "claims": [
           {
@@ -2656,6 +2806,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Fertilize every other month except while the plant is dormant in winter. [claim:devils_ivy:fertilizer:001]\n- Pothos prefers bright indirect light but can survive for long periods in low light. [claim:devils_ivy:lighting:001]\n- Low-light conditions can cause loss of leaf variegation. [claim:devils_ivy:lighting:002]",
         "claims": [
           {
@@ -2779,6 +2935,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Let the well-drained potting medium dry out between waterings. [claim:devils_ivy:watering:001]",
         "claims": [
           {
@@ -2852,6 +3014,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Let the well-drained potting medium dry out between waterings. [claim:devils_ivy:watering:001]",
         "claims": [
           {
@@ -2925,6 +3093,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Let the well-drained potting medium dry out between waterings. [claim:devils_ivy:watering:001]",
         "claims": [
           {
@@ -2998,6 +3172,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Provide bright indirect light or partial shade and protect the plant from afternoon sun. [claim:fiddle_leaf_fig:lighting:001]",
         "claims": [
           {
@@ -3071,6 +3251,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Provide bright indirect light or partial shade and protect the plant from afternoon sun. [claim:fiddle_leaf_fig:lighting:001]",
         "claims": [
           {
@@ -3144,6 +3330,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_semantic_fallback",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Provide bright indirect light or partial shade and protect the plant from afternoon sun. [claim:fiddle_leaf_fig:lighting:001]",
         "claims": [
           {
@@ -3222,6 +3414,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Provide bright indirect light or partial shade and protect the plant from afternoon sun. [claim:fiddle_leaf_fig:lighting:001]\n- Use moist, well-drained, loamy, acidic soil. [claim:fiddle_leaf_fig:soil:001]",
         "claims": [
           {
@@ -3318,6 +3516,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Use moist, well-drained, loamy, acidic soil. [claim:fiddle_leaf_fig:soil:001]",
         "claims": [
           {
@@ -3391,6 +3595,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Use moist, well-drained, loamy, acidic soil. [claim:fiddle_leaf_fig:soil:001]",
         "claims": [
           {
@@ -3464,6 +3674,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_semantic_fallback",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- This plant is sensitive to overwatering. [claim:fiddle_leaf_fig:watering:001]",
         "claims": [
           {
@@ -3537,6 +3753,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- This plant is sensitive to overwatering. [claim:fiddle_leaf_fig:watering:001]",
         "claims": [
           {
@@ -3610,6 +3832,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- This plant is sensitive to overwatering. [claim:fiddle_leaf_fig:watering:001]",
         "claims": [
           {
@@ -3683,6 +3911,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- This plant is sensitive to overwatering. [claim:fiddle_leaf_fig:watering:001]",
         "claims": [
           {
@@ -3752,6 +3986,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "none",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "The common name is broader than the reviewed species-level source. Please provide the scientific name before using this guidance.",
         "claims": [],
         "evidence": [],
@@ -3796,6 +4036,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "none",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "The common name is broader than the reviewed species-level source. Please provide the scientific name before using this guidance.",
         "claims": [],
         "evidence": [],
@@ -3846,6 +4092,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Peperomias generally prefer bright indirect light but tolerate low-light conditions. [claim:peperomia:lighting:001]\n- Direct sunlight can scorch Peperomia leaves. [claim:peperomia:lighting:002]",
         "claims": [
           {
@@ -3946,6 +4198,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Peperomias generally prefer bright indirect light but tolerate low-light conditions. [claim:peperomia:lighting:001]\n- Direct sunlight can scorch Peperomia leaves. [claim:peperomia:lighting:002]",
         "claims": [
           {
@@ -4046,6 +4304,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_semantic_fallback",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Peperomias generally prefer bright indirect light but tolerate low-light conditions. [claim:peperomia:lighting:001]\n- Direct sunlight can scorch Peperomia leaves. [claim:peperomia:lighting:002]",
         "claims": [
           {
@@ -4151,6 +4415,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Peperomias generally prefer bright indirect light but tolerate low-light conditions. [claim:peperomia:lighting:001]\n- Direct sunlight can scorch Peperomia leaves. [claim:peperomia:lighting:002]\n- Use a moist, well-drained mixture of loam and sand. [claim:peperomia:soil:001]",
         "claims": [
           {
@@ -4272,6 +4542,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Use a moist, well-drained mixture of loam and sand. [claim:peperomia:soil:001]",
         "claims": [
           {
@@ -4345,6 +4621,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Use a moist, well-drained mixture of loam and sand. [claim:peperomia:soil:001]",
         "claims": [
           {
@@ -4419,6 +4701,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_semantic_fallback",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Avoid overwatering. [claim:peperomia:watering:001]\n- Root rot and yellowing or curling leaves indicate overwatering. [claim:peperomia:watering:002]",
         "claims": [
           {
@@ -4519,6 +4807,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Avoid overwatering. [claim:peperomia:watering:001]\n- Root rot and yellowing or curling leaves indicate overwatering. [claim:peperomia:watering:002]",
         "claims": [
           {
@@ -4619,6 +4913,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Avoid overwatering. [claim:peperomia:watering:001]\n- Root rot and yellowing or curling leaves indicate overwatering. [claim:peperomia:watering:002]",
         "claims": [
           {
@@ -4719,6 +5019,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Avoid overwatering. [claim:peperomia:watering:001]\n- Root rot and yellowing or curling leaves indicate overwatering. [claim:peperomia:watering:002]",
         "claims": [
           {
@@ -4817,6 +5123,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Philodendrons generally prefer bright indirect light and direct sunlight may scorch the leaves, though some species require more light than others. [claim:philodendron:lighting:001]",
         "claims": [
           {
@@ -4890,6 +5202,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Philodendrons generally prefer bright indirect light and direct sunlight may scorch the leaves, though some species require more light than others. [claim:philodendron:lighting:001]",
         "claims": [
           {
@@ -4963,6 +5281,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_semantic_fallback",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Philodendrons generally prefer bright indirect light and direct sunlight may scorch the leaves, though some species require more light than others. [claim:philodendron:lighting:001]",
         "claims": [
           {
@@ -5041,6 +5365,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Philodendrons generally prefer bright indirect light and direct sunlight may scorch the leaves, though some species require more light than others. [claim:philodendron:lighting:001]\n- Philodendrons generally prefer moist, well-drained soil with high organic matter. [claim:philodendron:soil:001]",
         "claims": [
           {
@@ -5137,6 +5467,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Philodendrons generally prefer moist, well-drained soil with high organic matter. [claim:philodendron:soil:001]",
         "claims": [
           {
@@ -5210,6 +5546,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Philodendrons generally prefer moist, well-drained soil with high organic matter. [claim:philodendron:soil:001]",
         "claims": [
           {
@@ -5281,6 +5623,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_semantic_fallback",
+        "generation": {
+          "mode": "none",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "No human-verified evidence matches this plant, dimension, and qualifier.",
         "claims": [],
         "evidence": [],
@@ -5329,6 +5677,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Place where direct sun is limited to 2 to 6 hours per day; the plant also tolerates very low light. [claim:snake_plant:lighting:001]",
         "claims": [
           {
@@ -5402,6 +5756,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Place where direct sun is limited to 2 to 6 hours per day; the plant also tolerates very low light. [claim:snake_plant:lighting:001]",
         "claims": [
           {
@@ -5475,6 +5835,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_semantic_fallback",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Place where direct sun is limited to 2 to 6 hours per day; the plant also tolerates very low light. [claim:snake_plant:lighting:001]",
         "claims": [
           {
@@ -5553,6 +5919,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Place where direct sun is limited to 2 to 6 hours per day; the plant also tolerates very low light. [claim:snake_plant:lighting:001]\n- Use well-drained soil. [claim:snake_plant:soil:001]",
         "claims": [
           {
@@ -5645,6 +6017,12 @@
         ],
         "qualifiers": {},
         "route": "unsupported_gate",
+        "generation": {
+          "mode": "none",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "The verified evidence corpus has no pet_safety evidence, so this question cannot be answered safely.",
         "claims": [],
         "evidence": [],
@@ -5693,6 +6071,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Use well-drained soil. [claim:snake_plant:soil:001]",
         "claims": [
           {
@@ -5766,6 +6150,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Use well-drained soil. [claim:snake_plant:soil:001]",
         "claims": [
           {
@@ -5841,6 +6231,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_semantic_fallback",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- From spring through autumn, let the soil dry between waterings. [claim:snake_plant:watering:001]\n- In winter, water only every one to two months. [claim:snake_plant:watering:002]\n- Avoid overwatering because the roots can rot. [claim:snake_plant:watering:003]",
         "claims": [
           {
@@ -5968,6 +6364,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- From spring through autumn, let the soil dry between waterings. [claim:snake_plant:watering:001]\n- In winter, water only every one to two months. [claim:snake_plant:watering:002]\n- Avoid overwatering because the roots can rot. [claim:snake_plant:watering:003]",
         "claims": [
           {
@@ -6095,6 +6497,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- From spring through autumn, let the soil dry between waterings. [claim:snake_plant:watering:001]\n- In winter, water only every one to two months. [claim:snake_plant:watering:002]\n- Avoid overwatering because the roots can rot. [claim:snake_plant:watering:003]",
         "claims": [
           {
@@ -6222,6 +6630,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- From spring through autumn, let the soil dry between waterings. [claim:snake_plant:watering:001]\n- In winter, water only every one to two months. [claim:snake_plant:watering:002]\n- Avoid overwatering because the roots can rot. [claim:snake_plant:watering:003]",
         "claims": [
           {
@@ -6345,6 +6759,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Apply a balanced liquid houseplant fertilizer once or twice per year. [claim:zz_plant:fertilizer:001]",
         "claims": [
           {
@@ -6418,6 +6838,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Apply a balanced liquid houseplant fertilizer once or twice per year. [claim:zz_plant:fertilizer:001]",
         "claims": [
           {
@@ -6491,6 +6917,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_semantic_fallback",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Apply a balanced liquid houseplant fertilizer once or twice per year. [claim:zz_plant:fertilizer:001]",
         "claims": [
           {
@@ -6564,6 +6996,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- ZZ plant tolerates very low light but performs best in bright indirect light; direct sun can scorch foliage. [claim:zz_plant:lighting:001]",
         "claims": [
           {
@@ -6639,6 +7077,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- ZZ plant tolerates very low light but performs best in bright indirect light; direct sun can scorch foliage. [claim:zz_plant:lighting:001]",
         "claims": [
           {
@@ -6714,6 +7158,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_semantic_fallback",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- ZZ plant tolerates very low light but performs best in bright indirect light; direct sun can scorch foliage. [claim:zz_plant:lighting:001]",
         "claims": [
           {
@@ -6794,6 +7244,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- Apply a balanced liquid houseplant fertilizer once or twice per year. [claim:zz_plant:fertilizer:001]\n- ZZ plant tolerates very low light but performs best in bright indirect light; direct sun can scorch foliage. [claim:zz_plant:lighting:001]",
         "claims": [
           {
@@ -6888,6 +7344,12 @@
         ],
         "qualifiers": {},
         "route": "unsupported_gate",
+        "generation": {
+          "mode": "none",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "The verified evidence corpus has no pet_safety evidence, so this question cannot be answered safely.",
         "claims": [],
         "evidence": [],
@@ -6938,6 +7400,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- In summer, water about twice monthly only after the soil has dried completely. [claim:zz_plant:watering:001]\n- In winter, water at most once a month while the plant is not actively growing. [claim:zz_plant:watering:002]",
         "claims": [
           {
@@ -7040,6 +7508,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- In summer, water about twice monthly only after the soil has dried completely. [claim:zz_plant:watering:001]\n- In winter, water at most once a month while the plant is not actively growing. [claim:zz_plant:watering:002]",
         "claims": [
           {
@@ -7142,6 +7616,12 @@
         ],
         "qualifiers": {},
         "route": "frozen_lexical",
+        "generation": {
+          "mode": "extractive",
+          "provider": "local",
+          "model": null,
+          "fallback": false
+        },
         "answer": "- In summer, water about twice monthly only after the soil has dried completely. [claim:zz_plant:watering:001]\n- In winter, water at most once a month while the plant is not actively growing. [claim:zz_plant:watering:002]",
         "claims": [
           {

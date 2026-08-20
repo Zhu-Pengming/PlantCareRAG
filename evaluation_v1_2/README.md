@@ -250,3 +250,26 @@ rerunning or tuning the embedding model. Across all 80 synthetic cases:
 On the untouched 35-case test split, behavior is 35/35 and evidence exact match
 is 34/35. These remain component/regression results because the questions were
 generated from the same evidence being evaluated.
+
+### Optional OpenAI Structured Outputs generator
+
+Natural-language rewriting is opt-in. The adapter uses the Responses API
+Structured Outputs helper, requires an explicit model ID, sets `store=False`,
+and returns sentence-level evidence IDs. See the
+[official Structured Outputs guide](https://developers.openai.com/api/docs/guides/structured-outputs).
+
+```bash
+python3.12 -m venv .venv-llm
+.venv-llm/bin/python -m pip install -r evaluation_v1_2/requirements-llm.txt
+export OPENAI_API_KEY="..."
+.venv-llm/bin/python -m evaluation_v1_2 ask \
+  --generator openai --model "YOUR_MODEL_ID" \
+  "How should I water Snake Plant?"
+```
+
+Before returning an LLM answer, the runtime verifies that every retrieved
+evidence ID is cited exactly once, every citation exists, the rendered answer
+contains only structured cited sentences, and no generated number is absent
+from its cited evidence. Any API or validation failure returns the extractive
+answer and records a sanitized fallback reason. This is deliberately reported
+as structural/numeric validation—not proof that every paraphrase is entailed.
